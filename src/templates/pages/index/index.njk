@@ -1,5 +1,31 @@
-{% extends "layouts/base.njk" %}
+{% set currentPage = "Home" %} {% extends "layouts/base.njk" %} {% set title =
+"Pixmart – Your Creative Marketplace for Digital Assets" %}
+{% set description = "Pixmart – Your Creative Marketplace for Digital Assets" %}
+{% set page = "home" %}
 
 {% block content %}
+
+<!--MAIN STARTS HERE-->
+
+<!--HERO SECTION-->
+{% include "partials/hero-homepage.njk" %}
+
+<!--PRODUCTS SECTION-->
+{% include "partials/products-section.njk" %}
+
+<!--CATEGORIES SECTION-->
+{% include "partials/categories-section.njk" %}
+
+<!--TRENDING SECTION-->
+{% include "partials/trending-section.njk" %}
+
+<!--PRICING SECTION-->
+{% include "partials/pricing-section.njk" %}
+
+<!--FAQ SECTION-->
+{% include "partials/faq-section.njk" %}
+
+<!--BLOG SECTION-->
+{% include "partials/blog-section.njk" %}
 
 {% endblock %}

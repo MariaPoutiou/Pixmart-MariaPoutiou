@@ -14,13 +14,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="/src/styles/pages/normalize.scss" />
-  <link rel="stylesheet" href="/src/styles/pages/style.scss" />
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
   
 </head>
 <body>
 {% include "partials/header.njk" %}
-{% block content %}default content{% endblock %}
+<main>
+{% block content %}
+{% endblock %}
+</main>
 {% include "partials/footer.njk" %}
+<script src="/js/script.js"></script>
 </body>
 </html>
