@@ -1,10 +1,25 @@
-{% set currentPage = "Blog" %} {% extends "layouts/base.njk" %} {% set title =
+{% set currentPage = "Blog" %}
+{% extends "layouts/base.njk" %}
+{% set title =
 "Pixmart – Your Creative Marketplace for Digital Assets" %}
 {% set description = "Pixmart – Your Creative Marketplace for Digital Assets" %}
 {% set page = "blog" %}
-
 {% block content %}
 
-<!--MAIN STARTS HERE-->
+    <!--MAIN STARTS HERE-->
 
+    <!--HERO SECTION-->
+
+        <article class="container blog-article"> 
+        <section class="hero-blog">
+            {% include "partials/hero-blog.njk" %}
+        </section>
+
+        <!--MAIN ARTICLE-->
+
+        <section class="article">
+            {% include "partials/main-article.njk" %}
+        </section>
+
+    </article>
 {% endblock %}
