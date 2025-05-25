@@ -244,6 +244,54 @@
   ]
 },
 
+"faqSection": {
+  "title": "F.A.Q",
+  "subtitle": "Answers to Your Questions",
+  "buttonText": "Ask Us A Question",
+  "items": [
+    {
+      "question": "Can I request a refund?",
+      "answer": "#",
+      "icon": {
+        "src": "#",
+        "alt": "Toggle FAQ"
+      }
+    },
+    {
+      "question": "How do I access my purchased products",
+      "answer": "Accessing your purchased products is seamless and hassle-free...",
+      "icon": {
+        "src": "#",
+        "alt": "Toggle FAQ"
+      }
+    },
+    {
+      "question": "Are there any discounts for bulk purchases?",
+      "answer": "#",
+      "icon": {
+        "src": "#",
+        "alt": "Toggle FAQ"
+      }
+    },
+    {
+      "question": "What payment methods do you accept here?",
+      "answer": "#",
+      "icon": {
+        "src": "#",
+        "alt": "Toggle FAQ"
+      }
+    },
+    {
+      "question": "Can I sell my digital products on this marketplace?",
+      "answer": "#",
+      "icon": {
+        "src": "#",
+        "alt": "Toggle FAQ"
+      }
+    }
+  ]
+},
+
 "blogSection": {
   "title": "Latest Expert",
   "linkText": "Explore All Articles",
