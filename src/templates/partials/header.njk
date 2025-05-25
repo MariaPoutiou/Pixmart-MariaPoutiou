@@ -2,42 +2,32 @@
   <div class="header__menu-wrapper">
     <div class="header__burger-wrapper">
       <div class="header__burger-btn">
-        <img class="header__burger-img" src="#" alt="menu icon">
+        <img class="header__burger-img" src="{{ header.burgerImg }}" alt="{{ header.burgerImgAlt }}">
       </div>
     </div>
       <div class="header__logo">
-        <a class="header__logo-link" href="#">
-          <img class="header__logo-image" src="#" alt="pixmart logo" loading="eager">
+        <a class="header__logo-link" href="{{ header.logoLink }}">
+          <img class="header__logo-image" src="{{ header.logoImg }}" alt="{{ header.logoAlt }}" loading="eager">
         </a>
       </div>
     </div>
     <nav class="main-nav">
       <ul class="main-nav__list">
+        {% for item in header.nav %}
         <li class="main-nav__list-item">
           <a
             class="main-nav__list-link{% if item.text == currentPage %} main-nav__list-link--active{% endif %}"
-            href="index.html">About</a>
+            href="{{ item.link }}">{{ item.text }}</a>
         </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__list-link" href="catalog.html">Products</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__list-link" href="https://via.placeholder.com/150">Creators</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__list-link" href="blog-page.html">Blog</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__list-link" href="contact.html">Contact</a>
-        </li>
+        {% endfor %}
       </ul>
     </nav>
     <div class="header-actions">
       <form class="header-search" method="get">
-        <input type="search" name="search" maxlength="30" placeholder="Search for Digital Assets" autocomplete="on">
+        <input type="search" name="search" maxlength="30" placeholder="{{ headerSearch.headerPlaceholder }}" autocomplete="on">
       </form>
       <button class="button header__button button--primary">
-        <img class="header__button-img" src="https://via.placeholder.com/150" alt="bag icon">
+        <img class="header__button-img" src="{{ headerButton.img}}" alt="{{ headerButton.alt }}">
       </button>
     </div>
   </header>

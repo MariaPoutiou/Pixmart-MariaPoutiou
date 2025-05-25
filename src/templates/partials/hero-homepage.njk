@@ -1,27 +1,24 @@
 <section class="container hero-section hero-section--homepage">
     <div class="hero-section__wrapper">
         <h1 class="hero-section__heading">
-            Craft Your Success with Our Digital Assets
+            {{ heroHome.title }}
         </h1>
         <h2 class="hero-section__description">
-            From our inspiring illustrations to dynamic UI/UX ktis, elevate your projects with our premium digital design
-            resources.
+            {{ heroHome.description }}
         </h2>
         <div class="hero-section__btn-wrapper">
             <button class="button hero-section__button button--primary">
-                Shop Now
+                {{ heroHome.buttonPrimary }}
             </button>
             <button class="button hero-section__button button--secondary">
-                Watch About Us 
-                <img class="hero-section__button-svg" src="https://via.placeholder.com/150" alt="play icon">
+                <img class="hero-section__button-svg" src="{{ heroHome.buttonIcon.svg }}" alt="{{ heroHome.buttonIcon.alt }}">
+                {{ heroHome.buttonSecondary  }} 
             </button>
         </div>
     </div>
     <div class="hero-section__img-wrapper">
-        <img class="hero-section__img hero-section__img-primary" src="https://via.placeholder.com/150" alt="Main screen showing event platform with speaker and headline text">
-        <img class="hero-section__img hero-section__img-secondary" src="https://via.placeholder.com/150" alt="Schedule screen for Day 2 with speaker portraits and event agenda">
-        <img class="hero-section__img hero-section__img-tertiary" src="https://via.placeholder.com/150" alt="Grid of speaker cards showing profiles and event times">
-        <img class="hero-section__svg hero-section__svg-upper" src="https://via.placeholder.com/150" alt="Vector design tool icon representing graphic or UI design">
-        <img class="hero-section__svg hero-section__svg-lower" src="https://via.placeholder.com/150" alt="Icon representing modular or block-based layout design">
+        {% for item in heroHome.images %}
+        <img class="hero-section__img hero-section__img-primary" src="{{ item.img }}" alt="{{ item.alt }}">
+        {% endfor %}
     </div>
 </section>

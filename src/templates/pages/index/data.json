@@ -1,10 +1,82 @@
 {
+  "header": {
+    "burgerImg": "#",
+    "burgerAlt": "menu icon",
+    "logoLink": "#",
+    "logoImg": "#",
+    "logoAlt": "Binabox-logo",
+    "nav": [
+      {
+        "text": "About",
+        "link": "index.html"
+      },
+      {
+        "text": "Products",
+        "link": "catalog.html"
+      },
+      {
+        "text": "Creators",
+        "link": "https://some-url.com/"
+      },
+      {
+        "text": "Blog",
+        "link": "blog-article.html"
+      },
+      {
+        "text": "Contact",
+        "link": "contact.html"
+      }
+    ]
+  },
+
+  "headerSearch": {
+    "headerPlaceholder": "Search for Digital Assets"
+  },
+
+  "headerButton": {
+    "img": "https://some-url.com/",
+    "alt": "bag icon"
+  },
+
+  "heroHome": {
+    "title": "Craft Your Success with Our Digital Assets",
+    "description": "From our inspiring illustrations to dynamic UI/UX ktis, elevate your projects with our premium digital design resources.",
+    "buttonPrimary": "Shop Now",
+    "buttonSecondary": "Watch About Us",
+    "buttonIcon": {
+      "svg": "https://some-url.com/",
+      "alt": "play icon"
+    },
+    "images": [
+      {
+        "img": "https://some-url.com/",
+        "alt": "Main screen showing event platform with speaker and headline text"
+      },
+      {
+        "img": "https://some-url.com/",
+        "alt": "Schedule screen for Day 2 with speaker portraits and event agenda"
+      },
+      {
+        "img": "https://some-url.com/",
+        "alt": "Grid of speaker cards showing profiles and event times"
+      },
+      {
+        "img": "https://some-url.com/",
+        "alt": "Vector design tool icon representing graphic or UI design"
+      },
+      {
+        "img": "https://some-url.com/",
+        "alt": "Icon representing modular or block-based layout design"
+      }
+    ]
+  },
+
   "catalog": [
     {
       "title": "Lens Chronicles",
       "tags": ["Photography", "Creative"],
       "price": "€00.00",
-      "image": "#",
+      "image": "https://some-url.com/",
       "alt": "#",
       "state": "Sold Out",
       "stateClass": "sold-out"
@@ -13,59 +85,59 @@
       "title": "Career Success",
       "tags": ["Guidance", "Jobs"],
       "price": "€20.99",
-      "image": "#",
+      "image": "https://some-url.com/",
       "alt": "#",
       "state": "New",
       "stateClass": "new",
       "actions": [
-        { "icon": "#", "alt": "Save to wishlist" },
-        { "icon": "#", "alt": "Add to cart" }
+        { "icon": "https://some-url.com/", "alt": "Save to wishlist" },
+        { "icon": "https://some-url.com/", "alt": "Add to cart" }
       ]
     },
     {
       "title": "Dream Homes",
       "tags": ["Real Estate", "Modern"],
       "price": "€45.99",
-      "image": "#",
+      "image": "https://some-url.com/",
       "alt": "#",
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
-        { "icon": "#", "alt": "Save to wishlist" },
-        { "icon": "#", "alt": "Add to cart" }
+        { "icon": "https://some-url.com/", "alt": "Save to wishlist" },
+        { "icon": "https://some-url.com/", "alt": "Add to cart" }
       ]
     },
     {
       "title": "Foodish Catering",
       "tags": ["Food", "Events"],
       "price": "€15.99",
-      "image": "#",
+      "image": "https://some-url.com/",
       "alt": "#",
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
-        { "icon": "#", "alt": "Save to wishlist" },
-        { "icon": "#", "alt": "Add to cart" }
+        { "icon": "https://some-url.com/", "alt": "Save to wishlist" },
+        { "icon": "https://some-url.com/", "alt": "Add to cart" }
       ]
     },
     {
       "title": "Caring Hearts",
       "tags": ["Healthcare", "Support"],
       "price": "€19.99",
-      "image": "#",
+      "image": "https://some-url.com/",
       "alt": "#",
       "state": "New",
       "stateClass": "new",
       "actions": [
-        { "icon": "#", "alt": "Save to wishlist" },
-        { "icon": "#", "alt": "Add to cart" }
+        { "icon": "https://some-url.com/", "alt": "Save to wishlist" },
+        { "icon": "https://some-url.com/", "alt": "Add to cart" }
       ]
     },
     {
       "title": "Gaming Rise",
       "tags": ["eSports", "Trend"],
       "price": "€00.00",
-      "image": "#",
+      "image": "https://some-url.com/",
       "alt": "#",
       "state": "Sold Out",
       "stateClass": "sold-out"
@@ -74,7 +146,7 @@
       "title": "Edit Pro",
       "tags": ["Design", "Tools"],
       "price": "€00.00",
-      "image": "#",
+      "image": "https://some-url.com/",
       "alt": "#",
       "state": "Sold Out",
       "stateClass": "sold-out"
@@ -83,33 +155,33 @@
       "title": "Banking Redefined",
       "tags": ["Finance", "Secure"],
       "price": "€25.99",
-      "image": "#",
+      "image": "https://some-url.com/",
       "alt": "#",
       "state": "New",
       "stateClass": "new",
       "actions": [
-        { "icon": "#", "alt": "Save to wishlist" },
-        { "icon": "#", "alt": "Add to cart" }
+        { "icon": "https://some-url.com/", "alt": "Save to wishlist" },
+        { "icon": "https://some-url.com/", "alt": "Add to cart" }
       ]
     },
     {
       "title": "Exploring Fun",
       "tags": ["Travel", "Adventure"],
       "price": "€41.99",
-      "image": "#",
+      "image": "https://some-url.com/",
       "alt": "#",
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
-        { "icon": "#", "alt": "Save to wishlist" },
-        { "icon": "#", "alt": "Add to cart" }
+        { "icon": "https://some-url.com/", "alt": "Save to wishlist" },
+        { "icon": "https://some-url.com/", "alt": "Add to cart" }
       ]
     },
     {
       "title": "Admin Dashboard",
       "tags": ["Data", "Tools"],
       "price": "€15.99",
-      "image": "#",
+      "image": "https://some-url.com/",
       "alt": "#",
       "state": "Popular",
       "stateClass": "popular",
@@ -122,20 +194,20 @@
       "title": "Analytical Dashboard",
       "tags": ["Data", "Tools"],
       "price": "€10.99",
-      "image": "#",
+      "image": "https://some-url.com/",
       "alt": "#",
       "state": "New",
       "stateClass": "new",
       "actions": [
-        { "icon": "#", "alt": "Save to wishlist" },
-        { "icon": "#", "alt": "Add to cart" }
+        { "icon": "https://some-url.com/", "alt": "Save to wishlist" },
+        { "icon": "https://some-url.com/", "alt": "Add to cart" }
       ]
     },
     {
       "title": "Kindergarten",
       "tags": ["Education", "Kids"],
       "price": "€00.00",
-      "image": "#",
+      "image": "https://some-url.com/",
       "alt": "#",
       "state": "Sold Out",
       "stateClass": "sold-out"
