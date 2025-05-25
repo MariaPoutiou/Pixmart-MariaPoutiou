@@ -7,4 +7,20 @@
 
 <!--MAIN STARTS HERE-->
 
+<!--HERO SECTION-->
+{% include "partials/hero-catalog.njk" %}
+
+<!--CATALOG GRID HEADER-->
+<div class="container">
+<section class="catalog-header">
+{% include "partials/catalog-grid-header.njk" %}
+
+<!--CATALOG-GRID-->
+{% include "partials/catalog-grid.njk" %}
+</section>
+
+<!--CATALOG-ASIDE-->
+{% include "partials/aside-catalog.njk" %}
+</div>
+
 {% endblock %}
