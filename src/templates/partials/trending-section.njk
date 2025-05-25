@@ -1,74 +1,18 @@
 <section class="container trending">
-    <h2 class="primary-title trending__primary-title">TRENDING</h2>
-    <div class="trending__header">
-        <h3 class="secondary-title trending__secondary-title">Popular Products</h3>
-        <div class="trending__button-wrapper">
-            <button class="button trending__button button--tertiary">#</button>
-            <button class="button trending__button button--tertiary">#</button>
-        </div>
-    </div>
-    <ul class="trending__list-wrapper">
-        <li class="trending__list-item">
-            <article class="trending-card">
-                <img class="trending-card__img" src="#" alt="Travel Hero UI page">
-                <div class="trending-card__icon-wrapper">
-                    <img class="trending-card__label-icon" src="#" alt="cup-icon">
-                </div>
-                <button class="button trending-card__button button--primary">Go to Product</button>
-                <div class="trending-card__details">
-                    <h4 class="trending-card__title">Travel Hero</h4>
-                    <p class="trending-card__price">€29.99</p>
-                </div>
-                <div class="trending-card__tags">
-                    <p class="trending-card__tag">Adventure</p>
-                    <p class="trending-card__tag">Journey</p>
-                </div>
-            </article>
-        </li>
-        <li class="trending__list-item">
-            <article class="trending-card">
-                <img class="trending-card__img" src="#" alt="Healthcare Pro UI page">
-                <div class="trending-card__icon-wrapper">
-                    <img class="trending-card__label-icon" src="#" alt="cup-icon">
-                </div>
-                <button class="button trending-card__button button--primary">Go to Product</button>
-                <div class="trending-card__details">
-                    <h4 class="trending-card__title">Healthcare Pro</h4>
-                    <p class="trending-card__price">€15.99</p>
-                </div>
-                <div class="trending-card__tags">
-                    <p class="trending-card__tag">Medical</p>
-                    <p class="trending-card__tag">Wellness</p>
-                </div>
-            </article>
-        </li>
-        <li class="trending__list-item">
-            <article class="trending-card">
-                <img class="trending-card__img" src="#" alt="Foodish Delight UI page">
-                <button class="button trending-card__button button--primary">Go to Product</button>
-                <div class="trending-card__details">
-                    <h4 class="trending-card__title">Travel Hero</h4>
-                    <p class="trending-card__price">€31.99</p>
-                </div>
-                <div class="trending-card__tags">
-                    <p class="trending-card__tag">Catering</p>
-                    <p class="trending-card__tag">Food</p>
-                </div>
-            </article>
-        </li>
-        <li class="trending__list-item">
-            <article class="trending-card">
-                <img class="trending-card__img" src="#" alt="Real Estate UI page">
-                <button class="button trending-card__button button--primary">Go to Product</button>
-                <div class="trending-card__details">
-                    <h4 class="trending-card__title">Real Estate</h4>
-                    <p class="trending-card__price">€40.99</p>
-                </div>
-                <div class="trending-card__tags">
-                    <p class="trending-card__tag">Modern</p>
-                    <p class="trending-card__tag">Homes</p>
-                </div>
-            </article>
-        </li>
-    </ul>
+  <h2 class="primary-title trending__primary-title">
+    {{ trendingSection.title }}
+  </h2>
+  <div class="trending__header">
+    <h3 class="secondary-title trending__secondary-title">
+      {{ trendingSection.subtitle }}
+    </h3>
+    {% for button in trendingSection.navButtons %}
+    <button class="button trending__button button--tertiary">
+      <img src="{{ button.icon }}" alt="{{ button.alt }}" />
+    </button>
+    {% endfor %}
+  </div>
+  <ul class="trending__list-wrapper">
+    {% include "partials/trending-card.njk" %}
+  </ul>
 </section>

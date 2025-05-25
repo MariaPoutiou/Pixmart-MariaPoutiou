@@ -2,32 +2,53 @@
   <div class="header__menu-wrapper">
     <div class="header__burger-wrapper">
       <div class="header__burger-btn">
-        <img class="header__burger-img" src="{{ header.burgerImg }}" alt="{{ header.burgerImgAlt }}">
+        <img
+          class="header__burger-img"
+          src="{{ header.burgerImg }}"
+          alt="{{ header.burgerImgAlt }}"
+        />
       </div>
     </div>
-      <div class="header__logo">
-        <a class="header__logo-link" href="{{ header.logoLink }}">
-          <img class="header__logo-image" src="{{ header.logoImg }}" alt="{{ header.logoAlt }}" loading="eager">
-        </a>
-      </div>
+    <div class="header__logo">
+      <a class="header__logo-link" href="{{ header.logoLink }}">
+        <img
+          class="header__logo-image"
+          src="{{ header.logoImg }}"
+          alt="{{ header.logoAlt }}"
+          loading="eager"
+        />
+      </a>
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        {% for item in header.nav %}
-        <li class="main-nav__list-item">
-          <a
-            class="main-nav__list-link{% if item.text == currentPage %} main-nav__list-link--active{% endif %}"
-            href="{{ item.link }}">{{ item.text }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </nav>
-    <div class="header-actions">
-      <form class="header-search" method="get">
-        <input type="search" name="search" maxlength="30" placeholder="{{ headerSearch.headerPlaceholder }}" autocomplete="on">
-      </form>
-      <button class="button header__button button--primary">
-        <img class="header__button-img" src="{{ headerButton.img}}" alt="{{ headerButton.alt }}">
-      </button>
-    </div>
-  </header>
+  </div>
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+      {% for item in header.nav %}
+      <li class="main-nav__list-item">
+        <a
+          class="main-nav__list-link{% if item.text == currentPage %} main-nav__list-link--active{% endif %}"
+          href="{{ item.link }}"
+          >{{ item.text }}</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <div class="header-actions">
+    <form class="header-search" method="get">
+      <input
+        type="search"
+        name="search"
+        maxlength="30"
+        placeholder="{{ headerSearch.headerPlaceholder }}"
+        autocomplete="on"
+      />
+    </form>
+    <button class="button header__button button--primary">
+      <img
+        class="header__button-img"
+        src="{{ headerButton.img}}"
+        alt="{{ headerButton.alt }}"
+      />
+    </button>
+  </div>
+</header>

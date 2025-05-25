@@ -1,57 +1,11 @@
 <section class="container pricing-section">
-    <h2 class="primary-title pricing-section__primary-title">PRICING PLAN</h2>
-    <h3 class="secondary-title pricing-section__secondary-title">Choose The Perfect Plan for Creative Potential</h3>
-    <ul class="pricing-list">
-        <li class="pricing-list__item">
-            <article class="pricing-card">
-                <div class="pricing-card__header">
-                    <h4 class="pricing-card__title">Standard Membership</h4>
-                    <p class="pricing-card__price">€14.99
-                        <span class="pricing-card__billing">/Month</span>
-                    </p>
-                </div>
-                <ul class="pricing-card__list">
-                    <li class="pricing-card__list-item">Enhanced Resource Access</li>
-                    <li class="pricing-card__list-item">Monthly Credits</li>
-                    <li class="pricing-card__list-item">Priority Customer Support</li>
-                    <li class="pricing-card__list-item">Community Features Access</li>
-                </ul>
-                <button class="button pricing-card__button button--tertiary">Subscribe</button>
-            </article>
-        </li>
-        <li class="pricing-list__item">
-            <article class="pricing-card">
-                <div class="pricing-card__header">
-                    <h4 class="pricing-card__title">Plus Membership</h4>
-                    <p class="pricing-card__price">€29.99
-                        <span class="pricing-card__billing">/Month</span>
-                    </p>
-                </div>
-                <ul class="pricing-card__list">
-                    <li class="pricing-card__list-item">All Standard Benefits</li>
-                    <li class="pricing-card__list-item">Increased Monthly Credits</li>
-                    <li class="pricing-card__list-item">Early Access to New Releases</li>
-                    <li class="pricing-card__list-item">Member-Only Offers</li>
-                </ul>
-                <button class="button pricing-card__button button--primary">Subscribe</button>
-            </article>
-        </li>
-        <li class="pricing-list__item">
-            <article class="pricing-card">
-                <div class="pricing-card__header">
-                    <h4 class="pricing-card__title">Pro Membership</h4>
-                    <p class="pricing-card__price">€49.99
-                        <span class="pricing-card__billing">/Month</span>
-                    </p>
-                </div>
-                <ul class="pricing-card__list">
-                    <li class="pricing-card__list-item">All Plus Benefits</li>
-                    <li class="pricing-card__list-item">Unlimited Downloads</li>
-                    <li class="pricing-card__list-item">Custom Licensing</li>
-                    <li class="pricing-card__list-item">Direct Creator Collaboration</li>
-                </ul>
-                <button class="button pricing-card__button button--tertiary">Subscribe</button>
-            </article>
-        </li>
-    </ul>
+  <h2 class="primary-title pricing-section__primary-title">
+    {{ pricingSection.title }}
+  </h2>
+  <h3 class="secondary-title pricing-section__secondary-title">
+    {{ pricingSection.subtitle }}
+  </h3>
+  <ul class="pricing-list">
+    {% include "partials/pricing-card.njk" %}
+  </ul>
 </section>

@@ -1,24 +1,19 @@
-{% set currentPage = "Blog" %}
-{% extends "layouts/base.njk" %}
-{% set title =
-"Typography Tips for Stunning Designs" %}
-{% set description = "Learn how to use typography effectively in 2024 with hierarchy, alignment, and white space for clean, eye-catching design results." %}
-{% set page = "blog" %}
-{% block content %}
-    <!--MAIN STARTS HERE-->
-    <!--HERO SECTION-->
-        <article class="container blog-article"> <h1 class="blog-hero__title">Mastering the Art of Typography: Tips for
-            Eye-Catching designs for 2024</h1>
-        <section class="hero-blog">
-            {% include "partials/hero-blog.njk" %}
-        </section>
-        <!--MAIN ARTICLE-->
-        <section class="article">
-            {% include "partials/main-article.njk" %}
-        </section>
-    </article>
-    <!--ASIDE SECTIONS-->
-    {% include "partials/aside-blog.njk" %}
-    <!--ARTICLE FOOTER-->
-    {% include "partials/article-footer.njk" %}
-{% endblock %}
+{% set currentPage = "Blog" %} {% extends "layouts/base.njk" %} {% set title =
+"Typography Tips for Stunning Designs" %} {% set description = "Learn how to use
+typography effectively in 2024 with hierarchy, alignment, and white space for
+clean, eye-catching design results." %} {% set page = "blog" %} {% block content
+%}
+<!--MAIN STARTS HERE-->
+<!--HERO SECTION-->
+<article class="container blog-article">
+  <h1 class="blog-hero__title">
+    Mastering the Art of Typography: Tips for Eye-Catching designs for 2024
+  </h1>
+  <section class="hero-blog">{% include "partials/hero-blog.njk" %}</section>
+  <!--MAIN ARTICLE-->
+  <section class="article">{% include "partials/main-article.njk" %}</section>
+</article>
+<!--ASIDE SECTIONS-->
+{% include "partials/aside-blog.njk" %}
+<!--ARTICLE FOOTER-->
+{% include "partials/article-footer.njk" %} {% endblock %}

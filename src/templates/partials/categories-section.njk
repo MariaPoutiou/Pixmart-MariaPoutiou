@@ -1,46 +1,19 @@
 <section class="container categories">
   <div class="categories__header">
     <div class="categories__header-content">
-      <h2 class="primary-title categories__primary-title">PRODUCT CATEGORIES</h2>
-      <h3 class="secondary-title categories__secondary-title">Discover Assets for Every Projects</h3>
-      <p class="categories__description">From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you
-        need to your projects.
-      </p>
+      <h2 class="primary-title categories__primary-title">
+        {{ categoriesSection.title }}
+      </h2>
+      <h3 class="secondary-title categories__secondary-title">
+        {{ categoriesSection.subtitle }}
+      </h3>
+      <p class="categories__description">{{ categoriesSection.description }}</p>
     </div>
-    <button class="button categories-header__button button--primary">Shop Now</button>
+    <button class="button categories-header__button button--primary">
+      {{ categoriesSection.buttonText }}
+    </button>
   </div>
   <ul class="categories__list">
-    <li class="categories__list-item">
-      <article class="categories-card">
-      <img class="categories-card__img" src="#" alt="image of different devices">
-      <h4 class="categories-card__title">Templates</h4>
-      <p class="categories-card__description">For all needs</p>
-      <p class="categories-card__label">Modern</p>
-      </article>
-    </li>
-    <li class="categories__list-item">
-      <article class="categories-card">
-      <img class="categories-card__img" src="#" alt="roll up banner with graphs">
-      <h4 class="categories-card__title">Slides</h4>
-      <p class="categories-card__description">Pitch-ready</p>
-      <p class="categories-card__label">Creative</p>
-      </article>
-    </li>
-    <li class="categories__list-item">
-      <article class="categories-card">
-      <img class="categories-card__img" src="#" alt="mobile phone">
-      <h4 class="categories-card__title">App Icons</h4>
-      <p class="categories-card__description">High-quality</p>
-      <p class="categories-card__label">Elegant</p>
-      </article>
-    </li>
-    <li class="categories__list-item">
-      <article class="categories-card">
-      <img class="categories-card__img" src="#" alt="painting bag">
-      <h4 class="categories-card__title">Design Tools</h4>
-      <p class="categories-card__description">Easy to use</p>
-      <p class="categories-card__label">Unique</p>
-      </article>
-    </li>
+    {% include "partials/categories-card.njk" %}
   </ul>
 </section>

@@ -1,0 +1,21 @@
+{% for plan in pricingSection.cards %}
+<li class="pricing-list__item">
+  <article class="pricing-card">
+    <div class="pricing-card__header">
+      <h4 class="pricing-card__title">{{ plan.title }}</h4>
+      <p class="pricing-card__price">
+        {{ plan.price }}
+        <span class="pricing-card__billing">{{ plan.billing }}</span>
+      </p>
+    </div>
+    <ul class="pricing-card__list">
+      {% for feature in plan.features %}
+      <li class="pricing-card__list-item">{{ feature }}</li>
+      {% endfor %}
+    </ul>
+    <button class="button pricing-card__button button--tertiary">
+      {{ plan.button.label }}
+    </button>
+  </article>
+</li>
+{% endfor %}

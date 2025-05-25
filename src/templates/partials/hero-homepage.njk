@@ -1,24 +1,28 @@
 <section class="container hero-section hero-section--homepage">
-    <div class="hero-section__wrapper">
-        <h1 class="hero-section__heading">
-            {{ heroHome.title }}
-        </h1>
-        <h2 class="hero-section__description">
-            {{ heroHome.description }}
-        </h2>
-        <div class="hero-section__btn-wrapper">
-            <button class="button hero-section__button button--primary">
-                {{ heroHome.buttonPrimary }}
-            </button>
-            <button class="button hero-section__button button--secondary">
-                <img class="hero-section__button-svg" src="{{ heroHome.buttonIcon.svg }}" alt="{{ heroHome.buttonIcon.alt }}">
-                {{ heroHome.buttonSecondary  }} 
-            </button>
-        </div>
+  <div class="hero-section__wrapper">
+    <h1 class="hero-section__heading">{{ heroHome.title }}</h1>
+    <h2 class="hero-section__description">{{ heroHome.description }}</h2>
+    <div class="hero-section__btn-wrapper">
+      <button class="button hero-section__button button--primary">
+        {{ heroHome.buttonPrimary }}
+      </button>
+      <button class="button hero-section__button button--secondary">
+        <img
+          class="hero-section__button-svg"
+          src="{{ heroHome.buttonIcon.svg }}"
+          alt="{{ heroHome.buttonIcon.alt }}"
+        />
+        {{ heroHome.buttonSecondary }}
+      </button>
     </div>
-    <div class="hero-section__img-wrapper">
-        {% for item in heroHome.images %}
-        <img class="hero-section__img hero-section__img-primary" src="{{ item.img }}" alt="{{ item.alt }}">
-        {% endfor %}
-    </div>
+  </div>
+  <div class="hero-section__img-wrapper">
+    {% for item in heroHome.images %}
+    <img
+      class="hero-section__img hero-section__img-primary"
+      src="{{ item.img }}"
+      alt="{{ item.alt }}"
+    />
+    {% endfor %}
+  </div>
 </section>

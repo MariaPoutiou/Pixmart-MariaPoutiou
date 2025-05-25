@@ -1,49 +1,74 @@
 <form class="contact-form" method="post" action="#">
-    <div class="contact-form__item">
-        <label class="contact-form__label" for="name">Full Name</label>
-        <input class="contact-form__input" type="text" id="name" name="full-name" placeholder="Amelia Robert Johnson" minlength="2" required>
-    </div>
-    <div class="contact-form__item">
-        <label class="contact-form__label" for="email">Email Address</label>
-        <input
-            class="contact-form__input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="amelia.robertjohnson@pixmart.com"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
-            title="Format: your@email.com"
-            autocomplete
-            required>
-    </div>
-    <div class="contact-form__item">
-        <label class="contact-form__label" for="subject">Subject</label>
-        <select class="contact-form__select" id="subject" name="subject" required>
-            <option value="" disabled selected>Select a subject</option>
-            <option value="general">General Inquiry</option>
-            <option value="support">Support</option>
-            <option value="billing">Billing</option>
-        </select>
-    </div>
-    <div class="contact-form__item">
-        <label class="contact-form__label" for="message">Message</label>
-        <textarea
-            class="contact-form__textarea"
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Enter your message ..."
-            required></textarea>
-    </div>
-    <div class="contact-form__checkbox-wrapper">
-        <label class="contact-form__checkbox">
-            <input class="contact-form__checkbox-input" type="checkbox" name="subscribe" value="agree" id="subscribe">
-            <span>Subscribe me to Newsletter</span>
-        </label>
-        <label class="contact-form__checkbox">
-            <input class="contact-form__checkbox-input" type="checkbox" name="terms" value="agree" id="terms" required>
-            <span>I have read the User & Privacy Policy</span>
-        </label>
-    </div>
-    <button class="button contact-form__button button--primary" type="submit">Send Message</button>
+  <div class="contact-form__item">
+    <label class="contact-form__label" for="name">Full Name</label>
+    <input
+      class="contact-form__input"
+      type="text"
+      id="name"
+      name="full-name"
+      placeholder="Amelia Robert Johnson"
+      minlength="2"
+      required
+    />
+  </div>
+  <div class="contact-form__item">
+    <label class="contact-form__label" for="email">Email Address</label>
+    <input
+      class="contact-form__input"
+      type="email"
+      id="email"
+      name="email"
+      placeholder="amelia.robertjohnson@pixmart.com"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+      title="Format: your@email.com"
+      autocomplete
+      required
+    />
+  </div>
+  <div class="contact-form__item">
+    <label class="contact-form__label" for="subject">Subject</label>
+    <select class="contact-form__select" id="subject" name="subject" required>
+      <option value="" disabled selected>Select a subject</option>
+      <option value="general">General Inquiry</option>
+      <option value="support">Support</option>
+      <option value="billing">Billing</option>
+    </select>
+  </div>
+  <div class="contact-form__item">
+    <label class="contact-form__label" for="message">Message</label>
+    <textarea
+      class="contact-form__textarea"
+      id="message"
+      name="message"
+      rows="5"
+      placeholder="Enter your message ..."
+      required
+    ></textarea>
+  </div>
+  <div class="contact-form__checkbox-wrapper">
+    <label class="contact-form__checkbox">
+      <input
+        class="contact-form__checkbox-input"
+        type="checkbox"
+        name="subscribe"
+        value="agree"
+        id="subscribe"
+      />
+      <span>Subscribe me to Newsletter</span>
+    </label>
+    <label class="contact-form__checkbox">
+      <input
+        class="contact-form__checkbox-input"
+        type="checkbox"
+        name="terms"
+        value="agree"
+        id="terms"
+        required
+      />
+      <span>I have read the User & Privacy Policy</span>
+    </label>
+  </div>
+  <button class="button contact-form__button button--primary" type="submit">
+    Send Message
+  </button>
 </form>
