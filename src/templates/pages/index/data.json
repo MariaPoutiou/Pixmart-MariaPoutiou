@@ -72,88 +72,88 @@
   },
 
   "productCategories": {
-  "title": "PRODUCT CATEGORIES",
-  "items": [
-    {
-      "title": "UI kits",
-      "img": "Illustration.png",
-      "alt": "images of different devices"
-    },
-    {
-      "title": "Social Media",
-      "img": "Illustration.png",
-      "alt": "mobile phone"
-    },
-    {
-      "title": "Presentation",
-      "img": "Illustration.png",
-      "alt": "roll up banner with graphs"
-    },
-    {
-      "title": "Fonts",
-      "img": "Illustration.png",
-      "alt": "square with typography"
-    },
-    {
-      "title": "illustrations",
-      "img": "Illustration.png",
-      "alt": "painting bag"
-    }
-  ]
-},
+    "title": "PRODUCT CATEGORIES",
+    "items": [
+      {
+        "title": "UI kits",
+        "img": "Illustration.png",
+        "alt": "images of different devices"
+      },
+      {
+        "title": "Social Media",
+        "img": "Illustration.png",
+        "alt": "mobile phone"
+      },
+      {
+        "title": "Presentation",
+        "img": "Illustration.png",
+        "alt": "roll up banner with graphs"
+      },
+      {
+        "title": "Fonts",
+        "img": "Illustration.png",
+        "alt": "square with typography"
+      },
+      {
+        "title": "illustrations",
+        "img": "Illustration.png",
+        "alt": "painting bag"
+      }
+    ]
+  },
 
-"categoriesSection": {
-  "title": "PRODUCT CATEGORIES",
-  "subtitle": "Discover Assets for Every Projects",
-  "description": "From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you need to your projects.",
-  "buttonText": "Shop Now",
-  "items": [
-    {
-      "img": "#",
-      "alt": "image of different devices",
-      "title": "Templates",
-      "description": "For all needs",
-      "label": "Modern"
-    },
-    {
-      "img": "#",
-      "alt": "roll up banner with graphs",
-      "title": "Slides",
-      "description": "Pitch-ready",
-      "label": "Creative"
-    },
-    {
-      "img": "#",
-      "alt": "mobile phone",
-      "title": "App Icons",
-      "description": "High-quality",
-      "label": "Elegant"
-    },
-    {
-      "img": "#",
-      "alt": "painting bag",
-      "title": "Design Tools",
-      "description": "Easy to use",
-      "label": "Unique"
-    }
-  ]
-},
+  "categoriesSection": {
+    "title": "PRODUCT CATEGORIES",
+    "subtitle": "Discover Assets for Every Projects",
+    "description": "From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you need to your projects.",
+    "buttonText": "Shop Now",
+    "items": [
+      {
+        "img": "#",
+        "alt": "image of different devices",
+        "title": "Templates",
+        "description": "For all needs",
+        "label": "Modern"
+      },
+      {
+        "img": "#",
+        "alt": "roll up banner with graphs",
+        "title": "Slides",
+        "description": "Pitch-ready",
+        "label": "Creative"
+      },
+      {
+        "img": "#",
+        "alt": "mobile phone",
+        "title": "App Icons",
+        "description": "High-quality",
+        "label": "Elegant"
+      },
+      {
+        "img": "#",
+        "alt": "painting bag",
+        "title": "Design Tools",
+        "description": "Easy to use",
+        "label": "Unique"
+      }
+    ]
+  },
 
-"trendingSection": {
-  "title": "TRENDING",
-  "subtitle": "Popular Products",
-  "navButtons": [
-    {
-      "direction": "prev",
-      "icon": "#",
-      "alt": "Prev"
-    },
-    {
-      "direction": "next",
-      "icon": "#",
-      "alt": "Next"
-    }
-  ]
+  "trendingSection": {
+    "title": "TRENDING",
+    "subtitle": "Popular Products",
+    "navButtons": [
+      {
+        "direction": "prev",
+        "icon": "#",
+        "alt": "Prev"
+      },
+      {
+        "direction": "next",
+        "icon": "#",
+        "alt": "Next"
+      }
+    ]
   },
   "items": [
     {
@@ -195,172 +195,172 @@
   ],
 
   "pricingSection": {
-  "title": "PRICING PLAN",
-  "subtitle": "Choose The Perfect Plan for Creative Potential",
-  "plans": [
-    {
-      "title": "Standard Membership",
-      "price": "€14.99",
-      "billing": "/Month",
-      "features": [
-        "Enhanced Resource Access",
-        "Monthly Credits",
-        "Priority Customer Support",
-        "Community Features Access"
-      ],
-      "button": {
-        "label": "Subscribe"
-      }
-    },
-    {
-      "title": "Plus Membership",
-      "price": "€29.99",
-      "billing": "/Month",
-      "features": [
-        "All Standard Benefits",
-        "Increased Monthly Credits",
-        "Early Access to New Releases",
-        "Member-Only Offers"
-      ],
-      "button": {
-        "label": "Subscribe",
-        "style": "primary"
-      }
-    },
-    {
-      "title": "Pro Membership",
-      "price": "€49.99",
-      "billing": "/Month",
-      "features": [
-        "All Plus Benefits",
-        "Unlimited Downloads",
-        "Custom Licensing",
-        "Direct Creator Collaboration"
-      ],
-      "button": {
-        "label": "Subscribe"
-      }
-    }
-  ]
-},
-
-"faqSection": {
-  "title": "F.A.Q",
-  "subtitle": "Answers to Your Questions",
-  "buttonText": "Ask Us A Question",
-  "items": [
-    {
-      "question": "Can I request a refund?",
-      "answer": "#",
-      "icon": {
-        "src": "#",
-        "alt": "Toggle FAQ"
-      }
-    },
-    {
-      "question": "How do I access my purchased products",
-      "answer": "Accessing your purchased products is seamless and hassle-free...",
-      "icon": {
-        "src": "#",
-        "alt": "Toggle FAQ"
-      }
-    },
-    {
-      "question": "Are there any discounts for bulk purchases?",
-      "answer": "#",
-      "icon": {
-        "src": "#",
-        "alt": "Toggle FAQ"
-      }
-    },
-    {
-      "question": "What payment methods do you accept here?",
-      "answer": "#",
-      "icon": {
-        "src": "#",
-        "alt": "Toggle FAQ"
-      }
-    },
-    {
-      "question": "Can I sell my digital products on this marketplace?",
-      "answer": "#",
-      "icon": {
-        "src": "#",
-        "alt": "Toggle FAQ"
-      }
-    }
-  ]
-},
-
-"blogSection": {
-  "title": "Latest Expert",
-  "linkText": "Explore All Articles",
-  "link": "#",
-  "cards": [
-    {
-      "img": "#",
-      "alt": "UI of Creative Blog article",
-      "title": "Creative Blog",
-      "date": "15 APRIL 2024"
+    "title": "PRICING PLAN",
+    "subtitle": "Choose The Perfect Plan for Creative Potential",
+    "plans": [
+      {
+        "title": "Standard Membership",
+        "price": "€14.99",
+        "billing": "/Month",
+        "features": [
+          "Enhanced Resource Access",
+          "Monthly Credits",
+          "Priority Customer Support",
+          "Community Features Access"
+        ],
+        "button": {
+          "label": "Subscribe"
+        }
       },
-    {
-      "img": "#",
-      "alt": "UI of Best Dishes article",
-      "title": "Best Dishes",
-      "date": "5 MAY 2024"
+      {
+        "title": "Plus Membership",
+        "price": "€29.99",
+        "billing": "/Month",
+        "features": [
+          "All Standard Benefits",
+          "Increased Monthly Credits",
+          "Early Access to New Releases",
+          "Member-Only Offers"
+        ],
+        "button": {
+          "label": "Subscribe",
+          "style": "primary"
+        }
+      },
+      {
+        "title": "Pro Membership",
+        "price": "€49.99",
+        "billing": "/Month",
+        "features": [
+          "All Plus Benefits",
+          "Unlimited Downloads",
+          "Custom Licensing",
+          "Direct Creator Collaboration"
+        ],
+        "button": {
+          "label": "Subscribe"
+        }
+      }
+    ]
+  },
+
+  "faqSection": {
+    "title": "F.A.Q",
+    "subtitle": "Answers to Your Questions",
+    "buttonText": "Ask Us A Question",
+    "items": [
+      {
+        "question": "Can I request a refund?",
+        "answer": "#",
+        "icon": {
+          "src": "#",
+          "alt": "Toggle FAQ"
+        }
+      },
+      {
+        "question": "How do I access my purchased products",
+        "answer": "Accessing your purchased products is seamless and hassle-free...",
+        "icon": {
+          "src": "#",
+          "alt": "Toggle FAQ"
+        }
+      },
+      {
+        "question": "Are there any discounts for bulk purchases?",
+        "answer": "#",
+        "icon": {
+          "src": "#",
+          "alt": "Toggle FAQ"
+        }
+      },
+      {
+        "question": "What payment methods do you accept here?",
+        "answer": "#",
+        "icon": {
+          "src": "#",
+          "alt": "Toggle FAQ"
+        }
+      },
+      {
+        "question": "Can I sell my digital products on this marketplace?",
+        "answer": "#",
+        "icon": {
+          "src": "#",
+          "alt": "Toggle FAQ"
+        }
+      }
+    ]
+  },
+
+  "blogSection": {
+    "title": "Latest Expert",
+    "linkText": "Explore All Articles",
+    "link": "#",
+    "cards": [
+      {
+        "img": "#",
+        "alt": "UI of Creative Blog article",
+        "title": "Creative Blog",
+        "date": "15 APRIL 2024"
+      },
+      {
+        "img": "#",
+        "alt": "UI of Best Dishes article",
+        "title": "Best Dishes",
+        "date": "5 MAY 2024"
+      }
+    ]
+  },
+
+  "heroCatalog": {
+    "titleStart": "Explore Top",
+    "highlight": "UI Kits",
+    "titleEnd": "Design Assets",
+    "background": {
+      "src": "#",
+      "alt": "#"
     }
-  ]
-},
-
-"heroCatalog": {
-  "titleStart": "Explore Top",
-  "highlight": "UI Kits",
-  "titleEnd": "Design Assets",
-  "background": {
-    "src": "#",
-    "alt": "#"
-  }
-},
-
-"catalogDropdownOptions": [
-  "Best Seller",
-  "Newest",
-  "Price: Low to High",
-  "Price: High to Low"
-],
-
-"catalogFilterButton": {
-  "icon": "#",
-  "alt": "Filter icon"
-},
-
-"catalogMeta": {
-  "info": "Showing 12 out of 120 results."
-},
-
-"catalogViewmodes": {
-  "gridView": {
-    "icon": "#",
-    "alt": "grid view"
   },
-  "listView": {
-    "icon": "#",
-    "alt": "list view"
-  }
-},
 
-"catalogTags": [
-  {
-    "label": "UI Kit",
+  "catalogDropdownOptions": [
+    "Best Seller",
+    "Newest",
+    "Price: Low to High",
+    "Price: High to Low"
+  ],
+
+  "catalogFilterButton": {
     "icon": "#",
-    "alt": "Remove tag"
+    "alt": "Filter icon"
   },
-  {
-    "label": "UI Kit",
-    "icon": "#",
-    "alt": "Remove tag"
-  }
-],
+
+  "catalogMeta": {
+    "info": "Showing 12 out of 120 results."
+  },
+
+  "catalogViewmodes": {
+    "gridView": {
+      "icon": "#",
+      "alt": "grid view"
+    },
+    "listView": {
+      "icon": "#",
+      "alt": "list view"
+    }
+  },
+
+  "catalogTags": [
+    {
+      "label": "UI Kit",
+      "icon": "#",
+      "alt": "Remove tag"
+    },
+    {
+      "label": "UI Kit",
+      "icon": "#",
+      "alt": "Remove tag"
+    }
+  ],
 
   "catalog": [
     {
@@ -381,8 +381,16 @@
       "state": "New",
       "stateClass": "new",
       "actions": [
-        { "icon": "https://some-url.com/", "alt": "Save to wishlist" },
-        { "icon": "https://some-url.com/", "alt": "Add to cart" }
+        {
+          "icon": "https://some-url.com/",
+          "alt": "Save to wishlist",
+          "modifier": "wishlist"
+        },
+        {
+          "icon": "https://some-url.com/",
+          "alt": "Add to cart",
+          "modifier": "cart"
+        }
       ]
     },
     {
@@ -407,8 +415,16 @@
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
-        { "icon": "https://some-url.com/", "alt": "Save to wishlist" },
-        { "icon": "https://some-url.com/", "alt": "Add to cart" }
+        {
+          "icon": "https://some-url.com/",
+          "alt": "Save to wishlist",
+          "modifier": "wishlist"
+        },
+        {
+          "icon": "https://some-url.com/",
+          "alt": "Add to cart",
+          "modifier": "cart"
+        }
       ]
     },
     {
@@ -420,8 +436,16 @@
       "state": "New",
       "stateClass": "new",
       "actions": [
-        { "icon": "https://some-url.com/", "alt": "Save to wishlist" },
-        { "icon": "https://some-url.com/", "alt": "Add to cart" }
+        {
+          "icon": "https://some-url.com/",
+          "alt": "Save to wishlist",
+          "modifier": "wishlist"
+        },
+        {
+          "icon": "https://some-url.com/",
+          "alt": "Add to cart",
+          "modifier": "cart"
+        }
       ]
     },
     {
@@ -451,8 +475,16 @@
       "state": "New",
       "stateClass": "new",
       "actions": [
-        { "icon": "https://some-url.com/", "alt": "Save to wishlist" },
-        { "icon": "https://some-url.com/", "alt": "Add to cart" }
+        {
+          "icon": "https://some-url.com/",
+          "alt": "Save to wishlist",
+          "modifier": "wishlist"
+        },
+        {
+          "icon": "https://some-url.com/",
+          "alt": "Add to cart",
+          "modifier": "cart"
+        }
       ]
     },
     {
@@ -477,8 +509,16 @@
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
-        { "icon": "#", "alt": "Save to wishlist" },
-        { "icon": "#", "alt": "Add to cart" }
+        {
+          "icon": "https://some-url.com/",
+          "alt": "Save to wishlist",
+          "modifier": "wishlist"
+        },
+        {
+          "icon": "https://some-url.com/",
+          "alt": "Add to cart",
+          "modifier": "cart"
+        }
       ]
     },
     {
@@ -490,8 +530,16 @@
       "state": "New",
       "stateClass": "new",
       "actions": [
-        { "icon": "https://some-url.com/", "alt": "Save to wishlist" },
-        { "icon": "https://some-url.com/", "alt": "Add to cart" }
+        {
+          "icon": "https://some-url.com/",
+          "alt": "Save to wishlist",
+          "modifier": "wishlist"
+        },
+        {
+          "icon": "https://some-url.com/",
+          "alt": "Add to cart",
+          "modifier": "cart"
+        }
       ]
     },
     {
@@ -506,66 +554,61 @@
   ],
 
   "footerLogo": {
-  "src": "#",
-  "alt": "Pixmart logo"
-},
-
-"footerDescription": "Your premium digital assets solution with high quality and comprehensive range of products and services.",
-
-"footerNav": [
-  {
-    "title": "Company",
-    "links": [
-      { "text": "Homepage v1", "link": "#" },
-      { "text": "Homepeage v2", "link": "#" },
-      { "text": "Homepage v3", "link": "#" },
-      { "text": "About Us", "link": "#" },
-      { "text": "About Us", "link": "#" },
-      { "text": "Blog Articles", "link": "#" }
-    ]
+    "src": "#",
+    "alt": "Pixmart logo"
   },
-  {
-    "title": "Products",
-    "links": [
-      { "text": "Website", "link": "#" },
-      { "text": "Mobile App", "link": "#" },
-      { "text": "Social Media Feeds", "link": "#" },
-      { "text": "Presentation", "link": "#" },
-      { "text": "Product Mockups", "link": "#" },
-      { "text": "Illustrations", "link": "#" }
-    ]
+
+  "footerDescription": "Your premium digital assets solution with high quality and comprehensive range of products and services.",
+
+  "footerNav": [
+    {
+      "title": "Company",
+      "links": [
+        { "text": "Homepage v1", "link": "#" },
+        { "text": "Homepeage v2", "link": "#" },
+        { "text": "Homepage v3", "link": "#" },
+        { "text": "About Us", "link": "#" },
+        { "text": "About Us", "link": "#" },
+        { "text": "Blog Articles", "link": "#" }
+      ]
+    },
+    {
+      "title": "Products",
+      "links": [
+        { "text": "Website", "link": "#" },
+        { "text": "Mobile App", "link": "#" },
+        { "text": "Social Media Feeds", "link": "#" },
+        { "text": "Presentation", "link": "#" },
+        { "text": "Product Mockups", "link": "#" },
+        { "text": "Illustrations", "link": "#" }
+      ]
+    },
+    {
+      "title": "Account",
+      "links": [
+        { "text": "Your Card", "link": "#" },
+        { "text": "Check Out", "link": "#" },
+        { "text": "Refund Policy", "link": "#" },
+        { "text": "Company Policy", "link": "#" },
+        { "text": "Send A Message", "link": "#" },
+        { "text": "Customer Support", "link": "#" }
+      ]
+    }
+  ],
+
+  "footerSocials": [
+    { "icon": "#", "alt": "Twitter logo", "link": "#" },
+    { "icon": "#", "alt": "Facebook logo", "link": "#" },
+    { "icon": "#", "alt": "Telegram logo", "link": "#" }
+  ],
+
+  "footerNewsletter": {
+    "title": "Subscribe to Design Newsletter",
+    "placeholder": "Enter your email address",
+    "button": "Subscribe"
   },
-  {
-    "title": "Account",
-    "links": [
-      { "text": "Your Card", "link": "#" },
-      { "text": "Check Out", "link": "#" },
-      { "text": "Refund Policy", "link": "#" },
-      { "text": "Company Policy", "link": "#" },
-      { "text": "Send A Message", "link": "#" },
-      { "text": "Customer Support", "link": "#" }
-    ]
-  }
-],
 
-"footerSocials": [
-  { "icon": "#", "alt": "Twitter logo", "link": "#" },
-  { "icon": "#", "alt": "Facebook logo", "link": "#" },
-  { "icon": "#", "alt": "Telegram logo", "link": "#" }
-],
+  "footerLegal": ["Privacy Policy", "Terms and Condition", "Site Map"],
 
-"footerNewsletter": {
-  "title": "Subscribe to Design Newsletter",
-  "placeholder": "Enter your email address",
-  "button": "Subscribe"
-},
-
-"footerLegal": [
-  "Privacy Policy",
-  "Terms and Condition",
-  "Site Map"
-],
-
-"footerCopyright": "© 2024 Pixmart. All rights reserved."
-
+  "footerCopyright": "© 2024 Pixmart. All rights reserved."
 }

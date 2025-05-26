@@ -22,24 +22,25 @@
         <p class="catalog-card__tag">{{ tag }}</p>
         {% endfor %}
       </div>
-      {% if item.actions %}
-      <div class="catalog-card__footer">
-        <p class="catalog-card__price">{{ item.price }}</p>
-        <div class="catalog-card__actions">
-          {% for action in item.actions %}
-          <div class="catalog-card__action">
-            <img
-              class="catalog-card__action-icon"
-              src="{{ action.icon }}"
-              alt="{{ action.alt }}"
-            />
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-      {% else %}
-      <p class="catalog-card__price">{{ item.price }}</p>
-      {% endif %}
+{% if item.actions %}
+  <div class="catalog-card__footer">
+    <p class="catalog-card__price">{{ item.price }}</p>
+    <div class="catalog-card__actions">
+      {% for action in item.actions %}
+        <button class="catalog-card__action catalog-card__action--{{ action.modifier }}">
+          <img
+            class="catalog-card__action-icon"
+            src="{{ action.icon }}"
+            alt="{{ action.alt }}"
+          />
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+{% else %}
+  <p class="catalog-card__price">{{ item.price }}</p>
+{% endif %}
+
     </article>
   </li>
   {% endfor %}
