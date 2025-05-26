@@ -553,6 +553,59 @@
     }
   ],
 
+  "catalogCta": {
+    "text": "Load More"
+  },
+
+  "catalogFilterCategories": {
+  "title": "Categories",
+  "items": [
+    { "value": "all", "label": "All Categories", "id": "all_categories" },
+    { "value": "technology", "label": "Technology", "id": "technology" },
+    { "value": "travel & tourism", "label": "Travel & Tourism", "id": "travel_tourism" },
+    { "value": "health & fitness", "label": "Health & Fitness", "id": "health_fitness" },
+    { "value": "e-commerce", "label": "E-Commerce", "id": "e_commerce" },
+    { "value": "education", "label": "Education", "id": "education" },
+    { "value": "entertainment", "label": "Entertainment", "id": "entertainment" },
+    { "value": "others", "label": "Others", "id": "others1" },
+    { "value": "others", "label": "Others", "id": "others2" }
+  ]
+},
+
+"catalogFilterFormats": {
+  "title": "Format Type",
+  "items": [
+    { "value": "figma", "label": "Figma", "id": "figma" },
+    { "value": "sketch", "label": "Sketch", "id": "sketch" },
+    { "value": "adobe XD", "label": "Adobe XD", "id": "adobe_xd" },
+    { "value": "Adobe Photoshop", "label": "Adobe Photoshop", "id": "adobe_photoshop" },
+    { "value": "Adobe Illustration", "label": "Adobe Illustration", "id": "adobe_illustration" }
+  ]
+},
+
+"catalogFilterStyles": {
+  "title": "Style",
+  "items": [
+    { "value": "minimalist", "label": "Minimalist", "id": "minimalist" },
+    { "value": "modern", "label": "Modern", "id": "modern" },
+    { "value": "playful", "label": "Playful", "id": "playful" },
+    { "value": "dark mode", "label": "Dark Mode", "id": "dark_mode" },
+    { "value": "photocentric", "label": "Photocentric", "id": "photocentric" }
+  ]
+},
+
+"catalogFilterPrice": {
+  "title": "Price",
+  "min": 0,
+  "max": 100,
+  "valueMin": 10,
+  "valueMax": 90,
+  "labelMin": "€5",
+  "labelMax": "€50",
+  "idMin": "min_price",
+  "idMax": "max_price"
+},
+
   "footerLogo": {
     "src": "#",
     "alt": "Pixmart logo"

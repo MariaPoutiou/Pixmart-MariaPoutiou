@@ -1,58 +1,9 @@
 <section class="catalog-filter__section">
-  <h3 class="catalog-filter__title">Style</h3>
-
-  <div class="catalog-filter__group">
-    <input
-      class="catalog-filter__input"
-      type="checkbox"
-      name="style"
-      value="minimalist"
-      id="minimalist"
-    />
-    <label class="catalog-filter__label" for="minimalist">Minimalist</label>
-  </div>
-
-  <div class="catalog-filter__group">
-    <input
-      class="catalog-filter__input"
-      type="checkbox"
-      name="style"
-      value="modern"
-      id="modern"
-    />
-    <label class="catalog-filter__label" for="modern">Modern</label>
-  </div>
-
-  <div class="catalog-filter__group">
-    <input
-      class="catalog-filter__input"
-      type="checkbox"
-      name="style"
-      value="playful"
-      id="playful"
-    />
-    <label class="catalog-filter__label" for="playful">Playful</label>
-  </div>
-
-  <div class="catalog-filter__group">
-    <input
-      class="catalog-filter__input"
-      type="checkbox"
-      name="style"
-      value="dark mode"
-      id="dark_mode"
-    />
-    <label class="catalog-filter__label" for="dark_mode">Dark Mode</label>
-  </div>
-
-  <div class="catalog-filter__group">
-    <input
-      class="catalog-filter__input"
-      type="checkbox"
-      name="style"
-      value="photocentric"
-      id="photocentric"
-    />
-    <label class="catalog-filter__label" for="photocentric">Photocentric</label>
-  </div>
+  <h3 class="catalog-filter__title">{{ catalogFilterStyles.title }}</h3>
+  {% for style in catalogFilterStyles.items %}
+    <div class="catalog-filter__group">
+      <input class="catalog-filter__input" type="checkbox" name="style" value="{{ style.value }}" id="{{ style.id }}">
+      <label class="catalog-filter__label" for="{{ style.id }}">{{ style.label }}</label>
+    </div>
+  {% endfor %}
 </section>
