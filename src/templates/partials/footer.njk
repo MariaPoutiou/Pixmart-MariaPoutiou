@@ -3,14 +3,14 @@
     <div class="footer__brand">
       <img
         class="footer__logo"
-        src="{{ footerSection.logo }}"
-        alt="{{ footerSection.alt }}"
+        src="{{ footerLogo.src }}"
+        alt="{{ footerLogo.alt }}"
       />
-      <p class="footer__description">{{ footerSection.description }}</p>
+      <p class="footer__description">{{ footerDescription }}</p>
     </div>
     <nav class="footer__nav">
       <div class="footer__nav-wrapper">
-        {% for group in footerSection.nav %}
+        {% for group in footerNav %}
         <h3 class="footer__nav-title">{{ group.title }}</h3>
         <ul class="footer__nav-list">
           {% for item in group.links %}
@@ -28,7 +28,7 @@
   <div class="footer__middle">
     <div class="footer__socials">
       <ul class="footer__social-list">
-        {% for social in footerSection.socials %}
+        {% for social in footerSocials %}
         <li class="footer__social-item">
           <a href="{{ social.link }}">
             <img
@@ -42,26 +42,26 @@
     </div>
     <div class="footer__newsletter">
       <h4 class="footer__newsletter-title">
-        {{ footerSection.newsletter.title }}
+        {{ footerNewsletter.title }}
       </h4>
       <form class="footer__form" method="get">
         <input
           class="footer__input"
           type="search"
-          placeholder="{{ footerSection.newsletter.placeholder }}"
+          placeholder="{{ footerNewsletter.placeholder }}"
         />
-        <button class="button footer__submit">
-          {{ footerSection.newsletter.button }}
+        <button class="button footer__submit button--primary">
+          {{ footerNewsletter.button }}
         </button>
       </form>
     </div>
   </div>
   <div class="footer__lower">
     <ul class="footer__legal-list">
-      {% for item in footerSection.legal %}
+      {% for item in footer.legal %}
       <li class="footer__legal-item">{{ item }}</li>
       {% endfor %}
     </ul>
-    <p class="footer__copyright">{{ footerSection.copyright }}</p>
+    <p class="footer__copyright">{{ footerCopyright }}</p>
   </div>
 </footer>

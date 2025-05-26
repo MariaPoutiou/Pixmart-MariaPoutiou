@@ -505,60 +505,67 @@
     }
   ],
 
-  "footerSection": {
-  "logo": "#",
-  "alt": "Pixmart logo",
-  "description": "Your premium digital assets solution with high quality and comprehensive range of products and services.",
-  "nav": [
-    {
-      "title": "Company",
-      "links": [
-        { "text": "Homepage v1", "link": "#" },
-        { "text": "Homepeage v2", "link": "#" },
-        { "text": "Homepage v3", "link": "#" },
-        { "text": "About Us", "link": "#" },
-        { "text": "About Us", "link": "#" },
-        { "text": "Blog Articles", "link": "#" }
-      ]
-    },
-    {
-      "title": "Products",
-      "links": [
-        { "text": "Website", "link": "#" },
-        { "text": "Mobile App", "link": "#" },
-        { "text": "Social Media Feeds", "link": "#" },
-        { "text": "Presentation", "link": "#" },
-        { "text": "Product Mockups", "link": "#" },
-        { "text": "Illustrations", "link": "#" }
-      ]
-    },
-    {
-      "title": "Account",
-      "links": [
-        { "text": "Your Card", "link": "#" },
-        { "text": "Check Out", "link": "#" },
-        { "text": "Refund Policy", "link": "#" },
-        { "text": "Company Policy", "link": "#" },
-        { "text": "Send A Message", "link": "#" },
-        { "text": "Customer Support", "link": "#" }
-      ]
-    }
-  ],
-  "socials": [
-    { "icon": "#", "alt": "Twitter logo", "link": "#" },
-    { "icon": "#", "alt": "Facebook logo", "link": "#" },
-    { "icon": "#", "alt": "Telegram logo", "link": "#" }
-  ],
-  "newsletter": {
-    "title": "Subscribe to Design Newsletter",
-    "placeholder": "Enter your email address",
-    "button": "Subscribe"
+  "footerLogo": {
+  "src": "#",
+  "alt": "Pixmart logo"
+},
+
+"footerDescription": "Your premium digital assets solution with high quality and comprehensive range of products and services.",
+
+"footerNav": [
+  {
+    "title": "Company",
+    "links": [
+      { "text": "Homepage v1", "link": "#" },
+      { "text": "Homepeage v2", "link": "#" },
+      { "text": "Homepage v3", "link": "#" },
+      { "text": "About Us", "link": "#" },
+      { "text": "About Us", "link": "#" },
+      { "text": "Blog Articles", "link": "#" }
+    ]
   },
-  "legal": [
-    "Privacy Policy",
-    "Terms and Condition",
-    "Site Map"
-  ],
-  "copyright": "© 2024 Pixmart. All rights reserved."
-}
+  {
+    "title": "Products",
+    "links": [
+      { "text": "Website", "link": "#" },
+      { "text": "Mobile App", "link": "#" },
+      { "text": "Social Media Feeds", "link": "#" },
+      { "text": "Presentation", "link": "#" },
+      { "text": "Product Mockups", "link": "#" },
+      { "text": "Illustrations", "link": "#" }
+    ]
+  },
+  {
+    "title": "Account",
+    "links": [
+      { "text": "Your Card", "link": "#" },
+      { "text": "Check Out", "link": "#" },
+      { "text": "Refund Policy", "link": "#" },
+      { "text": "Company Policy", "link": "#" },
+      { "text": "Send A Message", "link": "#" },
+      { "text": "Customer Support", "link": "#" }
+    ]
+  }
+],
+
+"footerSocials": [
+  { "icon": "#", "alt": "Twitter logo", "link": "#" },
+  { "icon": "#", "alt": "Facebook logo", "link": "#" },
+  { "icon": "#", "alt": "Telegram logo", "link": "#" }
+],
+
+"footerNewsletter": {
+  "title": "Subscribe to Design Newsletter",
+  "placeholder": "Enter your email address",
+  "button": "Subscribe"
+},
+
+"footerLegal": [
+  "Privacy Policy",
+  "Terms and Condition",
+  "Site Map"
+],
+
+"footerCopyright": "© 2024 Pixmart. All rights reserved."
+
 }
