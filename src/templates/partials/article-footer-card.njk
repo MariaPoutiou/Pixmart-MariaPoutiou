@@ -1,12 +1,10 @@
-{% for item in relatedArticles.articles %}
-    <li class="related-articles__item">
-        <article class="article-card">
-            <img class="article-card__img" src="{{ item.img }}" alt="{{ item.alt }}"/>
-            <span class="article-card__tag">{{ item.tag }}</span>
-            <div class="article-card__content">
-                <h3 class="article-card__title">{{ item.title }}</h3>
-                <time class="article-card__date" datetime="{{ item.datetime }}">{{ item.date }}</time>
-            </div>
-        </article>
-    </li>
-{% endfor %}
+<li class="related-articles__item">
+    <article class="article-card">
+        <img class="article-card__img" src="{{ item.img }}" alt="{{ item.alt }}"/>
+        <span class="article-card__tag">{{ item.tag }}</span>
+        <div class="article-card__content">
+            <h3 class="article-card__title">{{ item.title }}</h3>
+            <time class="article-card__date" datetime="{{ item.datetime }}">{{ item.date }}</time>
+        </div>
+    </article>
+</li>

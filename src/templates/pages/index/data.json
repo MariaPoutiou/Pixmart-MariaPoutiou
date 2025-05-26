@@ -607,6 +607,7 @@
 },
 
 "blogHero": {
+  "title": "Mastering the Art of Typography: Tips for Eye-Catching designs for 2024",
   "label": "TYPOGRAPHY",
   "image": {
     "src": "#",
@@ -722,6 +723,64 @@
       "datetime": "2024-06-20"
     }
   ]
+},
+
+"contactTitleHidden": "Send us a Message",
+
+  "contactIntro": {
+    "label": "Contact",
+    "title": "Get in Touch with Us",
+    "description": "We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.",
+    "buttonText": "Shop Now"
+  },
+  "contactInfo": [
+    {
+      "icon": "#",
+      "text": "+1 (555) 123-4567"
+    },
+    {
+      "icon": "#",
+      "text": "support@pixmart.com"
+    },
+    {
+      "icon": "#",
+      "text": "Monday to Friday: 9 AM - 5 PM EST"
+    }
+  ],
+  "contactMap": {
+    "src": "https://maps.app.goo.gl/gWuCtQNuAMMHF7sJ9"
+  },
+
+"contactForm": {
+  "fields": [
+    {
+      "id": "name",
+      "label": "Full Name",
+      "type": "text",
+      "placeholder": "Amelia Robert Johnson"
+    },
+    {
+      "id": "email",
+      "label": "Email Address",
+      "type": "email",
+      "placeholder": "amelia.robertjohnson@pixmart.com",
+      "title": "Format: your@email.com"
+    }
+  ],
+  "selectLabel": "Select",
+  "selectPlaceholder": "Select a subject",
+  "selectOptions": [
+    "General Inquiry",
+    "Support",
+    "Billing"
+  ],
+  "textareaLabel": "Textarea",
+  "textareaPlaceholder": "Enter your message ...",
+  "checkboxes": [
+    "Subscribe me to Newsletter",
+    "I have read the User & Privacy Policy"
+  ],
+  "buttonText": "Send Message"
 },
 
   "footerLogo": {
