@@ -7,22 +7,14 @@
         {{ heroHome.buttonPrimary }}
       </button>
       <button class="button hero-section__button button--secondary">
-        <img
-          class="hero-section__button-svg"
-          src="{{ heroHome.buttonIcon.svg }}"
-          alt="{{ heroHome.buttonIcon.alt }}"
-        />
+        <img class="hero-section__button-svg" src="{{ heroHome.buttonIcon.svg }}" alt="{{ heroHome.buttonIcon.alt }}"> 
         {{ heroHome.buttonSecondary }}
       </button>
     </div>
   </div>
   <div class="hero-section__img-wrapper">
     {% for item in heroHome.images %}
-    <img
-      class="hero-section__img hero-section__img-primary"
-      src="{{ item.img }}"
-      alt="{{ item.alt }}"
-    />
+      <img class="hero-section__img hero-section__img-primary" src="{{ item.img }}" alt="{{ item.alt }}">
     {% endfor %}
   </div>
 </section>

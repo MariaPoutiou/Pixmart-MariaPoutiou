@@ -10,15 +10,14 @@
   </div>
   <div class="faq__list">
     {% for item in faqSection.items %}
-    <details class="faq__item">
-      <summary class="faq__question">
-        <h4 class="faq__text">{{ item.question }}</h4>
-        <div class="faq__icon">
-          <img class="faq__icon-img" src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" />
-        </div>
-      </summary>
-      <p class="faq__answer">{{ item.answer }}</p>
-    </details>
-    {% endfor %}
-  </div>
-</section>
+      <details class="faq__item">
+        <summary class="faq__question">
+          <h4 class="faq__text">{{ item.question }}</h4>
+          <div class="faq__icon">
+            <img class="faq__icon-img" src="{{ item.icon.src }}" alt="{{ item.icon.alt }}"></div>
+          </summary>
+          <p class="faq__answer">{{ item.answer }}</p>
+        </details>
+      {% endfor %}
+    </div>
+  </section>

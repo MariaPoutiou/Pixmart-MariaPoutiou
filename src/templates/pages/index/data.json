@@ -322,12 +322,12 @@
     }
   },
 
-"catalogDropdownOptions": [
-  "Best Seller",
-  "Newest",
-  "Price: Low to High",
-  "Price: High to Low"
-],
+  "catalogDropdownOptions": [
+    "Best Seller",
+    "Newest",
+    "Price: Low to High",
+    "Price: High to Low"
+  ],
 
   "catalogFilterButton": {
     "icon": "#",
@@ -558,174 +558,193 @@
   },
 
   "catalogFilterCategories": {
-  "title": "Categories",
-  "items": [
-    { "value": "all", "label": "All Categories", "id": "all_categories" },
-    { "value": "technology", "label": "Technology", "id": "technology" },
-    { "value": "travel & tourism", "label": "Travel & Tourism", "id": "travel_tourism" },
-    { "value": "health & fitness", "label": "Health & Fitness", "id": "health_fitness" },
-    { "value": "e-commerce", "label": "E-Commerce", "id": "e_commerce" },
-    { "value": "education", "label": "Education", "id": "education" },
-    { "value": "entertainment", "label": "Entertainment", "id": "entertainment" },
-    { "value": "others", "label": "Others", "id": "others1" },
-    { "value": "others", "label": "Others", "id": "others2" }
-  ]
-},
-
-"catalogFilterFormats": {
-  "title": "Format Type",
-  "items": [
-    { "value": "figma", "label": "Figma", "id": "figma" },
-    { "value": "sketch", "label": "Sketch", "id": "sketch" },
-    { "value": "adobe XD", "label": "Adobe XD", "id": "adobe_xd" },
-    { "value": "Adobe Photoshop", "label": "Adobe Photoshop", "id": "adobe_photoshop" },
-    { "value": "Adobe Illustration", "label": "Adobe Illustration", "id": "adobe_illustration" }
-  ]
-},
-
-"catalogFilterStyles": {
-  "title": "Style",
-  "items": [
-    { "value": "minimalist", "label": "Minimalist", "id": "minimalist" },
-    { "value": "modern", "label": "Modern", "id": "modern" },
-    { "value": "playful", "label": "Playful", "id": "playful" },
-    { "value": "dark mode", "label": "Dark Mode", "id": "dark_mode" },
-    { "value": "photocentric", "label": "Photocentric", "id": "photocentric" }
-  ]
-},
-
-"catalogFilterPrice": {
-  "title": "Price",
-  "min": 0,
-  "max": 100,
-  "valueMin": 10,
-  "valueMax": 90,
-  "labelMin": "€5",
-  "labelMax": "€50",
-  "idMin": "min_price",
-  "idMax": "max_price"
-},
-
-"blogHero": {
-  "title": "Mastering the Art of Typography: Tips for Eye-Catching designs for 2024",
-  "label": "TYPOGRAPHY",
-  "image": {
-    "src": "#",
-    "alt": "Featured article image"
-  }
-},
-
-"articleIntro": "In the vast expanse of graphic design, typography stands as a pivotal element that can make or break the visual appeal of any project. Understanding the art of typography is essential for creating designs that not only attract attention but also communicate effectively. Here, we delve into practical tips that will help you master typography, transforming your creations into eye-catching masterpieces.",
-
-"articleSections": [
-  {
-    "title": "1. Understand Typeface Selection",
-    "text": "The choice of typeface is foundational in setting the tone of your design. Serif fonts, with their classic appeal, lend a touch of elegance and formality, making them ideal for print media and official documents. Sans-serif fonts, on the other hand, project a modern and clean look, perfect for digital platforms. When selecting a typeface, consider the message you wish to convey and the medium through which it will be communicated."
-  },
-  {
-    "title": "2. Create a Typographic Hierarchy"
-  },
-  {
-    "image": {
-      "src": "#",
-      "alt": "#",
-      "caption": "Example of font usage in typography",
-      "linkText": "Get this asset",
-      "link": "#"
-    }
-  },
-  {
-    "title": "3. Experiment with Alignment",
-    "text": "While center and right alignments have their place, left-aligned text is generally the most legible and comfortable for readers, especially for longer passages. However, don’t shy away from experimenting with different alignments in headings or callouts to add dynamism to your layout."
-  },
-  {
-    "title": "4. Embrace white space",
-    "text": "White space, or negative space, is a powerful tool in typography. It helps in decluttering designs and allows each typographic element to breathe. Proper use of white space can significantly improve the overall balance and composition of your design."
-  }
-],
-
-"articleQuote": {
-  "img": "#",
-  "svg": "#",
-  "text": "Typography is not just the art of arranging type but the craft of breathing life into characters, turning words into stories that captivate the soul."
-},
-
-
-"articleOutro": "Typography is an art that speaks volumes beyond the mere letters on a surface. By applying these tips, designers can elevate their work from mere messages to powerful visual statements. Remember, mastering typography is a journey.",
-
-"blogAside": {
-  "author": {
-    "img": "#",
-    "alt": "Portrait of Emma Clarke",
-    "name": "Emma Clarke",
-    "date": "April 10, 2024",
-    "datetime": "2024-04-10"
-  },
-  "blogCategoriesSection": {
-    "heading": "Categories",
+    "title": "Categories",
     "items": [
-      { "text": "Graphic Design Trends" },
-      { "text": "Typography & Fonts", "active": true },
-      { "text": "UI/UX Design" },
-      { "text": "Branding & Identity" },
-      { "text": "Illustration" },
-      { "text": "Digital Marketing" }
-    ]
-  },
-  "latestArticlesSection": {
-    "heading": "Latest Articles",
-    "items": [
+      { "value": "all", "label": "All Categories", "id": "all_categories" },
+      { "value": "technology", "label": "Technology", "id": "technology" },
       {
-        "title": "Text",
-        "date": "March 15, 2024",
-        "datetime": "2024-03-15"
+        "value": "travel & tourism",
+        "label": "Travel & Tourism",
+        "id": "travel_tourism"
       },
       {
-        "title": "Text",
-        "date": "March 15, 2024",
-        "datetime": "2024-03-15"
+        "value": "health & fitness",
+        "label": "Health & Fitness",
+        "id": "health_fitness"
+      },
+      { "value": "e-commerce", "label": "E-Commerce", "id": "e_commerce" },
+      { "value": "education", "label": "Education", "id": "education" },
+      {
+        "value": "entertainment",
+        "label": "Entertainment",
+        "id": "entertainment"
+      },
+      { "value": "others", "label": "Others", "id": "others1" },
+      { "value": "others", "label": "Others", "id": "others2" }
+    ]
+  },
+
+  "catalogFilterFormats": {
+    "title": "Format Type",
+    "items": [
+      { "value": "figma", "label": "Figma", "id": "figma" },
+      { "value": "sketch", "label": "Sketch", "id": "sketch" },
+      { "value": "adobe XD", "label": "Adobe XD", "id": "adobe_xd" },
+      {
+        "value": "Adobe Photoshop",
+        "label": "Adobe Photoshop",
+        "id": "adobe_photoshop"
+      },
+      {
+        "value": "Adobe Illustration",
+        "label": "Adobe Illustration",
+        "id": "adobe_illustration"
       }
     ]
-  }
-},
-
-"relatedArticles": {
-  "title": "Related Articles",
-  "link": {
-    "text": "Explore All Articles",
-    "href": "#",
-    "icon": "#",
-    "alt": "arrow icon"
   },
-  "articles": [
-    {
-      "img": "#",
-      "alt": "Thumbnail for Best Dishes article",
-      "tag": "Tag",
-      "title": "Best Dishes",
-      "date": "15 APRIL 2024",
-      "datetime": "2024-04-15"
-    },
-    {
-      "img": "#",
-      "alt": "Thumbnail for Contact Us Lotus Spa",
-      "tag": "Tag",
-      "title": "Contact Us Lotus Spa",
-      "date": "05 MAY 2024",
-      "datetime": "2024-05-05"
-    },
-    {
-      "img": "#",
-      "alt": "Thumbnail for Creative Blog",
-      "tag": "Tag",
-      "title": "Creative Blog",
-      "date": "20 JUNE 2024",
-      "datetime": "2024-06-20"
-    }
-  ]
-},
 
-"contactTitleHidden": "Send us a Message",
+  "catalogFilterStyles": {
+    "title": "Style",
+    "items": [
+      { "value": "minimalist", "label": "Minimalist", "id": "minimalist" },
+      { "value": "modern", "label": "Modern", "id": "modern" },
+      { "value": "playful", "label": "Playful", "id": "playful" },
+      { "value": "dark mode", "label": "Dark Mode", "id": "dark_mode" },
+      { "value": "photocentric", "label": "Photocentric", "id": "photocentric" }
+    ]
+  },
+
+  "catalogFilterPrice": {
+    "title": "Price",
+    "min": 0,
+    "max": 100,
+    "valueMin": 10,
+    "valueMax": 90,
+    "labelMin": "€5",
+    "labelMax": "€50",
+    "idMin": "min_price",
+    "idMax": "max_price"
+  },
+
+  "blogHero": {
+    "title": "Mastering the Art of Typography: Tips for Eye-Catching designs for 2024",
+    "label": "TYPOGRAPHY",
+    "image": {
+      "src": "#",
+      "alt": "Featured article image"
+    }
+  },
+
+  "articleIntro": "In the vast expanse of graphic design, typography stands as a pivotal element that can make or break the visual appeal of any project. Understanding the art of typography is essential for creating designs that not only attract attention but also communicate effectively. Here, we delve into practical tips that will help you master typography, transforming your creations into eye-catching masterpieces.",
+
+  "articleSections": [
+    {
+      "title": "1. Understand Typeface Selection",
+      "text": "The choice of typeface is foundational in setting the tone of your design. Serif fonts, with their classic appeal, lend a touch of elegance and formality, making them ideal for print media and official documents. Sans-serif fonts, on the other hand, project a modern and clean look, perfect for digital platforms. When selecting a typeface, consider the message you wish to convey and the medium through which it will be communicated."
+    },
+    {
+      "title": "2. Create a Typographic Hierarchy"
+    },
+    {
+      "image": {
+        "src": "#",
+        "alt": "#",
+        "caption": "Example of font usage in typography",
+        "linkText": "Get this asset",
+        "link": "#"
+      }
+    },
+    {
+      "title": "3. Experiment with Alignment",
+      "text": "While center and right alignments have their place, left-aligned text is generally the most legible and comfortable for readers, especially for longer passages. However, don’t shy away from experimenting with different alignments in headings or callouts to add dynamism to your layout."
+    },
+    {
+      "title": "4. Embrace white space",
+      "text": "White space, or negative space, is a powerful tool in typography. It helps in decluttering designs and allows each typographic element to breathe. Proper use of white space can significantly improve the overall balance and composition of your design."
+    }
+  ],
+
+  "articleQuote": {
+    "img": "#",
+    "svg": "#",
+    "text": "Typography is not just the art of arranging type but the craft of breathing life into characters, turning words into stories that captivate the soul."
+  },
+
+  "articleOutro": "Typography is an art that speaks volumes beyond the mere letters on a surface. By applying these tips, designers can elevate their work from mere messages to powerful visual statements. Remember, mastering typography is a journey.",
+
+  "blogAside": {
+    "author": {
+      "img": "#",
+      "alt": "Portrait of Emma Clarke",
+      "name": "Emma Clarke",
+      "date": "April 10, 2024",
+      "datetime": "2024-04-10"
+    },
+    "blogCategoriesSection": {
+      "heading": "Categories",
+      "items": [
+        { "text": "Graphic Design Trends" },
+        { "text": "Typography & Fonts", "active": true },
+        { "text": "UI/UX Design" },
+        { "text": "Branding & Identity" },
+        { "text": "Illustration" },
+        { "text": "Digital Marketing" }
+      ]
+    },
+    "latestArticlesSection": {
+      "heading": "Latest Articles",
+      "items": [
+        {
+          "title": "Text",
+          "date": "March 15, 2024",
+          "datetime": "2024-03-15"
+        },
+        {
+          "title": "Text",
+          "date": "March 15, 2024",
+          "datetime": "2024-03-15"
+        }
+      ]
+    }
+  },
+
+  "relatedArticles": {
+    "title": "Related Articles",
+    "link": {
+      "text": "Explore All Articles",
+      "href": "#",
+      "icon": "#",
+      "alt": "arrow icon"
+    },
+    "articles": [
+      {
+        "img": "#",
+        "alt": "Thumbnail for Best Dishes article",
+        "tag": "Tag",
+        "title": "Best Dishes",
+        "date": "15 APRIL 2024",
+        "datetime": "2024-04-15"
+      },
+      {
+        "img": "#",
+        "alt": "Thumbnail for Contact Us Lotus Spa",
+        "tag": "Tag",
+        "title": "Contact Us Lotus Spa",
+        "date": "05 MAY 2024",
+        "datetime": "2024-05-05"
+      },
+      {
+        "img": "#",
+        "alt": "Thumbnail for Creative Blog",
+        "tag": "Tag",
+        "title": "Creative Blog",
+        "date": "20 JUNE 2024",
+        "datetime": "2024-06-20"
+      }
+    ]
+  },
+
+  "contactTitleHidden": "Send us a Message",
 
   "contactIntro": {
     "label": "Contact",
@@ -751,37 +770,33 @@
     "src": "https://maps.app.goo.gl/gWuCtQNuAMMHF7sJ9"
   },
 
-"contactForm": {
-  "fields": [
-    {
-      "id": "name",
-      "label": "Full Name",
-      "type": "text",
-      "placeholder": "Amelia Robert Johnson"
-    },
-    {
-      "id": "email",
-      "label": "Email Address",
-      "type": "email",
-      "placeholder": "amelia.robertjohnson@pixmart.com",
-      "title": "Format: your@email.com"
-    }
-  ],
-  "selectLabel": "Select",
-  "selectPlaceholder": "Select a subject",
-  "selectOptions": [
-    "General Inquiry",
-    "Support",
-    "Billing"
-  ],
-  "textareaLabel": "Textarea",
-  "textareaPlaceholder": "Enter your message ...",
-  "checkboxes": [
-    "Subscribe me to Newsletter",
-    "I have read the User & Privacy Policy"
-  ],
-  "buttonText": "Send Message"
-},
+  "contactForm": {
+    "fields": [
+      {
+        "id": "name",
+        "label": "Full Name",
+        "type": "text",
+        "placeholder": "Amelia Robert Johnson"
+      },
+      {
+        "id": "email",
+        "label": "Email Address",
+        "type": "email",
+        "placeholder": "amelia.robertjohnson@pixmart.com",
+        "title": "Format: your@email.com"
+      }
+    ],
+    "selectLabel": "Select",
+    "selectPlaceholder": "Select a subject",
+    "selectOptions": ["General Inquiry", "Support", "Billing"],
+    "textareaLabel": "Textarea",
+    "textareaPlaceholder": "Enter your message ...",
+    "checkboxes": [
+      "Subscribe me to Newsletter",
+      "I have read the User & Privacy Policy"
+    ],
+    "buttonText": "Send Message"
+  },
 
   "footerLogo": {
     "src": "#",

@@ -3,7 +3,7 @@
   {% for style in catalogFilterStyles.items %}
     <div class="catalog-filter__group">
       <input class="catalog-filter__input" type="checkbox" name="style" value="{{ style.value }}" id="{{ style.id }}">
-      <label class="catalog-filter__label" for="{{ style.id }}">{{ style.label }}</label>
-    </div>
-  {% endfor %}
-</section>
+        <label class="catalog-filter__label" for="{{ style.id }}">{{ style.label }}</label>
+      </div>
+    {% endfor %}
+  </section>

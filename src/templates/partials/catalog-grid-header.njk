@@ -1,31 +1,31 @@
 <div class="catalog-tools">
   <div class="button catalog-tools__dropdown button--tertiary">
-<select class="catalog-tools__select">
-  {% for option in catalogDropdownOptions %}
-    <option value="{{ option }}">{{ option }}</option>
-  {% endfor %}
-</select>
+    <select class="catalog-tools__select">
+      {% for option in catalogDropdownOptions %}
+        <option value="{{ option }}">{{ option }}</option>
+      {% endfor %}
+    </select>
   </div>
   <button class="button catalog-tools__filter button--primary">
-    <img class="catalog-tools__filter-icon" src="{{ catalogFilterButton.icon }}" alt="{{ catalogFilterButton.alt }}" />
+    <img class="catalog-tools__filter-icon" src="{{ catalogFilterButton.icon }}" alt="{{ catalogFilterButton.alt }}">
   </button>
 </div>
 <div>
   <p class="catalog-meta__info">{{ catalogMeta.info }}</p>
   <div class="catalog-meta">
     <div class="button catalog-meta__primary button--primary">
-      <img class="catalog-meta__icon" src="{{ catalogViewmodes.gridView.icon }}" alt="{{ catalogViewmodes.gridView.alt }}" />
+      <img class="catalog-meta__icon" src="{{ catalogViewmodes.gridView.icon }}" alt="{{ catalogViewmodes.gridView.alt }}">
     </div>
     <div class="button catalog-meta__secondary button--tertiary">
-      <img class="catalog-meta__icon" src="{{ catalogViewmodes.listView.icon }}" alt="{{ catalogViewmodes.listView.alt }}" />
+      <img class="catalog-meta__icon" src="{{ catalogViewmodes.listView.icon }}" alt="{{ catalogViewmodes.listView.alt }}">
     </div>
   </div>
 </div>
 <div class="catalog-tags">
   {% for tag in catalogTags %}
-  <div class="catalog-tags__item">
-    <p class="catalog-tags__label">{{ tag.label }}</p>
-    <img class="catalog-tags__icon" src="{{ tag.icon }}" alt="{{ tag.alt }}" />
-  </div>
+    <div class="catalog-tags__item">
+      <p class="catalog-tags__label">{{ tag.label }}</p>
+      <img class="catalog-tags__icon" src="{{ tag.icon }}" alt="{{ tag.alt }}">
+    </div>
   {% endfor %}
 </div>
