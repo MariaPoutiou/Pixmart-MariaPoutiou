@@ -322,12 +322,12 @@
     }
   },
 
-  "catalogDropdownOptions": [
-    "Best Seller",
-    "Newest",
-    "Price: Low to High",
-    "Price: High to Low"
-  ],
+"catalogDropdownOptions": [
+  "Best Seller",
+  "Newest",
+  "Price: Low to High",
+  "Price: High to Low"
+],
 
   "catalogFilterButton": {
     "icon": "#",
@@ -604,6 +604,124 @@
   "labelMax": "€50",
   "idMin": "min_price",
   "idMax": "max_price"
+},
+
+"blogHero": {
+  "label": "TYPOGRAPHY",
+  "image": {
+    "src": "#",
+    "alt": "Featured article image"
+  }
+},
+
+"articleIntro": "In the vast expanse of graphic design, typography stands as a pivotal element that can make or break the visual appeal of any project. Understanding the art of typography is essential for creating designs that not only attract attention but also communicate effectively. Here, we delve into practical tips that will help you master typography, transforming your creations into eye-catching masterpieces.",
+
+"articleSections": [
+  {
+    "title": "1. Understand Typeface Selection",
+    "text": "The choice of typeface is foundational in setting the tone of your design. Serif fonts, with their classic appeal, lend a touch of elegance and formality, making them ideal for print media and official documents. Sans-serif fonts, on the other hand, project a modern and clean look, perfect for digital platforms. When selecting a typeface, consider the message you wish to convey and the medium through which it will be communicated."
+  },
+  {
+    "title": "2. Create a Typographic Hierarchy"
+  },
+  {
+    "image": {
+      "src": "#",
+      "alt": "#",
+      "caption": "Example of font usage in typography",
+      "linkText": "Get this asset",
+      "link": "#"
+    }
+  },
+  {
+    "title": "3. Experiment with Alignment",
+    "text": "While center and right alignments have their place, left-aligned text is generally the most legible and comfortable for readers, especially for longer passages. However, don’t shy away from experimenting with different alignments in headings or callouts to add dynamism to your layout."
+  },
+  {
+    "title": "4. Embrace white space",
+    "text": "White space, or negative space, is a powerful tool in typography. It helps in decluttering designs and allows each typographic element to breathe. Proper use of white space can significantly improve the overall balance and composition of your design."
+  }
+],
+
+"articleQuote": {
+  "img": "#",
+  "svg": "#",
+  "text": "Typography is not just the art of arranging type but the craft of breathing life into characters, turning words into stories that captivate the soul."
+},
+
+
+"articleOutro": "Typography is an art that speaks volumes beyond the mere letters on a surface. By applying these tips, designers can elevate their work from mere messages to powerful visual statements. Remember, mastering typography is a journey.",
+
+"blogAside": {
+  "author": {
+    "img": "#",
+    "alt": "Portrait of Emma Clarke",
+    "name": "Emma Clarke",
+    "date": "April 10, 2024",
+    "datetime": "2024-04-10"
+  },
+  "blogCategoriesSection": {
+    "heading": "Categories",
+    "items": [
+      { "text": "Graphic Design Trends" },
+      { "text": "Typography & Fonts", "active": true },
+      { "text": "UI/UX Design" },
+      { "text": "Branding & Identity" },
+      { "text": "Illustration" },
+      { "text": "Digital Marketing" }
+    ]
+  },
+  "latestArticlesSection": {
+    "heading": "Latest Articles",
+    "items": [
+      {
+        "title": "Text",
+        "date": "March 15, 2024",
+        "datetime": "2024-03-15"
+      },
+      {
+        "title": "Text",
+        "date": "March 15, 2024",
+        "datetime": "2024-03-15"
+      }
+    ]
+  }
+},
+
+"relatedArticles": {
+  "title": "Related Articles",
+  "link": {
+    "text": "Explore All Articles",
+    "href": "#",
+    "icon": "#",
+    "alt": "arrow icon"
+  },
+  "articles": [
+    {
+      "img": "#",
+      "alt": "Thumbnail for Best Dishes article",
+      "tag": "Tag",
+      "title": "Best Dishes",
+      "date": "15 APRIL 2024",
+      "datetime": "2024-04-15"
+    },
+    {
+      "img": "#",
+      "alt": "Thumbnail for Contact Us Lotus Spa",
+      "tag": "Tag",
+      "title": "Contact Us Lotus Spa",
+      "date": "05 MAY 2024",
+      "datetime": "2024-05-05"
+    },
+    {
+      "img": "#",
+      "alt": "Thumbnail for Creative Blog",
+      "tag": "Tag",
+      "title": "Creative Blog",
+      "date": "20 JUNE 2024",
+      "datetime": "2024-06-20"
+    }
+  ]
 },
 
   "footerLogo": {

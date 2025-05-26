@@ -1,13 +1,10 @@
 <div class="catalog-tools">
   <div class="button catalog-tools__dropdown button--tertiary">
-    <select
-      class="catalog-tools__select"
-      name="best-sellers"
-      id="option"
-    ></select>
-    {% for option in catalogDropdownOptions %}
-    <option value="Best Seller">{{ option }}</option>
-    {% endfor %}
+<select class="catalog-tools__select">
+  {% for option in catalogDropdownOptions %}
+    <option value="{{ option }}">{{ option }}</option>
+  {% endfor %}
+</select>
   </div>
   <button class="button catalog-tools__filter button--primary">
     <img class="catalog-tools__filter-icon" src="{{ catalogFilterButton.icon }}" alt="{{ catalogFilterButton.alt }}" />

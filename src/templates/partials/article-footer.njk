@@ -1,47 +1,12 @@
 <section class="container related-articles">
   <div class="related-articles__header">
-    <h2 class="related-articles__title">Related Articles</h2>
-    <a class="related-articles__link" href="$"
-      >Explore All Articles
-      <img class="related-articles__icon" src="#" alt="#" />
+    <h2 class="related-articles__title">{{ relatedArticles.title }}</h2>
+    <a class="related-articles__link" href="{{ relatedArticles.link.href }}">
+      {{ relatedArticles.link.text }}
+      <img class="related-articles__icon" src="{{ relatedArticles.link.icon }}" alt="{{ relatedArticles.link.alt }}" />
     </a>
   </div>
   <ul class="related-articles__list">
-    <li class="related-articles__item">
-      <article class="article-card">
-        <img class="article-card__img" src="#" alt="#" />
-        <span class="article-card__tag">Tag</span>
-        <div class="article-card__content">
-          <h3 class="article-card__title">Best Dishes</h3>
-          <time class="article-card__date" datetime="2024-04-15"
-            >15 APRIL 2024</time
-          >
-        </div>
-      </article>
-    </li>
-    <li class="related-articles__item">
-      <article class="article-card">
-        <img class="article-card__img" src="#" alt="#" />
-        <span class="article-card__tag">Tag</span>
-        <div class="article-card__content">
-          <h3 class="article-card__title">Contact Us Lotus Spa</h3>
-          <time class="article-card__date" datetime="2024-05-05"
-            >05 MAY 2024</time
-          >
-        </div>
-      </article>
-    </li>
-    <li class="related-articles__item">
-      <article class="article-card">
-        <img class="article-card__img" src="#" alt="#" />
-        <span class="article-card__tag">Tag</span>
-        <div class="article-card__content">
-          <h3 class="article-card__title">Creative Blog</h3>
-          <time class="article-card__date" datetime="2024-06-20"
-            >20 JUNE 2024</time
-          >
-        </div>
-      </article>
-    </li>
+{% include "partials/article-footer-card.njk" %}
   </ul>
 </section>

@@ -27,7 +27,7 @@
     <p class="catalog-card__price">{{ item.price }}</p>
     <div class="catalog-card__actions">
       {% for action in item.actions %}
-        <button class="catalog-card__action catalog-card__action--{{ action.modifier }}">
+        <button class="catalog-card__action{% if action.modifier %} catalog-card__action--{{ action.modifier }}{% endif %}">
           <img
             class="catalog-card__action-icon"
             src="{{ action.icon }}"
@@ -40,7 +40,6 @@
 {% else %}
   <p class="catalog-card__price">{{ item.price }}</p>
 {% endif %}
-
     </article>
   </li>
   {% endfor %}
