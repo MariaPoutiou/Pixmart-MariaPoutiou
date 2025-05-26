@@ -5,30 +5,30 @@
       name="best-sellers"
       id="option"
     ></select>
-    <option value="Best Seller">Best Seller</option>
+    {% for option in catalogDropdownOptions %}
+    <option value="Best Seller">{{ option }}</option>
+    {% endfor %}
   </div>
   <div class="button catalog-tools__filter button--primary">
-    <img class="catalog-tools__filter-icon" src="#" alt="#" />
+    <img class="catalog-tools__filter-icon" src="{{ catalogFilterButton.icon }}" alt="{{ catalogFilterButton.alt }}" />
   </div>
 </div>
 <div>
-  <p class="catalog-meta__info">Showing 12 out of 120 results.</p>
+  <p class="catalog-meta__info">{{ catalogMeta.info }}</p>
   <div class="catalog-meta">
     <div class="button catalog-meta__primary button--primary">
-      <img class="catalog-meta__icon" src="#" alt="grid view" />
+      <img class="catalog-meta__icon" src="{{ catalogViewmodes.gridView.icon }}" alt="{{ catalogViewmodes.gridView.alt }}" />
     </div>
     <div class="button catalog-meta__secondary button--tertiary">
-      <img class="catalog-meta__icon" src="#" alt="list view" />
+      <img class="catalog-meta__icon" src="{{ catalogViewmodes.listView.icon }}" alt="{{ catalogViewmodes.listView.alt }}" />
     </div>
   </div>
 </div>
 <div class="catalog-tags">
+  {% for tag in catalogTags %}
   <div class="catalog-tags__item">
-    <p class="catalog-tags__label">UI Kit</p>
-    <img class="catalog-tags__icon" src="#" alt="#" />
+    <p class="catalog-tags__label">{{ tag.label }}</p>
+    <img class="catalog-tags__icon" src="{{ tag.icon }}" alt="{{ tag.alt }}" />
   </div>
-  <div class="catalog-tags__item">
-    <p class="catalog-tags__label">UI Kit</p>
-    <img class="catalog-tags__icon" src="#" alt="#" />
-  </div>
+  {% endfor %}
 </div>

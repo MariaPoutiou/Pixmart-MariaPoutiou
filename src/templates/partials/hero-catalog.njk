@@ -1,8 +1,8 @@
 <section class="container hero-section hero-section--catalog">
   <h1 class="hero-section__catalog-title">
-    Explore Top
-    <span class="hero-section__catalog-highlight">UI Kits</span>
-    Design Assets
+    {{ heroCatalog.titleStart }}
+    <span class="hero-section__catalog-highlight">{{ heroCatalog.highlight }}</span>
+    {{ heroCatalog.titleEnd }}
   </h1>
-  <img class="hero-section__catalog-background" src="#" alt="#" />
+  <img class="hero-section__catalog-background" src="{{ heroCatalog.background.src }}" alt="{{ heroCatalog.background.alt }}" />
 </section>

@@ -312,6 +312,56 @@
   ]
 },
 
+"heroCatalog": {
+  "titleStart": "Explore Top",
+  "highlight": "UI Kits",
+  "titleEnd": "Design Assets",
+  "background": {
+    "src": "#",
+    "alt": "#"
+  }
+},
+
+"catalogDropdownOptions": [
+  "Best Seller",
+  "Newest",
+  "Price: Low to High",
+  "Price: High to Low"
+],
+
+"catalogFilterButton": {
+  "icon": "#",
+  "alt": "Filter icon"
+},
+
+"catalogMeta": {
+  "info": "Showing 12 out of 120 results."
+},
+
+"catalogViewmodes": {
+  "gridView": {
+    "icon": "#",
+    "alt": "grid view"
+  },
+  "listView": {
+    "icon": "#",
+    "alt": "list view"
+  }
+},
+
+"catalogTags": [
+  {
+    "label": "UI Kit",
+    "icon": "#",
+    "alt": "Remove tag"
+  },
+  {
+    "label": "UI Kit",
+    "icon": "#",
+    "alt": "Remove tag"
+  }
+],
+
   "catalog": [
     {
       "title": "Lens Chronicles",
