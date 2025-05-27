@@ -3,5 +3,8 @@
     <h2 class="secondary-title blog__title">{{ blogSection.title }}</h2>
     <a class="blog__link" href="{{ blogSection.link }}">{{ blogSection.linkText }}</a>
   </div>
-  <div class="blog__wrapper">{% include "partials/blog-card.njk" %}</div>
+  <div class="blog__wrapper">
+    {% for card in blogSection.cards %}
+      {% include "partials/blog-card.njk" %}</div>
+  {% endfor %}
 </section>

@@ -14,6 +14,8 @@
     </button>
   </div>
   <ul class="categories__list">
-    {% include "partials/categories-card.njk" %}
+    {% for item in categoriesSection.items %}
+      {% include "partials/categories-card.njk" %}
+    {% endfor %}
   </ul>
 </section>

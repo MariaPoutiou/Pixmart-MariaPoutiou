@@ -8,11 +8,12 @@
     </h3>
     {% for button in trendingSection.navButtons %}
       <button class="button trending__button button--tertiary">
-        <img src="{{ button.icon }}" alt="{{ button.alt }}">
-      </button>
-    {% endfor %}
-  </div>
-  <ul class="trending__list-wrapper">
-    {% include "partials/trending-card.njk" %}
-  </ul>
-</section>
+        <img src="{{ button.icon }}" alt="{{ button.alt }}"></button>
+      {% endfor %}
+    </div>
+    <ul class="trending__list-wrapper">
+      {% for item in trendingSection.items %}
+        {% include "partials/trending-card.njk" %}
+      {% endfor %}
+    </ul>
+  </section>

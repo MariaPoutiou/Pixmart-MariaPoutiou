@@ -1,6 +1,8 @@
 <section class="container product-section">
   <h2 class="visually-hidden">{{ productCategories.title }}</h2>
   <ul class="product-section__list">
-    {% include "partials/product-card.njk" %}
+    {% for item in productCategories.items %}
+      {% include "partials/product-card.njk" %}
+    {% endfor %}
   </ul>
 </section>

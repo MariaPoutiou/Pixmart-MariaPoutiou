@@ -6,6 +6,8 @@
     {{ pricingSection.subtitle }}
   </h3>
   <ul class="pricing-list">
-    {% include "partials/pricing-card.njk" %}
+    {% for plan in pricingPlans %}
+      {% include "partials/pricing-card.njk" %}
+    {% endfor %}
   </ul>
 </section>

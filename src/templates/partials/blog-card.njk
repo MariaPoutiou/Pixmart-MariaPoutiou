@@ -1,7 +1,5 @@
-{% for card in blogSection.cards %}
-  <article class="blog-card">
-    <img class="blog-card__img" src="{{ card.img }}" alt="{{ card.alt }}">
-      <h3 class="blog-card__title">{{ card.title }}</h3>
-      <time class="blog-card__date" datetime="2024-04-15">{{ card.date }}</time>
-    </article>
-  {% endfor %}
+<article class="blog-card">
+  <img class="blog-card__img" src="{{ card.img }}" alt="{{ card.alt }}">
+  <h3 class="blog-card__title">{{ card.title }}</h3>
+  <time class="blog-card__date" datetime="2024-04-15">{{ card.date }}</time>
+</article>

@@ -196,53 +196,53 @@
 
   "pricingSection": {
     "title": "PRICING PLAN",
-    "subtitle": "Choose The Perfect Plan for Creative Potential",
-    "plans": [
-      {
-        "title": "Standard Membership",
-        "price": "€14.99",
-        "billing": "/Month",
-        "features": [
-          "Enhanced Resource Access",
-          "Monthly Credits",
-          "Priority Customer Support",
-          "Community Features Access"
-        ],
-        "button": {
-          "label": "Subscribe"
-        }
-      },
-      {
-        "title": "Plus Membership",
-        "price": "€29.99",
-        "billing": "/Month",
-        "features": [
-          "All Standard Benefits",
-          "Increased Monthly Credits",
-          "Early Access to New Releases",
-          "Member-Only Offers"
-        ],
-        "button": {
-          "label": "Subscribe",
-          "style": "primary"
-        }
-      },
-      {
-        "title": "Pro Membership",
-        "price": "€49.99",
-        "billing": "/Month",
-        "features": [
-          "All Plus Benefits",
-          "Unlimited Downloads",
-          "Custom Licensing",
-          "Direct Creator Collaboration"
-        ],
-        "button": {
-          "label": "Subscribe"
-        }
-      }
-    ]
+    "subtitle": "Choose The Perfect Plan for Creative Potential"
   },
+  "pricingPlans": [
+    {
+      "title": "Standard Membership",
+      "price": "€14.99",
+      "billing": "/Month",
+      "features": [
+        { "item": "Enhanced Resource Access" },
+        { "item": "Monthly Credits" },
+        { "item": "Priority Customer Support" },
+        { "item": "Community Features Access" }
+      ],
+      "button": {
+        "label": "Subscribe"
+      }
+    },
+    {
+      "title": "Plus Membership",
+      "price": "€29.99",
+      "billing": "/Month",
+      "features": [
+        { "item": "All Standard Benefits" },
+        { "item": "Increased Monthly Credits" },
+        { "item": "Early Access to New Releases" },
+        { "item": "Member-Only Offers" }
+      ],
+      "button": {
+        "label": "Subscribe",
+        "style": "primary"
+      }
+    },
+    {
+      "title": "Pro Membership",
+      "price": "€49.99",
+      "billing": "/Month",
+      "features": [
+        { "item": "All Plus Benefits" },
+        { "item": "Unlimited Downloads" },
+        { "item": "Custom Licensing" },
+        { "item": "Direct Creator Collaboration" }
+      ],
+      "button": {
+        "label": "Subscribe"
+      }
+    }
+  ],
 
   "faqSection": {
     "title": "F.A.Q",
@@ -314,7 +314,7 @@
 
   "heroCatalog": {
     "titleStart": "Explore Top",
-    "highlight": "UI Kits",
+    "titleHighlight": "UI Kits",
     "titleEnd": "Design Assets",
     "background": {
       "src": "#",

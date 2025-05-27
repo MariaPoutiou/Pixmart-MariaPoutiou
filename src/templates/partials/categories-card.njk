@@ -1,10 +1,8 @@
-{% for item in categoriesSection.items %}
-  <li class="categories__list-item">
-    <article class="categories-card">
-      <img class="categories-card__img" src="{{ item.img }}" alt="{{ item.alt }}">
-        <h4 class="categories-card__title">{{ item.title }}</h4>
-        <p class="categories-card__description">{{ item.description }}</p>
-        <p class="categories-card__label">{{ item.label }}</p>
-      </article>
-    </li>
-  {% endfor %}
+<li class="categories__list-item">
+  <article class="categories-card">
+    <img class="categories-card__img" src="{{ item.img }}" alt="{{ item.alt }}">
+    <h4 class="categories-card__title">{{ item.title }}</h4>
+    <p class="categories-card__description">{{ item.description }}</p>
+    <p class="categories-card__label">{{ item.label }}</p>
+  </article>
+</li>
