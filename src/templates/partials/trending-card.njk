@@ -3,19 +3,23 @@
     <img class="trending-card__img" src="{{ item.img }}" alt="{{ item.alt }}">
       {% if item.icon %}
         <div class="trending-card__icon-wrapper">
-          <img class="trending-card__label-icon" src="{{ item.icon }}" alt="{{ item.iconAlt }}"></div>
-        {% endif %}
-        <button class="button trending-card__button button--primary">
-          {{ item.button }}
-        </button>
-        <div class="trending-card__details">
-          <h4 class="trending-card__title">{{ item.title }}</h4>
-          <p class="trending-card__price">{{ item.price }}</p>
+          <svg class="svg trending-card__label-icon">
+            <use href="{{ item.icon }}" aria-label="{{ item.iconAlt }}" loading="lazy"></use>
+          </svg>
         </div>
-        <div class="trending-card__tags">
-          {% for tag in item.tags %}
-            <p class="trending-card__tag">{{ tag }}</p>
-          {% endfor %}
-        </div>
-      </article>
-    </li>
+      {% endif %}
+      <button class="button trending-card__button button--primary">
+        {{ item.button }}
+      </button>
+      <div class="trending-card__details">
+        <h4 class="trending-card__title">{{ item.title }}</h4>
+        <p class="trending-card__price">{{ item.price }}</p>
+      </div>
+      <div class="trending-card__tags">
+        {% for tag in item.tags %}
+          <p class="trending-card__tag">{{ tag }}</p>
+        {% endfor %}
+      </div>
+    </article>
+  </li>
+</li>

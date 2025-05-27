@@ -22,9 +22,11 @@
     <figure class="article__quote-wrapper">
       <img class="article__quote-img" src="{{ articleQuote.img }}" alt="Quote background">
         <blockquote class="article__quote">
-          <img class="article__quote-svg" src="{{ articleQuote.svg }}" alt="Quote icon">
-            {{ articleQuote.text }}
-          </blockquote>
-        </figure>
-        <p class="article__paragraph">{{ articleOutro }}</p>
-      </div>
+          <svg class="svg article__quote-svg">
+            <use href="{{ articleQuote.svg }}" aria-label="{{ articleQuote.svgAlt }}" loading="lazy"></use>
+          </svg>
+          {{ articleQuote.text }}
+        </blockquote>
+      </figure>
+      <p class="article__paragraph">{{ articleOutro }}</p>
+    </div>

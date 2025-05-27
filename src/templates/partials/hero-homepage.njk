@@ -7,14 +7,22 @@
         {{ heroHome.buttonPrimary }}
       </button>
       <button class="button hero-section__button button--secondary">
-        <img class="hero-section__button-svg" src="{{ heroHome.buttonIcon.svg }}" alt="{{ heroHome.buttonIcon.alt }}"> 
+        <svg class="svg hero-section__button-svg">
+          <use href="{{ heroHome.buttonIcon.svg }}" aria-label="{{ heroHome.buttonIcon.alt }}" loading="lazy"></use>
+        </svg>
         {{ heroHome.buttonSecondary }}
       </button>
     </div>
   </div>
   <div class="hero-section__img-wrapper">
     {% for item in heroHome.images %}
-      <img class="hero-section__img hero-section__img-primary" src="{{ item.img }}" alt="{{ item.alt }}">
-    {% endfor %}
-  </div>
-</section>
+      {% if item.type == 'img' %}
+        <img class="hero-section__img" src="{{ item.img }}" alt="{{ item.alt }}">
+        {% elif item.type == 'svg' %}
+          <svg class="svg hero-section__svg">
+            <use href="{{ item.icon }}" aria-label="{{ item.alt }}" loading="lazy"></use>
+          </svg>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>

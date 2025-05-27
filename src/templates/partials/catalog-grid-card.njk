@@ -22,14 +22,17 @@
               <div class="catalog-card__actions">
                 {% for action in item.actions %}
                   <button class="catalog-card__action{% if action.modifier %} catalog-card__action--{{ action.modifier }}{% endif %}">
-                    <img class="catalog-card__action-icon" src="{{ action.icon }}" alt="{{ action.alt }}"></button>
-                  {% endfor %}
-                </div>
+                    <svg class="svg catalog-card__action-icon">
+                      <use href="{{ action.icon }}" aria-label="{{ action.icon }}" loading="lazy"></use>
+                    </svg>
+                  </button>
+                {% endfor %}
               </div>
-            {% else %}
-              <p class="catalog-card__price">{{ item.price }}</p>
-            {% endif %}
-          </article>
-        </li>
-      {% endfor %}
-    </ul>
+            </div>
+          {% else %}
+            <p class="catalog-card__price">{{ item.price }}</p>
+          {% endif %}
+        </article>
+      </li>
+    {% endfor %}
+  </ul>

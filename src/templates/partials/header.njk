@@ -2,12 +2,19 @@
   <div class="header__menu-wrapper">
     <div class="header__burger-wrapper">
       <div class="header__burger-btn">
-        <img class="header__burger-img" src="{{ header.burgerImg }}" alt="{{ header.burgerImgAlt }}">
+        <svg class="svg header__burger-img">
+          <use href="{{ header.burgerImg }}" aria-label="{{ header.burgerImgAlt }}"></use>
+        </svg>
       </div>
     </div>
     <div class="header__logo">
-      <a class="header__logo-link" href="{{ header.logoLink }}">
-        <img class="header__logo-image" src="{{ header.logoImg }}" alt="{{ header.logoAlt }}" loading="eager">
+      <a class="header__logo-image" href="{{ header.logoLink }}">
+        <svg class="svg header__burger-img">
+          <use href="{{ header.logoImg }}" aria-label=" {{ header.logoAlt }}" loading="eager"></use>
+        </svg>
+        <svg class="svg header__burger-img header__burger-img--large">
+          <use href="{{ header.logoImgFull }}" aria-label=" {{ header.logoAlt }}" loading="eager"></use>
+        </svg>
       </a>
     </div>
   </div>
@@ -22,10 +29,11 @@
   </nav>
   <div class="header-actions">
     <form class="header-search" method="get">
-      <input type="search" name="search" maxlength="30" placeholder="{{ headerSearch.headerPlaceholder }}" autocomplete="on">
-    </form>
-    <button class="button header__button button--primary">
-      <img class="header__button-img" src="{{ headerButton.img }}" alt="{{ headerButton.alt }}">
-    </button>
-  </div>
-</header>
+      <input type="search" name="search" maxlength="30" placeholder="{{ headerSearch.headerPlaceholder }}" autocomplete="on"></form>
+      <button class="button header__button button--primary">
+        <svg class="svg header__button-img">
+          <use href="{{ headerButton.img }}" aria-label="{{ headerButton.alt }}" loading="eager"></use>
+        </svg>
+        </button>
+      </div>
+    </header>

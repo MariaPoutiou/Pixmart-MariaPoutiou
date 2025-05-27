@@ -4,6 +4,7 @@
     "burgerAlt": "menu icon",
     "logoLink": "#",
     "logoImg": "#",
+    "logoImgFull": "/img/sprite.svg#pixmart-logo-full",
     "logoAlt": "Binabox-logo",
     "nav": [
       {
@@ -49,23 +50,28 @@
     },
     "images": [
       {
+        "type": "img",
         "img": "https://some-url.com/",
         "alt": "Main screen showing event platform with speaker and headline text"
       },
       {
+        "type": "img",
         "img": "https://some-url.com/",
         "alt": "Schedule screen for Day 2 with speaker portraits and event agenda"
       },
       {
+        "type": "img",
         "img": "https://some-url.com/",
         "alt": "Grid of speaker cards showing profiles and event times"
       },
       {
-        "img": "https://some-url.com/",
+        "type": "svg",
+        "icon": "icon-fonts",
         "alt": "Vector design tool icon representing graphic or UI design"
       },
       {
-        "img": "https://some-url.com/",
+        "type": "svg",
+        "icon": "icon-layout",
         "alt": "Icon representing modular or block-based layout design"
       }
     ]
@@ -626,6 +632,11 @@
     "idMax": "max_price"
   },
 
+  "catalogFormButton": {
+    "icon": "#",
+    "text": "Clear all Filters"
+  },
+
   "blogHero": {
     "title": "Mastering the Art of Typography: Tips for Eye-Catching designs for 2024",
     "label": "TYPOGRAPHY",
@@ -667,6 +678,7 @@
   "articleQuote": {
     "img": "#",
     "svg": "#",
+    "svgAlt": "#",
     "text": "Typography is not just the art of arranging type but the craft of breathing life into characters, turning words into stories that captivate the soul."
   },
 
@@ -755,14 +767,17 @@
   "contactInfo": [
     {
       "icon": "#",
+      "iconAlt": "#",
       "text": "+1 (555) 123-4567"
     },
     {
       "icon": "#",
+      "iconAlt": "#",
       "text": "support@pixmart.com"
     },
     {
       "icon": "#",
+      "iconAlt": "#",
       "text": "Monday to Friday: 9 AM - 5 PM EST"
     }
   ],
