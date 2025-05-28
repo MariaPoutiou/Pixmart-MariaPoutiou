@@ -1,25 +1,20 @@
-{% set currentPage = "Products" %} {% extends "layouts/base.njk" %} {% set title
-= "Explore UI Kits for Creators" %} {% set description = "Browse a wide range of
-premium UI kits to elevate your design projects—filter by format, style, and
-price to find exactly what you need." %} {% set page = "catalog" %} {% block
-content %}
-
-<!--MAIN STARTS HERE-->
-
-<!--HERO SECTION-->
-{% include "partials/hero-catalog.njk" %}
-
-<!--CATALOG GRID HEADER-->
-<div class="container">
-  <section class="catalog-header">
-    {% include "partials/catalog-grid-header.njk" %}
-
-    <!--CATALOG-GRID-->
-    {% include "partials/catalog-grid.njk" %}
-  </section>
-
-  <!--CATALOG-ASIDE-->
-  {% include "partials/aside-catalog.njk" %}
-</div>
-
+{% set currentPage = "Products" %}
+{% extends "layouts/base.njk" %}
+{% set title
+= "Explore UI Kits for Creators" %}
+{% set description = "Browse a wide range of premium UI kits to elevate your design projects—filter by format, style, and price to find exactly what you need." %}
+{% set page = "catalog" %}
+{% block content %}
+  <!--MAIN STARTS HERE-->
+  <!--HERO SECTION-->
+  {% include "partials/hero-catalog.njk" %}
+  <!--CATALOG GRID HEADER-->
+    <div class="container"> <section class="catalog-header">
+      {% include "partials/catalog-grid-header.njk" %}
+      <!--CATALOG-GRID-->
+      {% include "partials/catalog-grid.njk" %}
+    </section>
+    <!--CATALOG-ASIDE-->
+    {% include "partials/aside-catalog.njk" %}
+  </div>
 {% endblock %}

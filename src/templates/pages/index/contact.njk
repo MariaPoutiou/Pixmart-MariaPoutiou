@@ -1,15 +1,15 @@
-{% set currentPage = "Contact" %} {% extends "layouts/base.njk" %} {% set title
-= "Get in Touch with Pixmart" %} {% set description = "Reach out to our team for
-support, questions, or feedback — we’re here to help you navigate your creative
-journey, Monday to Friday." %} {% set page = "contact" %} {% block content %}
-
-<!--HERO SECTION-->
-{% include "partials/hero-contact.njk" %}
-
-<!--MAIN STARTS HERE-->
-<section class="container contact">
-  <h2 class="visually-hidden">{{ contactTitleHidden }}</h2>
-  {% include "partials/contact-form.njk" %}
-</section>
-
+{% set currentPage = "Contact" %}
+{% extends "layouts/base.njk" %}
+{% set title
+= "Get in Touch with Pixmart" %}
+{% set description = "Reach out to our team for support, questions, or feedback — we’re here to help you navigate your creative journey, Monday to Friday." %}
+{% set page = "contact" %}
+{% block content %}
+  <!--HERO SECTION-->
+  {% include "partials/hero-contact.njk" %}
+  <!--MAIN STARTS HERE-->
+  <section class="container contact">
+    <h2 class="visually-hidden">{{ contactTitleHidden }}</h2>
+    {% include "partials/contact-form.njk" %}
+  </section>
 {% endblock %}
