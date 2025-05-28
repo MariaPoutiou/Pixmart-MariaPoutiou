@@ -1,9 +1,9 @@
 {
   "header": {
-    "burgerImg": "#",
+    "burgerImg": "/img/sprite.svg#icon-menu",
     "burgerAlt": "menu icon",
-    "logoLink": "#",
-    "logoImg": "#",
+    "logoLink": "index.html",
+    "logoImg": "/img/sprite.svg#pixmart-logo",
     "logoImgFull": "/img/sprite.svg#pixmart-logo-full",
     "logoAlt": "Binabox-logo",
     "nav": [
@@ -45,33 +45,33 @@
     "buttonPrimary": "Shop Now",
     "buttonSecondary": "Watch About Us",
     "buttonIcon": {
-      "svg": "https://some-url.com/",
+      "svg": "/img/sprite.svg#icon-play",
       "alt": "play icon"
     },
     "images": [
       {
         "type": "img",
-        "img": "https://some-url.com/",
+        "img": "hero-primary",
         "alt": "Main screen showing event platform with speaker and headline text"
       },
       {
         "type": "img",
-        "img": "https://some-url.com/",
+        "img": "hero-secondary",
         "alt": "Schedule screen for Day 2 with speaker portraits and event agenda"
       },
       {
         "type": "img",
-        "img": "https://some-url.com/",
+        "img": "hero-tertiary",
         "alt": "Grid of speaker cards showing profiles and event times"
       },
       {
         "type": "svg",
-        "icon": "icon-fonts",
+        "icon": "/img/sprite.svg#icon-tool",
         "alt": "Vector design tool icon representing graphic or UI design"
       },
       {
         "type": "svg",
-        "icon": "icon-layout",
+        "icon": "/img/sprite.svg#icon-layout",
         "alt": "Icon representing modular or block-based layout design"
       }
     ]
@@ -82,27 +82,27 @@
     "items": [
       {
         "title": "UI kits",
-        "img": "Illustration.png",
+        "img": "/img/sprite.svg#icon-uikits",
         "alt": "images of different devices"
       },
       {
         "title": "Social Media",
-        "img": "Illustration.png",
+        "img": "/img/sprite.svg#icon-social",
         "alt": "mobile phone"
       },
       {
         "title": "Presentation",
-        "img": "Illustration.png",
+        "img": "/img/sprite.svg#icon-presentation",
         "alt": "roll up banner with graphs"
       },
       {
         "title": "Fonts",
-        "img": "Illustration.png",
+        "img": "/img/sprite.svg#icon-fonts",
         "alt": "square with typography"
       },
       {
         "title": "illustrations",
-        "img": "Illustration.png",
+        "img": "/img/sprite.svg#icon-illustrations",
         "alt": "painting bag"
       }
     ]
@@ -115,28 +115,28 @@
     "buttonText": "Shop Now",
     "items": [
       {
-        "img": "#",
+        "svg": "/img/sprite.svg#icon-uikits",
         "alt": "image of different devices",
         "title": "Templates",
         "description": "For all needs",
         "label": "Modern"
       },
       {
-        "img": "#",
+        "svg": "/img/sprite.svg#icon-presentation",
         "alt": "roll up banner with graphs",
         "title": "Slides",
         "description": "Pitch-ready",
         "label": "Creative"
       },
       {
-        "img": "#",
+        "svg": "/img/sprite.svg#icon-social",
         "alt": "mobile phone",
         "title": "App Icons",
         "description": "High-quality",
         "label": "Elegant"
       },
       {
-        "img": "#",
+        "svg": "/img/sprite.svg#icon-illustrations",
         "alt": "painting bag",
         "title": "Design Tools",
         "description": "Easy to use",
@@ -151,21 +151,21 @@
     "navButtons": [
       {
         "direction": "prev",
-        "icon": "#",
+        "icon": "/img/sprite.svg#icon-chevron-left",
         "alt": "Prev"
       },
       {
         "direction": "next",
-        "icon": "#",
+        "icon": "/img/sprite.svg#icon-chevron-right",
         "alt": "Next"
       }
     ]
   },
   "items": [
     {
-      "img": "#",
+      "img": "exploring-fun",
       "alt": "Travel Hero UI page",
-      "icon": "#",
+      "icon": "/img/sprite.svg#icon-trophy",
       "iconAlt": "cup-icon",
       "button": "Go to Product",
       "title": "Travel Hero",
@@ -173,9 +173,9 @@
       "tags": ["Adventure", "Journey"]
     },
     {
-      "img": "#",
+      "img": "caring-hearts",
       "alt": "Healthcare Pro UI page",
-      "icon": "#",
+      "icon": "/img/sprite.svg#icon-trophy",
       "iconAlt": "cup-icon",
       "button": "Go to Product",
       "title": "Healthcare Pro",
@@ -183,7 +183,7 @@
       "tags": ["Medical", "Wellness"]
     },
     {
-      "img": "#",
+      "img": "foodish-catering",
       "alt": "Foodish Delight UI page",
       "button": "Go to Product",
       "title": "Foodish Delight",
@@ -191,7 +191,7 @@
       "tags": ["Catering", "Food"]
     },
     {
-      "img": "#",
+      "img": "dream-homes",
       "alt": "Real Estate UI page",
       "button": "Go to Product",
       "title": "Real Estate",
@@ -259,15 +259,15 @@
         "question": "Can I request a refund?",
         "answer": "#",
         "icon": {
-          "src": "#",
+          "src": "/img/sprite.svg#icon-chevron-down",
           "alt": "Toggle FAQ"
         }
       },
       {
         "question": "How do I access my purchased products",
-        "answer": "Accessing your purchased products is seamless and hassle-free...",
+        "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download.",
         "icon": {
-          "src": "#",
+          "src": "/img/sprite.svg#icon-chevron-down",
           "alt": "Toggle FAQ"
         }
       },
@@ -275,7 +275,7 @@
         "question": "Are there any discounts for bulk purchases?",
         "answer": "#",
         "icon": {
-          "src": "#",
+          "src": "/img/sprite.svg#icon-chevron-down",
           "alt": "Toggle FAQ"
         }
       },
@@ -283,7 +283,7 @@
         "question": "What payment methods do you accept here?",
         "answer": "#",
         "icon": {
-          "src": "#",
+          "src": "/img/sprite.svg#icon-chevron-down",
           "alt": "Toggle FAQ"
         }
       },
@@ -291,7 +291,7 @@
         "question": "Can I sell my digital products on this marketplace?",
         "answer": "#",
         "icon": {
-          "src": "#",
+          "src": "/img/sprite.svg#icon-chevron-down",
           "alt": "Toggle FAQ"
         }
       }
@@ -301,16 +301,16 @@
   "blogSection": {
     "title": "Latest Expert",
     "linkText": "Explore All Articles",
-    "link": "#",
+    "link": "https://some-url.com/",
     "cards": [
       {
-        "img": "#",
+        "img": "creative-blog-home",
         "alt": "UI of Creative Blog article",
         "title": "Creative Blog",
         "date": "15 APRIL 2024"
       },
       {
-        "img": "#",
+        "img": "best-dishes-home",
         "alt": "UI of Best Dishes article",
         "title": "Best Dishes",
         "date": "5 MAY 2024"
@@ -336,7 +336,7 @@
   ],
 
   "catalogFilterButton": {
-    "icon": "#",
+    "icon": "/img/sprite.svg#icon-filter-lines",
     "alt": "Filter icon"
   },
 
@@ -346,11 +346,11 @@
 
   "catalogViewmodes": {
     "gridView": {
-      "icon": "#",
+      "icon": "/img/sprite.svg#icon-grid",
       "alt": "grid view"
     },
     "listView": {
-      "icon": "#",
+      "icon": "/img/sprite.svg#icon-list",
       "alt": "list view"
     }
   },
@@ -358,12 +358,12 @@
   "catalogTags": [
     {
       "label": "UI Kit",
-      "icon": "#",
+      "icon": "/img/sprite.svg#icon-close",
       "alt": "Remove tag"
     },
     {
       "label": "UI Kit",
-      "icon": "#",
+      "icon": "/img/sprite.svg#icon-close",
       "alt": "Remove tag"
     }
   ],
@@ -373,8 +373,8 @@
       "title": "Lens Chronicles",
       "tags": ["Photography", "Creative"],
       "price": "€00.00",
-      "image": "https://some-url.com/",
-      "alt": "#",
+      "image": "lens-chronicles",
+      "alt": "UI of a photography website with layered photo collage and call-to-action button",
       "state": "Sold Out",
       "stateClass": "sold-out"
     },
@@ -382,18 +382,18 @@
       "title": "Career Success",
       "tags": ["Guidance", "Jobs"],
       "price": "€20.99",
-      "image": "https://some-url.com/",
-      "alt": "#",
+      "image": "career-success",
+      "alt": "UI of Job search website with job listings and search filters",
       "state": "New",
       "stateClass": "new",
       "actions": [
         {
-          "icon": "https://some-url.com/",
+          "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
           "modifier": "wishlist"
         },
         {
-          "icon": "https://some-url.com/",
+          "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
           "modifier": "cart"
         }
@@ -403,31 +403,31 @@
       "title": "Dream Homes",
       "tags": ["Real Estate", "Modern"],
       "price": "€45.99",
-      "image": "https://some-url.com/",
-      "alt": "#",
+      "image": "dream-homes",
+      "alt": "UI of Real Estate website with house images and newsletter button",
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
-        { "icon": "https://some-url.com/", "alt": "Save to wishlist" },
-        { "icon": "https://some-url.com/", "alt": "Add to cart" }
+        { "icon": "/img/sprite.svg#icon-heart", "alt": "Save to wishlist" },
+        { "icon": "/img/sprite.svg#icon-bag", "alt": "Add to cart" }
       ]
     },
     {
       "title": "Foodish Catering",
       "tags": ["Food", "Events"],
       "price": "€15.99",
-      "image": "https://some-url.com/",
-      "alt": "#",
+      "image": "foodish-catering",
+      "alt": "UI of catering website with fruit images and call to action button",
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
         {
-          "icon": "https://some-url.com/",
+          "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
           "modifier": "wishlist"
         },
         {
-          "icon": "https://some-url.com/",
+          "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
           "modifier": "cart"
         }
@@ -437,18 +437,18 @@
       "title": "Caring Hearts",
       "tags": ["Healthcare", "Support"],
       "price": "€19.99",
-      "image": "https://some-url.com/",
-      "alt": "#",
+      "image": "caring-hearts",
+      "alt": "UI of healthcare website with doctor appointment details and service highlights",
       "state": "New",
       "stateClass": "new",
       "actions": [
         {
-          "icon": "https://some-url.com/",
+          "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
           "modifier": "wishlist"
         },
         {
-          "icon": "https://some-url.com/",
+          "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
           "modifier": "cart"
         }
@@ -458,8 +458,8 @@
       "title": "Gaming Rise",
       "tags": ["eSports", "Trend"],
       "price": "€00.00",
-      "image": "https://some-url.com/",
-      "alt": "#",
+      "image": "gaming-rise",
+      "alt": "UI of e-gaming blog article with a list of related posts and recommended articles",
       "state": "Sold Out",
       "stateClass": "sold-out"
     },
@@ -467,8 +467,8 @@
       "title": "Edit Pro",
       "tags": ["Design", "Tools"],
       "price": "€00.00",
-      "image": "https://some-url.com/",
-      "alt": "#",
+      "image": "edit-pro",
+      "alt": "UI of video editing services website with quality highlights and call to action button",
       "state": "Sold Out",
       "stateClass": "sold-out"
     },
@@ -476,18 +476,18 @@
       "title": "Banking Redefined",
       "tags": ["Finance", "Secure"],
       "price": "€25.99",
-      "image": "https://some-url.com/",
-      "alt": "#",
+      "image": "banking-redefined",
+      "alt": "UI of banking website with financial stats, call-to-action buttons and user ratings",
       "state": "New",
       "stateClass": "new",
       "actions": [
         {
-          "icon": "https://some-url.com/",
+          "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
           "modifier": "wishlist"
         },
         {
-          "icon": "https://some-url.com/",
+          "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
           "modifier": "cart"
         }
@@ -497,31 +497,31 @@
       "title": "Exploring Fun",
       "tags": ["Travel", "Adventure"],
       "price": "€41.99",
-      "image": "https://some-url.com/",
-      "alt": "#",
+      "image": "exploring-fun",
+      "alt": "UI of travel agency website with call-to-action buttons and client testimonials",
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
-        { "icon": "https://some-url.com/", "alt": "Save to wishlist" },
-        { "icon": "https://some-url.com/", "alt": "Add to cart" }
+        { "icon": "/img/sprite.svg#icon-heart", "alt": "Save to wishlist" },
+        { "icon": "/img/sprite.svg#icon-bag", "alt": "Add to cart" }
       ]
     },
     {
       "title": "Admin Dashboard",
       "tags": ["Data", "Tools"],
       "price": "€15.99",
-      "image": "https://some-url.com/",
-      "alt": "#",
+      "image": "admin-dashboard",
+      "alt": "E-commerce admin dashboard showing sales, revenue analytics, and user activity metrics",
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
         {
-          "icon": "https://some-url.com/",
+          "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
           "modifier": "wishlist"
         },
         {
-          "icon": "https://some-url.com/",
+          "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
           "modifier": "cart"
         }
@@ -531,18 +531,18 @@
       "title": "Analytical Dashboard",
       "tags": ["Data", "Tools"],
       "price": "€10.99",
-      "image": "https://some-url.com/",
-      "alt": "#",
+      "image": "analytical-dashboard",
+      "alt": "School admin dashboard displaying student data, attendance, earnings, and teacher messages",
       "state": "New",
       "stateClass": "new",
       "actions": [
         {
-          "icon": "https://some-url.com/",
+          "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
           "modifier": "wishlist"
         },
         {
-          "icon": "https://some-url.com/",
+          "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
           "modifier": "cart"
         }
@@ -552,8 +552,8 @@
       "title": "Kindergarten",
       "tags": ["Education", "Kids"],
       "price": "€00.00",
-      "image": "https://some-url.com/",
-      "alt": "#",
+      "image": "kindergarten",
+      "alt": "Kindergarten website template preview with event highlights and playful design",
       "state": "Sold Out",
       "stateClass": "sold-out"
     }
@@ -633,7 +633,7 @@
   },
 
   "catalogFormButton": {
-    "icon": "#",
+    "icon": "/img/sprite.svg#icon-close",
     "text": "Clear all Filters"
   },
 
@@ -641,8 +641,8 @@
     "title": "Mastering the Art of Typography: Tips for Eye-Catching designs for 2024",
     "label": "TYPOGRAPHY",
     "image": {
-      "src": "#",
-      "alt": "Featured article image"
+      "src": "article-hero",
+      "alt": "Image of an office employee showing stats on a screen to his work team"
     }
   },
 
@@ -658,11 +658,11 @@
     },
     {
       "image": {
-        "src": "#",
-        "alt": "#",
+        "src": "article-image",
+        "alt": "Corporate presentation template with slides for company overview, goals, marketing strategy, and team profiles",
         "caption": "Example of font usage in typography",
         "linkText": "Get this asset",
-        "link": "#"
+        "link": "https://some-url.com/"
       }
     },
     {
@@ -676,9 +676,8 @@
   ],
 
   "articleQuote": {
-    "img": "#",
-    "svg": "#",
-    "svgAlt": "#",
+    "svg": "/img/sprite.svg#icon-quote",
+    "svgAlt": "quote icon",
     "text": "Typography is not just the art of arranging type but the craft of breathing life into characters, turning words into stories that captivate the soul."
   },
 
@@ -686,7 +685,7 @@
 
   "blogAside": {
     "author": {
-      "img": "#",
+      "img": "emma-clarke",
       "alt": "Portrait of Emma Clarke",
       "name": "Emma Clarke",
       "date": "April 10, 2024",
@@ -724,13 +723,13 @@
     "title": "Related Articles",
     "link": {
       "text": "Explore All Articles",
-      "href": "#",
-      "icon": "#",
+      "href": "https://some-url.com/",
+      "icon": "/img/sprite.svg#icon-chevron-right",
       "alt": "arrow icon"
     },
     "articles": [
       {
-        "img": "#",
+        "img": "article-best-dishes",
         "alt": "Thumbnail for Best Dishes article",
         "tag": "Tag",
         "title": "Best Dishes",
@@ -738,16 +737,16 @@
         "datetime": "2024-04-15"
       },
       {
-        "img": "#",
+        "img": "article-lotus-spa",
         "alt": "Thumbnail for Contact Us Lotus Spa",
         "tag": "Tag",
-        "title": "Contact Us Lotus Spa",
+        "title": "Contact Us Lotus Spa article",
         "date": "05 MAY 2024",
         "datetime": "2024-05-05"
       },
       {
-        "img": "#",
-        "alt": "Thumbnail for Creative Blog",
+        "img": "article-creative-blog",
+        "alt": "Thumbnail for Creative Blog article",
         "tag": "Tag",
         "title": "Creative Blog",
         "date": "20 JUNE 2024",
@@ -766,18 +765,18 @@
   },
   "contactInfo": [
     {
-      "icon": "#",
-      "iconAlt": "#",
+      "icon": "/img/sprite.svg#icon-phone",
+      "iconAlt": "phone icon",
       "text": "+1 (555) 123-4567"
     },
     {
-      "icon": "#",
-      "iconAlt": "#",
+      "icon": "/img/sprite.svg#icon-mail",
+      "iconAlt": "mail icon",
       "text": "support@pixmart.com"
     },
     {
-      "icon": "#",
-      "iconAlt": "#",
+      "icon": "/img/sprite.svg#icon-location",
+      "iconAlt": "location icon",
       "text": "Monday to Friday: 9 AM - 5 PM EST"
     }
   ],
@@ -814,7 +813,7 @@
   },
 
   "footerLogo": {
-    "src": "#",
+    "src": "/img/sprite.svg#pixmart-logo-full",
     "alt": "Pixmart logo"
   },
 
@@ -824,42 +823,42 @@
     {
       "title": "Company",
       "links": [
-        { "text": "Homepage v1", "link": "#" },
-        { "text": "Homepeage v2", "link": "#" },
-        { "text": "Homepage v3", "link": "#" },
-        { "text": "About Us", "link": "#" },
-        { "text": "About Us", "link": "#" },
-        { "text": "Blog Articles", "link": "#" }
+        { "text": "Homepage v1", "link": "index.html" },
+        { "text": "Homepeage v2", "link": "index.html" },
+        { "text": "Homepage v3", "link": "index.html" },
+        { "text": "About Us", "link": "https://some-url.com/" },
+        { "text": "About Us", "link": "https://some-url.com/" },
+        { "text": "Blog Articles", "link": "blog-article.html" }
       ]
     },
     {
       "title": "Products",
       "links": [
-        { "text": "Website", "link": "#" },
-        { "text": "Mobile App", "link": "#" },
-        { "text": "Social Media Feeds", "link": "#" },
-        { "text": "Presentation", "link": "#" },
-        { "text": "Product Mockups", "link": "#" },
-        { "text": "Illustrations", "link": "#" }
+        { "text": "Website", "link": "https://some-url.com/" },
+        { "text": "Mobile App", "link": "https://some-url.com/" },
+        { "text": "Social Media Feeds", "link": "https://some-url.com/" },
+        { "text": "Presentation", "link": "https://some-url.com/" },
+        { "text": "Product Mockups", "link": "https://some-url.com/" },
+        { "text": "Illustrations", "link": "https://some-url.com/" }
       ]
     },
     {
       "title": "Account",
       "links": [
-        { "text": "Your Card", "link": "#" },
-        { "text": "Check Out", "link": "#" },
-        { "text": "Refund Policy", "link": "#" },
-        { "text": "Company Policy", "link": "#" },
-        { "text": "Send A Message", "link": "#" },
-        { "text": "Customer Support", "link": "#" }
+        { "text": "Your Card", "link": "https://some-url.com/" },
+        { "text": "Check Out", "link": "https://some-url.com/" },
+        { "text": "Refund Policy", "link": "https://some-url.com/" },
+        { "text": "Company Policy", "link": "https://some-url.com/" },
+        { "text": "Send A Message", "link": "https://some-url.com/" },
+        { "text": "Customer Support", "link": "https://some-url.com/" }
       ]
     }
   ],
 
   "footerSocials": [
-    { "icon": "#", "alt": "Twitter logo", "link": "#" },
-    { "icon": "#", "alt": "Facebook logo", "link": "#" },
-    { "icon": "#", "alt": "Telegram logo", "link": "#" }
+    { "icon": "/img/sprite.svg#icon-twitter", "alt": "Twitter logo", "link": "https://x.com/" },
+    { "icon": "/img/sprite.svg#icon-facebook", "alt": "Facebook logo", "link": "https://www.facebook.com/" },
+    { "icon": "/img/sprite.svg#icon-telegram", "alt": "Telegram logo", "link": "https://web.telegram.org/" }
   ],
 
   "footerNewsletter": {
