@@ -1,6 +1,10 @@
 <li class="related-articles__item">
     <article class="article-card">
-        <img class="article-card__img" src="{{ item.img }}" alt="{{ item.alt }}">
+        <picture class="article-card__img">
+            <source srcset="/img/{{ item.img }}-1x.avif 1x, /img/{{ item.img }}-2x.avif 2x" type="image/avif"/>
+            <source srcset="/img/{{ item.img }}-1x.webp 1x, /img/{{ item.img }}-2x.webp 2x" type="image/webp"/>
+            <img class="article-card__img" src="/img/{{ item.img }}-2x.webp" alt="{{ item.alt }}" loading="lazy"/>
+        </picture>
         <span class="article-card__tag">{{ item.tag }}</span>
         <div class="article-card__content">
             <h3 class="article-card__title">{{ item.title }}</h3>

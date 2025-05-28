@@ -9,24 +9,28 @@
     {% endif %}
     {% if section.image %}
       <div class="article__img-wrapper">
-        <img class="article__img" src="{{ section.image.src }}" alt="{{ section.image.alt }}">
-          <div class="article__img-captions">
-            <p class="article__img-description">{{ section.image.caption }}</p>
-            <a class="article__img-link" href="{{ section.image.link }}">{{ section.image.linkText }}</a>
-          </div>
+        <picture class="article__img">
+          <source srcset="/img/{{ section.image.src }}-1x.avif 1x, /img/{{ section.image.src }}-2x.avif 2x" type="image/avif"/>
+          <source srcset="/img/{{ section.image.src }}-1x.webp 1x, /img/{{ section.image.src }}-2x.webp 2x" type="image/webp"/>
+          <img class="article__img" src="/img/{{ blogHero.image.src }}-2x.webp" alt="{{ section.image.alt }}" loading="lazy"/>
+        </picture>
+        <div class="article__img-captions">
+          <p class="article__img-description">{{ section.image.caption }}</p>
+          <a class="article__img-link" href="{{ section.image.link }}">{{ section.image.linkText }}</a>
         </div>
-      {% endif %}
-    {% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+<div class="article-section article__lower">
+  <figure class="article__quote-wrapper">
+    <img class="article__quote-img" src="{{ articleQuote.img }}" alt="Quote background">
+      <blockquote class="article__quote">
+        <svg class="svg article__quote-svg">
+          <use href="{{ articleQuote.svg }}" aria-label="{{ articleQuote.svgAlt }}" loading="lazy"></use>
+        </svg>
+        {{ articleQuote.text }}
+      </blockquote>
+    </figure>
+    <p class="article__paragraph">{{ articleOutro }}</p>
   </div>
-  <div class="article-section article__lower">
-    <figure class="article__quote-wrapper">
-      <img class="article__quote-img" src="{{ articleQuote.img }}" alt="Quote background">
-        <blockquote class="article__quote">
-          <svg class="svg article__quote-svg">
-            <use href="{{ articleQuote.svg }}" aria-label="{{ articleQuote.svgAlt }}" loading="lazy"></use>
-          </svg>
-          {{ articleQuote.text }}
-        </blockquote>
-      </figure>
-      <p class="article__paragraph">{{ articleOutro }}</p>
-    </div>

@@ -1,5 +1,9 @@
 <article class="blog-card">
-  <img class="blog-card__img" src="{{ card.img }}" alt="{{ card.alt }}">
+  <picture class="blog-card__img">
+    <source srcset="/img/{{ card.img }}-1x.avif 1x, /img/{{ card.img }}-2x.avif 2x" type="image/avif"/>
+    <source srcset="/img/{{ card.img }}-1x.webp 1x, /img/{{ card.img }}-2x.webp 2x" type="image/webp"/>
+    <img class="blog-card__img" src="/img/{{ card.img }}-2x.webp" alt="{{ card.alt }}" loading="lazy"/>
+  </picture>
   <h3 class="blog-card__title">{{ card.title }}</h3>
   <time class="blog-card__date" datetime="2024-04-15">{{ card.date }}</time>
 </article>
