@@ -7,7 +7,7 @@
         {{ heroHome.buttonPrimary }}
       </button>
       <button class="button hero-section__button button--secondary">
-        <svg class="svg hero-section__button-svg">
+        <svg class="hero-section__button-svg">
           <use href="{{ heroHome.buttonIcon.svg }}" aria-label="{{ heroHome.buttonIcon.alt }}" loading="lazy"></use>
         </svg>
         {{ heroHome.buttonSecondary }}
@@ -23,7 +23,7 @@
           <img class="hero-section__img" src="/img/{{ item.img }}-2x.webp" alt="{{ item.alt }}" loading="eager"/>
         </picture>
       {% elif item.type == 'svg' %}
-        <svg class="svg hero-section__svg">
+        <svg class="hero-section__svg">
           <use href="{{ item.icon }}" aria-label="{{ item.alt }}" loading="eager"></use>
         </svg>
       {% endif %}

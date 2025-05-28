@@ -1,34 +1,42 @@
 <aside class="blog-aside">
   <figure class="blog-aside__author">
-    <img class="blog-aside__author-img" src="{{ blogAside.author.img }}" alt="{{ blogAside.author.alt }}">
-      <figcaption class="blog-aside__author-info">
-        <p class="blog-aside__author-name">{{ blogAside.author.name }}</p>
-        <time class="blog-aside__author-date" datetime="{{ blogAside.author.datetime }}">
-          {{ blogAside.author.date }}
-        </time>
-      </figcaption>
-    </figure>
-    <section class="blog-aside__section">
-      <h3 class="blog-aside__heading">{{ blogAside.blogCategoriesSection.heading }}</h3>
-      <ul class="blog-aside__list">
-        {% for item in blogAside.blogCategoriesSection.items %}
-          <li class="blog-aside__list-item{% if item.active %} blog-aside__list-item--active{% endif %}">
-            {{ item.text }}
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
-    <section class="blog-aside__section">
-      <h3 class="blog-aside__heading">{{ blogAside.latestArticlesSection.heading }}</h3>
-      <ul class="blog-aside__articles">
-        {% for article in blogAside.latestArticlesSection.items %}
-          <li class="blog-aside__article">
-            <h4 class="blog-aside__article-title">{{ article.title }}</h4>
-            <time class="blog-aside__article-date" datetime="{{ article.datetime }}">
-              {{ article.date }}
-            </time>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
-  </aside>
+    <picture class="blog-aside__author-img">
+      <source
+        srcset="/img/{{ blogAside.author.img }}-1x.avif 1x, /img/{{ blogAside.author.alt }}-2x.avif 2x"
+        type="image/avif"/>
+      <source
+        srcset="/img/{{ blogAside.author.img }}-1x.webp 1x, /img/{{ blogAside.author.alt }}-2x.webp 2x"
+        type="image/webp"/>
+      <img class="blog-aside__author-img" src="/img/{{ blogAside.author.img }}-2x.webp" alt="{{ item.alt }}" loading="lazy"/>
+    </picture>
+    <figcaption class="blog-aside__author-info">
+      <p class="blog-aside__author-name">{{ blogAside.author.name }}</p>
+      <time class="blog-aside__author-date" datetime="{{ blogAside.author.datetime }}">
+        {{ blogAside.author.date }}
+      </time>
+    </figcaption>
+  </figure>
+  <section class="blog-aside__section">
+    <h3 class="blog-aside__heading">{{ blogAside.blogCategoriesSection.heading }}</h3>
+    <ul class="blog-aside__list">
+      {% for item in blogAside.blogCategoriesSection.items %}
+        <li class="blog-aside__list-item{% if item.active %} blog-aside__list-item--active{% endif %}">
+          {{ item.text }}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section class="blog-aside__section">
+    <h3 class="blog-aside__heading">{{ blogAside.latestArticlesSection.heading }}</h3>
+    <ul class="blog-aside__articles">
+      {% for article in blogAside.latestArticlesSection.items %}
+        <li class="blog-aside__article">
+          <h4 class="blog-aside__article-title">{{ article.title }}</h4>
+          <time class="blog-aside__article-date" datetime="{{ article.datetime }}">
+            {{ article.date }}
+          </time>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</aside>
