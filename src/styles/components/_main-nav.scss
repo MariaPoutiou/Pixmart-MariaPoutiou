@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as *;
+
+.main-nav {
+  &__list {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__list-link {
+    color: rgb(13 13 21);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__list-item {
+    padding-inline: 12px;
+    padding-block: 6px;
+  }
+}

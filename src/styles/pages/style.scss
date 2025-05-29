@@ -3,5 +3,8 @@
 @use "../abstracts/global";
 
 
+/********** GENERAL COMPONENTS ************/
+@use "../components/main-nav";
+
 /* HEADER */
 @use "../layouts/header";

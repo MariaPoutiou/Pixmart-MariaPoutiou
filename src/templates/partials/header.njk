@@ -23,7 +23,7 @@
       <ul class="main-nav__list">
         {% for item in header.nav %}
           <li class="main-nav__list-item">
-            <a class="main-nav__list-link{% if item.text == currentPage %} main-nav__list-link--active{% endif %}" href="{{ item.link }}">{{ item.text }}</a>
+            <a class="main-nav__list-link" href="{{ item.link }}">{{ item.text }}</a>
           </li>
         {% endfor %}
       </ul>
