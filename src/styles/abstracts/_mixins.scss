@@ -1,5 +1,11 @@
 @use "./variables" as *;
 
+@mixin input {
+  border: 1px solid #1D36532B;
+  border-radius: 8px;
+  height: 40px;
+}
+
 @mixin button-base {
   font-weight: 600;
   text-align: center;
@@ -15,12 +21,18 @@
 @mixin button-small {
   height: 40px;
   width: 40px;
+  border-radius: 8px;
 }
 
 @mixin button-primary {
   background-color: rgb(2, 101, 220);
   border-color: rgb(2, 101, 220);
-  color: rgb(245, 248, 251)
+  color: rgb(245, 248, 251);
+}
+
+@mixin button-tertiary {
+  border: 2px solid #1D36532B;
+  background-color: transparent;
 }
 
 @mixin desktop {

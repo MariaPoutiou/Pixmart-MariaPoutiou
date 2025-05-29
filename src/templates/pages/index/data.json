@@ -31,11 +31,13 @@
   },
 
   "headerSearch": {
-    "headerPlaceholder": "Search for Digital Assets"
+    "headerPlaceholder": "Search for Digital Assets",
+    "img": "/img/sprite.svg#icon-search",
+    "imgAlt": "search icon"
   },
 
   "headerButton": {
-    "img": "https://some-url.com/",
+    "img": "/img/sprite.svg#icon-bag",
     "alt": "bag icon"
   },
 

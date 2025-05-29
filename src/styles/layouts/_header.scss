@@ -2,13 +2,109 @@
 @use "../abstracts/mixins" as *;
 
 .header {
-    padding-block: 24px;
-}
+  padding-block: 24px;
 
-.header__burger-btn {
+  &__menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__burger {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &__burger-btn {
     @include button-base;
     @include button-primary;
     @include button-small;
-    padding: 12px;
+  }
+
+  &__burger-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__logo-img {
+    width: 108px;
+    height: 24px;
+  }
+
+  &-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &-search {
+    position: relative;
+  }
+
+  &-search__input {
+    border: 2px solid #1d36532b;
     border-radius: 8px;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    padding: 12px;
+
+    &::placeholder {
+      display: none;
+    }
+
+    @include tablet {
+      border: 1px solid #1d36532b;
+      width: 240px;
+
+      &::placeholder {
+        display: flex;
+      }
+    }
+  }
+
+  &-search__img {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__button {
+    @include button-base;
+    @include button-small;
+    @include button-primary;
+  }
+}
+
+.main-nav {
+  &__list {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__list-link {
+    color: rgb(13 13 21);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__list-item {
+    padding-inline: 12px;
+    padding-block: 6px;
+  }
 }
