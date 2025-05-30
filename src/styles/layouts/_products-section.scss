@@ -2,15 +2,6 @@
 @use "../abstracts/mixins" as *;
 
 .product-section {
-  margin-block: 64px;
-
-  @include tablet {
-    margin-block: 68px 120px;
-  }
-
-  @include desktop {
-    margin-block: 120px;
-  }
 
   &__list {
     padding-block: 0;
