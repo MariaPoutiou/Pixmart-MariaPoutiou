@@ -2,10 +2,36 @@
 @use "../abstracts/mixins" as *;
 
 .footer {
-  padding-top: 32px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding-block: 32px;
+    margin-bottom: 32px;
+
+    @include tablet {
+      padding-block: 64px 80px;
+      margin-bottom: 55px;
+    }
+  }
+
+  &__upper {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 
   &__brand {
-    margin-bottom: 32px;
+    width: 408px;
+    min-width: 320px;
+
+    @include tablet {
+      width: 320px;
+    }
   }
   &__logo {
     width: 300px;
@@ -17,11 +43,22 @@
     color: #0d0d15;
   }
 
+  &__middle {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
   &__social-list {
     padding: 0;
+    margin-block: 0 16px;
     display: flex;
     gap: 8px;
-    margin-bottom: 32px;
   }
 
   &__social-item {
@@ -29,29 +66,42 @@
     padding: 20px;
   }
 
+  &__newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    min-width: 320px;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: center;
+      width: 645px;
+    }
+  }
+
   &__newsletter-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    margin-bottom: 24px;
     width: 216px;
     min-width: 216px;
+    margin-block: 0;
   }
 
   &__form {
     display: flex;
     gap: 8px;
-    width: 408px;
+    width: 100%;
     min-width: 320px;
   }
 
   &__input {
     @include input;
     width: 243px;
-    margin-bottom: 32px;
 
     &::placeholder {
-        padding-left: 20px;
+      padding-left: 20px;
     }
   }
 
@@ -59,7 +109,13 @@
     padding-block: 24px;
     padding-inline: 16px;
     margin-bottom: 0;
-    background-color: #0D0D15;
+    background-color: #0d0d15;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      padding-inline: 80px;
+    }
   }
 
   &__legal-list {
@@ -70,12 +126,12 @@
 
   &__legal-item {
     line-height: 24px;
-    color: #E7EEF7A8;
+    color: #e7eef7a8;
   }
 
   &__copyright {
     line-height: 24px;
-    color: #E7EEF7A8;
+    color: #e7eef7a8;
     margin-bottom: 0;
   }
 }
