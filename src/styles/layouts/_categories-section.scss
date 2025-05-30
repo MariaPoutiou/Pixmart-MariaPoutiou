@@ -28,4 +28,61 @@
   &__header-button {
     width: 151px;
   }
+
+  &__secondary-title {
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    margin-bottom: 32px;
+  }
+
+  &__list-wrapper {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    min-width: 408px;
+
+    @include tablet {
+      width: 50%;
+      min-width: 440px;
+    }
+
+    @include desktop {
+      min-width: 608px;
+    }
+  }
+
+  &__list-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 460px;
+    padding-inline: 0;
+  }
+
+  &__list-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 460px;
+    padding-inline: 0;
+  }
+
+  &__list-item {
+    background-color: #f4f7fa;
+    padding: 24px;
+    border-radius: 20px;
+    width: 100%;
+    height: 180px;
+    min-width: 194px;
+
+    @include tablet {
+      min-width: 210px;
+    }
+
+    @include desktop {
+      min-width: 294px;
+    }
+  }
 }
