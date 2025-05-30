@@ -10,7 +10,7 @@
   <div class="contact__info-wrapper">
     {% for item in contactInfo %}
       <div class="contact__info-item">
-        <svg class="contact__icon">
+        <svg class="svg contact__icon">
           <use href="{{ item.icon }}" aria-label="{{ item.iconAlt }}" loading="lazy"></use>
         </svg>
         <p class="contact__text">{{ item.text }}</p>

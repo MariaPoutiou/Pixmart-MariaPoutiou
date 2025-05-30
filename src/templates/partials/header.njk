@@ -5,15 +5,15 @@
     <div class="header__nav">
       <div class="header__burger">
       <div class="header__burger-wrapper">
-        <button class="header__burger-btn">
-          <svg class="header__burger-img">
+        <button class="header__burger-btn button--primary-smal">
+          <svg class="svg header__burger-img">
             <use href="{{ header.burgerImg }}" aria-label="{{ header.burgerImgAlt }}"></use>
           </svg>
         </button>
       </div>
       <div class="header__logo">
         <a class="header__logo-image" href="{{ header.logoLink }}">
-          <svg class="header__logo-img">
+          <svg class="svg header__logo-img">
             <use href="{{ header.logoImgFull }}" aria-label=" {{ header.logoAlt }}" loading="eager"></use>
           </svg>
         </a>
@@ -37,8 +37,8 @@
         </svg>
         <input class="header-search__input" type="search" name="search" maxlength="30" placeholder="{{ headerSearch.headerPlaceholder }}" autocomplete="on">
         </form>
-        <button class="button header__button button--primary">
-          <svg class="header__button-img">
+        <button class="button header__button button--primary-small">
+          <svg class="svg header__button-img">
             <use href="{{ headerButton.img }}" aria-label="{{ headerButton.alt }}" loading="eager"></use>
           </svg>
         </button>

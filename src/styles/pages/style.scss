@@ -4,7 +4,12 @@
 
 
 /********** GENERAL COMPONENTS ************/
+@use "../components/buttons";
 @use "../components/main-nav";
 
 /* HEADER */
 @use "../layouts/header";
+
+/* HERO SECTION HOMEPAGE */
+@use "../layouts/hero-home";
+

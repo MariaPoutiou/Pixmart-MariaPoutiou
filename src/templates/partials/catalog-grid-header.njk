@@ -1,13 +1,13 @@
 <div class="catalog-tools">
-  <div class="button catalog-tools__dropdown button--tertiary">
+  <div class="button catalog-tools__dropdown button--primary-small">
     <select class="catalog-tools__select">
       {% for option in catalogDropdownOptions %}
         <option value="{{ option }}">{{ option }}</option>
       {% endfor %}
     </select>
   </div>
-  <button class="button catalog-tools__filter button--primary">
-    <svg class="catalog-tools__filter-icon">
+  <button class="button catalog-tools__filter button--primary-small">
+    <svg class="svg catalog-tools__filter-icon">
       <use href="{{ catalogFilterButton.icon }}" aria-label="{{ catalogFilterButton.alt }}" loading="lazy"></use>
     </svg>
   </button>
@@ -15,13 +15,13 @@
 <div>
   <p class="catalog-meta__info">{{ catalogMeta.info }}</p>
   <div class="catalog-meta">
-    <div class="button catalog-meta__primary button--primary">
-      <svg class="catalog-meta__icon">
+    <div class="button catalog-meta__primary button--primary-smal">
+      <svg class="svg catalog-meta__icon">
         <use href="{{ catalogViewmodes.gridView.icon }}" aria-label="{{ catalogViewmodes.gridView.alt }}" loading="lazy"></use>
       </svg>
     </div>
-    <div class="button catalog-meta__secondary button--tertiary">
-      <svg class="catalog-meta__icon">
+    <div class="button catalog-meta__secondary button--secondary-small">
+      <svg class="svg catalog-meta__icon">
         <use href="{{ catalogViewmodes.listView.icon }}" aria-label="{{ catalogViewmodes.listView.alt }}" loading="lazy"></use>
       </svg>
     </div>

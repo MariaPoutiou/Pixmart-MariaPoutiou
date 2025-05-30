@@ -25,9 +25,9 @@
     <div class="footer__socials">
       <ul class="footer__social-list">
         {% for social in footerSocials %}
-          <li class="footer__social-item">
+          <li class="button footer__social-item button--secondadry">
             <a href="{{ social.link }}">
-              <svg class="footer__social-icon">
+              <svg class="svg footer__social-icon">
                 <use href="{{ social.icon }}" aria-label="{{ social.alt }}" loading="lazy"></use>
               </svg>
             </a>

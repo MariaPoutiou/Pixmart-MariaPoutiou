@@ -42,6 +42,10 @@ a {
   border: 0;
 }
 
+.svg {
+  @include svg-size;
+}
+
 /**svg {
   display: none;
 } **/

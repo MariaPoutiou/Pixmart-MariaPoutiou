@@ -42,8 +42,10 @@
   },
 
   "heroHome": {
-    "title": "Craft Your Success with Our Digital Assets",
-    "description": "From our inspiring illustrations to dynamic UI/UX ktis, elevate your projects with our premium digital design resources.",
+    "titleFirst": "Craft Your Success with Our ",
+    "titleMiddle": "Digital ",
+    "titleLast": "Assets",
+    "description": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
     "buttonPrimary": "Shop Now",
     "buttonSecondary": "Watch About Us",
     "buttonIcon": {
@@ -392,12 +394,14 @@
         {
           "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
-          "modifier": "wishlist"
+          "modifier": "wishlist",
+          "modifierBtn": "button--secondary-small"
         },
         {
           "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
-          "modifier": "cart"
+          "modifier": "cart",
+          "modifierBtn": "button--primary-small"
         }
       ]
     },
@@ -410,8 +414,18 @@
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
-        { "icon": "/img/sprite.svg#icon-heart", "alt": "Save to wishlist" },
-        { "icon": "/img/sprite.svg#icon-bag", "alt": "Add to cart" }
+        {
+          "icon": "/img/sprite.svg#icon-heart",
+          "alt": "Save to wishlist",
+          "modifier": "wishlist",
+          "modifierBtn": "button--secondary-small"
+        },
+        {
+          "icon": "/img/sprite.svg#icon-bag",
+          "alt": "Add to cart",
+          "modifier": "cart",
+          "modifierBtn": "button--primary-small"
+        }
       ]
     },
     {
@@ -426,12 +440,14 @@
         {
           "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
-          "modifier": "wishlist"
+          "modifier": "wishlist",
+          "modifierBtn": "button--secondary-small"
         },
         {
           "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
-          "modifier": "cart"
+          "modifier": "cart",
+          "modifierBtn": "button--primary-small"
         }
       ]
     },
@@ -447,12 +463,14 @@
         {
           "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
-          "modifier": "wishlist"
+          "modifier": "wishlist",
+          "modifierBtn": "button--secondary-small"
         },
         {
           "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
-          "modifier": "cart"
+          "modifier": "cart",
+          "modifierBtn": "button--primary-small"
         }
       ]
     },
@@ -486,12 +504,14 @@
         {
           "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
-          "modifier": "wishlist"
+          "modifier": "wishlist",
+          "modifierBtn": "button--secondary-small"
         },
         {
           "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
-          "modifier": "cart"
+          "modifier": "cart",
+          "modifierBtn": "button--primary-small"
         }
       ]
     },
@@ -504,8 +524,18 @@
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
-        { "icon": "/img/sprite.svg#icon-heart", "alt": "Save to wishlist" },
-        { "icon": "/img/sprite.svg#icon-bag", "alt": "Add to cart" }
+        {
+          "icon": "/img/sprite.svg#icon-heart",
+          "alt": "Save to wishlist",
+          "modifier": "wishlist",
+          "modifierBtn": "button--secondary-small"
+        },
+        {
+          "icon": "/img/sprite.svg#icon-bag",
+          "alt": "Add to cart",
+          "modifier": "cart",
+          "modifierBtn": "button--primary-small"
+        }
       ]
     },
     {
@@ -520,12 +550,14 @@
         {
           "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
-          "modifier": "wishlist"
+          "modifier": "wishlist",
+          "modifierBtn": "button--secondary-small"
         },
         {
           "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
-          "modifier": "cart"
+          "modifier": "cart",
+          "modifierBtn": "button--primary-small"
         }
       ]
     },
@@ -541,12 +573,14 @@
         {
           "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
-          "modifier": "wishlist"
+          "modifier": "wishlist",
+          "modifierBtn": "button--secondary-small"
         },
         {
           "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
-          "modifier": "cart"
+          "modifier": "cart",
+          "modifierBtn": "button--primary-small"
         }
       ]
     },
@@ -858,9 +892,21 @@
   ],
 
   "footerSocials": [
-    { "icon": "/img/sprite.svg#icon-twitter", "alt": "Twitter logo", "link": "https://x.com/" },
-    { "icon": "/img/sprite.svg#icon-facebook", "alt": "Facebook logo", "link": "https://www.facebook.com/" },
-    { "icon": "/img/sprite.svg#icon-telegram", "alt": "Telegram logo", "link": "https://web.telegram.org/" }
+    {
+      "icon": "/img/sprite.svg#icon-twitter",
+      "alt": "Twitter logo",
+      "link": "https://x.com/"
+    },
+    {
+      "icon": "/img/sprite.svg#icon-facebook",
+      "alt": "Facebook logo",
+      "link": "https://www.facebook.com/"
+    },
+    {
+      "icon": "/img/sprite.svg#icon-telegram",
+      "alt": "Telegram logo",
+      "link": "https://web.telegram.org/"
+    }
   ],
 
   "footerNewsletter": {

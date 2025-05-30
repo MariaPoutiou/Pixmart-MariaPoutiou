@@ -1,15 +1,18 @@
 @use "./variables" as *;
 
 @mixin input {
-  border: 1px solid #1D36532B;
+  border: 1px solid #1d36532b;
   border-radius: 8px;
   height: 40px;
 }
 
 @mixin button-base {
   font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
   text-align: center;
   border: 2px solid transparent;
+  border-radius: 8px;
   display: inline-block;
   white-space: nowrap;
   display: inline-flex;
@@ -18,21 +21,41 @@
   text-decoration: none;
 }
 
-@mixin button-small {
+@mixin button-small-primary {
+  background-color: rgb(2, 101, 220);
+  border-color: rgb(2, 101, 220);
+  color: rgb(245, 248, 251);
   height: 40px;
   width: 40px;
-  border-radius: 8px;
+}
+
+@mixin button-small-secondary {
+  background-color: transparent;
+  border-color: #2735448c;
+  height: 40px;
+  width: 40px;
 }
 
 @mixin button-primary {
   background-color: rgb(2, 101, 220);
   border-color: rgb(2, 101, 220);
   color: rgb(245, 248, 251);
+  height: 64px;
+  padding-block: 18px;
+  padding-inline: 32px;
 }
 
-@mixin button-tertiary {
-  border: 2px solid #1D36532B;
+@mixin button-secondary {
+  border: 2px solid #1d36532b;
   background-color: transparent;
+  height: 64px;
+  padding-block: 18px;
+  padding-inline: 32px;
+}
+
+@mixin svg-size {
+  width: 24px;
+  height: 24px;
 }
 
 @mixin desktop {

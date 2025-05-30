@@ -1,19 +1,24 @@
 <section class="container hero-section hero-section--homepage">
+
   <div class="hero-section__wrapper">
-    <h1 class="hero-section__heading">{{ heroHome.title }}</h1>
+
+    <h1 class="hero-section__heading">{{ heroHome.titleFirst }}<span class="hero-section__heading-highlight">{{ heroHome.titleMiddle }}</span>{{ heroHome.titleLast }}</h1>
     <h2 class="hero-section__description">{{ heroHome.description }}</h2>
+
     <div class="hero-section__btn-wrapper">
-      <button class="button hero-section__button button--primary">
+      <button class="button hero-section__button-primary button--primary">
         {{ heroHome.buttonPrimary }}
       </button>
-      <button class="button hero-section__button button--secondary">
-        <svg class="hero-section__button-svg">
+      <button class="button hero-section__button-secondary">
+        <svg class="svg hero-section__button-svg">
           <use href="{{ heroHome.buttonIcon.svg }}" aria-label="{{ heroHome.buttonIcon.alt }}" loading="lazy"></use>
         </svg>
         {{ heroHome.buttonSecondary }}
       </button>
     </div>
+
   </div>
+
   <div class="hero-section__img-wrapper">
     {% for item in heroHome.images %}
       {% if item.type == 'img' %}
@@ -29,4 +34,5 @@
       {% endif %}
     {% endfor %}
   </div>
+
 </section>

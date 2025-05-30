@@ -25,8 +25,8 @@
             <p class="catalog-card__price">{{ item.price }}</p>
             <div class="catalog-card__actions">
               {% for action in item.actions %}
-                <button class="catalog-card__action{% if action.modifier %} catalog-card__action--{{ action.modifier }}{% endif %}">
-                  <svg class="catalog-card__action-icon">
+                <button class="catalog-card__action{% if action.modifier %} catalog-card__action--{{ action.modifier }} {{ action.modifierBtn }}{% endif %}">
+                  <svg class="svg catalog-card__action-icon">
                     <use href="{{ action.icon }}" aria-label="{{ action.icon }}" loading="lazy"></use>
                   </svg>
                 </button>
