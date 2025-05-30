@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.product-section {
+  margin-block: 64px;
+
+  @include tablet {
+    margin-block: 68px 120px;
+  }
+
+  @include desktop {
+    margin-block: 120px;
+  }
+
+  &__list {
+    padding-block: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    overflow-x: auto;
+    max-width: 100vw;
+    padding: 0;
+    overflow-x: auto;
+
+    @include tablet {
+      overflow-x: unset;
+    }
+  }
+
+  &__list-item {
+    height: 272px;
+    width: 100%;
+    min-width: 224px;
+
+    @include tablet {
+      min-width: 176px;
+    }
+
+    @include desktop {
+      min-width: 224px;
+    }
+  }
+}
