@@ -1,0 +1,81 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.footer {
+  padding-top: 32px;
+
+  &__brand {
+    margin-bottom: 32px;
+  }
+  &__logo {
+    width: 300px;
+    height: 58px;
+  }
+
+  &__description {
+    line-height: 24px;
+    color: #0d0d15;
+  }
+
+  &__social-list {
+    padding: 0;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  &__social-item {
+    width: 64px;
+    padding: 20px;
+  }
+
+  &__newsletter-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    width: 216px;
+    min-width: 216px;
+  }
+
+  &__form {
+    display: flex;
+    gap: 8px;
+    width: 408px;
+    min-width: 320px;
+  }
+
+  &__input {
+    @include input;
+    width: 243px;
+    margin-bottom: 32px;
+
+    &::placeholder {
+        padding-left: 20px;
+    }
+  }
+
+  &__lower {
+    padding-block: 24px;
+    padding-inline: 16px;
+    margin-bottom: 0;
+    background-color: #0D0D15;
+  }
+
+  &__legal-list {
+    display: inline-flex;
+    gap: 8px;
+    padding: 0;
+  }
+
+  &__legal-item {
+    line-height: 24px;
+    color: #E7EEF7A8;
+  }
+
+  &__copyright {
+    line-height: 24px;
+    color: #E7EEF7A8;
+    margin-bottom: 0;
+  }
+}

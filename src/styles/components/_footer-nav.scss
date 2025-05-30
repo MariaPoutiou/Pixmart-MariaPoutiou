@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.footer__nav {
+    &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 72px;
+  }
+
+  &-title {
+    color: #0D0D15;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    margin-block: 0 16px;
+  }
+
+  &-list {
+    padding: 0;
+  }
+
+  &-item {
+    margin-bottom: 8px;
+  }
+
+  &-link {
+    line-height: 24px;
+    color: #2A3541D9;
+  }
+}

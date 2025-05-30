@@ -9,6 +9,7 @@
 @use "../components/main-nav";
 @use "../components/product-card";
 @use "../components/categories-card";
+@use "../components/footer-nav";
 
 /* HEADER */
 @use "../layouts/header";
@@ -21,3 +22,6 @@
 
 /* PRODUCTS SECTION */
 @use "../layouts/categories-section";
+
+/* PRODUCTS SECTION */
+@use "../layouts/footer";

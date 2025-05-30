@@ -889,7 +889,7 @@
     {
       "title": "Account",
       "links": [
-        { "text": "Your Card", "link": "https://some-url.com/" },
+        { "text": "Your Cart", "link": "https://some-url.com/" },
         { "text": "Check Out", "link": "https://some-url.com/" },
         { "text": "Refund Policy", "link": "https://some-url.com/" },
         { "text": "Company Policy", "link": "https://some-url.com/" },
@@ -919,11 +919,11 @@
 
   "footerNewsletter": {
     "title": "Subscribe to Design Newsletter",
-    "placeholder": "Enter your email address",
+    "placeholder": "Enter your email address...",
     "button": "Subscribe"
   },
 
   "footerLegal": ["Privacy Policy", "Terms and Condition", "Site Map"],
 
-  "footerCopyright": "© 2024 Pixmart. All rights reserved."
+  "footerCopyright": "Copyright © 2024 Pixmart. All rights reserved."
 }

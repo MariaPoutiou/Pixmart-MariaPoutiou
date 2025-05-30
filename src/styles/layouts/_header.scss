@@ -23,7 +23,6 @@
 
   &__burger-btn {
     @include button-base;
-    @include button-small-primary;
 
     @include tablet {
       display: none;
