@@ -18,16 +18,16 @@
   &__description {
     line-height: 24px;
     margin-block: 8px 0;
+
+    &::after {
+      @include card-pseudoelement;
+    }
   }
 
   &__label {
     line-height: 24px;
     position: relative;
     margin-block: 8px 0;
-
-    &::before {
-      @include card-pseudoelement;
-    }
   }
 
   &__info {
