@@ -158,21 +158,20 @@
   },
 
   "trendingSection": {
-    "title": "TRENDING",
-    "subtitle": "Popular Products",
-    "navButtons": [
-      {
-        "direction": "prev",
-        "icon": "/img/sprite.svg#icon-chevron-left",
-        "alt": "Prev"
-      },
-      {
-        "direction": "next",
-        "icon": "/img/sprite.svg#icon-chevron-right",
-        "alt": "Next"
-      }
-    ]
-  },
+  "title": "TRENDING",
+  "subtitle": "Popular Products",
+  "navButtons": [
+    {
+      "direction": "prev",
+      "icon": "/img/sprite.svg#icon-chevron-left",
+      "alt": "Prev"
+    },
+    {
+      "direction": "next",
+      "icon": "/img/sprite.svg#icon-chevron-right",
+      "alt": "Next"
+    }
+  ],
   "items": [
     {
       "img": "exploring-fun",
@@ -210,7 +209,8 @@
       "price": "€40.99",
       "tags": ["Modern", "Homes"]
     }
-  ],
+  ]
+},
 
   "pricingSection": {
     "title": "PRICING PLAN",

@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.trending-card {
+  &__img {
+    height: 272px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  &__icon-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    background-color: #0265dc;
+    width: 56px;
+    height: 56px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  &__button {
+    display: none;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 0;
+  }
+
+  &__title {
+    font-weight: 700px;
+    font-size: 28px;
+    line-height: 36px;
+    margin-block: 16px 4px;
+  }
+
+  &__price {
+    font-weight: 500;
+    line-height: 24px;
+    color: #0265dc;
+    margin-block: 16px 4px;
+  }
+
+  &__tags {
+    @include card-info;
+  }
+
+  &__tag {
+    &:first-child::after {
+      @include card-pseudoelement;
+    }
+  }
+}

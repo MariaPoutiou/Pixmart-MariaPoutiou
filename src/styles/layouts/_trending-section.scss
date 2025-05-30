@@ -1,0 +1,48 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.trending {
+  &__button {
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &__secondary-title {
+    margin-block: 0;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+
+  &__header-functions {
+    display: inline-flex;
+    gap: 12px;
+  }
+
+  &__list-item {
+    width: 100%;
+    min-width: 305px;
+    position: relative;
+  }
+
+  &__list-wrapper {
+    display: flex;
+    gap: 16px;
+    padding-inline: 0;
+    overflow-x: scroll;
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      align-items: center;
+      overflow: visible;
+      overflow-x: unset;
+    }
+  }
+}

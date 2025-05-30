@@ -6,13 +6,15 @@
     <h3 class="secondary-title trending__secondary-title">
       {{ trendingSection.subtitle }}
     </h3>
+    <div class="trending__header-functions">
     {% for button in trendingSection.navButtons %}
-      <button class="button trending__button button--secondary">
-        <svg class="trending-button__icon">
+      <button class="button trending__button button--secondary-small">
+        <svg class="svg trending-button__icon">
           <use href="{{ button.icon }}" aria-label="{{ button.alt }}" loading="lazy"></use>
         </svg>
       </button>
     {% endfor %}
+    </div>
   </div>
   <ul class="trending__list-wrapper">
     {% for item in trendingSection.items %}
