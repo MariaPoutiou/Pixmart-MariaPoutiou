@@ -1,6 +1,5 @@
 <section class="container categories">
   <div class="categories__header">
-    <div class="categories__header-content">
       <h2 class="primary-title categories__primary-title">
         {{ categoriesSection.title }}
       </h2>
@@ -8,14 +7,20 @@
         {{ categoriesSection.subtitle }}
       </h3>
       <p class="categories__description">{{ categoriesSection.description }}</p>
-    </div>
-    <button class="button categories-header__button button--primary">
+    <button class="button categories__header-button button--primary">
       {{ categoriesSection.buttonText }}
     </button>
   </div>
-  <ul class="categories__list">
-    {% for item in categoriesSection.items %}
+  <div class="categories__list-wrapper">
+  <ul class="categories__list-left">
+    {% for item in categoriesSectionLeft.items %}
       {% include "partials/categories-card.njk" %}
     {% endfor %}
   </ul>
+    <ul class="categories__list-right">
+    {% for item in categoriesSectionRight.items %}
+      {% include "partials/categories-card.njk" %}
+    {% endfor %}
+  </ul>
+  </div>
 </section>

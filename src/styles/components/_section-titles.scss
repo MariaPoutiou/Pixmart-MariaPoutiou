@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.primary-title {
+  font-family: "Libre Franklin", "Arial", "Georgia", sans-serif;
+  line-height: 24px;
+  color: #0f73f6;
+  margin-block: 0 16px;
+}
+
+.secondary-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+}

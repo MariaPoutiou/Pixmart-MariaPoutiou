@@ -113,10 +113,13 @@
   },
 
   "categoriesSection": {
-    "title": "PRODUCT CATEGORIES",
+    "title": "CATEGORIES",
     "subtitle": "Discover Assets for Every Projects",
     "description": "From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you need to your projects.",
-    "buttonText": "Shop Now",
+    "buttonText": "Shop Now"
+  },
+
+  "categoriesSectionLeft": {
     "items": [
       {
         "svg": "/img/sprite.svg#icon-uikits",
@@ -131,7 +134,12 @@
         "title": "Slides",
         "description": "Pitch-ready",
         "label": "Creative"
-      },
+      }
+    ]
+  },
+  
+  "categoriesSectionRight": {
+    "items": [
       {
         "svg": "/img/sprite.svg#icon-social",
         "alt": "mobile phone",

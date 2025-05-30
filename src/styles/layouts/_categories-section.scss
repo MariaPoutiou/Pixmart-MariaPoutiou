@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.categories {
+  padding-block: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  @include tablet {
+    flex-direction: row-reverse;
+  }
+
+  &__header {
+    min-width: 408px;
+
+    @include desktop {
+      height: 304px;
+    }
+  }
+
+  &__description {
+    color: #222222;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__header-button {
+    width: 151px;
+  }
+}

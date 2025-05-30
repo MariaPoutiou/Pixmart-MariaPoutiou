@@ -58,6 +58,25 @@
   height: 24px;
 }
 
+@mixin card-info {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  color: #2a3541b2;
+}
+
+@mixin card-pseudoelement {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #2a3541b2;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
 @mixin desktop {
   @media screen and (width >= #{$screen-desktop}) {
     @content;

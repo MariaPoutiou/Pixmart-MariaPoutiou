@@ -4,8 +4,11 @@
 
 
 /********** GENERAL COMPONENTS ************/
+@use "../components/section-titles";
 @use "../components/buttons";
 @use "../components/main-nav";
+@use "../components/product-card";
+@use "../components/categories-card";
 
 /* HEADER */
 @use "../layouts/header";
@@ -15,5 +18,6 @@
 
 /* PRODUCTS SECTION */
 @use "../layouts/products-section";
-@use "../components/product-card";
 
+/* PRODUCTS SECTION */
+@use "../layouts/categories-section";
