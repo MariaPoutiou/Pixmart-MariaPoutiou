@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.hero-section__svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 56px;
+  height: 56px;
+  border-radius: 5px;
+  box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
+  display: none;
+}
+
+.hero-section__svg {
+  width: 32px;
+  height: 32px;
+  display: none;
+}
+
+.hero-section__img {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.hero-section__img--primary {
+  display: none;
+}
+
+.hero-section__img--secondary {
+  display: none;
+}
+
+.hero-section__img--tertiary {
+  display: none;
+}

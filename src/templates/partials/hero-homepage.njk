@@ -1,10 +1,8 @@
 <section class="container hero-section hero-section--homepage">
-
   <div class="hero-section__wrapper">
-
-    <h1 class="hero-section__heading">{{ heroHome.titleFirst }}<span class="hero-section__heading-highlight">{{ heroHome.titleMiddle }}</span>{{ heroHome.titleLast }}</h1>
+    <h1 class="hero-section__heading">{{ heroHome.titleFirst }}<span class="hero-section__heading-highlight">{{ heroHome.titleMiddle }}</span>
+      {{ heroHome.titleLast }}</h1>
     <h2 class="hero-section__description">{{ heroHome.description }}</h2>
-
     <div class="hero-section__btn-wrapper">
       <button class="button hero-section__button-primary button--primary">
         {{ heroHome.buttonPrimary }}
@@ -16,9 +14,7 @@
         {{ heroHome.buttonSecondary }}
       </button>
     </div>
-
   </div>
-
   <div class="hero-section__img-wrapper">
     {% for item in heroHome.images %}
       {% if item.type == 'img' %}
@@ -28,11 +24,12 @@
           <img class="hero-section__img" src="/img/{{ item.img }}-2x.webp" alt="{{ item.alt }}" loading="eager"/>
         </picture>
       {% elif item.type == 'svg' %}
-        <svg class="hero-section__svg hero-section__svg--{{ item.modifier }}">
-          <use href="{{ item.icon }}" aria-label="{{ item.alt }}" loading="eager"></use>
-        </svg>
+        <div class="hero-section__svg-wrapper hero-section__svg-wrapper--{{ item.modifier }}">
+          <svg class="hero-section__svg">
+            <use href="{{ item.icon }}" aria-label="{{ item.alt }}" loading="eager"></use>
+          </svg>
+        </div>
       {% endif %}
     {% endfor %}
   </div>
-
 </section>
