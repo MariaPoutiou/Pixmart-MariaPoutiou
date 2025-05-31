@@ -32,7 +32,13 @@
   }
 
   &__item:nth-child(2) {
-    transform: translateY(-32px);
     border: 2px solid #0265dc;
+    margin-bottom: 32px; /** magic number, sorry. It should be padding bottom 32 but i put the border in pricing-list__item not pricing-card. This fits better my structure so far **/
+
+    @include tablet {
+      transform: translateY(-32px);
+      margin-bottom: unset;
+      padding-bottom: 0;
+    }
   }
 }

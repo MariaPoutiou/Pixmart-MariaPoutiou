@@ -243,6 +243,7 @@
     },
     {
       "title": "Plus Membership",
+      "titleModifier": "best-seller",
       "price": "€29.99",
       "billing": "/Month",
       "badge": "BEST SELLER",

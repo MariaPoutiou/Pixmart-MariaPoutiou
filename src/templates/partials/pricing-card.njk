@@ -4,7 +4,7 @@
       <div class="pricing-card__badge">{{ plan.badge }}</div>
     {% endif %}
     <div class="pricing-card__header">
-      <h4 class="pricing-card__title">{{ plan.title }}</h4>
+      <h4 class="pricing-card__title{% if plan.titleModifier %} pricing-card__title--{{ plan.titleModifier }}{% endif %}">{{ plan.title }}</h4>
       <p class="pricing-card__price">
         {{ plan.price }}
         <span class="pricing-card__billing">{{ plan.billing }}</span>
