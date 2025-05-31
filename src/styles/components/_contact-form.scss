@@ -1,2 +1,65 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+
+.contact {
+  width: 100%;
+}
+
+.contact-form {
+  padding: 32px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  gap: 24px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+  }
+
+  &__label {
+    line-height: 20px;
+  }
+
+  &__input {
+    &::placeholder {
+      padding-left: 20px;
+    }
+  }
+
+  &__textarea {
+    border: 1px solid #1d36532b;
+    border-radius: 8px;
+    height: 180px;
+
+    &::placeholder {
+        padding-top: 20px;
+    }
+  }
+
+  &__checkbox-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    min-width: 300px;
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    width: 192px;
+    padding-inline: 40px;
+    padding-block: 20px;
+  }
+}
+
+.input {
+  @include input;
+}

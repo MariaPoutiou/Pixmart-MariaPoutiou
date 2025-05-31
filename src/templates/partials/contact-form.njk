@@ -2,11 +2,11 @@
   {% for field in contactForm.fields %}
     <div class="contact-form__item">
       <label class="contact-form__label" for="{{ field.id }}">{{ field.label }}</label>
-      <input class="contact-form__input" type="{{ field.type }}" id="{{ field.id }}" name="{{ field.id }}" placeholder="{{ field.placeholder }}" {% if field.title %} title="{{ field.title }}" {% endif %} required></div>
+      <input class="input contact-form__input" type="{{ field.type }}" id="{{ field.id }}" name="{{ field.id }}" placeholder="{{ field.placeholder }}" {% if field.title %} title="{{ field.title }}" {% endif %} required></div>
     {% endfor %}
     <div class="contact-form__item">
       <label class="contact-form__label" for="subject">{{ contactForm.selectLabel }}</label>
-      <select class="contact-form__select" id="subject" name="subject" required>
+      <select class="input contact-form__select" id="subject" name="subject" required>
         <option value="" disabled selected>{{ contactForm.selectPlaceholder }}</option>
         {% for option in contactForm.selectOptions %}
           <option value="{{ option }}">{{ option }}</option>
@@ -15,14 +15,14 @@
     </div>
     <div class="contact-form__item">
       <label class="contact-form__label" for="message">{{ contactForm.textareaLabel }}</label>
-      <textarea class="contact-form__textarea" id="message" name="message" rows="5" placeholder="{{ contactForm.textareaPlaceholder }}" required></textarea>
+      <textarea class="contact-form__input contact-form__textarea" id="message" name="message" rows="5" placeholder="{{ contactForm.textareaPlaceholder }}" required></textarea>
     </div>
     <div class="contact-form__footer-wrapper">
       <div class="contact-form__checkbox-wrapper">
         {% for text in contactForm.checkboxes %}
           <label class="contact-form__checkbox">
             <input class="contact-form__checkbox-input" type="checkbox" name="checkbox-{{ loop.index }}" {% if loop.last %} required {% endif %}>
-              <span>{{ text }}</span>
+              <span class="contact-form__checkbox-terms">{{ text }}</span>
             </label>
           {% endfor %}
         </div>

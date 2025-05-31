@@ -884,10 +884,10 @@
         "title": "Format: your@email.com"
       }
     ],
-    "selectLabel": "Select",
+    "selectLabel": "Subject",
     "selectPlaceholder": "Select a subject",
     "selectOptions": ["General Inquiry", "Support", "Billing"],
-    "textareaLabel": "Textarea",
+    "textareaLabel": "Message",
     "textareaPlaceholder": "Enter your message ...",
     "checkboxes": [
       "Subscribe me to Newsletter",

@@ -10,6 +10,8 @@
 
   @include tablet {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 40px;
   }
 }
@@ -17,11 +19,11 @@
 .contact {
   &__layout {
     padding-block: 64px 0;
+    width: 100%;
   }
 
   &__intro {
     margin-bottom: 32px;
-    width: 100%;
   }
 
   &__title {
@@ -63,12 +65,16 @@
     margin-bottom: 0;
   }
 
+  &__icon {
+    color: #0265DC;
+  }
+
   &__map-wrapper {
     position: relative;
-    width: 100%;
     border-radius: 20px;
     overflow: hidden;
     height: 314px;
+    margin-bottom: 24px;
   }
 
   &__map-img {
@@ -96,5 +102,9 @@
   &__map-text-lower {
     color: #2a3541d9;
     margin-block: 0 12px;
+  }
+
+  &__map-icon {
+    color: #0265DC;
   }
 }
