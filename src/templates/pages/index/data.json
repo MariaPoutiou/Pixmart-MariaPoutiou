@@ -56,27 +56,32 @@
       {
         "type": "img",
         "img": "hero-primary",
-        "alt": "Main screen showing event platform with speaker and headline text"
+        "alt": "Main screen showing event platform with speaker and headline text",
+        "modifier": "primary"
       },
       {
         "type": "img",
         "img": "hero-secondary",
-        "alt": "Schedule screen for Day 2 with speaker portraits and event agenda"
+        "alt": "Schedule screen for Day 2 with speaker portraits and event agenda",
+        "modifier": "secondary"
       },
       {
         "type": "img",
         "img": "hero-tertiary",
-        "alt": "Grid of speaker cards showing profiles and event times"
+        "alt": "Grid of speaker cards showing profiles and event times",
+        "modifier": "tertiary"
       },
       {
         "type": "svg",
         "icon": "/img/sprite.svg#icon-tool",
-        "alt": "Vector design tool icon representing graphic or UI design"
+        "alt": "Vector design tool icon representing graphic or UI design",
+        "modifier": "primary"
       },
       {
         "type": "svg",
         "icon": "/img/sprite.svg#icon-layout",
-        "alt": "Icon representing modular or block-based layout design"
+        "alt": "Icon representing modular or block-based layout design",
+        "modifier": "secondary"
       }
     ]
   },
