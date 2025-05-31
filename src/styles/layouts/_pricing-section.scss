@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.pricing-section {
+  &__primary-title {
+    text-align: center;
+  }
+
+  &__secondary-title {
+    text-align: center;
+    margin-block: 16px 80px;
+  }
+}
+
+.pricing-list {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(272px, 1fr));
+  gap: 16px;
+  padding-inline: 0;
+
+  @include tablet {
+    grid-template-columns: repeat(3, minmax(272px, 1fr));
+  }
+
+  &__item {
+    border-radius: 22px; /** I had to push it 2 pixels to match layout **/
+  }
+
+  &__item:first-child,
+  &__item:last-child {
+    box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
+  }
+
+  &__item:nth-child(2) {
+    transform: translateY(-32px);
+    border: 2px solid #0265dc;
+  }
+}

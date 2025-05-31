@@ -137,7 +137,7 @@
       }
     ]
   },
-  
+
   "categoriesSectionRight": {
     "items": [
       {
@@ -158,59 +158,59 @@
   },
 
   "trendingSection": {
-  "title": "TRENDING",
-  "subtitle": "Popular Products",
-  "navButtons": [
-    {
-      "direction": "prev",
-      "icon": "/img/sprite.svg#icon-chevron-left",
-      "alt": "Prev"
-    },
-    {
-      "direction": "next",
-      "icon": "/img/sprite.svg#icon-chevron-right",
-      "alt": "Next"
-    }
-  ],
-  "items": [
-    {
-      "img": "exploring-fun",
-      "alt": "Travel Hero UI page",
-      "icon": "/img/sprite.svg#icon-trophy",
-      "iconAlt": "cup-icon",
-      "button": "Go to Product",
-      "title": "Travel Hero",
-      "price": "€29.99",
-      "tags": ["Adventure", "Journey"]
-    },
-    {
-      "img": "caring-hearts",
-      "alt": "Healthcare Pro UI page",
-      "icon": "/img/sprite.svg#icon-trophy",
-      "iconAlt": "cup-icon",
-      "button": "Go to Product",
-      "title": "Healthcare Pro",
-      "price": "€15.99",
-      "tags": ["Medical", "Wellness"]
-    },
-    {
-      "img": "foodish-catering",
-      "alt": "Foodish Delight UI page",
-      "button": "Go to Product",
-      "title": "Foodish Delight",
-      "price": "€31.99",
-      "tags": ["Catering", "Food"]
-    },
-    {
-      "img": "dream-homes",
-      "alt": "Real Estate UI page",
-      "button": "Go to Product",
-      "title": "Real Estate",
-      "price": "€40.99",
-      "tags": ["Modern", "Homes"]
-    }
-  ]
-},
+    "title": "TRENDING",
+    "subtitle": "Popular Products",
+    "navButtons": [
+      {
+        "direction": "prev",
+        "icon": "/img/sprite.svg#icon-chevron-left",
+        "alt": "Prev"
+      },
+      {
+        "direction": "next",
+        "icon": "/img/sprite.svg#icon-chevron-right",
+        "alt": "Next"
+      }
+    ],
+    "items": [
+      {
+        "img": "exploring-fun",
+        "alt": "Travel Hero UI page",
+        "icon": "/img/sprite.svg#icon-trophy",
+        "iconAlt": "cup-icon",
+        "button": "Go to Product",
+        "title": "Travel Hero",
+        "price": "€29.99",
+        "tags": ["Adventure", "Journey"]
+      },
+      {
+        "img": "caring-hearts",
+        "alt": "Healthcare Pro UI page",
+        "icon": "/img/sprite.svg#icon-trophy",
+        "iconAlt": "cup-icon",
+        "button": "Go to Product",
+        "title": "Healthcare Pro",
+        "price": "€15.99",
+        "tags": ["Medical", "Wellness"]
+      },
+      {
+        "img": "foodish-catering",
+        "alt": "Foodish Delight UI page",
+        "button": "Go to Product",
+        "title": "Foodish Delight",
+        "price": "€31.99",
+        "tags": ["Catering", "Food"]
+      },
+      {
+        "img": "dream-homes",
+        "alt": "Real Estate UI page",
+        "button": "Go to Product",
+        "title": "Real Estate",
+        "price": "€40.99",
+        "tags": ["Modern", "Homes"]
+      }
+    ]
+  },
 
   "pricingSection": {
     "title": "PRICING PLAN",
@@ -222,24 +222,44 @@
       "price": "€14.99",
       "billing": "/Month",
       "features": [
-        { "item": "Enhanced Resource Access" },
-        { "item": "Monthly Credits" },
-        { "item": "Priority Customer Support" },
-        { "item": "Community Features Access" }
+        {
+          "item": "Enhanced Resource Access",
+          "icon": "/img/sprite.svg#icon-check"
+        },
+        { "item": "Monthly Credits", "icon": "/img/sprite.svg#icon-check" },
+        {
+          "item": "Priority Customer Support",
+          "icon": "/img/sprite.svg#icon-check"
+        },
+        {
+          "item": "Community Features Access",
+          "icon": "/img/sprite.svg#icon-check"
+        }
       ],
       "button": {
-        "label": "Subscribe"
+        "label": "Subscribe",
+        "style": "secondary"
       }
     },
     {
       "title": "Plus Membership",
       "price": "€29.99",
       "billing": "/Month",
+      "badge": "BEST SELLER",
       "features": [
-        { "item": "All Standard Benefits" },
-        { "item": "Increased Monthly Credits" },
-        { "item": "Early Access to New Releases" },
-        { "item": "Member-Only Offers" }
+        {
+          "item": "All Standard Benefits",
+          "icon": "/img/sprite.svg#icon-check"
+        },
+        {
+          "item": "Increased Monthly Credits",
+          "icon": "/img/sprite.svg#icon-check"
+        },
+        {
+          "item": "Early Access to New Releases",
+          "icon": "/img/sprite.svg#icon-check"
+        },
+        { "item": "Member-Only Offers", "icon": "/img/sprite.svg#icon-check" }
       ],
       "button": {
         "label": "Subscribe",
@@ -251,13 +271,17 @@
       "price": "€49.99",
       "billing": "/Month",
       "features": [
-        { "item": "All Plus Benefits" },
-        { "item": "Unlimited Downloads" },
-        { "item": "Custom Licensing" },
-        { "item": "Direct Creator Collaboration" }
+        { "item": "All Plus Benefits", "icon": "/img/sprite.svg#icon-check" },
+        { "item": "Unlimited Downloads", "icon": "/img/sprite.svg#icon-check" },
+        { "item": "Custom Licensing", "icon": "/img/sprite.svg#icon-check" },
+        {
+          "item": "Direct Creator Collaboration",
+          "icon": "/img/sprite.svg#icon-check"
+        }
       ],
       "button": {
-        "label": "Subscribe"
+        "label": "Subscribe",
+        "style": "secondary"
       }
     }
   ],

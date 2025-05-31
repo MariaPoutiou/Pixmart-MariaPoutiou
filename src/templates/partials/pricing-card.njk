@@ -1,5 +1,8 @@
 <li class="pricing-list__item">
   <article class="pricing-card">
+    {% if plan.badge %}
+      <div class="pricing-card__badge">{{ plan.badge }}</div>
+    {% endif %}
     <div class="pricing-card__header">
       <h4 class="pricing-card__title">{{ plan.title }}</h4>
       <p class="pricing-card__price">
@@ -7,13 +10,19 @@
         <span class="pricing-card__billing">{{ plan.billing }}</span>
       </p>
     </div>
-    <ul class="pricing-card__list">
-      {% for feature in plan.features %}
-        <li class="pricing-card__list-item">{{ feature.item }}</li>
-      {% endfor %}
-    </ul>
-    <button class="button pricing-card__button button--secondary">
-      {{ plan.button.label }}
-    </button>
+    <div class="pricing-card__wrapper">
+      <ul class="pricing-card__list">
+        {% for feature in plan.features %}
+          <li class="pricing-card__list-item">
+            <svg class="pricing-card__list-icon">
+              <use href="{{ feature.icon }}"></use>
+            </svg>
+            {{ feature.item }}</li>
+        {% endfor %}
+      </ul>
+      <button class="button pricing-card__button button--{{ plan.button.style }}">
+        {{ plan.button.label }}
+      </button>
+    </div>
   </article>
 </li>

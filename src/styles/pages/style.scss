@@ -10,6 +10,7 @@
 @use "../components/product-card";
 @use "../components/categories-card";
 @use "../components/trending-card";
+@use "../components/pricing-card";
 @use "../components/footer-nav";
 
 /* HEADER */
@@ -26,6 +27,9 @@
 
 /* CATEGORIES SECTION */
 @use "../layouts/trending-section";
+
+/* PRICING SECTION */
+@use "../layouts/pricing-section";
 
 /* BLOG SECTION */
 @use "../layouts/blog-section";
