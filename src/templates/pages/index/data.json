@@ -314,6 +314,8 @@
     "title": "Latest Expert",
     "linkText": "Explore All Articles",
     "link": "https://some-url.com/",
+    "icon": "/img/sprite.svg#icon-chevron-right",
+    "alt": "arrow right",
     "cards": [
       {
         "img": "creative-blog-home",

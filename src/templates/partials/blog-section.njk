@@ -1,10 +1,17 @@
 <section class="container blog">
   <div class="blog__header">
     <h2 class="secondary-title blog__title">{{ blogSection.title }}</h2>
-    <a class="blog__link" href="{{ blogSection.link }}">{{ blogSection.linkText }}</a>
+    <div class="blog__link-wrapper">
+      <a class="blog__link" href="{{ blogSection.link }}">{{ blogSection.linkText }}
+        <svg class="blog__link-icon">
+          <use href="{{ blogSection.icon }}" aria-label="{{ blogSection.alt }}"></use>
+        </svg>
+      </a>
+    </div>
   </div>
   <div class="blog__wrapper">
     {% for card in blogSection.cards %}
-      {% include "partials/blog-card.njk" %}</div>
-  {% endfor %}
+      {% include "partials/blog-card.njk" %}
+    {% endfor %}
+  </div>
 </section>
