@@ -314,6 +314,10 @@
         "icon": {
           "src": "/img/sprite.svg#icon-chevron-down",
           "alt": "Toggle FAQ"
+        },
+        "iconOpen": {
+          "src": "/img/sprite.svg#icon-chevron-up",
+          "alt": "Toggle FAQ"
         }
       },
       {

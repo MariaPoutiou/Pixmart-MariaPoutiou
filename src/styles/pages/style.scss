@@ -11,12 +11,15 @@
 @use "../components/categories-card";
 @use "../components/trending-card";
 @use "../components/pricing-card";
+@use "../components/faq-item";
 @use "../components/footer-nav";
 
 /* HEADER */
 @use "../layouts/header";
 
-/* HERO SECTION HOMEPAGE */
+/* HOMEPAGE STARTS HERE */
+
+/* HERO SECTION */
 @use "../layouts/hero-home";
 
 /* PRODUCTS SECTION */
@@ -31,8 +34,13 @@
 /* PRICING SECTION */
 @use "../layouts/pricing-section";
 
+/* FAQ SECTION */
+@use "../layouts/faq-section";
+
 /* BLOG SECTION */
 @use "../layouts/blog-section";
+
+/* HOMEPAGE ENDS HERE */
 
 /* FOOTER */
 @use "../layouts/footer";
