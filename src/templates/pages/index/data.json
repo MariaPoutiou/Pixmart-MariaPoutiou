@@ -838,7 +838,7 @@
   "contactTitleHidden": "Send us a Message",
 
   "contactIntro": {
-    "label": "Contact",
+    "label": "CONTACT",
     "title": "Get in Touch with Us",
     "description": "We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.",
     "buttonText": "Shop Now"
@@ -855,13 +855,17 @@
       "text": "support@pixmart.com"
     },
     {
-      "icon": "/img/sprite.svg#icon-location",
+      "icon": "/img/sprite.svg#icon-clock",
       "iconAlt": "location icon",
       "text": "Monday to Friday: 9 AM - 5 PM EST"
     }
   ],
   "contactMap": {
-    "src": "https://maps.app.goo.gl/gWuCtQNuAMMHF7sJ9"
+    "img": "map",
+    "alt": "Map of the PixMart HQ address: 123 Creative Ave, Design City, 45678",
+    "icon": "/img/sprite.svg#icon-location",
+    "textPrimary": "PixMart HQ",
+    "textSecondary": "123 Creative Ave, Design City, 45678"
   },
 
   "contactForm": {

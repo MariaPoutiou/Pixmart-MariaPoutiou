@@ -13,6 +13,7 @@
 @use "../components/trending-card";
 @use "../components/pricing-card";
 @use "../components/faq-item";
+@use "../components/contact-form";
 @use "../components/footer-nav";
 
 /* HEADER */
@@ -42,6 +43,9 @@
 @use "../layouts/blog-section";
 
 /* HOMEPAGE ENDS HERE */
+
+/* CONTACT PAGE*/
+@use "../layouts/contact-page";
 
 /* FOOTER */
 @use "../layouts/footer";

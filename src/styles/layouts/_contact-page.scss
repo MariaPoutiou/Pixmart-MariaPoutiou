@@ -1,0 +1,100 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.container--contact {
+  background: linear-gradient(
+    180deg,
+    rgba(240, 246, 253, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  @include tablet {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+.contact {
+  &__layout {
+    padding-block: 64px 0;
+  }
+
+  &__intro {
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 62px;
+    margin-block: 0;
+  }
+
+  &__description {
+    font-family: "Libre Franklin", "Arial", "Georgia", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #2a3541d9;
+  }
+
+  &__button {
+    width: 117px;
+    padding-block: 8px;
+    padding-inline: 20px;
+    margin-bottom: 32px;
+  }
+
+  &__info-wrapper {
+    margin-bottom: 48px;
+  }
+
+  &__info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+
+  &__map-wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 314px;
+  }
+
+  &__map-img {
+    object-fit: fill;
+  }
+
+  &__map-wrapper-info {
+    position: absolute;
+    bottom: 60px;
+    left: 2%;
+    background-color: white;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
+  }
+
+  &__map-text-upper {
+    font-weight: 700;
+    margin-block: 12px 0;
+  }
+
+  &__map-text-lower {
+    color: #2a3541d9;
+    margin-block: 0 12px;
+  }
+}
