@@ -2,7 +2,7 @@
   <p class="article__paragraph">{{ articleIntro }}</p>
   {% for section in articleSections %}
     {% if section.title %}
-      <h3 class="article__subtitle">{{ section.title }}</h3>
+      <h2 class="article__subtitle">{{ section.title }}</h2>
     {% endif %}
     {% if section.text %}
       <p class="article__paragraph">{{ section.text }}</p>
@@ -26,7 +26,7 @@
   <figure class="article__quote-wrapper">
       <blockquote class="article__quote">
         <svg class="article__quote-svg">
-          <use href="{{ articleQuote.svg }}" aria-label="{{ articleQuote.svgAlt }}" loading="lazy"></use>
+          <use href="{{ articleQuote.svg }}" aria-label="{{ articleQuote.svgAlt }}"></use>
         </svg>
         {{ articleQuote.text }}
       </blockquote>

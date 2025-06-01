@@ -21,7 +21,9 @@
     <ul class="blog-aside__list">
       {% for item in blogAside.blogCategoriesSection.items %}
         <li class="blog-aside__list-item{% if item.active %} blog-aside__list-item--active{% endif %}">
+          <a class="blog-aside__list-link{% if item.active %} blog-aside__list-link--active{% endif %}" href="{{ item.link }}">
           {{ item.text }}
+          </a>
         </li>
       {% endfor %}
     </ul>

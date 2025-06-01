@@ -1,0 +1,60 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.article {
+  &__paragraph {
+    font-size: 18px;
+    line-height: 26px;
+    color: #2a3541d9;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__img-captions {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__img-description {
+    @include tablet {
+      color: #222222;
+      opacity: 70%;
+    }
+  }
+
+  &__img-link {
+    font-weight: 600;
+    color: #0265dc;
+  }
+
+  &__lower {
+    display: none;
+
+    @include tablet {
+      display: unset;
+    }
+  }
+
+  &__quote-wrapper {
+    display: flex;
+    gap: 16px;
+    margin-inline: 0;
+  }
+
+  &__quote {
+    font-family: "Plus Jakarta Sans", "Arial", "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #0D0D15;
+    margin-inline: 0;
+  }
+}

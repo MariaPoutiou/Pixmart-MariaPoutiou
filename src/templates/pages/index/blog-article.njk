@@ -7,15 +7,15 @@
 {% block content %}
   <!--MAIN STARTS HERE-->
   <!--HERO SECTION-->
-    <article class="container blog-article"> <h1 class="blog-hero__title">
-      {{ blogHero.title }}
-    </h1>
-    <section class="hero-blog">{% include "partials/hero-blog.njk" %}</section>
-    <!--MAIN ARTICLE-->
-    <section class="article">{% include "partials/main-article.njk" %}</section>
+    <article class="container"> 
+      <section class="blog-hero">{% include "partials/hero-blog.njk" %}</section>
+    <div class="blog-layout">
+      <!--MAIN ARTICLE-->
+      <section class="article">{% include "partials/main-article.njk" %}</section>
+      <!--ASIDE SECTIONS-->
+      {% include "partials/aside-blog.njk" %}
+    </div>
   </article>
-  <!--ASIDE SECTIONS-->
-  {% include "partials/aside-blog.njk" %}
   <!--ARTICLE FOOTER-->
   {% include "partials/article-footer.njk" %}
 {% endblock %}

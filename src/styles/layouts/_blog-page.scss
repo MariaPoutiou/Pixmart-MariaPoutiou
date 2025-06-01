@@ -1,0 +1,35 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.blog-hero {
+  &__wrapper {
+    margin-block: 64px;
+  }
+
+  &__label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px;
+    border-radius: 100px;
+    width: 146px;
+    height: 40px;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 52px;
+    line-height: 62px;
+  }
+}
+
+.blog-layout {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 48px;
+
+    @include tablet {
+        flex-direction: row-reverse;
+        gap: 40px;
+    }
+}
