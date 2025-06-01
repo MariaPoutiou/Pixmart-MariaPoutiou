@@ -3,9 +3,7 @@
 
 .trending-card {
   &__img {
-    height: 272px;
-    border-radius: 20px;
-    object-fit: cover;
+    @include product-image;
   }
 
   &__icon-wrapper {
@@ -21,7 +19,7 @@
   }
 
   &__label-icon {
-    color: #F8F7FF;
+    color: #f8f7ff;
   }
 
   &__button {
@@ -36,7 +34,6 @@
   }
 
   &__title {
-    font-weight: 700px;
     font-size: 28px;
     line-height: 36px;
     margin-block: 16px 4px;

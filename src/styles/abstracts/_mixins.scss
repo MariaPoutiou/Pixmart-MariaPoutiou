@@ -58,6 +58,12 @@
   height: 24px;
 }
 
+@mixin product-image {
+  height: 272px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
 @mixin card-info {
   display: flex;
   align-items: center;

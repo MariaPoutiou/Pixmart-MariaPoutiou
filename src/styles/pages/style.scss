@@ -3,7 +3,7 @@
 @use "../abstracts/global";
 
 
-/********** GENERAL COMPONENTS ************/
+/********** COMPONENTS ************/
 @use "../components/general";
 @use "../components/buttons";
 @use "../components/main-nav";
@@ -17,6 +17,8 @@
 @use "../components/article-footer";
 @use "../components/article-footer-card";
 @use "../components/blog-aside";
+@use "../components/catalog-grid";
+@use "../components/catalog-grid-card";
 @use "../components/contact-form";
 @use "../components/footer-nav";
 
@@ -53,6 +55,9 @@
 
 /* BLOG PAGE*/
 @use "../layouts/blog-page";
+
+/* CATALOG PAGE*/
+@use "../layouts/catalog-page";
 
 /* FOOTER */
 @use "../layouts/footer";

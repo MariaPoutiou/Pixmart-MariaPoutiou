@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.catalog-list {
+  padding-inline: 0;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 32px;
+
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    @include desktop {
+      padding-bottom: 7px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:last-child {
+      opacity: 50%;
+    }
+  }
+}

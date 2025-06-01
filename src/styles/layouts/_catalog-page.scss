@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.hero-section {
+
+&--catalog {
+  background-image: url("/sprite/background-gradient.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 288px;
+}
+
+&__catalog-title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 62px;
+    color: #0D0D15;
+    letter-spacing: -0.5px;
+    top: 64px;
+    left: 80px;
+}
+
+&__catalog-highlight {
+    color: #0265DC;
+}
+}

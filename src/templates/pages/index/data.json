@@ -369,11 +369,7 @@
   "heroCatalog": {
     "titleStart": "Explore Top",
     "titleHighlight": "UI Kits",
-    "titleEnd": "Design Assets",
-    "background": {
-      "src": "#",
-      "alt": "#"
-    }
+    "titleEnd": "Design Assets"
   },
 
   "catalogDropdownOptions": [
