@@ -7,12 +7,14 @@
     rgba(240, 246, 253, 1) 50%,
     rgba(255, 255, 255, 0) 100%
   );
+  margin-bottom: 64px;
 
   @include tablet {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    margin-bottom: 120px;
   }
 }
 
@@ -62,7 +64,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
-    margin-bottom: 0;
+    margin-block: 0;
   }
 
   &__icon {
