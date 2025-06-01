@@ -1,9 +1,13 @@
 <section class="catalog-filter__section">
   <h3 class="catalog-filter__title">{{ catalogFilterCategories.title }}</h3>
-  {% for item in catalogFilterCategories.items %}
-    <div class="catalog-filter__group">
-      <input class="catalog-filter__input" type="checkbox" name="categories" value="{{ item.value }}" id="{{ item.id }}">
-        <label class="catalog-filter__label" for="{{ item.id }}">{{ item.label }}</label>
-      </div>
-    {% endfor %}
+  <ul class="catalog-filter__list">
+    {% for item in catalogFilterCategories.items %}
+      <li class="catalog-filter__item">
+        <div class="catalog-filter__group">
+          <input class="catalog-filter__input" type="checkbox" name="categories" value="{{ item.value }}" id="{{ item.id }}">
+            <label class="catalog-filter__label" for="{{ item.id }}">{{ item.label }}</label>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
   </section>
