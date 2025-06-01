@@ -4,8 +4,8 @@
     {% for style in catalogFilterStyles.items %}
       <li class="catalog-filter__item">
         <div class="catalog-filter__group">
-          <input class="visually-hidden catalog-filter__input" type="checkbox" name="style" value="{{ style.value }}" id="{{ style.id }}">
-            <label class="catalog-filter__label" for="{{ style.id }}">{{ style.label }}</label>
+          <input class="visually-hidden toggle catalog-filter__input" type="checkbox" name="style" value="{{ style.value }}" id="{{ style.id }}">
+            <label class="input-toggle catalog-filter__label" for="{{ style.id }}">{{ style.label }}</label>
           </div>
         </li>
       {% endfor %}
