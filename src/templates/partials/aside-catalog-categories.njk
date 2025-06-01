@@ -4,7 +4,7 @@
     {% for item in catalogFilterCategories.items %}
       <li class="catalog-filter__item">
         <div class="catalog-filter__group">
-          <input class="catalog-filter__input" type="checkbox" name="categories" value="{{ item.value }}" id="{{ item.id }}">
+          <input class="visually-hidden catalog-filter__input" type="checkbox" name="categories" value="{{ item.value }}" id="{{ item.id }}">
             <label class="catalog-filter__label" for="{{ item.id }}">{{ item.label }}</label>
           </div>
         </li>

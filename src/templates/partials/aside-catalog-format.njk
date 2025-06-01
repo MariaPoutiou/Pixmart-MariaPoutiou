@@ -4,7 +4,7 @@
   {% for format in catalogFilterFormats.items %}
   <li class="catalog-filter__item">
     <div class="catalog-filter__group">
-      <input class="catalog-filter__input" type="radio" name="format_type" value="{{ format.value }}" id="{{ format.id }}">
+      <input class="visually-hidden catalog-filter__input" type="radio" name="format_type" value="{{ format.value }}" id="{{ format.id }}">
         <label class="catalog-filter__label" for="{{ format.id }}">{{ format.label }}</label>
       </div>
       </li>
