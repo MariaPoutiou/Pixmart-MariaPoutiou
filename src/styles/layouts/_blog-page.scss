@@ -1,9 +1,17 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.blog-page {
+  background: linear-gradient(
+    180deg,
+    rgba(240, 246, 253, 1) 10%,
+    rgba(0, 0, 0, 0) 80%
+  );
+}
+
 .blog-hero {
   &__wrapper {
-    margin-block: 64px;
+    padding-block: 64px;
   }
 
   &__label {
@@ -20,16 +28,28 @@
   &__title {
     font-size: 52px;
     line-height: 62px;
+    margin-block: 0;
+  }
+
+  &__img-wrapper {
+    margin-bottom: 48px;
+  }
+
+  &__img img {
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
 .blog-layout {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 48px;
+  display: flex;
+  position: relative;
+  flex-direction: column-reverse;
+  gap: 48px;
 
-    @include tablet {
-        flex-direction: row-reverse;
-        gap: 40px;
-    }
+  @include tablet {
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
 }

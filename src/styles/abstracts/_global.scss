@@ -17,6 +17,7 @@ body {
 h1,h2,h3,h4,h5 {
   font-family: "Plus Jakarta Sans", "Arial", "Georgia", sans-serif;
   font-weight: 700;
+  color: #0D0D15;
 }
 
 ul {
@@ -46,10 +47,6 @@ a {
 .svg {
   @include svg-size;
 }
-
-/**svg {
-  display: none;
-} **/
 
 .container {
   width: 100%;

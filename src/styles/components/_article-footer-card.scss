@@ -1,0 +1,51 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.article-card {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 30px rgba(29, 57, 95, 0.05);
+  position: relative;
+  height: 426px;
+
+  &__tag {
+    width: 64px;
+    height: 40px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    position: absolute;
+    left: 36px;
+    top: 270px;
+  }
+
+  &__content {
+    padding-inline: 16px;
+    margin-top: 32px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &__date {
+    color: #2a3541d9;
+  }
+
+  &__img-wrapper {
+    height: 272px; 
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  &__img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+}

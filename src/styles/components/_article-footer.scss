@@ -1,0 +1,73 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.related-articles {
+  padding-block: 0 32px;
+  width: 100%;
+  background-color: #f0f6fd;
+
+  @include tablet {
+    padding-block: 0 40px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    margin-block-end: 16px;
+
+    @include tablet {
+      margin-block-end: 32px;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    color: #0265dc;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    color: #0265dc;
+  }
+
+  &__list {
+    display: grid;
+    gap: 24px;
+    grid-template-rows: 1fr;
+    padding-inline: 0;
+    margin: 0;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.related-articles__item:last-child {
+  @include tablet {
+    grid-column: 1 / -1;
+  }
+
+  @include desktop {
+    grid-column: unset;
+  }
+}
