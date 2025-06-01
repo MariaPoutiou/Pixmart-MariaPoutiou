@@ -14,11 +14,12 @@
   }
 
   &__img-captions {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @include tablet {
-      display: flex;
-      justify-content: space-between;
+      flex-direction: row;
       align-items: center;
     }
   }
@@ -35,16 +36,9 @@
     color: #0265dc;
   }
 
-  &__lower {
-    display: none;
-
-    @include tablet {
-      display: unset;
-    }
-  }
-
   &__quote-wrapper {
     display: flex;
+    align-items: flex-start;
     gap: 16px;
     margin-inline: 0;
   }
@@ -54,7 +48,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    color: #0D0D15;
+    color: #0d0d15;
     margin-inline: 0;
   }
 }
