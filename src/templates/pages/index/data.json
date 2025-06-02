@@ -402,13 +402,11 @@
   "catalogTags": [
     {
       "label": "UI Kit",
-      "icon": "/img/sprite.svg#icon-close",
-      "alt": "Remove tag"
+      "icon": "/img/sprite.svg#icon-close"
     },
     {
       "label": "UI Kit",
-      "icon": "/img/sprite.svg#icon-close",
-      "alt": "Remove tag"
+      "icon": "/img/sprite.svg#icon-close"
     }
   ],
 

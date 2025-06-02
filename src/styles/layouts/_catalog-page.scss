@@ -2,32 +2,126 @@
 @use "../abstracts/mixins" as *;
 
 .hero-section {
+  &--catalog {
+    background-image: url("/sprite/background-gradient.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 288px;
+  }
 
-&--catalog {
-  background-image: url("/sprite/background-gradient.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 288px;
-}
-
-&__catalog-title {
+  &__catalog-title {
     font-weight: 700;
     font-size: 52px;
     line-height: 62px;
-    color: #0D0D15;
+    color: #0d0d15;
     letter-spacing: -0.5px;
     top: 64px;
     left: 80px;
-}
+  }
 
-&__catalog-highlight {
-    color: #0265DC;
-}
+  &__catalog-highlight {
+    color: #0265dc;
+  }
 }
 
 .catalog__grid-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.catalog {
+  &-header {
     display: flex;
-    justify-content: center;
-    margin-top: 48px;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  &-tools {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &-tools__upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  &-tools__select {
+    height: 40px;
+    flex: 1;
+    padding-block: 8px;
+    padding-inline: 20px;
+
+    @include tablet {
+        width: 156px;
+    }
+  }
+
+  &-tools__filter-icon {
+    color: #f8f7ff;
+  }
+
+  &-tools__filter {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &-tools__lower {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+  }
+
+  &-meta__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &-meta {
+    display: inline-block;
+  }
+
+  &-meta__primary {
+    margin-right: 8px;
+  }
+
+  &-meta__icon-primary {
+    color: #f8f7ff;
+  }
+
+  &-tags {
+    display: flex;
+    gap: 8px;
+  }
+
+  &-tag__item {
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    gap: 8px;
+    height: 32px;
+    width: auto;
+    padding-block: 6px;
+    padding-inline: 12px;
+  }
+
+  &-tag__icon {
+    width: 16px;
+    height: 16px;
+  }
 }
