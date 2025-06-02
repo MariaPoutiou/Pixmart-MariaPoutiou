@@ -7,11 +7,11 @@
     "partials/aside-catalog-style.njk" %}
     {% include
     "partials/aside-catalog-price.njk" %}
-    <button>
-      <svg class="catalog-filter__button">
-        <use class="catalog-filter__button-icon" href="{{ catalogFormButton.icon }}" loading="lazy"></use>
+    <button class="button catalog-filter__button button--secondary">
+      <svg class="svg catalog-filter__button-icon">
+        <use href="{{ catalogFormButton.icon }}"></use>
       </svg>
-      {{ catalogFormButton }}
+      {{ catalogFormButton.text }}
     </button>
   </form>
 </aside>
