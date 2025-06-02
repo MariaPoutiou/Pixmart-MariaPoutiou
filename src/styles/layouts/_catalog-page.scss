@@ -101,12 +101,6 @@
     color: #f8f7ff;
   }
 
-  &-tools__filter {
-    @include tablet {
-      display: none;
-    }
-  }
-
   &-tools__lower {
     display: flex;
     gap: 24px;

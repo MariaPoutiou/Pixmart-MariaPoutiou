@@ -29,6 +29,12 @@ img {
   height: auto;
 }
 
+button:focus,
+a:focus,
+input:focus {
+  outline: none;
+}
+
 a {
   text-decoration: none;
 }

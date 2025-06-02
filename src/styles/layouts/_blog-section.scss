@@ -14,6 +14,7 @@
     font-weight: 600;
     line-height: 24px;
     color: #0265dc;
+    @include link-style;
   }
 
   &__link-icon {

@@ -7,16 +7,20 @@
 
 .button--primary {
     @include button-primary;
+    @include button-primary-style;
 }
 
 .button--secondary {
     @include button-secondary;
+    @include button-secondary-style;
 }
 
 .button--primary-small {
     @include button-small-primary;
+    @include button-primary-style;
 }
 
 .button--secondary-small {
     @include button-small-secondary;
+    @include button-secondary-style;
 }

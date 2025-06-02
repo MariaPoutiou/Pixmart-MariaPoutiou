@@ -62,8 +62,9 @@
   }
 
   &__social-item {
-    width: 64px;
     padding: 20px;
+    align-items: unset;
+    width: 64px;
   }
 
   &__newsletter {
