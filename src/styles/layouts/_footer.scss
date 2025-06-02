@@ -65,6 +65,8 @@
     padding: 20px;
     align-items: unset;
     width: 64px;
+
+    @include button-secondary-style;
   }
 
   &__newsletter {
@@ -104,6 +106,8 @@
     &::placeholder {
       padding-left: 20px;
     }
+
+    @include input-style;
   }
 
   &__lower {

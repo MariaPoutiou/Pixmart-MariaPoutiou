@@ -60,6 +60,8 @@
       display: none;
     }
 
+    @include input-style;
+
     @include tablet {
       border: 1px solid #1d36532b;
       width: 240px;

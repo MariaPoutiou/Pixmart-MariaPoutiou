@@ -6,6 +6,25 @@
   height: 64px;
 }
 
+@mixin input-style {
+  &:hover {
+    border: 2px solid #3892f3;
+  }
+
+  &:invalid {
+    border: 1px solid #ea3829;
+  }
+
+  &:focus,
+  &:focus-visible {
+    border: 3px solid #3892f3;
+  }
+
+  &:disabled {
+    background-color: #1d36532b;
+  }
+}
+
 @mixin button-base {
   font-weight: 600;
   font-size: 18px;
@@ -83,7 +102,7 @@
   vertical-align: middle;
 }
 
-@mixin link-style {
+@mixin link-style($has-focus: true) {
   text-decoration: none;
   box-sizing: border-box;
   transition: box-shadow 0.2s ease;
@@ -91,11 +110,13 @@
   &:hover {
     color: #3892f3;
   }
-
-  &:focus, &:focus-visible {
-    outline: none;
-    box-shadow: 0 0 0 4px #3892f3;
-    border-radius: 5px;
+  @if $has-focus {
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 4px #3892f3;
+      border-radius: 5px;
+    }
   }
 
   &:visited {
@@ -113,7 +134,7 @@
     border-color: #3892f3;
   }
 
-  &:focus, &:focus-visible {
+  &:focus-visible {
     outline: none;
     box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.6);
   }
@@ -137,11 +158,11 @@
     background-color: #294d7517;
   }
 
-  &:focus, &:focus-visible {
+  &:focus-visible {
     outline: none;
-    background-color: #294D7517;
-    box-shadow: 0 0 0 4px #3892F3;
-    border-color: #294D7517;
+    background-color: #294d7517;
+    box-shadow: 0 0 0 4px #3892f3;
+    border-color: #294d7517;
   }
 
   &:active {

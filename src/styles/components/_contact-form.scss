@@ -32,6 +32,8 @@
     &::placeholder {
       padding-left: 20px;
     }
+
+    @include input-style;
   }
 
   &__textarea {
