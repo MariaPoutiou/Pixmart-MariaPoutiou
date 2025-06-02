@@ -73,7 +73,11 @@
 
   &__action {
     &:first-child {
-        margin-right: 8px;
+      margin-right: 8px;
     }
   }
+}
+
+.catalog-list__item:hover .catalog-card__price {
+  color: #0265dc;
 }

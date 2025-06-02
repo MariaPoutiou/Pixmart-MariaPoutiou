@@ -97,6 +97,11 @@
     }
   }
 
+  &-tools__info {
+    margin-block: 8px;
+    white-space: nowrap;
+  }
+
   &-tools__filter-icon {
     color: #f8f7ff;
   }
@@ -115,7 +120,7 @@
   }
 
   &-meta {
-    display: inline-block;
+    display: flex;
   }
 
   &-meta__primary {
