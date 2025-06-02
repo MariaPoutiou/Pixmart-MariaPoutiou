@@ -1,8 +1,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-  .categories-card {
-
+.categories-card {
   &__svg {
     width: 48px;
     height: 48px;

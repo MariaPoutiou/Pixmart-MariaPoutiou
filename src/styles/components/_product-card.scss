@@ -10,6 +10,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+      background-color: #0265DC;
+    }
   }
 
   &__title {
@@ -22,5 +26,9 @@
   &__img {
     width: 150px;
     height: 150px;
+
+    &:hover {
+      color: #E0F2FF;
+    }
   }
 }

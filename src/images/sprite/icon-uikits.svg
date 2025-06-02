@@ -1,4 +1,4 @@
-<svg viewBox="0 0 151 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 151 150" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_9445_5136)">
 <mask id="mask0_9445_5136" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="151" height="150">
 <path d="M0.199219 1.52588e-05H150.199V150H0.199219V1.52588e-05Z" fill="white"/>
@@ -24,7 +24,7 @@
 </g>
 <defs>
 <clipPath id="clip0_9445_5136">
-<rect width="150" height="150" fill="white" transform="translate(0.199219)"/>
+<rect width="150" height="150" fill="currentColor" transform="translate(0.199219)"/>
 </clipPath>
 </defs>
 </svg>
