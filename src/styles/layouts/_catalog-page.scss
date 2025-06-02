@@ -2,18 +2,38 @@
 @use "../abstracts/mixins" as *;
 
 .catalog {
-    flex: 1;
-}
+  flex: 1;
+  position: relative;
 
+  &__grid-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    position: relative;
+    z-index: 2;
+    overflow: visible;
 
-.catalog-layout {
+    &::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(0deg,rgba(255, 255, 255, 1) 35%, rgba(0, 0, 0, 0) 130%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  }
+
+  &-layout {
     display: flex;
     flex-direction: row-reverse;
     gap: 24px;
     padding-block: 0;
     margin-bottom: 120px;
+  }
 }
-
 
 .hero-section {
   &--catalog {
@@ -37,12 +57,6 @@
   &__catalog-highlight {
     color: #0265dc;
   }
-}
-
-.catalog__grid-button {
-  display: flex;
-  justify-content: center;
-  margin-top: 48px;
 }
 
 .catalog {
@@ -79,7 +93,7 @@
     padding-inline: 20px;
 
     @include tablet {
-        width: 156px;
+      width: 156px;
     }
   }
 
@@ -142,11 +156,9 @@
   &-filter__button {
     font-size: 16px;
     line-height: 24px;
-}
+  }
 
-&-filter__button-icon {
+  &-filter__button-icon {
     margin-right: 8px;
+  }
 }
-}
-
-
