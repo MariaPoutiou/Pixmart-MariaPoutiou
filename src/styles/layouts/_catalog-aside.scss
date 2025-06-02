@@ -2,6 +2,8 @@
 @use "../abstracts/mixins" as *;
 
 .catalog-filter {
+    width: 100%;
+    max-width: 217px;
 
 &__form {
   display: flex;
