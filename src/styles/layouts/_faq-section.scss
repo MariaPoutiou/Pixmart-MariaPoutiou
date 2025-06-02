@@ -20,9 +20,11 @@ details summary::-webkit-details-marker {
 
   &__header {
     margin-bottom: 64px;
+    width: 100%;
 
     @include tablet {
-        margin-bottom: 0;
+      margin-bottom: 0;
+      width: 50%;
     }
   }
 
@@ -38,13 +40,19 @@ details summary::-webkit-details-marker {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
+
+    @include tablet {
+    width: 100%;
+    max-width: 50%;
   }
+}
 
   &__button {
     width: 100%;
 
     @include tablet {
-        width: 223px;
+      width: 223px;
     }
   }
 }

@@ -6,15 +6,11 @@
     padding: 24px;
     border-radius: 10px;
     box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
-    width: 100%;
-    min-width: 408px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
 
-    @include tablet {
-      min-width: 412px;
-    }
-
-    @include desktop {
-      min-width: 620px;
+    &:hover {
+    border-color: #0265dc;
     }
   }
 
@@ -45,4 +41,8 @@
 
 details[open] .faq__icon-img {
   transform: rotate(180deg);
+}
+
+details.faq__item {
+  max-width: 100%;
 }
