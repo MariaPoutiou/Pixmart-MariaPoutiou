@@ -2,7 +2,7 @@
   {% for item in catalog %}
     <li class="catalog-list__item">
       <article class="catalog-card">
-        <div class="catalog-card__img-wrapper">
+        <div class="catalog-card__img-wrapper hover-wrapper">
           <picture class="catalog-card__img">
             <source srcset="/img/{{ item.image }}-1x.avif 1x, /img/{{ item.image }}-2x.avif 2x" type="image/avif"/>
             <source srcset="/img/{{ item.image }}-1x.webp 1x, /img/{{ item.image }}-2x.webp 2x" type="image/webp"/>
@@ -12,6 +12,11 @@
             <div class="button catalog-card__label catalog-card__label--{{ item.stateClass }}">
               <p class="catalog-card__state">{{ item.state }}</p>
             </div>
+          {% endif %}
+          {% if item.state == "New" or item.state == "Popular" %}
+            <button class="button catalog-grid__button card-button button--primary">
+              {{ item.button }}
+            </button>
           {% endif %}
         </div>
         <h2 class="catalog-card__title">{{ item.title }}</h2>
@@ -25,7 +30,8 @@
             <p class="catalog-card__price">{{ item.price }}</p>
             <div class="catalog-card__actions">
               {% for action in item.actions %}
-                <button class="button catalog-card__action{% if action.modifier %} catalog-card__action--{{ action.modifier }} {{ action.modifierBtn }}{% endif %}">
+                <button class="button catalog-card__action{% if action.modifier %} catalog-card__action--{{ action.modifier }} {{
+                    action.modifierBtn }}{% endif %}">
                   <svg class="svg catalog-card__action-icon">
                     <use href="{{ action.icon }}" aria-label="{{ action.icon }}" loading="lazy"></use>
                   </svg>

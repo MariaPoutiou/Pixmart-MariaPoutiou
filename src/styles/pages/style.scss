@@ -7,6 +7,7 @@
 @use "../components/general";
 @use "../components/buttons";
 @use "../components/inputs";
+@use "../components/card-hover";
 @use "../components/main-nav";
 @use "../components/hero-home-imgs";
 @use "../components/product-card";
@@ -25,8 +26,6 @@
 
 /* HEADER */
 @use "../layouts/header";
-
-/* HOMEPAGE STARTS HERE */
 
 /* HERO SECTION */
 @use "../layouts/hero-home";
@@ -48,8 +47,6 @@
 
 /* BLOG SECTION */
 @use "../layouts/blog-section";
-
-/* HOMEPAGE ENDS HERE */
 
 /* CONTACT PAGE*/
 @use "../layouts/contact-page";

@@ -426,6 +426,7 @@
       "price": "€20.99",
       "image": "career-success",
       "alt": "UI of Job search website with job listings and search filters",
+      "button": "Go to Product",
       "state": "New",
       "stateClass": "new",
       "actions": [
@@ -449,6 +450,7 @@
       "price": "€45.99",
       "image": "dream-homes",
       "alt": "UI of Real Estate website with house images and newsletter button",
+      "button": "Go to Product",
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
@@ -472,6 +474,7 @@
       "price": "€15.99",
       "image": "foodish-catering",
       "alt": "UI of catering website with fruit images and call to action button",
+      "button": "Go to Product",
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
@@ -495,6 +498,7 @@
       "price": "€19.99",
       "image": "caring-hearts",
       "alt": "UI of healthcare website with doctor appointment details and service highlights",
+      "button": "Go to Product",
       "state": "New",
       "stateClass": "new",
       "actions": [
@@ -536,6 +540,7 @@
       "price": "€25.99",
       "image": "banking-redefined",
       "alt": "UI of banking website with financial stats, call-to-action buttons and user ratings",
+      "button": "Go to Product",
       "state": "New",
       "stateClass": "new",
       "actions": [
@@ -559,6 +564,7 @@
       "price": "€41.99",
       "image": "exploring-fun",
       "alt": "UI of travel agency website with call-to-action buttons and client testimonials",
+      "button": "Go to Product",
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
@@ -582,6 +588,7 @@
       "price": "€15.99",
       "image": "admin-dashboard",
       "alt": "E-commerce admin dashboard showing sales, revenue analytics, and user activity metrics",
+      "button": "Go to Product",
       "state": "Popular",
       "stateClass": "popular",
       "actions": [
@@ -605,6 +612,7 @@
       "price": "€10.99",
       "image": "analytical-dashboard",
       "alt": "School admin dashboard displaying student data, attendance, earnings, and teacher messages",
+      "button": "Go to Product",
       "state": "New",
       "stateClass": "new",
       "actions": [
@@ -662,7 +670,7 @@
       { "value": "others", "label": "Others", "id": "others1" },
       { "value": "others", "label": "Others", "id": "others2" }
     ],
-    "icon":"/img/sprite.svg#icon-check"
+    "icon": "/img/sprite.svg#icon-check"
   },
 
   "catalogFilterFormats": {
@@ -729,7 +737,7 @@
       "text": "The choice of typeface is foundational in setting the tone of your design. Serif fonts, with their classic appeal, lend a touch of elegance and formality, making them ideal for print media and official documents. Sans-serif fonts, on the other hand, project a modern and clean look, perfect for digital platforms. When selecting a typeface, consider the message you wish to convey and the medium through which it will be communicated."
     },
     {
-      "title": "2. Create a Typographic Hierarchy", 
+      "title": "2. Create a Typographic Hierarchy",
       "text": "A well-defined typographic hierarchy organizes information, making it easier for readers to navigate through the content. Use different font sizes, weights, and styles to differentiate between headings, subheadings, and body text. This hierarchy not only improves readability but also adds visual interest to your next future design."
     },
     {
@@ -889,10 +897,10 @@
     "selectOptions": ["General Inquiry", "Support", "Billing"],
     "textareaLabel": "Message",
     "textareaPlaceholder": "Enter your message ...",
-    "checkboxes": [
-      "Subscribe me to Newsletter",
-      "I have read the User & Privacy Policy"
-    ],
+  "checkboxes": [
+    { "text": "Subscribe me to Newsletter", "position": "upper" },
+    { "text": "I have read the User & Privacy Policy", "position": "lower", "required": true }
+  ],
     "buttonText": "Send Message"
   },
 

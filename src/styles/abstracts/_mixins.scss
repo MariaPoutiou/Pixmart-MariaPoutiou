@@ -82,6 +82,7 @@
   height: 272px;
   border-radius: 20px;
   object-fit: cover;
+  position: relative;
 }
 
 @mixin card-info {
