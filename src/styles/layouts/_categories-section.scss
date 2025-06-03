@@ -15,10 +15,6 @@
 
   &__header {
     width: 100%;
-
-    @include tablet {
-      width: 50%;
-    }
   }
 
   &__description {
@@ -45,8 +41,8 @@
     width: 100%;
     overflow: hidden;
 
-    @include desktop {
-      min-width: 608px;
+    @include tablet {
+      min-width: 50%;
     }
   }
 
