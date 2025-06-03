@@ -5,6 +5,7 @@
   &__list {
     display: flex;
     flex-direction: column;
+    padding-inline: 0;
     gap: 8px;
     display: none;
 

@@ -2,11 +2,14 @@
 @use "../abstracts/mixins" as *;
 
 .header {
-  padding-block: 24px;
+  height: 92px;
+  display: flex;
+  align-items: center;
 
   &__menu-wrapper {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 
   &__nav {
@@ -19,6 +22,10 @@
     flex-direction: row;
     gap: 16px;
     align-items: center;
+
+    @include tablet {
+      gap: 0;
+    }
   }
 
   &__burger-btn {
