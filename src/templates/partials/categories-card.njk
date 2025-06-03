@@ -3,10 +3,12 @@
     <svg class="categories-card__svg">
       <use href="{{ item.svg }}" aria-label="{{ item.alt }}" loading="lazy"></use>
     </svg>
-    <h4 class="categories-card__title">{{ item.title }}</h4>
     <div class="categories-card__info">
+    <h4 class="categories-card__title">{{ item.title }}</h4>
+    <div class='categories-card__meta'>
     <p class="categories-card__description">{{ item.description }}</p>
     <p class="categories-card__label">{{ item.label }}</p>
+    </div>
     </div>
   </article>
 </li>

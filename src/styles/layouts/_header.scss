@@ -23,14 +23,13 @@
 
   &__burger-btn {
     @include button-base;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @include tablet {
       display: none;
     }
-  }
-
-  &__burger-img {
-    border-radius: 2px;
   }
 
   &__logo-img {

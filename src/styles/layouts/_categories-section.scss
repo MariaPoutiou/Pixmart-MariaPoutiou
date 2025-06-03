@@ -10,13 +10,14 @@
   @include tablet {
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__header {
-    min-width: 408px;
+    width: 100%;
 
-    @include desktop {
-      height: 304px;
+    @include tablet {
+      width: 50%;
     }
   }
 
@@ -42,12 +43,7 @@
     display: flex;
     gap: 20px;
     width: 100%;
-    min-width: 408px;
-
-    @include tablet {
-      width: 50%;
-      min-width: 440px;
-    }
+    overflow: hidden;
 
     @include desktop {
       min-width: 608px;
@@ -59,7 +55,25 @@
     flex-direction: column;
     gap: 20px;
     height: 460px;
+    width: 50%;
     padding-inline: 0;
+    margin-block: 0 100px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 400px;
+      height: 60px;
+      width: 100%;
+      background: linear-gradient(
+        180deg,
+        rgba(240, 246, 253, 1) 40%,
+        rgba(255, 255, 255, 0.6) 100%
+      );
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
   }
 
   &__list-right {
@@ -67,16 +81,32 @@
     flex-direction: column;
     gap: 20px;
     height: 460px;
+    width: 50%;
     padding-inline: 0;
+    margin-block: 100px 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      left: 0;
+      height: 60px;
+      width: 100%;
+      background: linear-gradient(
+        0deg,
+        rgba(240, 246, 253, 1) 40%,
+        rgba(255, 255, 255, 0.6) 100%
+      );
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
   }
 
   &__list-item {
     background-color: #f4f7fa;
-    padding: 24px;
     border-radius: 20px;
-    width: 100%;
     height: 180px;
-    min-width: 194px;
 
     @include tablet {
       min-width: 210px;
@@ -87,3 +117,26 @@
     }
   }
 }
+
+.categories__list-item:hover .categories-card {
+  background-color: #0265dc;
+}
+
+.categories__list-item:hover .categories-card__title {
+  color: #F8F7FF;
+}
+
+.categories__list-item:hover .categories-card__description {
+  color: #EFF5FAD1;
+}
+
+.categories__list-item:hover .categories-card__label {
+  color: #EFF5FAD1;
+}
+
+.categories__list-item:hover .categories-card__img {
+  color: #FFFFFF;
+}
+
+
+

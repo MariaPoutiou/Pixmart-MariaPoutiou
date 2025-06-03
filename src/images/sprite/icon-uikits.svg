@@ -1,7 +1,7 @@
 <svg viewBox="0 0 151 150" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_9445_5136)">
 <mask id="mask0_9445_5136" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="151" height="150">
-<path d="M0.199219 1.52588e-05H150.199V150H0.199219V1.52588e-05Z" fill="white"/>
+<path d="M0.199219 1.52588e-05H150.199V150H0.199219V1.52588e-05Z" fill="currentColor"/>
 </mask>
 <g mask="url(#mask0_9445_5136)">
 <path d="M42.4733 143.038H100.315C101.112 143.038 101.777 142.382 101.777 141.576V138.146C101.777 135.447 99.568 133.246 96.877 133.246H45.9031C43.2125 133.246 41.0117 135.447 41.0117 138.146V141.576C41.0117 142.382 41.6677 143.038 42.4733 143.038Z" stroke="#0265DC" stroke-width="3.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
