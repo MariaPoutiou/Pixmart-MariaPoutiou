@@ -16,6 +16,11 @@
     @include tablet {
       overflow-x: unset;
     }
+
+    @include desktop {
+      gap: 32px;
+
+    }
   }
 
   &__list-item {
