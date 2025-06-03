@@ -68,25 +68,32 @@
   }
 
   &__icon {
-    color: #0265DC;
+    color: #0265dc;
+  }
+
+  &__map {
+    height: 314px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
   }
 
   &__map-wrapper {
     position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    height: 314px;
-    margin-bottom: 24px;
   }
 
-  &__map-img {
-    object-fit: fill;
+  &__map-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 75%;
   }
 
   &__map-wrapper-info {
     position: absolute;
-    bottom: 60px;
-    left: 2%;
+    bottom: 16px;
+    right: 16px;
     background-color: white;
     display: flex;
     gap: 12px;
@@ -107,6 +114,6 @@
   }
 
   &__map-icon {
-    color: #0265DC;
+    color: #0265dc;
   }
 }
