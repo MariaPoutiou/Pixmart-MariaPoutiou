@@ -69,6 +69,8 @@
 
   &__list-item {
     margin-bottom: 32px;
+    display: flex;
+    gap: 16px;
 
     &:last-child {
       margin-bottom: 0;
@@ -76,10 +78,7 @@
   }
 
   &__list-icon {
-    height: 12px;
-    width: 12px;
     color: #0265dc;
-    margin-right: 4px;
   }
 
   &__button {
