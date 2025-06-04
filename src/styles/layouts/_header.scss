@@ -28,6 +28,14 @@
     }
   }
 
+  &__burger-img {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   &__burger-btn {
     @include button-base;
     display: flex;
