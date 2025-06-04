@@ -1,17 +1,20 @@
 <section class="catalog-filter__section">
   <h3 class="catalog-filter__title">{{ catalogFilterCategories.title }}</h3>
-  <ul class="catalog-filter__list">
-    {% for item in catalogFilterCategories.items %}
-      <li class="catalog-filter__item">
-        <div class="catalog-filter__group">
-          <input class="visually-hidden checkbox catalog-filter__input" type="checkbox" name="categories" value="{{ item.value }}" id="{{ item.id }}">
-            <label class="input-checkbox catalog-filter__label" for="{{ item.id }}">{{ item.label }}
-              <svg class="catalog-filter__label-icon">
-                <use href="{{ catalogFilterCategories.icon }}"></use>
-              </svg>
-            </label>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
+  <fieldset class="catalog-filter__fieldset">
+    <legend class="visually-hidden catalog-filter__legend">{{ catalogFilterCategories.title }}</legend>
+    <ul class="catalog-filter__list">
+      {% for item in catalogFilterCategories.items %}
+        <li class="catalog-filter__item">
+          <div class="catalog-filter__group">
+            <input class="visually-hidden checkbox catalog-filter__input" type="checkbox" name="categories" value="{{ item.value }}" id="{{ item.id }}">
+              <label class="input-checkbox catalog-filter__label" for="{{ item.id }}">{{ item.label }}
+                <svg class="catalog-filter__label-icon">
+                  <use href="{{ catalogFilterCategories.icon }}"></use>
+                </svg>
+              </label>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </fieldset>
   </section>

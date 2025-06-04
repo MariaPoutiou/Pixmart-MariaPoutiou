@@ -2,11 +2,14 @@
   <div class="catalog-tools">
     <div class="catalog-tools__upper">
       <div class="catalog-tools__select-wrapper">
+        <fieldset class="catalog-tools__fieldset">
+          <legend class="visually-hidden catalog-tools__legend">Select Filter</legend>
       <select class="button catalog-tools__select button--secondary">
         {% for option in catalogDropdownOptions %}
           <option value="{{ option }}">{{ option }}</option>
         {% endfor %}
       </select>
+      </fieldset>
             <svg class="svg catalog-tools__select-icon">
               <use href="{{ catalogDropdownIcon }}"></use>
             </svg>
