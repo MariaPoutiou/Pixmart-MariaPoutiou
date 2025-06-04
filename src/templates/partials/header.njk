@@ -1,49 +1,51 @@
 <header class="container header">
-
   <div class="header__menu-wrapper">
-
     <div class="header__nav">
       <div class="header__burger">
-      <div class="header__burger-wrapper">
-        <button class="button header__burger-btn button--primary-small">
-          <svg class="header__burger-img">
-            <use href="{{ header.burgerImg }}"></use>
-          </svg>
-        </button>
+        <div class="header__burger-wrapper">
+          <button class="button header__burger-btn button--primary-small">
+            <svg class="header__burger-img">
+              <use href="{{ header.burgerImg }}"></use>
+            </svg>
+          </button>
+        </div>
+        {% if page == "about" %}
+          <div class="header__logo">
+            <svg class="header__logo-img">
+              <use href="{{ header.logoImgFull }}" aria-label="{{ header.logoAlt }}"></use>
+            </svg>
+          </div>
+        {% else %}
+          <div class="header__logo">
+            <a class="header__logo-image" href="{{ header.logoLink }}">
+              <svg class="header__logo-img">
+                <use href="{{ header.logoImgFull }}" aria-label="{{ header.logoAlt }}"></use>
+              </svg>
+            </a>
+          </div>
+        {% endif %}
       </div>
-      <div class="header__logo">
-        <a class="header__logo-image" href="{{ header.logoLink }}">
-          <svg class="header__logo-img">
-            <use href="{{ header.logoImgFull }}" aria-label=" {{ header.logoAlt }}"></use>
-          </svg>
-        </a>
-      </div>
-      </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        {% for item in header.nav %}
-          <li class="main-nav__list-item">
-            <a class="main-nav__list-link" href="{{ item.link }}">{{ item.text }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </nav>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          {% for item in header.nav %}
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-link" href="{{ item.link }}">{{ item.text }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
     </div>
-
     <div class="header-actions">
       <form class="header-search" method="get">
         <svg class="header-search__img">
           <use href="{{ headerSearch.img }}"></use>
         </svg>
-        <input class="header-search__input" type="search" name="search" maxlength="30" placeholder="{{ headerSearch.headerPlaceholder }}" autocomplete="on">
-        </form>
+        <input class="header-search__input" type="search" name="search" maxlength="30" placeholder="{{ headerSearch.headerPlaceholder }}" autocomplete="on"></form>
         <button class="button header__button button--primary-small">
           <svg class="svg header__button-img">
             <use href="{{ headerButton.img }}" aria-label="{{ headerButton.alt }}"></use>
           </svg>
         </button>
       </div>
-
     </div>
-
   </header>
