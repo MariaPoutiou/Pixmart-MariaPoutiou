@@ -32,8 +32,7 @@
 
   "headerSearch": {
     "headerPlaceholder": "Search for Digital Assets",
-    "img": "/img/sprite.svg#icon-search",
-    "imgAlt": "search icon"
+    "img": "/img/sprite.svg#icon-search"
   },
 
   "headerButton": {
@@ -49,8 +48,7 @@
     "buttonPrimary": "Shop Now",
     "buttonSecondary": "Watch About Us",
     "buttonIcon": {
-      "svg": "/img/sprite.svg#icon-play",
-      "alt": "play icon"
+      "svg": "/img/sprite.svg#icon-play"
     },
     "images": [
       {
@@ -128,14 +126,12 @@
     "items": [
       {
         "svg": "/img/sprite.svg#icon-uikits",
-        "alt": "image of different devices",
         "title": "Templates",
         "description": "For all needs",
         "label": "Modern"
       },
       {
         "svg": "/img/sprite.svg#icon-presentation",
-        "alt": "roll up banner with graphs",
         "title": "Slides",
         "description": "Pitch-ready",
         "label": "Creative"
@@ -147,14 +143,12 @@
     "items": [
       {
         "svg": "/img/sprite.svg#icon-social",
-        "alt": "mobile phone",
         "title": "App Icons",
         "description": "High-quality",
         "label": "Elegant"
       },
       {
         "svg": "/img/sprite.svg#icon-illustrations",
-        "alt": "painting bag",
         "title": "Design Tools",
         "description": "Easy to use",
         "label": "Unique"
@@ -182,7 +176,6 @@
         "img": "exploring-fun",
         "alt": "Travel Hero UI page",
         "icon": "/img/sprite.svg#icon-trophy",
-        "iconAlt": "cup-icon",
         "button": "Go to Product",
         "title": "Travel Hero",
         "price": "€29.99",
@@ -192,7 +185,6 @@
         "img": "caring-hearts",
         "alt": "Healthcare Pro UI page",
         "icon": "/img/sprite.svg#icon-trophy",
-        "iconAlt": "cup-icon",
         "button": "Go to Product",
         "title": "Healthcare Pro",
         "price": "€15.99",
@@ -301,28 +293,24 @@
         "question": "Can I request a refund?",
         "answer": "#",
         "icon": {
-          "src": "/img/sprite.svg#icon-chevron-down",
-          "alt": "Toggle FAQ"
+          "src": "/img/sprite.svg#icon-chevron-down"
         }
       },
       {
         "question": "How do I access my purchased products",
         "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download.",
         "icon": {
-          "src": "/img/sprite.svg#icon-chevron-down",
-          "alt": "Toggle FAQ"
+          "src": "/img/sprite.svg#icon-chevron-down"
         }
       },
       {
         "question": "Are there any discounts for bulk purchases?",
         "answer": "#",
         "icon": {
-          "src": "/img/sprite.svg#icon-chevron-down",
-          "alt": "Toggle FAQ"
+          "src": "/img/sprite.svg#icon-chevron-down"
         },
         "iconOpen": {
-          "src": "/img/sprite.svg#icon-chevron-up",
-          "alt": "Toggle FAQ"
+          "src": "/img/sprite.svg#icon-chevron-up"
         }
       },
       {
@@ -330,7 +318,7 @@
         "answer": "#",
         "icon": {
           "src": "/img/sprite.svg#icon-chevron-down",
-          "alt": "Toggle FAQ"
+          "alt": "Toggle"
         }
       },
       {
@@ -349,7 +337,6 @@
     "linkText": "Explore All Articles",
     "link": "https://some-url.com/",
     "icon": "/img/sprite.svg#icon-chevron-right",
-    "alt": "arrow right",
     "cards": [
       {
         "img": "creative-blog-home",
@@ -765,7 +752,6 @@
 
   "articleQuote": {
     "svg": "/img/sprite.svg#icon-quote",
-    "svgAlt": "quote icon",
     "text": "Typography is not just the art of arranging type but the craft of breathing life into characters, turning words into stories that captivate the soul."
   },
 
@@ -816,8 +802,7 @@
     "link": {
       "text": "Explore All Articles",
       "href": "https://some-url.com/",
-      "icon": "/img/sprite.svg#icon-chevron-right",
-      "alt": "arrow icon"
+      "icon": "/img/sprite.svg#icon-chevron-right"
     },
     "articles": [
       {
@@ -858,17 +843,14 @@
   "contactInfo": [
     {
       "icon": "/img/sprite.svg#icon-phone",
-      "iconAlt": "phone icon",
       "text": "+1 (555) 123-4567"
     },
     {
       "icon": "/img/sprite.svg#icon-mail",
-      "iconAlt": "mail icon",
       "text": "support@pixmart.com"
     },
     {
       "icon": "/img/sprite.svg#icon-clock",
-      "iconAlt": "location icon",
       "text": "Monday to Friday: 9 AM - 5 PM EST"
     }
   ],

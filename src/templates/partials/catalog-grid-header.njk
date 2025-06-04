@@ -23,12 +23,12 @@
         <div class="catalog-meta">
           <div class="button catalog-meta__primary button--primary-small">
             <svg class="svg catalog-meta__icon-primary">
-              <use href="{{ catalogViewmodes.gridView.icon }}" aria-label="{{ catalogViewmodes.gridView.alt }}" loading="lazy"></use>
+              <use href="{{ catalogViewmodes.gridView.icon }}" aria-label="{{ catalogViewmodes.gridView.alt }}"></use>
             </svg>
           </div>
           <div class="button catalog-meta__secondary button--secondary-small">
             <svg class="svg catalog-meta__icon">
-              <use href="{{ catalogViewmodes.listView.icon }}" aria-label="{{ catalogViewmodes.listView.alt }}" loading="lazy"></use>
+              <use href="{{ catalogViewmodes.listView.icon }}" aria-label="{{ catalogViewmodes.listView.alt }}"></use>
             </svg>
           </div>
         </div>
@@ -40,7 +40,7 @@
       <div class="button catalog-tag__item button--secondary">
         {{ tag.label }}
         <svg class="catalog-tag__icon">
-          <use href="{{ tag.icon }}" loading="lazy"></use>
+          <use href="{{ tag.icon }}"></use>
         </svg>
       </div>
     {% endfor %}

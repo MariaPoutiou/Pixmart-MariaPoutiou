@@ -14,7 +14,7 @@
       <div class="header__logo">
         <a class="header__logo-image" href="{{ header.logoLink }}">
           <svg class="svg header__logo-img">
-            <use href="{{ header.logoImgFull }}" aria-label=" {{ header.logoAlt }}" loading="eager"></use>
+            <use href="{{ header.logoImgFull }}" aria-label=" {{ header.logoAlt }}"></use>
           </svg>
         </a>
       </div>
@@ -33,13 +33,13 @@
     <div class="header-actions">
       <form class="header-search" method="get">
         <svg class="header-search__img">
-          <use href="{{ headerSearch.img }}" aria-label="{{ headerSearch.imgAlt }}" loading="lazy"></use>
+          <use href="{{ headerSearch.img }}"></use>
         </svg>
         <input class="header-search__input" type="search" name="search" maxlength="30" placeholder="{{ headerSearch.headerPlaceholder }}" autocomplete="on">
         </form>
         <button class="button header__button button--primary-small">
           <svg class="svg header__button-img">
-            <use href="{{ headerButton.img }}" aria-label="{{ headerButton.alt }}" loading="eager"></use>
+            <use href="{{ headerButton.img }}" aria-label="{{ headerButton.alt }}"></use>
           </svg>
         </button>
       </div>
