@@ -62,41 +62,10 @@
     "description": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
     "buttonPrimary": "Shop Now",
     "buttonSecondary": "Watch About Us",
+    "img": "hero-ornaments",
     "buttonIcon": {
       "svg": "/img/sprite.svg#icon-play"
-    },
-    "images": [
-      {
-        "type": "img",
-        "img": "hero-primary",
-        "alt": "Main screen showing event platform with speaker and headline text",
-        "modifier": "primary"
-      },
-      {
-        "type": "img",
-        "img": "hero-secondary",
-        "alt": "Schedule screen for Day 2 with speaker portraits and event agenda",
-        "modifier": "secondary"
-      },
-      {
-        "type": "img",
-        "img": "hero-tertiary",
-        "alt": "Grid of speaker cards showing profiles and event times",
-        "modifier": "tertiary"
-      },
-      {
-        "type": "svg",
-        "icon": "/img/sprite.svg#icon-tool",
-        "alt": "Vector design tool icon representing graphic or UI design",
-        "modifier": "primary"
-      },
-      {
-        "type": "svg",
-        "icon": "/img/sprite.svg#icon-layout",
-        "alt": "Icon representing modular or block-based layout design",
-        "modifier": "secondary"
-      }
-    ]
+    }
   },
 
   "productCategories": {
