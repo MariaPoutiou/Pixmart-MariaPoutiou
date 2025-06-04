@@ -25,6 +25,24 @@
   }
 }
 
+@mixin label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  white-space: nowrap;
+  background-color: rgb(2, 101, 220);
+  border-color: rgb(2, 101, 220);
+  color: rgb(245, 248, 251);
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
 @mixin button-base {
   font-weight: 600;
   font-size: 18px;
