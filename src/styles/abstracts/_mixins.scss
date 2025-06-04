@@ -93,6 +93,11 @@
   height: 24px;
 }
 
+@mixin svg-small {
+  width: 16px;
+  height: 16px;
+}
+
 @mixin product-image {
   height: 272px;
   border-radius: 20px;

@@ -33,8 +33,7 @@
   }
 
   &__icon-img {
-    width: 16px;
-    height: 16px;
+   @include svg-small;
     transition: transform 0.3s ease;
   }
 }
