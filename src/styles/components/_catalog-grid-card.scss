@@ -24,7 +24,7 @@
   }
 
   &__tag {
-    &:first-child::after {
+    &:last-child::before {
       @include card-pseudoelement;
     }
   }
