@@ -11,6 +11,11 @@
     justify-content: center;
     align-items: center;
     height: 224px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0265dc;
+    }
   }
 
   &__title {
@@ -24,10 +29,6 @@
   &__img {
     width: 150px;
     height: 150px;
-    color: #0265DC;
-
-    &:hover {
-      color: #E0F2FF;
-    }
+    color: #0265dc;
   }
 }

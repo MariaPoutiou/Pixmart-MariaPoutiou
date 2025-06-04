@@ -63,6 +63,13 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  &__item {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: border-color 0.5s ease;
+    @include card-hover;
+  }
 }
 
 .related-articles__item:last-child {

@@ -8,10 +8,7 @@
     box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
     border: 2px solid transparent;
     transition: border-color 0.3s ease;
-
-    &:hover {
-    border-color: #0265dc;
-    }
+    @include card-hover;
   }
 
   &__question {
@@ -33,7 +30,7 @@
   }
 
   &__icon-img {
-   @include svg-small;
+    @include svg-small;
     transition: transform 0.3s ease;
   }
 }

@@ -124,6 +124,12 @@
   vertical-align: middle;
 }
 
+@mixin card-hover {
+  &:hover {
+    border-color: #0265dc;
+  }
+}
+
 @mixin link-style($has-focus: true) {
   text-decoration: none;
   box-sizing: border-box;
