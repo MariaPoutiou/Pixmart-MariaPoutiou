@@ -38,11 +38,6 @@
     height: 58px;
   }
 
-  &__description {
-    line-height: 24px;
-    color: #0d0d15;
-  }
-
   &__middle {
     display: flex;
     flex-direction: column;
@@ -84,7 +79,6 @@
   }
 
   &__newsletter-title {
-    font-weight: 700;
     font-size: 24px;
     line-height: 32px;
     width: 216px;
