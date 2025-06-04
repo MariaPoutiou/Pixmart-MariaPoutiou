@@ -374,9 +374,13 @@
 
   "catalogDropdownOptions": [
     "Best Seller",
-    "Newest",
-    "Price: Low to High",
-    "Price: High to Low"
+    "Option",
+    "Option",
+    "Option"
+  ],
+
+  "catalogDropdownIcon": [
+    "/img/sprite.svg#icon-chevron-down"
   ],
 
   "catalogFilterButton": {

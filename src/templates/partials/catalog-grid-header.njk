@@ -1,11 +1,16 @@
 <section class="catalog-header">
   <div class="catalog-tools">
     <div class="catalog-tools__upper">
+      <div class="catalog-tools__select-wrapper">
       <select class="button catalog-tools__select button--secondary">
         {% for option in catalogDropdownOptions %}
           <option value="{{ option }}">{{ option }}</option>
         {% endfor %}
       </select>
+            <svg class="svg catalog-tools__select-icon">
+              <use href="{{ catalogDropdownIcon }}"></use>
+            </svg>
+      </div>
       <button class="button catalog-tools__filter button--primary-small">
         <svg class="svg catalog-tools__filter-icon">
           <use href="{{ catalogFilterButton.icon }}" aria-label="{{ catalogFilterButton.alt }}"></use>

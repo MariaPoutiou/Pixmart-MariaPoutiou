@@ -86,15 +86,32 @@
     gap: 8px;
   }
 
-  &-tools__select {
-    height: 40px;
-    flex: 1;
-    padding-block: 8px;
-    padding-inline: 20px;
+  &-tools__select-wrapper {
+    position: relative;
+    width: 156px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    @include tablet {
-      width: 156px;
-    }
+  &-tools__select-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+
+  &-tools__select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 40px;
+    width: 100%;
+    padding: 8px 40px 8px 20px;
+    background-color: #f1f2f4;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
   }
 
   &-tools__info {
