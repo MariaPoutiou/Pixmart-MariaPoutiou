@@ -37,6 +37,9 @@
   &__link {
     font-weight: 600;
     color: #0265dc;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   &__icon {
