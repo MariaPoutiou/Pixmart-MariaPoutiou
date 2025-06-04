@@ -1,15 +1,14 @@
 {% set currentPage = "Blog" %}
 {% extends "layouts/base.njk" %}
-{% set title =
-"Typography Tips for Stunning Designs" %}
-{% set description = "Learn how to use typography effectively in 2024 with hierarchy, alignment, and white space for clean, eye-catching design results." %}
+{% set title = meta.title.blog %}
+{% set description = meta.description.blog %}
 {% set page = "blog" %}
 {% block content %}
   <!--MAIN STARTS HERE-->
   <!--HERO SECTION-->
-    <article class="container blog-page"> 
-      <section class="blog-hero">{% include "partials/hero-blog.njk" %}</section>
-    <div class="blog-layout">
+    <article class="container blog-page"> <section class="blog-hero">{% include "partials/hero-blog.njk" %}</section>
+    <div
+      class="blog-layout">
       <!--MAIN ARTICLE-->
       <section class="article">{% include "partials/main-article.njk" %}</section>
       <!--ASIDE SECTIONS-->

@@ -1,8 +1,7 @@
 {% set currentPage = "About" %}
 {% extends "layouts/base.njk" %}
-{% set title =
-"Pixmart – Your Creative Marketplace for Digital Assets" %}
-{% set description = "Discover, explore, and download high-quality digital assets to boost your creative projects and streamline your design workflow." %}
+{% set title = meta.title.index %}
+{% set description = meta.description.index %}
 {% set page = "about"
 %}
 {% block content %}

@@ -1,4 +1,19 @@
 {
+  "meta": {
+    "title": {
+      "index": "Pixmart – Your Creative Marketplace for Digital Assets",
+      "blog": "Typography Tips for Stunning Designs",
+      "catalog": "Explore UI Kits for Creators",
+      "contact": "Get in Touch with Pixmart"
+    },
+    "description": {
+      "index": "Discover, explore, and download high-quality digital assets to boost your creative projects and streamline your design workflow.",
+      "blog": "Learn how to use typography effectively in 2024 with hierarchy, alignment, and white space for clean, eye-catching design results.",
+      "catalog": "Browse a wide range of premium UI kits to elevate your design projects—filter by format, style, and price to find exactly what you need.",
+      "contact": "Reach out to our team for support, questions, or feedback — we’re here to help you navigate your creative journey, Monday to Friday."
+    }
+  },
+
   "header": {
     "burgerImg": "/img/sprite.svg#icon-menu",
     "burgerAlt": "menu icon",
@@ -359,16 +374,9 @@
     "titleEnd": "Design Assets"
   },
 
-  "catalogDropdownOptions": [
-    "Best Seller",
-    "Option",
-    "Option",
-    "Option"
-  ],
+  "catalogDropdownOptions": ["Best Seller", "Option", "Option", "Option"],
 
-  "catalogDropdownIcon": [
-    "/img/sprite.svg#icon-chevron-down"
-  ],
+  "catalogDropdownIcon": ["/img/sprite.svg#icon-chevron-down"],
 
   "catalogFilterButton": {
     "icon": "/img/sprite.svg#icon-filter-lines",
@@ -883,10 +891,14 @@
     "selectOptions": ["General Inquiry", "Support", "Billing"],
     "textareaLabel": "Message",
     "textareaPlaceholder": "Enter your message ...",
-  "checkboxes": [
-    { "text": "Subscribe me to Newsletter", "position": "upper" },
-    { "text": "I have read the User & Privacy Policy", "position": "lower", "required": true }
-  ],
+    "checkboxes": [
+      { "text": "Subscribe me to Newsletter", "position": "upper" },
+      {
+        "text": "I have read the User & Privacy Policy",
+        "position": "lower",
+        "required": true
+      }
+    ],
     "buttonText": "Send Message"
   },
 
