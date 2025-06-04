@@ -3,7 +3,7 @@
 
 .categories-card {
   width: 100%;
-  padding: 12px;/**according to figma the padding here is 24px, but in mobile view in Figma the text (title and labels) says just "text". Our actual text is bigger and it's impossible to fit in this block at 440px. I decided to just reduce padding in mobile view so it can fit the whole text**/
+  padding: 12px; /**according to figma the padding here is 24px, but in mobile view in Figma the text (title and labels) says just "text". Our actual text is bigger and it's impossible to fit in this block at 440px. I decided to just reduce padding in mobile view so it can fit the whole text**/
   border-radius: 20px;
 
   @include tablet {
@@ -49,5 +49,6 @@
 
   &__info {
     @include card-info;
+    flex-direction: column;
   }
 }
