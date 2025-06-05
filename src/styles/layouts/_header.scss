@@ -105,4 +105,25 @@
     @include button-base;
     @include button-small-primary;
   }
+
+  &-section {
+    display: none;
+
+    &.is-shown {
+      display: flex;
+      position: fixed;
+      z-index: 999;
+      padding: 16px;
+      height: 100%;
+      left: 0;
+      top: 80px;
+      width: 100%;
+      background-color: #F0F6FD;
+      overflow-y: auto;
+    }
+
+    @include tablet {
+      display: flex;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const burgerBtn = document.querySelector(".header__burger-btn");
-  const headerSection = document.querySelector(".header");
+  const headerSection = document.querySelector(".header-section");
   const body = document.querySelector("body");
 
   if (burgerBtn && headerSection) {

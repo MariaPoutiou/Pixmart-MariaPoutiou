@@ -2,11 +2,6 @@
 @use "../abstracts/mixins" as *;
 
 .main-nav {
-  display: none;
-
-  @include tablet {
-    display: flex;
-  }
 
   &__list {
     display: flex;
