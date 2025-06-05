@@ -613,6 +613,11 @@
     "text": "Load More"
   },
 
+  "catalogFilterHeader": {
+"title": "Filters",
+"icon": "/img/sprite.svg#icon-close"
+  },
+
   "catalogFilterCategories": {
     "title": "Categories",
     "items": [
@@ -686,6 +691,10 @@
   "catalogFormButton": {
     "icon": "/img/sprite.svg#icon-close",
     "text": "Clear all Filters"
+  },
+
+  "catalogFormSave": {
+    "text": "Save"
   },
 
   "blogHero": {

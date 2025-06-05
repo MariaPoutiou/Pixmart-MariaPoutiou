@@ -119,6 +119,12 @@
     white-space: nowrap;
   }
 
+  &-tools__filter {
+    @include desktop {
+      display: none;
+    }
+  }
+
   &-tools__filter-icon {
     color: #f8f7ff;
   }
