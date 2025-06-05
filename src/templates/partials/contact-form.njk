@@ -1,4 +1,4 @@
-<form class="contact-form" method="post" action="#">
+<form class="contact-form" method="post" action="{{ contactForm.action }}">
   <fieldset class="contact-form__fieldset">
     <legend class="visually-hidden">Contact Us</legend>
     {% for field in contactForm.fields %}
@@ -21,10 +21,10 @@
       </div>
       <div class="contact-form__footer-wrapper">
         <div class="contact-form__checkbox-wrapper">
-          {% for text in contactForm.checkboxes %}
+          {% for checkbox in contactForm.checkboxes %}
             <input class="visually-hidden checkbox contact-form__checkbox-input" type="checkbox" name="checkbox{{ loop.index }}" id="checkbox{{ loop.index }}" {% if checkbox.required %} required {% endif %}>
               <label class="input-checkbox contact-form__checkbox" for="checkbox{{ loop.index }}">
-                <span class="contact-form__checkbox-terms">{{ text.text }}</span>
+                <span class="contact-form__checkbox-terms">{{ checkbox.text }}</span>
               </label>
             {% endfor %}
           </div>
