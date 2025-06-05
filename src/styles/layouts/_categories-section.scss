@@ -103,6 +103,7 @@
     background-color: #f4f7fa;
     border-radius: 20px;
     height: 180px;
+    transition: background-color 0.3s ease;
 
     @include tablet {
       min-width: 210px;
@@ -112,6 +113,11 @@
       min-width: 294px;
     }
   }
+}
+
+.categories__list-item:hover .categories-card__svg {
+  color: #ffffff;
+  transform: scale(1.1);
 }
 
 .categories__list-item:hover .categories-card {

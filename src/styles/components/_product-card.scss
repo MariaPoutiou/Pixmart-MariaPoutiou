@@ -30,9 +30,12 @@
     width: 150px;
     height: 150px;
     color: #0265dc;
-
-    &:hover {
-      color: #FFFFFF;
-    }
+    transition: color 0.3s ease;
+    transition: transform 0.3s
   }
+}
+
+.product-card__wrapper:hover .product-card__img {
+  color: #ffffff;
+  transform: scale(1.1);
 }
