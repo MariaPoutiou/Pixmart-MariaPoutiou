@@ -11,9 +11,9 @@
     border: 2px solid #3892f3;
   }
 
-  /**  &:invalid {
+  &:user-invalid {
     border: 1px solid #ea3829;
-  } **/
+  }
 
   &:focus,
   &:focus-visible {
