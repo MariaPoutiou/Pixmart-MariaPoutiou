@@ -873,11 +873,11 @@
     "checkboxes": [
       {
         "text": "Subscribe me to Newsletter",
-        "icon": "/img/sprite.svg#checkbox-icon"
+        "icon": "/img/sprite.svg#icon-checkbox"
       },
       {
         "text": "I have read the User & Privacy Policy",
-        "icon": "/img/sprite.svg#checkbox-icon",
+        "icon": "/img/sprite.svg#icon-checkbox",
         "required": true
       }
     ],
