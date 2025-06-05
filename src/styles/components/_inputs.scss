@@ -18,19 +18,32 @@
     height: 14px;
     border: 1px solid #1f324745;
     border-radius: 4px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 }
 
-.catalog-filter__label-icon {
+.catalog-filter__label-icon, .contact-form__checkbox-icon {
   display: none;
 }
 
 .checkbox:checked + .input-checkbox .catalog-filter__label-icon {
-  width: 8px;
-  height: 6px;
-  color: #f5f8fb;
+  color: #F5F8FB;
   display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 8px;
+  top: 7px;
+  left: 3px;
+}
+
+.checkbox:checked + .contact-form__checkbox .contact-form__checkbox-icon {
+  color: #F5F8FB;
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 8px;
+  top: 7px;
+  left: 3px;
 }
 
 .checkbox:checked + .input-checkbox::before {

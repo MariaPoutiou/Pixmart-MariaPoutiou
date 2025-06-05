@@ -643,7 +643,7 @@
       { "value": "others", "label": "Others", "id": "others1" },
       { "value": "others", "label": "Others", "id": "others2" }
     ],
-    "icon": "/img/sprite.svg#icon-check"
+    "icon": "/img/sprite.svg#icon-checkbox"
   },
 
   "catalogFilterFormats": {
@@ -871,10 +871,13 @@
     "textareaLabel": "Message",
     "textareaPlaceholder": "Enter your message ...",
     "checkboxes": [
-      { 
-        "text": "Subscribe me to Newsletter" },
+      {
+        "text": "Subscribe me to Newsletter",
+        "icon": "/img/sprite.svg#checkbox-icon"
+      },
       {
         "text": "I have read the User & Privacy Policy",
+        "icon": "/img/sprite.svg#checkbox-icon",
         "required": true
       }
     ],
