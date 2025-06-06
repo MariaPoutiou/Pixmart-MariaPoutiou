@@ -26,8 +26,6 @@
     @include desktop {
       padding-block: 47px;
     }
-
-  
   }
 
   &__wrapper {
@@ -63,11 +61,11 @@
     line-height: 62px;
     letter-spacing: -0.5px;
     margin-block: 0;
-  }
 
-  &__heading-highlight {
-    font-weight: 700;
-    color: rgb(2, 101, 220);
+    &-highlight {
+      font-weight: 700;
+      color: rgb(2, 101, 220);
+    }
   }
 
   &__description {

@@ -17,11 +17,11 @@
     font-size: 16px;
     margin-right: 8px;
     padding: 0;
-  }
 
-  &__button-icon {
-    color: #0d0d15;
-    @include svg-small;
+    &-icon {
+      color: #0d0d15;
+      @include svg-small;
+    }
   }
 
   &__list-item {

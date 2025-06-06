@@ -1,6 +1,27 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.hero-section {
+  &--catalog {
+    background-image: url("/img/hero-background-1x.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 288px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__catalog-title {
+    letter-spacing: -0.5px;
+    margin-block: 64px 100px;
+  }
+
+  &__catalog-highlight {
+    color: #0265dc;
+  }
+}
+
 .catalog {
   flex: 1;
   position: relative;
@@ -30,6 +51,13 @@
     }
   }
 
+  &-header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
   &-layout {
     display: flex;
     flex-direction: row-reverse;
@@ -39,67 +67,37 @@
   }
 }
 
-.hero-section {
-  &--catalog {
-    background-image: url("/img/hero-background-1x.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 288px;
-    display: flex;
+.catalog-tools {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
 
-  &__catalog-title {
-    letter-spacing: -0.5px;
-    margin-block: 64px 100px;
-  }
-
-  &__catalog-highlight {
-    color: #0265dc;
-  }
-}
-
-.catalog {
-  &-header {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-bottom: 48px;
-  }
-
-  &-tools {
-    display: flex;
-    gap: 24px;
-    flex-direction: column;
-
-    @include tablet {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-
-  &-tools__upper {
+  &__upper {
     display: flex;
     justify-content: space-between;
     gap: 8px;
   }
 
-  &-tools__select-wrapper {
+  &__select-wrapper {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  &-tools__select-icon {
+  &__select-icon {
     position: absolute;
     top: 8px;
     right: 8px;
   }
 
-  &-tools__select {
+  &__select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -112,27 +110,29 @@
     cursor: pointer;
   }
 
-  &-tools__info {
+  &__info {
     margin-block: 8px;
     white-space: nowrap;
   }
 
-  &-tools__filter {
+  &__filter {
     @include desktop {
       display: none;
     }
   }
 
-  &-tools__filter-icon {
+  &__filter-icon {
     color: #f8f7ff;
   }
 
-  &-tools__lower {
+  &__lower {
     display: flex;
     gap: 24px;
     justify-content: space-between;
   }
+}
 
+.catalog {
   &-meta__wrapper {
     display: flex;
     justify-content: space-between;

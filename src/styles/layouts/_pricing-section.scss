@@ -24,14 +24,13 @@
 
   &__item {
     border-radius: 22px; /** I had to push it 2 pixels to match layout **/
-  }
 
-  &__item:first-child,
-  &__item:last-child {
+  &:first-child,
+  &:last-child {
     @include box-shadow;
   }
 
-  &__item:nth-child(2) {
+  &:nth-child(2) {
     border: 2px solid #0265dc;
     margin-bottom: 32px; /** magic number, sorry. It should be padding bottom 32 but i put the border in pricing-list__item not pricing-card. This fits better my structure so far **/
 
@@ -41,4 +40,5 @@
       padding-bottom: 0;
     }
   }
+}
 }

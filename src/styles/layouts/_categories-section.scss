@@ -21,6 +21,7 @@
     color: #222222;
     font-size: 18px;
     line-height: 28px;
+    margin-block: 16px 32px;
   }
 
   &__header-button {
@@ -29,10 +30,6 @@
 
   &__secondary-title {
     margin-block: 16px;
-  }
-
-  &__description {
-    margin-block: 16px 32px;
   }
 
   &__list-wrapper {
@@ -115,35 +112,33 @@
   }
 }
 
-.categories__list-item:hover .categories-card__svg {
-  color: #ffffff;
-  transform: scale(1.1);
+.categories__list-item {
+  &:hover {
+    .categories-card {
+      background-color: #0265dc;
+      transform: scale(1.02);
+
+      &__svg {
+        color: #ffffff;
+        transform: scale(1.1);
+      }
+
+      &__title {
+        color: #f8f7ff;
+      }
+
+      &__description,
+      &__label {
+        color: #eff5fad1;
+      }
+
+      &__label::before {
+        background-color: #eff5fad1;
+      }
+
+      &__img {
+        color: #ffffff;
+      }
+    }
+  }
 }
-
-.categories__list-item:hover .categories-card {
-  background-color: #0265dc;
-  transform: scale(1.02);
-}
-
-.categories__list-item:hover .categories-card__title {
-  color: #F8F7FF;
-}
-
-.categories__list-item:hover .categories-card__description {
-  color: #EFF5FAD1;
-}
-
-.categories__list-item:hover .categories-card__label {
-  color: #EFF5FAD1;
-}
-
-.categories__list-item:hover .categories-card__label::before {
-  background-color: #EFF5FAD1;
-}
-
-.categories__list-item:hover .categories-card__img {
-  color: #FFFFFF;
-}
-
-
-
