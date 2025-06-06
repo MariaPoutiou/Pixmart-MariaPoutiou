@@ -124,6 +124,10 @@
     padding: 0;
   }
 
+  &__legal-link {
+    @include link-style;
+  }
+
   &__legal-item {
     line-height: 24px;
     color: #e7eef7a8;

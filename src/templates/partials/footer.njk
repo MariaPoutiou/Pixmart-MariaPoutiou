@@ -67,9 +67,9 @@
     <div class="footer__lower">
       <ul class="footer__legal-list">
         {% for item in footerLegal %}
-        <a class="footer__legal-link" href="{{ item.link }}">
-          <li class="footer__legal-item">{{ item.text }}</li>
-          </a>
+          <li class="footer__legal-item">
+            <a class="footer__legal-link" href="{{ item.link }}">{{ item.text }}</a>
+          </li>
         {% endfor %}
       </ul>
       <p class="footer__copyright">{{ footerCopyright }}</p>
