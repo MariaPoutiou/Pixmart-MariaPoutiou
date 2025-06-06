@@ -25,6 +25,7 @@
 }
 
 .input {
+  @include input;
   @include input-style;
 }
 

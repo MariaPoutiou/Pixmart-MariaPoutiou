@@ -69,15 +69,15 @@
     border-radius: 20px;
     transition: border-color 0.5s ease;
     @include card-hover;
-  }
-}
 
-.related-articles__item:last-child {
-  @include tablet {
-    grid-column: 1 / -1;
-  }
+    &:last-child {
+      @include tablet {
+        grid-column: 1 / -1;
+      }
 
-  @include desktop {
-    grid-column: unset;
+      @include desktop {
+        grid-column: unset;
+      }
+    }
   }
 }

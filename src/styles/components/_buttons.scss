@@ -2,25 +2,24 @@
 @use "../abstracts/mixins" as *;
 
 .button {
-    @include button-base;
-}
-
-.button--primary {
+  @include button-base;
+  &--primary {
     @include button-primary;
     @include button-primary-style;
-}
+  }
 
-.button--secondary {
+  &--secondary {
     @include button-secondary;
     @include button-secondary-style;
-}
+  }
 
-.button--primary-small {
+  &--primary-small {
     @include button-small-primary;
     @include button-primary-style;
-}
+  }
 
-.button--secondary-small {
+  &--secondary-small {
     @include button-small-secondary;
     @include button-secondary-style;
+  }
 }
