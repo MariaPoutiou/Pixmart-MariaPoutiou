@@ -54,24 +54,19 @@
         <h4 class="footer__newsletter-title">
           {{ footerNewsletter.title }}
         </h4>
-        <form class="footer__form" method="get">
-          <input class="footer__input" type="search" placeholder="{{ footerNewsletter.placeholder }}">
-            <button class="button footer__submit button--primary">
-              {{ footerNewsletter.button }}
-            </button>
-          </form>
-        </div>
+        {% include "partials/footer-search-form.njk" %}
       </div>
     </div>
-    <!-- Lower section (outside .footer__content) -->
-    <div class="footer__lower">
-      <ul class="footer__legal-list">
-        {% for item in footerLegal %}
-          <li class="footer__legal-item">
-            <a class="footer__legal-link" href="{{ item.link }}">{{ item.text }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-      <p class="footer__copyright">{{ footerCopyright }}</p>
-    </div>
-  </footer>
+  </div>
+  <!-- Lower section (outside .footer__content) -->
+  <div class="footer__lower">
+    <ul class="footer__legal-list">
+      {% for item in footerLegal %}
+        <li class="footer__legal-item">
+          <a class="footer__legal-link" href="{{ item.link }}">{{ item.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <p class="footer__copyright">{{ footerCopyright }}</p>
+  </div>
+</footer>
