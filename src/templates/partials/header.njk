@@ -4,8 +4,8 @@
       <div class="header__burger">
         <div class="header__burger-wrapper">
           <button class="button header__burger-btn button--primary-small">
-            <svg class="header__burger-img">
-              <use href="{{ header.burgerImg }}" aria-hidden="true" focusable="false"></use>
+            <svg class="header__burger-img" aria-hidden="true" focusable="false">
+              <use href="{{ header.burgerImg }}"></use>
             </svg>
           </button>
         </div>
@@ -18,36 +18,32 @@
         {% else %}
           <div class="header__logo">
             <a class="header__logo-image" href="{{ header.logoLink }}">
-              <svg class="header__logo-img">
-                <use href="{{ header.logoImgFull }}" aria-label="{{ header.logoAlt }}"></use>
+              <svg class="header__logo-img" aria-label="{{ header.logoAlt }}">
+                <use href="{{ header.logoImgFull }}"></use>
               </svg>
             </a>
           </div>
         {% endif %}
       </div>
       <div class="header-section">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          {% for item in header.nav %}
-            <li class="main-nav__list-item">
-              <a class="main-nav__list-link" href="{{ item.link }}">{{ item.text }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </nav>
+        <nav class="main-nav" aria-label="main navigation">
+          <ul class="main-nav__list">
+            {% for item in header.nav %}
+              <li class="main-nav__list-item">
+                <a class="main-nav__list-link" href="{{ item.link }}">{{ item.text }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
       </div>
     </div>
     <div class="header-actions">
-      <form class="header-search" method="get">
-        <svg class="header-search__img">
-          <use href="{{ headerSearch.img }}" aria-hidden="true" focusable="false"></use>
+      {% include "partials/header-search-form.njk" %}
+      <button class="button header__button button--primary-small">
+        <svg class="svg header__button-img" aria-label="{{ headerButton.alt }}">
+          <use href="{{ headerButton.img }}"></use>
         </svg>
-        <input class="header-search__input" type="search" name="search" maxlength="30" placeholder="{{ headerSearch.headerPlaceholder }}" autocomplete="on"></form>
-        <button class="button header__button button--primary-small">
-          <svg class="svg header__button-img">
-            <use href="{{ headerButton.img }}" aria-label="{{ headerButton.alt }}"></use>
-          </svg>
-        </button>
-      </div>
+      </button>
     </div>
-  </header>
+  </div>
+</header>

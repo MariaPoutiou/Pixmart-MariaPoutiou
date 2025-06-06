@@ -5,16 +5,16 @@
     <div class="footer__upper">
       {% if page == "about" %}
         <div class="footer__brand">
-          <svg class="footer__logo">
-            <use href="{{ header.logoImgFull }}" aria-label="{{ header.logoAlt }}"></use>
+          <svg class="footer__logo" aria-label="{{ header.logoAlt }}">
+            <use href="{{ header.logoImgFull }}"></use>
           </svg>
           <p class="footer__description">{{ footerDescription }}</p>
         </div>
       {% else %}
         <div class="footer__brand">
           <a href="{{ header.logoLink }}">
-            <svg class="footer__logo">
-              <use href="{{ header.logoImgFull }}" aria-label="{{ header.logoAlt }}"></use>
+            <svg class="footer__logo" aria-label="{{ header.logoAlt }}">
+              <use href="{{ header.logoImgFull }}"></use>
             </svg>
           </a>
           <p class="footer__description">{{ footerDescription }}</p>
@@ -22,7 +22,7 @@
       {% endif %}
       <div class="footer__nav-wrapper">
         {% for group in footerNav %}
-          <nav class="footer__nav">
+          <nav class="footer__nav" aria-label="website navigation">
             <h3 class="footer__nav-title">{{ group.title }}</h3>
             <ul class="footer__nav-list">
               {% for item in group.links %}
@@ -42,8 +42,8 @@
           {% for social in footerSocials %}
             <li class="button footer__social-item button--secondary">
               <a href="{{ social.link }}" target="_blank">
-                <svg class="svg footer__social-icon">
-                  <use href="{{ social.icon }}" aria-label="{{ social.alt }}"></use>
+                <svg class="svg footer__social-icon" aria-label="{{ social.alt }}">
+                  <use href="{{ social.icon }}"></use>
                 </svg>
               </a>
             </li>
@@ -67,7 +67,9 @@
     <div class="footer__lower">
       <ul class="footer__legal-list">
         {% for item in footerLegal %}
-          <li class="footer__legal-item">{{ item }}</li>
+        <a class="footer__legal-link" href="{{ item.link }}">
+          <li class="footer__legal-item">{{ item.text }}</li>
+          </a>
         {% endfor %}
       </ul>
       <p class="footer__copyright">{{ footerCopyright }}</p>

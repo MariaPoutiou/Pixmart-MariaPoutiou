@@ -1,30 +1,29 @@
 <aside class="catalog-filter">
   {% include "partials/mobile-filter-header.njk" %}
-
   <form class="catalog-filter__form" action="#" method="get">
     <div class="catalog-filter__wrapper">
       <div class="catalog-filter__blocks">
-    {% include "partials/aside-catalog-categories.njk" %}
-    {% include
+        {% include "partials/aside-catalog-categories.njk" %}
+        {% include
     "partials/aside-catalog-format.njk" %}
-    {% include
+        {% include
     "partials/aside-catalog-style.njk" %}
-    {% include
+        {% include
     "partials/aside-catalog-price.njk" %}
+      </div>
+      <div class="catalog-filter__button-upper">
+        <button class="button catalog-filter__button button--secondary">
+          <svg class="svg catalog-filter__button-icon" aria-hidden="true" focusable="false">
+            <use href="{{ catalogFormButton.icon }}"></use>
+          </svg>
+          {{ catalogFormButton.text }}
+        </button>
+      </div>
     </div>
-    <div class="catalog-filter__button-upper">
-    <button class="button catalog-filter__button button--secondary">
-      <svg class="svg catalog-filter__button-icon">
-        <use href="{{ catalogFormButton.icon }}" aria-hidden="true" focusable="false"></use>
-      </svg>
-      {{ catalogFormButton.text }}
+    <div class="catalog-filter__button-lower">
+      <button class="button catalog-filter__button-save button--primary">
+        {{ catalogFormSave.text }}
       </button>
-      </div>
-      </div>
-      <div class="catalog-filter__button-lower">
-    <button class="button catalog-filter__button-save button--primary">
-      {{ catalogFormSave.text }}
-    </button>
     </div>
   </form>
 </aside>

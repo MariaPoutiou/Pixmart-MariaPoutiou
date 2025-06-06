@@ -1,10 +1,12 @@
-<li class="product-section__list-item">
+<li class="product-section__list-item" href="{{ item.link }}">
   <article class="product-card">
+    <a class="product-card__link">
     <div class="product-card__wrapper">
       <svg class="product-card__img">
         <use href="{{ item.img }}" aria-label="{{ item.alt }}"></use>
       </svg>
     </div>
     <h3 class="product-card__title">{{ item.title }}</h3>
+    </a>
   </article>
 </li>

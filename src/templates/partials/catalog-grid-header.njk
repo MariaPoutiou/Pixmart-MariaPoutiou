@@ -5,8 +5,8 @@
         {% include "partials/dropdown-catalog.njk" %}
       </div>
       <button class="button catalog-tools__filter button--primary-small">
-        <svg class="svg catalog-tools__filter-icon">
-          <use href="{{ catalogFilterButton.icon }}" aria-label="{{ catalogFilterButton.alt }}"></use>
+        <svg class="svg catalog-tools__filter-icon" aria-label="{{ catalogFilterButton.alt }}">
+          <use href="{{ catalogFilterButton.icon }}"></use>
         </svg>
       </button>
     </div>
@@ -15,13 +15,13 @@
       <div class="catalog-meta__wrapper">
         <div class="catalog-meta">
           <div class="button catalog-meta__primary button--primary-small">
-            <svg class="svg catalog-meta__icon-primary">
-              <use href="{{ catalogViewmodes.gridView.icon }}" aria-label="{{ catalogViewmodes.gridView.alt }}"></use>
+            <svg class="svg catalog-meta__icon-primary" aria-label="{{ catalogViewmodes.gridView.alt }}">
+              <use href="{{ catalogViewmodes.gridView.icon }}"></use>
             </svg>
           </div>
           <div class="button catalog-meta__secondary button--secondary-small">
-            <svg class="svg catalog-meta__icon">
-              <use href="{{ catalogViewmodes.listView.icon }}" aria-label="{{ catalogViewmodes.listView.alt }}"></use>
+            <svg class="svg catalog-meta__icon" aria-label="{{ catalogViewmodes.listView.alt }}">
+              <use href="{{ catalogViewmodes.listView.icon }}"></use>
             </svg>
           </div>
         </div>
@@ -32,8 +32,8 @@
     {% for tag in catalogTags %}
       <div class="button catalog-tag__item button--secondary">
         {{ tag.label }}
-        <svg class="catalog-tag__icon">
-          <use href="{{ tag.icon }}" aria-hidden="true" focusable="false"></use>
+        <svg class="catalog-tag__icon" aria-hidden="true" focusable="false">
+          <use href="{{ tag.icon }}"></use>
         </svg>
       </div>
     {% endfor %}

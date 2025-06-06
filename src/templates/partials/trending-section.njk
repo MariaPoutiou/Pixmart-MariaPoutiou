@@ -9,8 +9,8 @@
     <div class="trending__header-functions">
     {% for button in trendingSection.navButtons %}
       <button class="button trending__button button--secondary">
-        <svg class="svg trending-button__icon">
-          <use href="{{ button.icon }}" aria-label="{{ button.alt }}"></use>
+        <svg class="svg trending-button__icon" aria-label="{{ button.alt }}">
+          <use href="{{ button.icon }}"></use>
         </svg>
       </button>
     {% endfor %}

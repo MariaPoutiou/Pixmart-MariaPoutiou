@@ -8,7 +8,7 @@
       </picture>
       {% if item.icon %}
         <div class="trending-card__icon-wrapper">
-          <svg class="svg trending-card__label-icon">
+          <svg class="svg trending-card__label-icon" aria-hidden="true" focusable="false">
             <use href="{{ item.icon }}"></use>
           </svg>
         </div>

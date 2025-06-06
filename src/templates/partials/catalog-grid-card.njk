@@ -27,8 +27,8 @@
               {% for action in item.actions %}
                 <button class="button catalog-card__action{% if action.modifier %} catalog-card__action--{{ action.modifier }} {{
                     action.modifierBtn }}{% endif %}">
-                  <svg class="svg catalog-card__action-icon">
-                    <use href="{{ action.icon }}" aria-label="{{ action.icon }}"></use>
+                  <svg class="svg catalog-card__action-icon" aria-label="{{ action.icon }}">
+                    <use href="{{ action.icon }}"></use>
                   </svg>
                 </button>
               {% endfor %}

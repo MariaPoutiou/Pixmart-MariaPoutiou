@@ -72,27 +72,27 @@
   "productCategories": {
     "title": "PRODUCT CATEGORIES",
     "items": [
-      {
+      { "link": "https://some-url.com/",
         "title": "UI kits",
         "img": "/img/sprite.svg#icon-uikits",
         "alt": "images of different devices"
       },
-      {
+      { "link": "https://some-url.com/",
         "title": "Social Media",
         "img": "/img/sprite.svg#icon-social",
         "alt": "mobile phone"
       },
-      {
+      { "link": "https://some-url.com/",
         "title": "Presentation",
         "img": "/img/sprite.svg#icon-presentation",
         "alt": "roll up banner with graphs"
       },
-      {
+      { "link": "https://some-url.com/",
         "title": "Fonts",
         "img": "/img/sprite.svg#icon-fonts",
         "alt": "square with typography"
       },
-      {
+      { "link": "https://some-url.com/",
         "title": "illustrations",
         "img": "/img/sprite.svg#icon-illustrations",
         "alt": "painting bag"
@@ -952,7 +952,20 @@
     "button": "Subscribe"
   },
 
-  "footerLegal": ["Privacy Policy", "Terms and Condition", "Site Map"],
+  "footerLegal": [
+  { 
+    "text": "Privacy Policy", 
+    "link": "https://some-url.com/" 
+  },
+  { 
+    "text": "Terms and Condition", 
+    "link": "https://some-url.com/" 
+  },
+  { 
+    "text": "Site Map", 
+    "link": "index.html" }
+  ],
+
 
   "footerCopyright": "Copyright © 2024 Pixmart. All rights reserved."
 }
