@@ -895,6 +895,7 @@
   "footerNav": [
     {
       "title": "Company",
+      "ariaLabel": "company navigation",
       "links": [
         { "text": "Homepage v1", "link": "index.html" },
         { "text": "Homepeage v2", "link": "index.html" },
@@ -906,6 +907,7 @@
     },
     {
       "title": "Products",
+      "ariaLabel": "products navigation",
       "links": [
         { "text": "Website", "link": "https://some-url.com/" },
         { "text": "Mobile App", "link": "https://some-url.com/" },
@@ -917,6 +919,7 @@
     },
     {
       "title": "Account",
+      "ariaLabel": "account navigation",
       "links": [
         { "text": "Your Cart", "link": "https://some-url.com/" },
         { "text": "Check Out", "link": "https://some-url.com/" },

@@ -11,14 +11,14 @@
         </div>
         {% if page == "about" %}
           <div class="header__logo">
-            <svg class="header__logo-img">
-              <use href="{{ header.logoImgFull }}" aria-label="{{ header.logoAlt }}"></use>
+            <svg class="header__logo-img" aria-label="{{ header.logoAlt }}">
+              <use href="{{ header.logoImgFull }}"></use>
             </svg>
           </div>
         {% else %}
           <div class="header__logo">
-            <a class="header__logo-image" href="{{ header.logoLink }}">
-              <svg class="header__logo-img" aria-label="{{ header.logoAlt }}">
+            <a class="header__logo-image" href="{{ header.logoLink }}" aria-label="{{ header.logoAlt }}">
+              <svg class="header__logo-img">
                 <use href="{{ header.logoImgFull }}"></use>
               </svg>
             </a>
@@ -39,8 +39,8 @@
     </div>
     <div class="header-actions">
       {% include "partials/header-search-form.njk" %}
-      <button class="button header__button button--primary-small">
-        <svg class="svg header__button-img" aria-label="{{ headerButton.alt }}">
+      <button class="button header__button button--primary-small" aria-label="{{ headerButton.alt }}">
+        <svg class="svg header__button-img">
           <use href="{{ headerButton.img }}"></use>
         </svg>
       </button>
