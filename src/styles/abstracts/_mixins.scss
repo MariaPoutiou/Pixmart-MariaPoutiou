@@ -216,6 +216,10 @@
   }
 }
 
+@mixin box-shadow {
+  box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
+}
+
 @mixin desktop {
   @media screen and (width >= #{$screen-desktop}) {
     @content;

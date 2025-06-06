@@ -344,7 +344,7 @@
     "titleEnd": "Design Assets"
   },
 
-  "catalogDropdownOptions": ["Best Seller", "Option", "Option", "Option"],
+  "catalogDropdownOptions": ["Best Seller", "Newest", "Price: Low to High", "Price: High to Low"],
 
   "catalogDropdownIcon": ["/img/sprite.svg#icon-chevron-down"],
 

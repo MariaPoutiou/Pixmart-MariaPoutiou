@@ -1,0 +1,18 @@
+<form method="get" action="">
+    <fieldset class="catalog-tools__fieldset">
+        <legend class="visually-hidden catalog-tools__legend">Select Filter</legend>
+        <div class="catalog-tools__select-wrapper">
+            <select name="sort" id="sort" class="button catalog-tools__select button--secondary">
+                {% for option in catalogDropdownOptions %}
+                    <option value="{{ option }}" {% if option == currentSelection %} selected {% endif %}>
+                        {{ option }}
+                    </option>
+                {% endfor %}
+            </select>
+            <svg class="svg catalog-tools__select-icon" aria-hidden="true" focusable="false">
+                <use href="{{ catalogDropdownIcon }}"></use>
+            </svg>
+        </div>
+    </fieldset>
+    <button type="submit" class="visually-hidden">Submit</button>
+</form>

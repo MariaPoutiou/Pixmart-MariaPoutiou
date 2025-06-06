@@ -28,7 +28,7 @@
 
   &__item:first-child,
   &__item:last-child {
-    box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
+    @include box-shadow;
   }
 
   &__item:nth-child(2) {
