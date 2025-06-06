@@ -41,17 +41,18 @@
 
 .hero-section {
   &--catalog {
-    background-image: url("/sprite/background-gradient.svg");
+    background-image: url("/img/hero-background-1x.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 288px;
+    display: flex;
+    align-items: center;
   }
 
   &__catalog-title {
     letter-spacing: -0.5px;
-    top: 64px;
-    left: 80px;
+    margin-block: 64px 100px;
   }
 
   &__catalog-highlight {
