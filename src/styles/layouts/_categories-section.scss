@@ -37,6 +37,7 @@
 
   &__list-wrapper {
     display: flex;
+    align-items: flex-end;
     gap: 20px;
     width: 100%;
     overflow: hidden;
@@ -53,7 +54,7 @@
     height: 460px;
     width: 50%;
     padding-inline: 0;
-    margin-block: 0 100px;
+    margin-block: 0;
     position: relative;
 
     &::after {
@@ -79,7 +80,7 @@
     height: 460px;
     width: 50%;
     padding-inline: 0;
-    margin-block: 100px 0;
+    margin-block: 100px -80px;
     position: relative;
 
     &::before {
