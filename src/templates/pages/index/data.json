@@ -772,11 +772,13 @@
       "items": [
         {
           "title": "Text",
+          "link": "https://some-url.com/",
           "date": "March 15, 2024",
           "datetime": "2024-03-15"
         },
         {
           "title": "Text",
+          "link": "https://some-url.com/",
           "date": "March 15, 2024",
           "datetime": "2024-03-15"
         }
@@ -798,7 +800,8 @@
         "tag": "TAG",
         "title": "Best Dishes",
         "date": "15 APRIL 2024",
-        "datetime": "2024-04-15"
+        "datetime": "2024-04-15",
+        "link": "https://some-url.com/"
       },
       {
         "img": "article-lotus-spa",
@@ -806,7 +809,8 @@
         "tag": "TAG",
         "title": "Contact Us Lotus Spa article",
         "date": "05 MAY 2024",
-        "datetime": "2024-05-05"
+        "datetime": "2024-05-05",
+        "link": "https://some-url.com/"
       },
       {
         "img": "article-creative-blog",
@@ -814,7 +818,8 @@
         "tag": "TAG",
         "title": "Creative Blog",
         "date": "20 JUNE 2024",
-        "datetime": "2024-06-20"
+        "datetime": "2024-06-20",
+        "link": "https://some-url.com/"
       }
     ]
   },

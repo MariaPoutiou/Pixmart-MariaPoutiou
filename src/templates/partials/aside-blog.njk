@@ -33,7 +33,9 @@
     <ul class="blog-aside__articles">
       {% for article in blogAside.latestArticlesSection.items %}
         <li class="blog-aside__article">
+          <a class="blog-aside__link" href="{{ article.link }}">
           <h4 class="blog-aside__article-title">{{ article.title }}</h4>
+          </a>
           <time class="blog-aside__article-date" datetime="{{ article.datetime }}">
             {{ article.date }}
           </time>

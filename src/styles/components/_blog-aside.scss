@@ -80,7 +80,7 @@
     color: #2a3541d9;
     @include link-style;
   }
-  
+
   &__article-date {
     color: #2a3541d9;
   }
@@ -116,5 +116,9 @@
     font-size: 20px;
     line-height: 26px;
     margin-bottom: 12px;
+  }
+
+  &__article-title {
+    @include link-style;
   }
 }
