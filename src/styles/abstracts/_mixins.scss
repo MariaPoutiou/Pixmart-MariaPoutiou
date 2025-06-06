@@ -130,29 +130,34 @@
   }
 }
 
-@mixin link-style($has-focus: true) {
+@mixin link-style {
   text-decoration: none;
   box-sizing: border-box;
-  transition: box-shadow 0.2s ease;
-
-  &:hover {
-    color: #3892f3;
-  }
-  @if $has-focus {
-    &:focus,
-    &:focus-visible {
-      outline: none;
-      box-shadow: 0 0 0 4px #3892f3;
-      border-radius: 5px;
-    }
-  }
 
   &:visited {
     color: #0054b6;
   }
 
+  &:hover {
+    color: #3892f3;
+  }
+
+ &:focus {
+  outline: none;
+}
+
+&:focus-visible {
+  box-shadow: 0 0 0 4px #3892f3;
+  border-radius: 5px;
+  outline: none;
+}
+
   &:disabled {
     color: #22344966;
+  }
+
+  &:active {
+    outline: none;
   }
 }
 

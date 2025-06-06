@@ -61,7 +61,9 @@
   }
 
   &__list-item {
-    padding-block: 4px; /** padding not defined in Figma, but it doesn't look correct with 24px line height, so i put this padding to match the look in Figma. I could do it with flex column gap but i did not see reason to apply flex here**/
+    padding-block: 4px;
+    
+    /* padding not defined in Figma, but it doesn't look correct with 24px line height, so i put this padding to match the look in Figma. I could do it with flex column gap but i did not see reason to apply flex here */
 
     &::before {
       content: "";
@@ -77,6 +79,7 @@
   &__list-link,
   &__article-date {
     color: #2a3541d9;
+    @include link-style;
   }
 
   &__list-item--active {
