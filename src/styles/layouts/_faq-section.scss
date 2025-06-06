@@ -39,7 +39,7 @@ details summary::-webkit-details-marker {
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 18px;
     width: 100%;
 
     @include tablet {
