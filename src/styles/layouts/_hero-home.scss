@@ -95,6 +95,30 @@
     padding-block: 18px;
     padding-inline: 32px;
     width: 233px;
+    border: 1px solid transparent;
+
+    &:hover {
+      &:hover {
+        background-color: #294d7517;
+        border: 1px solid #3892f3;
+      }
+
+      &:focus-visible {
+        outline: none;
+        background-color: #294d7517;
+        box-shadow: 0 0 0 4px #3892f3;
+        border-color: #294d7517;
+      }
+
+      &:active {
+        background-color: #294d7517;
+      }
+
+      &:disabled {
+        color: #22344966;
+        background-color: transparent;
+      }
+    }
   }
 
   &__button-svg {
