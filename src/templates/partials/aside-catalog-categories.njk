@@ -9,7 +9,7 @@
             <input class="visually-hidden checkbox catalog-filter__input" type="checkbox" name="categories" value="{{ item.value }}" id="{{ item.id }}">
               <label class="input-checkbox catalog-filter__label" for="{{ item.id }}">{{ item.label }}
                 <svg class="catalog-filter__label-icon">
-                  <use href="{{ catalogFilterCategories.icon }}"></use>
+                  <use href="{{ catalogFilterCategories.icon }}" aria-hidden="true" focusable="false"></use>
                 </svg>
               </label>
             </div>

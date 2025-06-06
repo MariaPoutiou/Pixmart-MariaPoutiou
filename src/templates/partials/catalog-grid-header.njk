@@ -33,7 +33,7 @@
       <div class="button catalog-tag__item button--secondary">
         {{ tag.label }}
         <svg class="catalog-tag__icon">
-          <use href="{{ tag.icon }}"></use>
+          <use href="{{ tag.icon }}" aria-hidden="true" focusable="false"></use>
         </svg>
       </div>
     {% endfor %}

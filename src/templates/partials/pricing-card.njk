@@ -15,7 +15,7 @@
         {% for feature in plan.features %}
           <li class="pricing-card__list-item">
             <svg class="svg pricing-card__list-icon">
-              <use href="{{ feature.icon }}"></use>
+              <use href="{{ feature.icon }}" aria-hidden="true" focusable="false"></use>
             </svg>
             {{ feature.item }}</li>
         {% endfor %}

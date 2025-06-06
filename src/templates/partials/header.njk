@@ -5,7 +5,7 @@
         <div class="header__burger-wrapper">
           <button class="button header__burger-btn button--primary-small">
             <svg class="header__burger-img">
-              <use href="{{ header.burgerImg }}"></use>
+              <use href="{{ header.burgerImg }}" aria-hidden="true" focusable="false"></use>
             </svg>
           </button>
         </div>
@@ -40,7 +40,7 @@
     <div class="header-actions">
       <form class="header-search" method="get">
         <svg class="header-search__img">
-          <use href="{{ headerSearch.img }}"></use>
+          <use href="{{ headerSearch.img }}" aria-hidden="true" focusable="false"></use>
         </svg>
         <input class="header-search__input" type="search" name="search" maxlength="30" placeholder="{{ headerSearch.headerPlaceholder }}" autocomplete="on"></form>
         <button class="button header__button button--primary-small">

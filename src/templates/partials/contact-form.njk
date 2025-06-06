@@ -25,7 +25,7 @@
             <input class="visually-hidden checkbox contact-form__checkbox-input" type="checkbox" name="checkbox{{ loop.index }}" id="checkbox{{ loop.index }}" {% if checkbox.required %} required {% endif %}>
               <label class="input-checkbox contact-form__checkbox" for="checkbox{{ loop.index }}">
                 <svg class="contact-form__checkbox-icon">
-                  <use href="{{ checkbox.icon }}"></use>
+                  <use href="{{ checkbox.icon }}" aria-hidden="true" focusable="false"></use>
                 </svg>
                 <span class="contact-form__checkbox-terms">{{ checkbox.text }}</span>
               </label>
