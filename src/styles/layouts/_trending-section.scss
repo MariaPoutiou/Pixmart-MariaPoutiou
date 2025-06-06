@@ -2,7 +2,6 @@
 @use "../abstracts/mixins" as *;
 
 .trending {
-
   &__secondary-title {
     margin-block: 0;
   }
@@ -14,13 +13,16 @@
   }
 
   &__button {
-  font-size: 16px;         
-  margin-right: 8px;       
-}
+    width: 64px;
+    font-size: 16px;
+    margin-right: 8px;
+    padding: 0;
+  }
 
-&__button-icon {
-  color: #0D0D15;
-}
+  &__button-icon {
+    color: #0d0d15;
+    @include svg-small;
+  }
 
   &__list-item {
     width: 100%;
