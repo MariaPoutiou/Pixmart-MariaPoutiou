@@ -63,6 +63,7 @@
     "buttonPrimary": "Shop Now",
     "buttonSecondary": "Watch About Us",
     "img": "hero-ornaments",
+    "alt": "Event and Conference Website UI Kit Preview",
     "buttonIcon": {
       "svg": "/img/sprite.svg#icon-play"
     }
