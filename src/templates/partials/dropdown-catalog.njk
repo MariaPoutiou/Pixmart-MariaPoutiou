@@ -1,7 +1,7 @@
 <form method="get" action="">
     <div class="catalog-tools__block">
         <label for="select" class="visually-hidden">Sort products by</label>
-        <select class="catalog-tools__select" name="select" id="select" class="button catalog-tools__select button--secondary">
+        <select class="button catalog-tools__select button--secondary" name="select" id="select">
             {% for option in catalogDropdownOptions %}
                 <option value="{{ option }}" {% if option == currentSelection %} selected {% endif %}>
                     {{ option }}
@@ -12,5 +12,5 @@
             <use href="{{ catalogDropdownIcon }}"></use>
         </svg>
     </div>
-    <button type="submit" class="visually-hidden">Submit</button>
+    <button class="visually-hidden" type="submit">Submit</button>
 </form>

@@ -52,7 +52,7 @@
 
   "headerButton": {
     "img": "/img/sprite.svg#icon-bag",
-    "alt": "bag icon"
+    "alt": "View Cart"
   },
 
   "heroHome": {
