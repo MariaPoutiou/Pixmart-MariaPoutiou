@@ -98,6 +98,11 @@
   height: 16px;
 }
 
+@mixin svg-large {
+  width: 64px;
+  height: 64px;
+}
+
 @mixin product-image {
   height: 272px;
   border-radius: 20px;
@@ -142,15 +147,15 @@
     color: #3892f3;
   }
 
- &:focus {
-  outline: none;
-}
+  &:focus {
+    outline: none;
+  }
 
-&:focus-visible {
-  box-shadow: 0 0 0 4px #3892f3;
-  border-radius: 5px;
-  outline: none;
-}
+  &:focus-visible {
+    box-shadow: 0 0 0 4px #3892f3;
+    border-radius: 5px;
+    outline: none;
+  }
 
   &:disabled {
     color: #22344966;

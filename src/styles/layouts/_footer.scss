@@ -28,6 +28,7 @@
   &__brand {
     width: 408px;
     min-width: 320px;
+    margin-bottom: 32px;
 
     @include tablet {
       width: 320px;
