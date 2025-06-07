@@ -4,7 +4,10 @@
     {% for field in contactForm.fields %}
       <div class="contact-form__item">
         <label class="contact-form__label" for="{{ field.id }}">{{ field.label }}</label>
-        <input class="input contact-form__input" type="{{ field.type }}" id="{{ field.id }}" name="{{ field.id }}" placeholder="{{ field.placeholder }}" {% if field.title %} title="{{ field.title }}" {% endif %} required></div>
+        <input class="input contact-form__input" type="{{ field.type }}" id="{{ field.id }}" name="{{ field.id }}" placeholder="{{ field.placeholder }}" {% if field.title %} title="{{ field.title }}" {% endif %} required>
+          <span class="contact-form__valid">{{ field.valid }}</span>
+          <span class="contact-form__invalid">{{ field.invalid }}</span>
+        </div>
       {% endfor %}
       <div class="contact-form__item">
         <label class="contact-form__label" for="subject">{{ contactForm.selectLabel }}</label>
@@ -18,6 +21,8 @@
       <div class="contact-form__item">
         <label class="contact-form__label" for="message">{{ contactForm.textareaLabel }}</label>
         <textarea class="contact-form__input contact-form__textarea" id="message" name="message" rows="5" placeholder="{{ contactForm.textareaPlaceholder }}" required></textarea>
+        <span class="contact-form__textarea-valid">{{ contactForm.valid }}</span>
+        <span class="contact-form__textarea-invalid">{{ contactForm.invalid }}</span>
       </div>
       <div class="contact-form__footer-wrapper">
         <div class="contact-form__checkbox-wrapper">

@@ -43,7 +43,7 @@
     height: 180px;
 
     &::placeholder {
-        padding-top: 20px;
+      padding-top: 20px;
     }
   }
 
@@ -65,4 +65,40 @@
     padding-inline: 40px;
     padding-block: 20px;
   }
+
+  &__valid {
+    display: none;
+    color: #008f5d;
+  }
+
+  &__invalid {
+    display: none;
+    color: #ea3829;
+  }
+
+  &__textarea-valid {
+    display: none;
+    color: #008f5d;
+  }
+
+  &__textarea-invalid {
+    display: none;
+    color: #ea3829;
+  }
+}
+
+.contact-form__input:user-invalid ~ .contact-form__invalid {
+  display: block;
+}
+
+.contact-form__input:valid + .contact-form__valid {
+  display: block;
+}
+
+.contact-form__textarea:user-invalid ~ .contact-form__invalid {
+  display: block;
+}
+
+.contact-form__textarea:valid + .contact-form__valid {
+  display: block;
 }
