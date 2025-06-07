@@ -124,7 +124,7 @@
     background-color: #294d7517;
   }
 
-  &:focus-visible {
+  &:focus-visible, &:focus {
     outline: none;
     background-color: #294d7517;
     box-shadow: 0 0 0 4px #3892f3;
@@ -229,77 +229,5 @@
 
   &:disabled {
     background-color: #1d36532b;
-  }
-}
-
-@mixin svg-check-icon-checked {
-  &:active {
-    color: #0054b6;
-  }
-
-  &:disabled {
-    background-color: #22344966;
-  }
-}
-
-@mixin checkbox-style-default {
-  &:hover::before {
-    background-color: #f4f7fa;
-  }
-
-  &:active::before {
-    background-color: #f4f7fa;
-    border-color: transparent;
-  }
-
-  &:focus-visible::before {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.6);
-  }
-
-  &:disabled::before {
-    background-color: #1d36532b;
-    border-color: transparent;
-  }
-
-  &:user-invalid::before {
-    border-color: #ea3829;
-  }
-
-  &:hover:invalid::before {
-    border-color: #ea3829;
-    background-color: #294d7517;
-  }
-}
-
-@mixin checkbox-style-checked {
-  &:hover::before {
-    background-color: #3892f3;
-    border-color: #3892f3;
-  }
-
-  &:active:active {
-    background-color: #b5deff;
-    border-color: #b5deff;
-  }
-
-  &:focus-visible::before {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.6);
-  }
-
-  &:disabled::before {
-    background-color: #1d36532b;
-    border-color: #1d36532b;
-  }
-
-  &:user-invalid::before {
-    border-color: #ea3829;
-    background-color: #0265dc;
-  }
-
-  &:hover:invalid::before {
-    border-color: #ea3829;
-    background-color: #3892f3;
   }
 }
