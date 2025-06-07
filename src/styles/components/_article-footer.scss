@@ -2,12 +2,12 @@
 @use "../abstracts/mixins" as *;
 
 .related-articles {
-  padding-block: 0 32px;
+  padding-block: 0 $space-xl;
   width: 100%;
   background-color: #f0f6fd;
 
   @include tablet {
-    padding-block: 0 40px;
+    padding-block: $space-base $space-2xl;
   }
 
   &__header {
@@ -16,7 +16,7 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: flex-start;
-    margin-bottom: 32px;
+    margin-bottom: $space-xl;
 
     @include tablet {
       flex-direction: row;
@@ -28,10 +28,10 @@
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -0.5px;
-    margin-block-end: 16px;
+    margin-block-end: $space-base;
 
     @include tablet {
-      margin-block-end: 32px;
+      margin-block-end: $space-xl;
     }
   }
 
@@ -40,7 +40,7 @@
     color: #0265dc;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: $gap-sm;
   }
 
   &__icon {
@@ -53,8 +53,8 @@
     display: grid;
     gap: $gap-lg;
     grid-template-rows: 1fr;
-    padding-inline: 0;
-    margin: 0;
+    padding-inline: $space-0;
+    margin: $space-0;
 
     @include tablet {
       grid-template-columns: repeat(2, 1fr);

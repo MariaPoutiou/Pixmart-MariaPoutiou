@@ -8,7 +8,7 @@
 
   &__secondary-title {
     text-align: center;
-    margin-block: 16px 80px;
+    margin-block: $space-base $space-5xl;
   }
 }
 
@@ -16,7 +16,7 @@
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(272px, 1fr));
   gap: $gap-base;
-  padding-inline: 0;
+  padding-inline: $space-0;
 
   @include tablet {
     grid-template-columns: repeat(3, minmax(272px, 1fr));
@@ -32,7 +32,7 @@
 
   &:nth-child(2) {
     border: 2px solid #0265dc;
-    margin-bottom: 32px; /** magic number, sorry. It should be padding bottom 32 but i put the border in pricing-list__item not pricing-card. This fits better my structure so far **/
+    margin-bottom: $space-xl; /** magic number, sorry. It should be padding bottom 32 but i put the border in pricing-list__item not pricing-card. This fits better my structure so far **/
 
     @include tablet {
       transform: translateY(-32px);

@@ -43,7 +43,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: $space-base;
 }
 
 @mixin button-base {
@@ -82,16 +82,16 @@
   border-color: rgb(2, 101, 220);
   color: rgb(245, 248, 251);
   height: 64px;
-  padding-block: 18px;
-  padding-inline: 32px;
+  padding-block: $space-ml;
+  padding-inline: $space-xl;
 }
 
 @mixin button-secondary {
   border: 2px solid #1d36532b;
   background-color: transparent;
   height: 64px;
-  padding-block: 18px;
-  padding-inline: 32px;
+  padding-block: $space-ml;
+  padding-inline: $space-xl;
 }
 
 @mixin button-primary-style {
@@ -154,7 +154,7 @@
 @mixin card-info {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
+  gap: $gap-sm;
   color: #2a3541b2;
   white-space: nowrap;
 }
@@ -166,7 +166,7 @@
   height: 5px;
   background-color: #2a3541b2;
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: $space-sm;
   vertical-align: middle;
 }
 

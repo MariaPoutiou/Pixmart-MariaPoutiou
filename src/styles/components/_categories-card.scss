@@ -5,7 +5,7 @@
   width: 100%;
   border-radius: 20px;
   transition: background-color 0.3s ease, transform 0.3 ease;
-  padding: 24px;
+  padding: $space-lg;
 
   &__svg {
     width: 48px;
@@ -21,23 +21,23 @@
   &__title {
     font-size: 28px;
     line-height: 36px;
-    margin-block: 16px 0;
+    margin-block: $space-base 0;
   }
 
   &__meta {
     display: flex;
     width: 100px;
-    gap: 8px;
+    gap: $gap-sm;
   }
 
   &__description {
-    margin-block: 8px 0;
+    margin-block: $space-sm 0;
   }
 
   &__label {
     line-height: 24px;
     position: relative;
-    margin-block: 8px 0;
+    margin-block: $space-sm 0;
 
     &::before {
       @include card-pseudoelement;

@@ -6,11 +6,11 @@
     display: flex;
     flex-direction: column;
     gap: $gap-xl;
-    padding-block: 32px;
-    margin-bottom: 32px;
+    padding-block: $space-xl;
+    margin-bottom: $space-xl;
 
     @include tablet {
-      padding-block: 64px 80px;
+      padding-block: $space-4xl $space-5xl;
       gap: $gap-6xl;
     }
   }
@@ -26,7 +26,7 @@
   }
 
   &__brand {
-    margin-bottom: 32px;
+    margin-bottom: $space-xl;
 
     @include tablet {
       width: 320px;
@@ -51,14 +51,14 @@
   }
 
   &__social-list {
-    padding: 0;
-    margin-block: 0;
+    padding: $space-0;
+    margin-block: $space-0;
     display: flex;
-    gap: 8px;
+    gap: $gap-sm;
   }
 
   &__social-item {
-    padding: 20px;
+    padding: $space-m;
     align-items: unset;
     width: 64px;
 
@@ -84,12 +84,12 @@
     line-height: 32px;
     width: 216px;
     min-width: 216px;
-    margin-block: 0;
+    margin-block: $space-0;
   }
 
   &__form {
     display: flex;
-    gap: 8px;
+    gap: $gap-sm;
     width: 100%;
     min-width: 320px;
   }
@@ -104,16 +104,16 @@
     }
 
     &::placeholder {
-      padding-left: 20px;
+      padding-left: $space-m;
     }
 
     @include input-style;
   }
 
   &__lower {
-    padding-block: 24px;
-    padding-inline: 16px;
-    margin-bottom: 0;
+    padding-block: $space-lg;
+    padding-inline: $space-base;
+    margin-bottom: $space-0;
     background-color: #0d0d15;
     height: 128px;
 
@@ -121,7 +121,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-inline: 80px;
+      padding-inline: $space-5xl;
       height: 72px;
     }
   }
@@ -129,7 +129,7 @@
   &__legal-list {
     display: inline-flex;
     gap: $gap-base;
-    padding: 0;
+    padding: $space-0;
   }
 
   &__legal-link {
@@ -147,8 +147,8 @@
       display: inline-block;
       width: 1px;
       height: 24px;
-      margin-inline: 8px;
-      margin-right: 8px;
+      margin-inline: $space-sm;
+      margin-right: $space-sm;
       background-color: #e7eef7a8;
     }
 
@@ -160,6 +160,6 @@
   &__copyright {
     line-height: 24px;
     color: #e7eef7a8;
-    margin-bottom: 0;
+    margin-bottom: $space-0;
   }
 }

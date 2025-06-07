@@ -4,7 +4,7 @@
 .faq {
   &__item {
     border-radius: 10px;
-    padding-inline: 24px;
+    padding-inline: $space-lg;
     border: 2px solid transparent;
     transition: border-color 0.3s ease;
     background-color: #FFFFFF;
@@ -22,7 +22,7 @@
     font-size: 20px;
     line-height: 26px;
     flex: 1;
-    margin-right: 8px;
+    margin-right: $space-sm;
   }
 
   &__icon {

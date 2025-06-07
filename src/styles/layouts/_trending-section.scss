@@ -3,20 +3,20 @@
 
 .trending {
   &__secondary-title {
-    margin-block: 0;
+    margin-block: $space-0;
   }
 
   &__header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 48px;
+    margin-bottom: $space-3xl;
   }
 
   &__button {
     width: 64px;
     font-size: 16px;
-    margin-right: 8px;
-    padding: 0;
+    margin-right: $space-sm;
+    padding: $space-0;
 
     &-icon {
       color: #0d0d15;
@@ -33,7 +33,7 @@
   &__list-wrapper {
     display: flex;
     gap: $gap-base;
-    padding-inline: 0;
+    padding-inline: $space-0;
     overflow-x: scroll;
 
     @include desktop {

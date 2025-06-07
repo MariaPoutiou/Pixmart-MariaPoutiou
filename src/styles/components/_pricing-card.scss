@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .pricing-card {
-  padding: 32px;
+  padding: $space-xl;
   width: 100%;
   position: relative;
 
@@ -28,13 +28,13 @@
   &__title {
     font-size: 20px;
     line-height: 26px;
-    margin-block: 0;
+    margin-block: $space-0;
 
       &--best-seller {
-        margin-top: 32px;
+        margin-top: $space-xl;
 
         @include desktop {
-          margin-block: 0;
+          margin-block: $space-0;
         }
       }
     }
@@ -45,7 +45,7 @@
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -0.5px;
-    margin-block: 16px 32px;
+    margin-block: $space-base $space-xl;
   }
 
   &__billing {
@@ -57,22 +57,22 @@
   }
 
   &__wrapper {
-    padding-top: 40px;
+    padding-top: $space-2xl;
     border-top: 1px solid #1f324745;
   }
 
   &__list {
-    padding: 0;
-    margin-bottom: 40px;
+    padding: $space-0;
+    margin-bottom: $space-2xl;
   }
 
   &__list-item {
-    margin-bottom: 16px;
+    margin-bottom: $space-base;
     display: flex;
     gap: $gap-base;
 
     &:last-child {
-      margin-bottom: 0;
+      margin-bottom: $space-0;
     }
   }
 

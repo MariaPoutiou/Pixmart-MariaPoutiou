@@ -36,7 +36,7 @@
 
   &-actions {
     display: flex;
-    gap: 8px;
+    gap: $gap-sm;
     align-items: center;
   }
 
@@ -50,7 +50,7 @@
     height: 40px;
     width: 40px;
     align-items: center;
-    padding: 12px;
+    padding: $space-md;
 
     &::placeholder {
       display: none;
@@ -95,7 +95,7 @@
       display: flex;
       position: fixed;
       z-index: 999;
-      padding: 16px;
+      padding: $space-base;
       height: 100%;
       left: 0;
       top: 80px;

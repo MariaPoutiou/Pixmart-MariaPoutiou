@@ -22,7 +22,7 @@
   }
 
   &__section {
-    margin-bottom: 40px;
+    margin-bottom: $space-2xl;
   }
 
   &__header {
@@ -31,10 +31,10 @@
     align-items: center;
     gap: $gap-base;
     height: 88px;
-    padding-block: 24px;
-    padding-inline: 16px;
+    padding-block: $space-lg;
+    padding-inline: $space-base;
     background-color: #ffffff;
-    margin-bottom: 40px;
+    margin-bottom: $space-2xl;
 
     @include desktop {
       display: none;
@@ -42,7 +42,7 @@
 
     &-btn {
       border: 2px solid #1d36532b;
-      padding: 6px;
+      padding: $space-s;
       border-radius: 8px;
       display: flex;
       align-items: center;
@@ -53,7 +53,7 @@
     &-title {
       font-size: 24px;
       line-height: 23px;
-      margin-block: 0;
+      margin-block: $space-0;
     }
   }
 
@@ -61,7 +61,7 @@
     display: flex;
     gap: $gap-3xl;
     flex-direction: column-reverse;
-    padding-inline: 16px;
+    padding-inline: $space-base;
     height: 100%;
     @include desktop {
       flex-direction: column;
@@ -76,7 +76,7 @@
     height: 96px;
     width: 100%;
     background-color: #ffffff;
-    padding: 16px;
+    padding: $space-base;
     top: 854px;
     left: 0;
 
@@ -101,8 +101,8 @@
   }
 
   &__title {
-    margin-bottom: 24px;
-    margin-top: 0;
+    margin-bottom: $space-lg;
+    margin-top: $space-0;
     font-size: 32px;
   }
 
@@ -117,23 +117,23 @@
     display: flex;
     flex-direction: column;
     gap: $gap-md;
-    padding-inline: 0;
+    padding-inline: $space-0;
   }
 
   &__item {
-    padding-block: 4px;
+    padding-block: $space-xs;
   }
 
   &__range-labels {
     display: flex;
     justify-content: space-between;
-    margin-top: 8px;
+    margin-top: $space-sm;
   }
 
   &--price {
-    margin-bottom: 120px;
+    margin-bottom: $space-6xl;
     @include desktop {
-      margin-bottom: 0;
+      margin-bottom: $space-0;
     }
   }
 }

@@ -6,7 +6,7 @@
 }
 
 .contact-form {
-  padding: 32px;
+  padding: $space-xl;
   border-radius: 20px;
   background-color: #ffffff;
   width: 100%;
@@ -22,18 +22,18 @@
     flex-direction: column;
     gap: $gap-xxs;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: $space-m;
   }
 
   &__label {
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 4px;
+    margin-bottom: $space-xs;
   }
 
   &__input {
     &::placeholder {
-      padding-left: 16px;
+      padding-left: $space-base;
     }
 
     @include input-style;
@@ -45,7 +45,7 @@
     height: 180px;
 
     &::placeholder {
-      padding-top: 18px;
+      padding-top: $space-ml;
     }
   }
 
@@ -64,8 +64,8 @@
 
   &__button {
     width: 192px;
-    padding-inline: 40px;
-    padding-block: 20px;
+    padding-inline: $space-2xl;
+    padding-block: $space-m;
   }
 
   &__valid {

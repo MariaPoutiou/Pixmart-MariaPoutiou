@@ -10,13 +10,13 @@
   }
 
   &__img-wrapper {
-    margin-bottom: 20px;
+    margin-bottom: $space-m;
   }
 
   &__title {
     font-size: 20px;
     line-height: 26px;
-    margin-block: 20px 0;
+    margin-block: $space-m 0;
   }
 
   &__tags {
@@ -34,7 +34,7 @@
     height: 40px;
     border-radius: 100px;
     font-weight: 500;
-    padding: 16px;
+    padding: $space-base;
     top: 16px;
     left: 16px;
   }
@@ -73,7 +73,7 @@
 
   &__action {
     &:first-child {
-      margin-right: 8px;
+      margin-right: $space-sm;
     }
   }
 }

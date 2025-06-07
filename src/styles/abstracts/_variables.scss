@@ -8,7 +8,6 @@ $screen-mobile: 440px;
 $text-primary:rgb(42 53 65);
 
 // Gaps
-
 $gap-xxs: 4px;
 $gap-xs: 6px;
 $gap-sm: 8px;
@@ -23,3 +22,24 @@ $gap-3xl: 40px;
 $gap-4xl: 48px;
 $gap-5xl: 64px;
 $gap-6xl: 72px;
+
+// Spacing
+$space-0: 0px;
+// Small sizes
+$space-xs: 4px;
+$space-s: 6px;
+$space-sm: 8px;
+// Primary sizes
+$space-md: 12px;
+$space-base: 16px;
+$space-ml: 18px;
+$space-m: 20px;
+$space-lg: 24px;
+
+// Large sizes
+$space-xl: 32px;
+$space-2xl: 40px;
+$space-3xl: 48px;
+$space-4xl: 64px;
+$space-5xl: 80px;
+$space-6xl: 120px;

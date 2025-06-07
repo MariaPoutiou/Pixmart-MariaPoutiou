@@ -16,16 +16,16 @@
   &-title {
     font-size: 20px;
     line-height: 26px;
-    margin-block: 0 16px;
+    margin-block: $space-0 $space-base;
   }
 
   &-list {
-    padding: 0;
-    margin-bottom: 0;
+    padding: $space-0;
+    margin-bottom: $space-0;
   }
 
   &-item {
-    margin-bottom: 8px;
+    margin-bottom: $space-sm;
   }
 
   &-link {

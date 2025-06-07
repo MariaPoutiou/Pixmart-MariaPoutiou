@@ -67,8 +67,8 @@ a {
 
 fieldset {
   border: none;
-  padding: 0;
-  margin: 0;
+  padding: $space-0;
+  margin: $space-0;
 }
 
 .svg {
@@ -77,14 +77,14 @@ fieldset {
 
 .container {
   width: 100%;
-  margin: 0 auto;
-  padding-inline: 16px;
+  margin: $space-0 auto;
+  padding-inline: $space-base;
 
   @include tablet {
-    padding-inline: 40px;
+    padding-inline: $space-2xl;
   }
 
   @include desktop {
-    padding-inline: 80px;
+    padding-inline: $space-5xl;
   }
 }

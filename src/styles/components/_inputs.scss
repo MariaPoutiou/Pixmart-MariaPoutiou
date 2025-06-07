@@ -9,7 +9,7 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 24px;
+  padding-left: $space-lg;
   cursor: pointer;
 
   &::before {
@@ -134,7 +134,7 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 24px;
+  padding-left: $space-lg;
   cursor: pointer;
 
   &::before {
@@ -213,7 +213,7 @@ input[type="radio"]:focus-visible + .input-radio::before {
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 48px;
+  padding-left: $space-3xl;
   cursor: pointer;
 
   &::before {

@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     letter-spacing: -0.5px;
-    margin-block: 64px 100px;
+    margin-block: $space-4xl 100px;
   }
 
   &__catalog-highlight {
@@ -31,7 +31,7 @@
   &__grid-button {
     display: flex;
     justify-content: center;
-    margin-top: 48px;
+    margin-top: $space-3xl;
     position: relative;
     z-index: 2;
     overflow: visible;
@@ -56,15 +56,15 @@
   &-header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 48px;
+    margin-bottom: $space-3xl;
   }
 
   &-layout {
     display: flex;
     flex-direction: row-reverse;
     gap: $gap-lg;
-    padding-block: 0;
-    margin-bottom: 120px;
+    padding-block: $space-0;
+    margin-bottom: $space-6xl;
   }
 }
 
@@ -81,7 +81,7 @@
   &__upper {
     display: flex;
     justify-content: space-between;
-    gap: 8px;
+    gap: $gap-sm;
   }
 
   &__select-wrapper {
@@ -101,7 +101,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     height: 40px;
-    padding: 8px 40px 8px 20px;
+    padding: $space-sm $space-2xl $space-sm 20px;
     background-color: #f1f2f4;
     border: none;
     border-radius: 6px;
@@ -110,7 +110,7 @@
   }
 
   &__info {
-    margin-block: 8px;
+    margin-block: $space-sm;
     white-space: nowrap;
   }
 
@@ -136,7 +136,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: $space-lg;
   }
 
   &-meta {
@@ -144,7 +144,7 @@
   }
 
   &-meta__primary {
-    margin-right: 8px;
+    margin-right: $space-sm;
   }
 
   &-meta__icon-primary {
@@ -153,18 +153,18 @@
 
   &-tags {
     display: flex;
-    gap: 8px;
+    gap: $gap-sm;
   }
 
   &-tag__item {
     font-size: 14px;
     line-height: 20px;
     display: flex;
-    gap: 8px;
+    gap: $gap-sm;
     height: 32px;
     width: auto;
-    padding-block: 6px;
-    padding-inline: 12px;
+    padding-block: $space-s;
+    padding-inline: $space-md;
   }
 
   &-tag__icon {
@@ -177,6 +177,6 @@
   }
 
   &-filter__button-icon {
-    margin-right: 8px;
+    margin-right: $space-sm;
   }
 }

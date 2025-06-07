@@ -35,22 +35,22 @@ details summary::-webkit-details-marker {
   }
 
   &__header {
-    margin-bottom: 64px;
+    margin-bottom: $space-4xl;
     width: 100%;
 
 
     @include tablet {
-      margin-bottom: 0;
+      margin-bottom: $space-0;
       width: 50%;
     }
   }
 
   &__primary-title {
-    margin-block: 0 16px;
+    margin-block: $space-0 $space-base;
   }
 
   &__secondary-title {
-    margin-block: 0 32px;
+    margin-block: $space-0 $space-xl;
   }
 
   &__list {

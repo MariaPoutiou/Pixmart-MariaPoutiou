@@ -4,9 +4,9 @@
 .product-card {
   &__wrapper {
     background-color: #f4f7fa;
-    padding: 32px;
+    padding: $space-xl;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: $space-m;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@
     font-size: 20px;
     line-height: 28px;
     text-align: center;
-    margin-top: 0;
+    margin-top: $space-0;
   }
 
   &__img {

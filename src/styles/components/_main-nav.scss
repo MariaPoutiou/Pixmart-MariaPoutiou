@@ -6,8 +6,8 @@
   &__list {
     display: flex;
     flex-direction: column;
-    padding-inline: 0;
-    gap: 8px;
+    padding-inline: $space-0;
+    gap: $gap-sm;
 
     @include tablet {
       display: flex;
@@ -29,12 +29,12 @@
   }
 
   &__list-item {
-    padding-inline: 32px;
-    padding-block: 18px;
+    padding-inline: $space-xl;
+    padding-block: $space-ml;
 
     @include tablet {
-      padding-inline: 12px;
-      padding-block: 6px;
+      padding-inline: $space-md;
+      padding-block: $space-s;
     }
   }
 }

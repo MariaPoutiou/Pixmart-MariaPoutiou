@@ -11,23 +11,23 @@
 
 .blog-hero {
   &__wrapper {
-    padding-block: 64px;
+    padding-block: $space-4xl;
   }
 
   &__label {
-    padding: 16px;
+    padding: $space-base;
     border-radius: 100px;
     width: 146px;
     height: 40px;
-    margin-bottom: 24px;
+    margin-bottom: $space-lg;
   }
 
   &__title {
-    margin-block: 0;
+    margin-block: $space-0;
   }
 
   &__img-wrapper {
-    margin-bottom: 48px;
+    margin-bottom: $space-3xl;
   }
 
   &__img img {

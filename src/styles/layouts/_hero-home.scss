@@ -3,8 +3,8 @@
 
 .hero-section {
   &--homepage {
-    padding-block: 32px 64px;
-    margin-block: 0 64px;
+    padding-block: $space-xl $space-4xl;
+    margin-block: $space-0 $space-4xl;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -17,8 +17,8 @@
     );
 
     @include tablet {
-      padding-block: 120px;
-      margin-block: 0 120px;
+      padding-block: $space-6xl;
+      margin-block: $space-0 $space-6xl;
       flex-direction: row;
       align-items: center;
     }
@@ -60,7 +60,7 @@
     font-size: 52px;
     line-height: 62px;
     letter-spacing: -0.5px;
-    margin-block: 0;
+    margin-block: $space-0;
 
     &-highlight {
       font-weight: 700;
@@ -74,7 +74,7 @@
     line-height: 28px;
     color: $text-primary;
     opacity: 85%;
-    margin-block: 0;
+    margin-block: $space-0;
   }
 
   &__btn-wrapper {
@@ -92,8 +92,8 @@
     @include button-base;
     background-color: #ffffff;
     color: #0d0d15;
-    padding-block: 18px;
-    padding-inline: 32px;
+    padding-block: $space-ml;
+    padding-inline: $space-xl;
     width: 233px;
     border: 1px solid transparent;
 
@@ -122,7 +122,7 @@
   }
 
   &__button-svg {
-    margin-right: 8px;
+    margin-right: $space-sm;
     color: #0265dc;
     fill: #0265dc;
   }
