@@ -118,14 +118,15 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
     border-color: #1d36532b;
   }
 
-  &:user-invalid::before {
-    border-color: #ea3829;
-    background-color: #0265dc;
-  }
-
   &:hover:invalid::before {
     border-color: #ea3829;
     background-color: #3892f3;
+  }
+
+    &:user-invalid::before {
+    border-color: #ea3829;
+    background-color: #0265dc;
+    cursor: not-allowed;
   }
 }
 
@@ -169,6 +170,7 @@ input[type="radio"]:focus-visible + .input-radio::before {
   input[type="radio"]:disabled + &::before {
     background-color: #22344966;
     border: 2px solid #22344966;
+    cursor: not-allowed;
   }
 
   input[type="radio"]:hover:invalid + &::before {
@@ -196,14 +198,15 @@ input[type="radio"]:focus-visible + .input-radio::before {
   box-shadow: 0 0 0 2px #3892F3;
 }
 
-.radio:checked + .input-radio:disabled::before {
-  box-shadow: 0 0 0 5px #1F324745;
-  background-color: #2A3541B2;
-}
-
 .radio:checked + .input-radio:hover:invalid::before {
   border: 2px solid #ea3829;
   box-shadow: 0 0 0 2px #0054b6;
+}
+
+.radio:checked + .input-radio:disabled::before {
+  box-shadow: 0 0 0 5px #1F324745;
+  background-color: #2A3541B2;
+  cursor: not-allowed;
 }
 
 .input-toggle {
