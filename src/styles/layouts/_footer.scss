@@ -11,7 +11,6 @@
 
     @include tablet {
       padding-block: 64px 80px;
-      margin-bottom: 55px;
     }
   }
 
@@ -35,6 +34,7 @@
   &__logo {
     width: 300px;
     height: 58px;
+    margin-left: -20px;/* there is a mystery space on the left of the logo, i believe it comes from viewport and goes away only when i put height in around 70px, so i put -20 to the left to match the layout*/
   }
 
   &__middle {
