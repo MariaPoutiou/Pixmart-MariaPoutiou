@@ -880,8 +880,9 @@
     "textSecondary": "123 Creative Ave, Design City, 45678"
   },
 
-  "catalogAsideForm": {
+  "contactForm": {
     "action": "https://some-url.com/",
+    "hiddenTitle": "Contact Us",
     "fields": [
       {
         "id": "name",

@@ -1,6 +1,6 @@
 <form class="contact-form" method="post" action="{{ contactForm.action }}">
   <fieldset class="contact-form__fieldset">
-    <legend class="visually-hidden">Contact Us</legend>
+    <legend class="visually-hidden">{{ contactForm.hiddenTitle }}</legend>
     {% for field in contactForm.fields %}
       <div class="contact-form__item">
         <label class="contact-form__label" for="{{ field.id }}">{{ field.label }}</label>

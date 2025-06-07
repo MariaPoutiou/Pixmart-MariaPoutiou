@@ -4,7 +4,7 @@
 .blog-aside {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: $gap-3xl;
   width: 100%;
 
   @include tablet {
@@ -17,7 +17,7 @@
   &__author {
     display: inline-flex;
     flex-wrap: nowrap;
-    gap: 16px;
+    gap: 1$gap-base;
     align-items: center;
     margin-inline: 0;
   }

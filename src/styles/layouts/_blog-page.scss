@@ -41,10 +41,10 @@
   display: flex;
   position: relative;
   flex-direction: column-reverse;
-  gap: 48px;
+  gap: $gap-4xl;
 
   @include tablet {
     flex-direction: row-reverse;
-    gap: 40px;
+    gap: $gap-3xl;
   }
 }

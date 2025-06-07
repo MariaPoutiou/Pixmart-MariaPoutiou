@@ -62,7 +62,7 @@
   &-layout {
     display: flex;
     flex-direction: row-reverse;
-    gap: 24px;
+    gap: $gap-lg;
     padding-block: 0;
     margin-bottom: 120px;
   }
@@ -70,7 +70,7 @@
 
 .catalog-tools {
   display: flex;
-  gap: 24px;
+  gap: $gap-lg;
   flex-direction: column;
 
   @include tablet {
@@ -126,7 +126,7 @@
 
   &__lower {
     display: flex;
-    gap: 24px;
+    gap: $gap-lg;
     justify-content: space-between;
   }
 }

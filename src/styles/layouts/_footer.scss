@@ -5,13 +5,13 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: $gap-xl;
     padding-block: 32px;
     margin-bottom: 32px;
 
     @include tablet {
       padding-block: 64px 80px;
-      gap: 72px;
+      gap: $gap-6xl;
     }
   }
 
@@ -41,7 +41,7 @@
   &__middle {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: $gap-base;
     min-width: 0;
 
     @include tablet {
@@ -68,7 +68,7 @@
   &__newsletter {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: $gap-lg;
     width: 100%;
     min-width: 320px;
 
@@ -128,7 +128,7 @@
 
   &__legal-list {
     display: inline-flex;
-    gap: 16px;
+    gap: $gap-base;
     padding: 0;
   }
 

@@ -46,7 +46,7 @@
   &__quote-wrapper {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: $gap-base;
     margin-inline: 0;
     margin-block: 0;
   }

@@ -5,7 +5,7 @@
   padding-block: 0;
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: $gap-5xl;
 
   @include tablet {
     flex-direction: row-reverse;
@@ -35,7 +35,7 @@
   &__list-wrapper {
     display: flex;
     align-items: flex-end;
-    gap: 20px;
+    gap: $gap-ml;
     width: 100%;
 
     @include tablet {
@@ -46,7 +46,7 @@
   &__list-left {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: $gap-ml;
     height: 460px;
     width: 50%;
     padding-inline: 0;
@@ -72,7 +72,7 @@
   &__list-right {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: $gap-ml;
     height: 460px;
     width: 50%;
     padding-inline: 0;

@@ -13,7 +13,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 40px;
+    gap: $gap-3xl;
     margin-bottom: 120px;
   }
 }
@@ -93,7 +93,7 @@
     background-color: white;
     display: flex;
     height: 72px;
-    gap: 12px;
+    gap: $gap-md;
     align-items: center;
     padding: 12px 16px;
     border-radius: 8px;

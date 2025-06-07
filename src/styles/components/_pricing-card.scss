@@ -69,7 +69,7 @@
   &__list-item {
     margin-bottom: 16px;
     display: flex;
-    gap: 16px;
+    gap: $gap-base;
 
     &:last-child {
       margin-bottom: 0;

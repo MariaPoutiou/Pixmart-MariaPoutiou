@@ -14,13 +14,13 @@
   display: flex;
   flex: 1 1;
   flex-direction: column;
-  gap: 24px;
+  gap: $gap-lg;
   @include box-shadow;
 
   &__item {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: $gap-xxs;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -53,7 +53,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 6px;
+    gap: $gap-xs;
     width: 100%;
     min-width: 300px;
   }

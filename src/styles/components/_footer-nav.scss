@@ -5,11 +5,11 @@
     &-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: $gap-base;
 
     @include tablet {
       flex-direction: row;
-      gap: 64px;
+      gap: $gap-5xl;
     }
   }
 

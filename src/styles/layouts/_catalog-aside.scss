@@ -29,7 +29,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    gap: $gap-base;
     height: 88px;
     padding-block: 24px;
     padding-inline: 16px;
@@ -59,7 +59,7 @@
 
   &__wrapper {
     display: flex;
-    gap: 40px;
+    gap: $gap-3xl;
     flex-direction: column-reverse;
     padding-inline: 16px;
     height: 100%;
@@ -97,7 +97,7 @@
   &__form {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: $gap-3xl;
   }
 
   &__title {
@@ -116,7 +116,7 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: $gap-md;
     padding-inline: 0;
   }
 

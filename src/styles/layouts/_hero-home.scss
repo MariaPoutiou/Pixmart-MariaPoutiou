@@ -9,7 +9,7 @@
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: left;
-    gap: 36px;
+    gap: $gap-2xl;
     background: linear-gradient(
       90deg,
       rgba(240, 246, 253, 1) 30%,
@@ -31,7 +31,7 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: $gap-xl;
     height: 398px;
     width: 100%;
 
@@ -79,7 +79,7 @@
 
   &__btn-wrapper {
     display: flex;
-    gap: 24px;
+    gap: $gap-lg;
   }
 
   &__button-primary {

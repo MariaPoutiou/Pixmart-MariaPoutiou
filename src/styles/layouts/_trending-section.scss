@@ -32,7 +32,7 @@
 
   &__list-wrapper {
     display: flex;
-    gap: 16px;
+    gap: $gap-base;
     padding-inline: 0;
     overflow-x: scroll;
 
