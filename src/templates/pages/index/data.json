@@ -888,6 +888,8 @@
     "selectLabel": "Subject",
     "selectPlaceholder": "Select a subject",
     "selectOptions": ["General Inquiry", "Support", "Billing"],
+    "selectValid": "Field validation is successful.",
+    "selectInvalid": "This field is required.",
     "textareaLabel": "Message",
     "textareaPlaceholder": "Enter your message ...",
     "valid": "Field validation is successful.",

@@ -11,12 +11,14 @@
       {% endfor %}
       <div class="contact-form__item">
         <label class="contact-form__label" for="subject">{{ contactForm.selectLabel }}</label>
-        <select class="input contact-form__select" id="subject" name="subject">
+        <select class="input contact-form__select" id="subject" name="subject" required>
           <option value="" disabled selected>{{ contactForm.selectPlaceholder }}</option>
           {% for option in contactForm.selectOptions %}
             <option value="{{ option }}">{{ option }}</option>
           {% endfor %}
         </select>
+        <span class="contact-form__select-valid">{{ option.selectValid }}</span>
+        <span class="contact-form__select-invalid">{{ option.selectInvalid }}</span>
       </div>
       <div class="contact-form__item">
         <label class="contact-form__label" for="message">{{ contactForm.textareaLabel }}</label>
