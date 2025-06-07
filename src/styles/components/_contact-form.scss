@@ -95,10 +95,10 @@
   display: block;
 }
 
-.contact-form__textarea:user-invalid ~ .contact-form__invalid {
+.contact-form__textarea:user-invalid ~ .contact-form__textarea-invalid {
   display: block;
 }
 
-.contact-form__textarea:valid + .contact-form__valid {
+.contact-form__textarea:valid + .contact-form__textarea-valid {
   display: block;
 }
