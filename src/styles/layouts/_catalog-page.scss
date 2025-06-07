@@ -54,7 +54,6 @@
   &-header {
     display: flex;
     flex-direction: column;
-    gap: 24px;
     margin-bottom: 48px;
   }
 
@@ -75,7 +74,6 @@
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
   }
 
   &__upper {
@@ -86,7 +84,6 @@
 
   &__select-wrapper {
     position: relative;
-    display: flex;
     align-items: center;
     justify-content: space-between;
   }
