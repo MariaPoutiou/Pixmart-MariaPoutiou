@@ -124,6 +124,12 @@
     padding-block: 4px;
   }
 
+  &__range-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+
   &--price {
     margin-bottom: 120px;
     @include desktop {

@@ -5,10 +5,10 @@
     <div class="catalog-filter__range">
       <div class="catalog-filter__range-slider">
         <input class="catalog-filter__range-input" type="range" min="{{ catalogFilterPrice.min }}" max="{{ catalogFilterPrice.max }}" value="{{ catalogFilterPrice.valueMin }}" id="{{ catalogFilterPrice.idMin }}">
-          <input class="catalog-filter__range-input" type="range" min="{{ catalogFilterPrice.min }}" max="{{ catalogFilterPrice.max }}" value="{{ catalogFilterPrice.valueMax }}" id="{{ catalogFilterPrice.idMax }}"/></div>
+          </div>
           <div class="catalog-filter__range-labels">
-            <span class="catalog-filter__range-label">{{ catalogFilterPrice.labelMin }}</span>
-            <span class="catalog-filter__range-label">{{ catalogFilterPrice.labelMax }}</span>
+            <span class="catalog-filter__range-up">{{ catalogFilterPrice.labelMin }}</span>
+            <span class="catalog-filter__range-down">{{ catalogFilterPrice.labelMax }}</span>
           </div>
         </div>
       </fieldset>
