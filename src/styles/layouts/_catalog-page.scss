@@ -13,6 +13,8 @@
   }
 
   &__catalog-title {
+    display: flex;
+    flex-direction: column;
     letter-spacing: -0.5px;
     margin-block: 64px 100px;
   }
