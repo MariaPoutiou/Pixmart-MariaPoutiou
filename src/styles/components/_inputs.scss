@@ -20,35 +20,42 @@
     border-radius: 4px;
     background-color: #ffffff;
   }
+  @include checkbox-style-default;
 }
 
-.catalog-filter__label-icon, .contact-form__checkbox-icon {
+.catalog-filter__label-icon,
+.contact-form__checkbox-icon {
   display: none;
 }
 
 .checkbox:checked + .input-checkbox .catalog-filter__label-icon {
-  color: #F5F8FB;
+  color: #f5f8fb;
   display: inline-block;
   position: absolute;
   width: 10px;
   height: 8px;
   top: 7px;
   left: 3px;
+  @include svg-check-icon-checked;
 }
 
 .checkbox:checked + .contact-form__checkbox .contact-form__checkbox-icon {
-  color: #F5F8FB;
+  color: #f5f8fb;
   display: inline-block;
   position: absolute;
   width: 10px;
   height: 8px;
   top: 9px;
   left: 3px;
+  @include svg-check-icon-checked;
 }
 
-.checkbox:checked + .input-checkbox::before {
-  background-color: #0265dc;
-  border-color: #0265dc;
+.checkbox:checked + .input-checkbox {
+  &::before {
+    background-color: #0265dc;
+    border-color: #0265dc;
+  }
+  @include checkbox-style-checked;
 }
 
 .input-radio {

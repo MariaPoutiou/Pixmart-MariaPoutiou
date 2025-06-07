@@ -1,28 +1,34 @@
 @use "./variables" as *;
 
-@mixin input {
-  border: 1px solid #1d36532b;
-  border-radius: 8px;
+@mixin desktop {
+  @media screen and (width >= #{$screen-desktop}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (width >= #{$screen-tablet}) {
+    @content;
+  }
+}
+
+@mixin svg-size {
+  width: 24px;
+  height: 24px;
+}
+
+@mixin svg-small {
+  width: 16px;
+  height: 16px;
+}
+
+@mixin svg-large {
+  width: 64px;
   height: 64px;
 }
 
-@mixin input-style {
-  &:hover {
-    border: 2px solid #3892f3;
-  }
-
-  &:user-invalid {
-    border: 1px solid #ea3829;
-  }
-
-  &:focus,
-  &:focus-visible {
-    border: 3px solid #3892f3;
-  }
-
-  &:disabled {
-    background-color: #1d36532b;
-  }
+@mixin box-shadow {
+  box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
 }
 
 @mixin label {
@@ -88,19 +94,54 @@
   padding-inline: 32px;
 }
 
-@mixin svg-size {
-  width: 24px;
-  height: 24px;
+@mixin button-primary-style {
+  &:hover {
+    background-color: #3892f3;
+    border-color: #3892f3;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.6);
+  }
+
+  &:active {
+    background-color: #0054b6;
+    border-color: #0054b6;
+  }
+
+  &:disabled {
+    outline: none;
+    color: #22344966;
+    border: 2px solid rgba(29, 54, 83, 0.17);
+    background-color: rgba(29, 54, 83, 0.17);
+    pointer-events: none;
+  }
 }
 
-@mixin svg-small {
-  width: 16px;
-  height: 16px;
-}
+@mixin button-secondary-style {
+  &:hover {
+    background-color: #294d7517;
+  }
 
-@mixin svg-large {
-  width: 64px;
-  height: 64px;
+  &:focus-visible {
+    outline: none;
+    background-color: #294d7517;
+    box-shadow: 0 0 0 4px #3892f3;
+    border-color: #294d7517;
+  }
+
+  &:active {
+    background-color: #294d7517;
+  }
+
+  &:disabled {
+    color: #22344966;
+    background-color: #1d36532b;
+    border: 2px solid #22344966;
+    border-radius: 8px;
+    pointer-events: none;
+  }
 }
 
 @mixin product-image {
@@ -166,68 +207,99 @@
   }
 }
 
-@mixin button-primary-style {
+@mixin input {
+  border: 1px solid #1d36532b;
+  border-radius: 8px;
+  height: 64px;
+}
+
+@mixin input-style {
   &:hover {
-    background-color: #3892f3;
-    border-color: #3892f3;
+    border: 2px solid #3892f3;
   }
 
+  &:user-invalid {
+    border: 1px solid #ea3829;
+  }
+
+  &:focus,
   &:focus-visible {
+    border: 3px solid #3892f3;
+  }
+
+  &:disabled {
+    background-color: #1d36532b;
+  }
+}
+
+@mixin svg-check-icon-checked {
+  &:active {
+    color: #0054b6;
+  }
+
+  &:disabled {
+    background-color: #22344966;
+  }
+}
+
+@mixin checkbox-style-default {
+  &:hover::before {
+    background-color: #f4f7fa;
+  }
+
+  &:active::before {
+    background-color: #f4f7fa;
+    border-color: transparent;
+  }
+
+  &:focus-visible::before {
     outline: none;
     box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.6);
   }
 
-  &:active {
-    background-color: #0054b6;
-    border-color: #0054b6;
-  }
-
-  &:disabled {
-    outline: none;
-    color: #22344966;
-    border: 2px solid rgba(29, 54, 83, 0.17);
-    background-color: rgba(29, 54, 83, 0.17);
-    pointer-events: none;
-  }
-}
-
-@mixin button-secondary-style {
-  &:hover {
-    background-color: #294d7517;
-  }
-
-  &:focus-visible {
-    outline: none;
-    background-color: #294d7517;
-    box-shadow: 0 0 0 4px #3892f3;
-    border-color: #294d7517;
-  }
-
-  &:active {
-    background-color: #294d7517;
-  }
-
-  &:disabled {
-    color: #22344966;
+  &:disabled::before {
     background-color: #1d36532b;
-    border: 2px solid #22344966;
-    border-radius: 8px;
-    pointer-events: none;
+    border-color: transparent;
+  }
+
+  &:user-invalid::before {
+    border-color: #ea3829;
+  }
+
+  &:hover:invalid::before {
+    border-color: #ea3829;
+    background-color: #294d7517;
   }
 }
 
-@mixin box-shadow {
-  box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
-}
-
-@mixin desktop {
-  @media screen and (width >= #{$screen-desktop}) {
-    @content;
+@mixin checkbox-style-checked {
+  &:hover::before {
+    background-color: #3892f3;
+    border-color: #3892f3;
   }
-}
 
-@mixin tablet {
-  @media screen and (width >= #{$screen-tablet}) {
-    @content;
+  &:active:active {
+    background-color: #b5deff;
+    border-color: #b5deff;
+  }
+
+  &:focus-visible::before {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.6);
+  }
+
+  &:disabled::before {
+    background-color: #1d36532b;
+    border-color: #1d36532b;
+  }
+
+  &:user-invalid::before {
+    border-color: #ea3829;
+    background-color: #0265dc;
+  }
+
+  &:hover:invalid::before {
+    border-color: #ea3829;
+    background-color: #3892f3;
   }
 }
