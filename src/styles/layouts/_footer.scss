@@ -5,12 +5,13 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 72px;
+    gap: 32px;
     padding-block: 32px;
     margin-bottom: 32px;
 
     @include tablet {
       padding-block: 64px 80px;
+      gap: 72px;
     }
   }
 
@@ -51,7 +52,7 @@
 
   &__social-list {
     padding: 0;
-    margin-block: 0 16px;
+    margin-block: 0;
     display: flex;
     gap: 8px;
   }
@@ -114,11 +115,14 @@
     padding-inline: 16px;
     margin-bottom: 0;
     background-color: #0d0d15;
+    height: 128px;
 
     @include tablet {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding-inline: 80px;
+      height: 72px;
     }
   }
 

@@ -838,7 +838,8 @@
 
   "contactIntro": {
     "label": "CONTACT",
-    "title": "Get in Touch with Us",
+    "titleUp": "Get in Touch",
+    "titleLow": "with Us",
     "description": "We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.",
     "buttonText": "Shop Now"
   },

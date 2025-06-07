@@ -1,7 +1,11 @@
 <div class="contact__layout">
   <div class="contact__intro">
     <h2 class="primary-title contact__primary-title">{{ contactIntro.label }}</h2>
-    <h1 class="contact__title">{{ contactIntro.title }}</h1>
+    <h1 class="contact__title">
+      <span>{{ contactIntro.titleUp }}</span>
+      <span>{{ contactIntro.titleLow }}</span>
+    </h1>
+
     <h3 class="contact__description">{{ contactIntro.description }}</h3>
   </div>
   <button class="button contact__button button--primary">
