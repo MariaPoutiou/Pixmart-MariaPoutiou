@@ -26,25 +26,6 @@
     @include tablet {
       gap: 0;
     }
-
-    &-img {
-      width: 24px;
-      height: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    &-btn {
-      @include button-base;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      @include tablet {
-        display: none;
-      }
-    }
   }
 
   &__logo-img {
@@ -124,6 +105,38 @@
 
     @include tablet {
       display: flex;
+    }
+  }
+}
+
+.header {
+  &__burger-btn {
+    @include button-base;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+      display: none;
+    }
+
+    .header__burger-img {
+      display: block;
+    }
+
+    .header__burger-img--close {
+      display: none;
+    }
+
+    &.is-open {
+      .header__burger-img {
+        display: none;
+      }
+
+      .header__burger-img--close {
+        display: block;
+        color: #f8f7ff;
+      }
     }
   }
 }

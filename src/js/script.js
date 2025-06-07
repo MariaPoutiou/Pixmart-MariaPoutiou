@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     burgerBtn.addEventListener("click", () => {
       headerSection.classList.toggle("is-shown");
       body.classList.toggle("not-scrolled");
+      burgerBtn.classList.toggle("is-open");
     });
   }
   if (filterMobileBtnArea && asideCatalog) {

@@ -16,7 +16,7 @@
 
   "header": {
     "burgerImg": "/img/sprite.svg#icon-menu",
-    "burgerAlt": "menu icon",
+    "burgerImgClose": "/img/sprite.svg#icon-close",
     "logoLink": "index.html",
     "logoImg": "/img/sprite.svg#pixmart-logo",
     "logoImgFull": "/img/sprite.svg#pixmart-logo-header",
