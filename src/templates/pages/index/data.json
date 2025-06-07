@@ -349,6 +349,15 @@
     "titleEnd": "Design Assets"
   },
 
+  "gridHeader": {
+    "title": "Catalog Actions",
+    "action": "https://some-url.com/"
+  },
+
+  "gridCatalog": {
+    "mainTitle": "Choose Among our Products"
+  },
+
   "catalogDropdownOptions": [
     "Best Seller",
     "Newest",
@@ -625,8 +634,13 @@
   },
 
   "catalogFilterHeader": {
+    "mainTitle": "Customize Your Prefrences",
     "title": "Filters",
     "icon": "/img/sprite.svg#icon-close"
+  },
+
+  "catalogForm": {
+    "action": "https://some-url.com"
   },
 
   "catalogFilterCategories": {
@@ -755,6 +769,7 @@
   "articleOutro": "Typography is an art that speaks volumes beyond the mere letters on a surface. By applying these tips, designers can elevate their work from mere messages to powerful visual statements. Remember, mastering typography is a journey.",
 
   "blogAside": {
+    "title": "Choose your Favorite Category",
     "author": {
       "img": "emma-clarke",
       "alt": "Portrait of Emma Clarke",
@@ -865,7 +880,7 @@
     "textSecondary": "123 Creative Ave, Design City, 45678"
   },
 
-  "contactForm": {
+  "catalogAsideForm": {
     "action": "https://some-url.com/",
     "fields": [
       {
