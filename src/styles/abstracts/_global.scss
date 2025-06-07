@@ -8,10 +8,10 @@
 body {
   color: #0d0d15;
   background-color: rgb(255, 255, 255);
-  font-family: "Libre Franklin", "Arial", "Georgia", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: $ff-body;
+  font-weight: $fw-regular;
+  font-size: $fz-sm;
+  line-height: $lh-base;
 
   &.not-scrolled {
     @include tablet {
@@ -21,8 +21,8 @@ body {
 }
 
 h1 {
-  font-size: 52px;
-  line-height: 62px;
+  font-size: $fz-2xl;
+  line-height: $lh-2xl;
 }
 
 h1,
@@ -30,8 +30,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Plus Jakarta Sans", "Arial", "Georgia", sans-serif;
-  font-weight: 700;
+  font-family: $ff-heading;
+  font-weight: $fw-bold;
   color: #0d0d15;
 }
 

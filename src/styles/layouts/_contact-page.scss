@@ -35,9 +35,9 @@
   }
 
   &__description {
-    font-family: "Libre Franklin", "Arial", "Georgia", sans-serif;
-    font-size: 18px;
-    line-height: 28px;
+    font-family: $ff-body;
+    font-size: $fz-md;
+    line-height: $lh-m;
     color: #2a3541d9;
     margin-bottom: $space-base;
   }
@@ -61,9 +61,9 @@
   }
 
   &__text {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
+    font-weight: $fw-semibold;
+    font-size: $fz-md;
+    line-height: $lh-m;
     margin-block: $space-0;
   }
 
@@ -101,7 +101,7 @@
   }
 
   &__map-text-upper {
-    font-weight: 700;
+    font-weight: $fw-bold;
     margin-block: $space-md 0;
   }
 

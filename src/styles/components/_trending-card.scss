@@ -41,14 +41,14 @@
   }
 
   &__title {
-    font-size: 28px;
+    font-size: $fz-lg;
     line-height: 36px;
     margin-block: $space-base 4px;
   }
 
   &__price {
-    font-weight: 500;
-    line-height: 24px;
+    font-weight: $fw-medium;
+    line-height: $lh-base;
     color: #0265dc;
     margin-block: $space-base 4px;
   }

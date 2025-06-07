@@ -11,7 +11,7 @@
   }
 
   &__link {
-    font-weight: 600;
+    font-weight: $fw-semibold;
     color: #0265dc;
     @include link-style;
   }
@@ -51,7 +51,7 @@
   }
 
   &__title {
-    font-size: 28px;
+    font-size: $fz-lg;
     line-height: 36px;
     margin-block: $space-lg $space-sm;
   }

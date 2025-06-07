@@ -14,8 +14,8 @@
   }
 
   &__title {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: $fz-m;
+    line-height: $lh-md;
     margin-block: $space-m 0;
   }
 
@@ -33,7 +33,7 @@
     position: absolute;
     height: 40px;
     border-radius: 100px;
-    font-weight: 500;
+    font-weight: $fw-medium;
     padding: $space-base;
     top: 16px;
     left: 16px;
@@ -60,9 +60,9 @@
   }
 
   &__price {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
+    font-weight: $fw-bold;
+    font-size: $fz-m;
+    line-height: $lh-md;
   }
 
   &__footer {

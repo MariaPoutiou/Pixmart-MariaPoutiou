@@ -25,8 +25,8 @@
   }
 
   &__title {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: $fz-xl;
+    line-height: $lh-xl;
     letter-spacing: -0.5px;
     margin-block-end: $space-base;
 
@@ -36,7 +36,7 @@
   }
 
   &__link {
-    font-weight: 600;
+    font-weight: $fw-semibold;
     color: #0265dc;
     display: flex;
     align-items: center;

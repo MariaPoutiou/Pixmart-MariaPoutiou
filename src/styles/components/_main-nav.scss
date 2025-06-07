@@ -17,14 +17,14 @@
 
   &__list-link {
     color: rgb(13 13 21);
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
+    font-weight: $fw-semibold;
+    font-size: $fz-md;
+    line-height: $lh-m;
     @include link-style;
     
     @include tablet {
-      font-size: 14px;
-      line-height: 20px;
+      font-size: $fz-xs;
+      line-height: $lh-sm;
     }
   }
 

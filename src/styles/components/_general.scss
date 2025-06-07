@@ -2,17 +2,17 @@
 @use "../abstracts/mixins" as *;
 
 .primary-title {
-  font-family: "Libre Franklin", "Arial", "Georgia", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  font-family: $ff-body;
+  font-size: $fz-sm;
+  font-weight: $fw-regular;
+  line-height: $lh-base;
   color: #0f73f6;
   margin-block: 0 $space-base;
 }
 
 .secondary-title {
-  font-size: 36px;
-  line-height: 48px;
+  font-size: $fz-xl;
+  line-height: $lh-xl;
   letter-spacing: -0.5px;
 }
 

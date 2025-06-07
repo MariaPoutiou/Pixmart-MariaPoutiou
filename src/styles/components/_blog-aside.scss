@@ -17,17 +17,17 @@
   &__author {
     display: inline-flex;
     flex-wrap: nowrap;
-    gap: 1$gap-base;
+    gap: $gap-base;
     align-items: center;
     margin-inline: $space-0;
   }
 
   &__author-name {
-    font-family: "Plus Jakarta Sans", "Arial", "Georgia", sans-serif;
+    font-family: $ff-heading;
     margin-block: $space-0;
-    font-weight: 700px;
-    font-size: 20px;
-    line-height: 26px;
+    font-weight: $fw-bold;
+    font-size: $fz-m;
+    line-height: $lh-md;
     white-space: nowrap;
   }
 
@@ -52,8 +52,8 @@
   }
 
   &__heading {
-    font-size: 25px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: $lh-lg;
   }
 
   &__list {
@@ -86,7 +86,7 @@
   }
 
   &__list-item--active {
-    font-weight: 600;
+    font-weight: $fw-semibold;
     padding-inline: $space-base;
   }
 
@@ -113,8 +113,8 @@
   }
 
   &__article-title {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: $fz-m;
+    line-height: $lh-md;
     margin-bottom: $space-md;
   }
 

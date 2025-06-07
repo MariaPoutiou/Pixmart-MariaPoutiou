@@ -19,9 +19,9 @@
   }
 
   &__title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
+    font-weight: $fw-medium;
+    font-size: $fz-m;
+    line-height: $lh-m;
     text-align: center;
     margin-top: $space-0;
   }

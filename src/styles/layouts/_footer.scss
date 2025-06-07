@@ -81,7 +81,7 @@
 
   &__newsletter-title {
     font-size: 24px;
-    line-height: 32px;
+    line-height: $lh-lg;
     width: 216px;
     min-width: 216px;
     margin-block: $space-0;
@@ -137,7 +137,7 @@
   }
 
   &__legal-item {
-    line-height: 24px;
+    line-height: $lh-base;
     color: #e7eef7a8;
     position: relative;
 
@@ -158,8 +158,8 @@
   }
 
   &__copyright {
-    line-height: 24px;
+    line-height: $lh-base;
     color: #e7eef7a8;
-    margin-bottom: $space-0;
+    margin-block: $space-0;
   }
 }

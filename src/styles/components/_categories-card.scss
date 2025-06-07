@@ -19,7 +19,7 @@
   }
 
   &__title {
-    font-size: 28px;
+    font-size: $fz-lg;
     line-height: 36px;
     margin-block: $space-base 0;
   }
@@ -35,7 +35,7 @@
   }
 
   &__label {
-    line-height: 24px;
+    line-height: $lh-base;
     position: relative;
     margin-block: $space-sm 0;
 

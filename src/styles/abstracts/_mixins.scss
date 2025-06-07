@@ -47,9 +47,9 @@
 }
 
 @mixin button-base {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
+  font-weight: $fw-semibold;
+  font-size: $fz-md;
+  line-height: $lh-m;
   text-align: center;
   border: 2px solid transparent;
   border-radius: 8px;

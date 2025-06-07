@@ -57,21 +57,21 @@
   }
 
   &__heading {
-    font-size: 52px;
-    line-height: 62px;
+    font-size: $fz-2xl;
+    line-height: $lh-2xl;
     letter-spacing: -0.5px;
     margin-block: $space-0;
 
     &-highlight {
-      font-weight: 700;
+      font-weight: $fw-bold;
       color: rgb(2, 101, 220);
     }
   }
 
   &__description {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
+    font-weight: $fw-medium;
+    font-size: $fz-m;
+    line-height: $lh-m;
     color: $text-primary;
     opacity: 85%;
     margin-block: $space-0;

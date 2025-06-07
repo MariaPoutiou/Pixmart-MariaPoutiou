@@ -3,14 +3,14 @@
 
 .article {
   &__paragraph {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: $fz-md;
+    line-height: $lh-md;
     color: #2a3541d9;
   }
 
   &__subtitle {
     font-size: 24px;
-    line-height: 32px;
+    line-height: $lh-lg;
   }
 
   &__img img {
@@ -38,7 +38,7 @@
   }
 
   &__img-link {
-    font-weight: 600;
+    font-weight: $fw-semibold;
     color: #0265dc;
     @include link-style;
   }
@@ -56,10 +56,10 @@
   }
 
   &__quote {
-    font-family: "Plus Jakarta Sans", "Arial", "Georgia", sans-serif;
-    font-weight: 700;
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
     font-size: 24px;
-    line-height: 32px;
+    line-height: $lh-lg;
     color: #0d0d15;
     margin: $space-0;
     padding-top: $space-sm;

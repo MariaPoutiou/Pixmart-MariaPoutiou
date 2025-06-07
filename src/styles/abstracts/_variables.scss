@@ -6,6 +6,30 @@ $screen-mobile: 440px;
 
 // Typography
 $text-primary:rgb(42 53 65);
+//Font Family
+$ff-body: "Libre Franklin", "Arial", "Georgia", sans-serif;
+$ff-heading: "Plus Jakarta Sans", "Arial", "Georgia", sans-serif;
+// Fonte Weight
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+// Font Size
+$fz-xs: 14px;
+$fz-sm: 16px;
+$fz-md: 18px;
+$fz-m: 20px;
+$fz-lg: 28px;
+$fz-xl: 36px;
+$fz-2xl: 52px;
+// Line Height
+$lh-sm: 20px;
+$lh-base: 24px;
+$lh-md: 26px;
+$lh-m: 28px;
+$lh-lg: 32px;
+$lh-xl: 48px;
+$lh-2xl: 62px;
 
 // Gaps
 $gap-xxs: 4px;
@@ -35,7 +59,6 @@ $space-base: 16px;
 $space-ml: 18px;
 $space-m: 20px;
 $space-lg: 24px;
-
 // Large sizes
 $space-xl: 32px;
 $space-2xl: 40px;

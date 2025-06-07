@@ -19,8 +19,8 @@
   }
 
   &__text {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: $fz-m;
+    line-height: $lh-md;
     flex: 1;
     margin-right: $space-sm;
   }

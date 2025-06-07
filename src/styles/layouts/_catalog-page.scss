@@ -105,7 +105,7 @@
     background-color: #f1f2f4;
     border: none;
     border-radius: 6px;
-    font-weight: 600;
+    font-weight: $fw-semibold;
     cursor: pointer;
   }
 
@@ -157,8 +157,8 @@
   }
 
   &-tag__item {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: $fz-xs;
+    line-height: $lh-sm;
     display: flex;
     gap: $gap-sm;
     height: 32px;
@@ -172,8 +172,8 @@
   }
 
   &-filter__button {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: $fz-sm;
+    line-height: $lh-base;
   }
 
   &-filter__button-icon {

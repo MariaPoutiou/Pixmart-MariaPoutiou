@@ -26,8 +26,8 @@
   }
 
   &__label {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: $fz-xs;
+    line-height: $lh-sm;
     margin-bottom: $space-xs;
   }
 
@@ -105,8 +105,8 @@
   }
 
   &__checkbox-terms {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: $fz-xs;
+    line-height: $lh-sm;
   }
 }
 
