@@ -3,13 +3,9 @@
 
 .categories-card {
   width: 100%;
-  padding: 12px; /**according to figma the padding here is 24px, but in mobile view in Figma the text (title and labels) says just "text". Our actual text is bigger and it's impossible to fit in this block at 440px. I decided to just reduce padding in mobile view so it can fit the whole text**/
   border-radius: 20px;
   transition: background-color 0.3s ease, transform 0.3 ease;
-
-  @include tablet {
-    padding: 24px;
-  }
+  padding: 24px;
 
   &__svg {
     width: 48px;
@@ -46,6 +42,10 @@
     &::before {
       @include card-pseudoelement;
     }
+
+    @media screen and (max-width: 500px) {
+      display: none;
+    }/* i need to explain here, the mobile layout text is different. It says "text" everywhere. These words are small and fit the block but the actual text is long and not possible to fit the block without wrap or adjustment. I just hide one of the words for screen below 500px*/
   }
 
   &__info {
