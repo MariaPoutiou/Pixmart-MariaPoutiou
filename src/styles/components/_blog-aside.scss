@@ -32,7 +32,7 @@
   }
 
   &__author-date {
-    color: #222222;
+    color: $color-text-dark;
     opacity: 50%;
     white-space: nowrap;
   }
@@ -47,7 +47,7 @@
 
   &__section {
     padding-top: $space-2xl;
-    border-top: 2px solid #0d0d15;
+    border-top: 2px solid $color-text-primary;
     width: 100%;
   }
 
@@ -71,13 +71,13 @@
       width: 8px;
       height: 8px;
       border-radius: 50px;
-      background-color: #0265dc;
+      background-color: $color-primary;
       margin-right: $space-sm;
     }
   }
 
   &__list-link {
-    color: #2a3541d9;
+    color: $color-text-secondary;
     @include link-style;
   }
 
@@ -86,7 +86,7 @@
   }
 
   &__article-date {
-    color: #2a3541d9;
+    color: $color-text-secondary;
   }
 
   &__list-item--active {
@@ -95,7 +95,7 @@
   }
 
   &__list-link--active {
-    color: #0d0d15;
+    color: $color-text-primary;
   }
 
   &__articles {
@@ -111,7 +111,7 @@
       display: block;
       width: 100%;
       height: 1px;
-      background-color: #22222226;
+      background-color: rgba(34, 34, 34, 0.15);
       margin: $space-lg auto 0;
     }
   }

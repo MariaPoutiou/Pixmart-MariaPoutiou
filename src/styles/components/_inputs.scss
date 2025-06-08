@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
-  border-color: #ea3829;
+  border-color: $color-error;
 }
 
 .input-checkbox {
@@ -20,36 +20,36 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
     transform: translateY(-50%);
     width: 14px;
     height: 14px;
-    border: 1px solid #1f324745;
+    border: 1px solid $color-02;
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: $color-white;
   }
   input[type="checkbox"]:focus-visible + &::before {
-    box-shadow: 0 0 0 2px rgba(30, 144, 255, 0.6);
+    box-shadow: 0 0 0 2px $color-focus-ring;
     border-color: transparent;
   }
 
   input[type="checkbox"]:hover + &::before {
-    background-color: #f4f7fa;
+    background-color: $color-surface-light;
   }
 
   input[type="checkbox"]:active + &::before {
-    background-color: #f4f7fa;
+    background-color: $color-surface-light;
     border-color: transparent;
   }
 
   input[type="checkbox"]:disabled + &::before {
-    background-color: #1d36532b;
+    background-color: $color-gray-light;
     border-color: transparent;
   }
 
   input[type="checkbox"]:invalid + &::before {
-    border-color: #ea3829;
+    border-color: $color-error;
   }
 
   input[type="checkbox"]:hover:invalid + &::before {
-    border-color: #ea3829;
-    background-color: #294d7517;
+    border-color: $color-error;
+    background-color: $color-gray-bg;
   }
 }
 
@@ -59,7 +59,7 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
 }
 
 .checkbox:checked + .input-checkbox .catalog-filter__label-icon {
-  color: #f5f8fb;
+  color: $color-background-soft;
   display: inline-block;
   position: absolute;
   width: 10px;
@@ -68,16 +68,16 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
   left: 3px;
 
   &:active {
-    color: #0054b6;
+    color: $color-blue-dark;
   }
 
   &:disabled {
-    background-color: #22344966;
+    background-color: $color-disabled;
   }
 }
 
 .checkbox:checked + .contact-form__checkbox .contact-form__checkbox-icon {
-  color: #f5f8fb;
+  color: $color-background-soft;
   display: inline-block;
   position: absolute;
   width: 10px;
@@ -85,47 +85,47 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
   top: 7px;
   left: 3px;
   &:active {
-    color: #0054b6;
+    color: $color-blue-dark;
   }
 
   &:disabled {
-    background-color: #22344966;
+    background-color: $color-disabled;
   }
 }
 
 .checkbox:checked + .input-checkbox {
   &::before {
-    background-color: #0265dc;
-    border-color: #0265dc;
+    background-color: $color-primary;
+    border-color: $color-primary;
   }
   &:hover::before {
-    background-color: #3892f3;
-    border-color: #3892f3;
+    background-color: $color-blue-light;
+    border-color: $color-blue-light;
   }
 
   &:active:before {
-    background-color: #b5deff;
-    border-color: #b5deff;
+    background-color: $color-07;
+    border-color: $color-07;
   }
 
   &:focus-visible::before {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.6);
+    box-shadow: 0 0 0 4px $color-focus-ring;
   }
 
   &:disabled::before {
-    background-color: #1d36532b;
-    border-color: #1d36532b;
+    background-color: $color-gray-light;
+    border-color: $color-gray-light;
   }
 
   &:hover:invalid::before {
-    border-color: #ea3829;
-    background-color: #3892f3;
+    border-color: $color-error;
+    background-color: $color-blue-light;
   }
 
   &:user-invalid::before {
-    border-color: #ea3829;
-    background-color: #0265dc;
+    border-color: $color-error;
+    background-color: $color-primary;
     cursor: not-allowed;
   }
 }
@@ -145,67 +145,67 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
     transform: translateY(-50%);
     width: 14px;
     height: 14px;
-    border: 2px solid #1f324745;
+    border: 2px solid $color-02;
     border-radius: 50%;
     background-color: transparent;
     box-sizing: border-box;
   }
 
   input[type="radio"]:hover + &::before {
-    background-color: #f4f7fa;
+    background-color: $color-surface-light;
     box-shadow: none;
   }
 
   input[type="radio"]:active + &::before {
-    background-color: #e7eef7a8;
-    border-color: #2a3541b2;
+    background-color: $color-background-faded;
+    border-color: $color-03;
     box-shadow: none;
   }
 
   input[type="radio"]:disabled + &::before {
-    background-color: #22344966;
-    border: 2px solid #22344966;
+    background-color: $color-disabled;
+    border: 2px solid $color-disabled;
     cursor: not-allowed;
   }
 
   input[type="radio"]:hover:invalid + &::before {
-    border-color: #ea3829;
-    background-color: #294d7517;
+    border-color: $color-error;
+    background-color: $color-gray-bg;
   }
 }
 
 .radio:focus-visible + .input-radio::before {
-  box-shadow: 0 0 0 2px rgba(30, 144, 255, 0.6);
-  border-color: #2a3541b2;
+  box-shadow: 0 0 0 2px $color-focus-ring;
+  border-color: $color-03;
 }
 
 .radio:checked + .input-radio::before {
-  border: 5px solid #0265dc;
+  border: 5px solid $color-primary;
 }
 
 .radio:checked + .input-radio:hover::before {
-  background-color: #e7eef7a8;
-  border-color: #3892f3;
+  background-color: $color-background-faded;
+  border-color: $color-blue-light;
 }
 
 .radio:checked + .input-radio:active::before {
-  background-color: #0054b6;
-  border: 5px solid #cae8ff;
+  background-color: $color-blue-dark;
+  border: 5px solid $color-08;
 }
 
 .radio:focus-visible + .input-radio::before {
-  border: 5px solid #0265dc;
-  box-shadow: 0 0 0 2px #3892f3;
+  border: 5px solid $color-primary;
+  box-shadow: 0 0 0 2px $color-blue-light;
 }
 
 .radio:checked + .input-radio:hover:invalid::before {
-  border: 2px solid #ea3829;
-  box-shadow: 0 0 0 2px #0054b6;
+  border: 2px solid $color-error;
+  box-shadow: 0 0 0 2px $color-blue-dark;
 }
 
 .radio:checked + .input-radio:disabled::before {
-  box-shadow: 0 0 0 5px #1f324745;
-  background-color: #2a3541b2;
+  box-shadow: 0 0 0 5px $color-02;
+  background-color: $color-03;
   cursor: not-allowed;
 }
 
@@ -225,7 +225,7 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
     transform: translateY(-50%);
     width: 40px;
     height: 20px;
-    background-color: #22344966;
+    background-color: $color-disabled;
     border-radius: 19px;
   }
 
@@ -237,36 +237,36 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
     top: 2px;
     left: 2px;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: $color-white;
   }
 
   &:hover::before {
-    background-color: #1f324745;
+    background-color: $color-02;
   }
 
   &:active::before {
-    background-color: #2a3541d9;
+    background-color: $color-text-secondary;
   }
 
   &:active::after {
-    background-color: #1d1c28;
+    background-color: $color-01;
   }
 }
 
 .toggle:checked + .input-toggle::before {
-  background-color: #0265dc;
+  background-color: $color-primary;
 }
 
 .toggle:checked + .input-toggle:hover::before {
-  background-color: #3892f3;
+  background-color: $color-blue-light;
 }
 
 .toggle:checked + .input-toggle:focus-visible::before {
-  background-color: #0265dc;
+  background-color: $color-primary;
 }
 
 .toggle:checked + .input-toggle:active::before {
-  background-color: #3892f3;
+  background-color: $color-blue-light;
 }
 
 .toggle:checked + .input-toggle::after {
@@ -275,12 +275,12 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
 }
 
 .toggle:checked + .input-toggle::after {
-  background-color: #ffffff;
+  background-color: $color-white;
 }
 
 
 .toggle:focus-visible + .input-toggle::before {
-  box-shadow: 0 0 0 2px #3892f3;
+  box-shadow: 0 0 0 2px $color-blue-light;
 }
 
 .toggle:disabled + .input-toggle {
@@ -288,11 +288,11 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
   opacity: 0.6;
 
   &::before {
-    background-color: #1d36532b;
+    background-color: $color-gray-light;
   }
 
   &::after {
-    background-color: #f8fafc;
+    background-color: $color-04;
   }
 }
 

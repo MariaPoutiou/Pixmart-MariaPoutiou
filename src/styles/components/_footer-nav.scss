@@ -29,7 +29,7 @@
   }
 
   &-link {
-    color: #2A3541D9;
+    color: $color-text-secondary;
     @include link-style;
   }
 }

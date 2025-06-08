@@ -20,7 +20,7 @@
   }
 
   &__catalog-highlight {
-    color: #0265dc;
+    color: $color-primary;
   }
 }
 
@@ -90,8 +90,8 @@
     justify-content: space-between;
     height: 40px;
     padding: $space-sm $space-2xl $space-sm 20px;
-    background-color: #f1f2f4;
-    border: 1px solid #1d36532b;
+    background-color: $color-06;
+    border: 1px solid $color-gray-light;
     font-weight: $fw-semibold;
     cursor: pointer;
     width: 100%;
@@ -143,7 +143,7 @@
   }
 
   &__filter-icon {
-    color: #f8f7ff;
+    color: $color-soft-white;
   }
 
   &__lower {
@@ -170,7 +170,7 @@
   }
 
   &-meta__icon-primary {
-    color: #f8f7ff;
+    color: $color-soft-white;
   }
 
   &-tags {

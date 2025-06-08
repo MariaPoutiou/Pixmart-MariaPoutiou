@@ -3,6 +3,50 @@ $screen-desktop: 1440px;
 $screen-tablet: 1024px;
 $screen-mobile: 440px;
 
+// Core color variables
+$color-primary: #0265DC;
+$color-background: #F0F6FD;
+$color-text-primary: #0D0D15;
+$color-text-secondary: rgba(42, 53, 65, 0.8509803922);
+$color-text-dark: #222222;
+
+// Box shadow and hover
+$color-blue-light: #3892f3;
+
+// Input and links styling
+$color-blue-dark: #0054b6;
+
+// Form and input validation
+$color-error: #ea3829;
+$color-valid: #008f5d;
+
+// General
+$color-body-bg: rgb(255, 255, 255);
+$color-white: #ffffff;
+$color-soft-white: #f8f7ff;
+$color-gray-light: rgba(29, 54, 83, 0.168627451);
+$color-gray-bg: rgba(41, 77, 117, 0.0901960784);
+$color-shadow: rgba(29, 57, 95, 0.08);
+$color-focus-ring: rgba(30, 144, 255, 0.6);
+$color-disabled: #22344966;
+$color-background-soft: rgb(245, 248, 251);
+$color-background-faded: #e7eef7a8;
+$color-surface-light: #f4f7fa;
+$color-text-button: rgb(245, 248, 251);
+
+// Unique-rarely used
+$color-01: #1d1c28;
+$color-02: #1f324745;
+$color-03: #2a3541b2;
+$color-04: #f8fafc;
+$color-05: #eff5fad1;
+$color-06: #f1f2f4;
+$color-07: #b5deff;
+$color-08: #cae8ff;
+$color-09: #0f73f6;
+$color-10: #2735448c;
+$color-11: #007772;
+
 
 // Typography
 $text-primary:rgb(42 53 65);

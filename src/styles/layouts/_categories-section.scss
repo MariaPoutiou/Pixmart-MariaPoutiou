@@ -18,7 +18,7 @@
   }
 
   &__description {
-    color: #222222;
+    color: $color-text-dark;
     font-size: $fz-md;
     line-height: $lh-m;
     margin-block: $space-base $space-xl;
@@ -97,7 +97,7 @@
   }
 
   &__list-item {
-    background-color: #f4f7fa;
+    background-color: $color-surface-light;
     border-radius: 20px;
     height: 180px;
 
@@ -114,29 +114,29 @@
 .categories__list-item {
   &:hover {
     .categories-card {
-      background-color: #0265dc;
+      background-color: $color-primary;
       transform: scale(1.02);
 
       &__svg {
-        color: #ffffff;
+        color: $color-white;
         transform: scale(1.1);
       }
 
       &__title {
-        color: #f8f7ff;
+        color: $color-soft-white;
       }
 
       &__description,
       &__label {
-        color: #eff5fad1;
+        color: $color-05;
       }
 
       &__label::before {
-        background-color: #eff5fad1;
+        background-color: $color-05;
       }
 
       &__img {
-        color: #ffffff;
+        color: $color-white;
       }
     }
   }

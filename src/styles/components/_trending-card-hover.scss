@@ -20,7 +20,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: #e7eef7a8;
+    background-color: $color-background-faded;
     border-radius: 20px;
     opacity: 0;
     transition: opacity 0.5s ease;

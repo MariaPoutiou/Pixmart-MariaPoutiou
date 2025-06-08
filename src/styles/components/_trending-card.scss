@@ -22,7 +22,7 @@
     top: 0;
     right: 0;
     padding: $space-base;
-    background-color: #0265dc;
+    background-color: $color-primary;
     width: 56px;
     height: 56px;
     border-top-right-radius: 20px;
@@ -30,7 +30,7 @@
   }
 
   &__label-icon {
-    color: #f8f7ff;
+    color: $color-soft-white;
   }
 
   &__details {
@@ -49,7 +49,7 @@
   &__price {
     font-weight: $fw-medium;
     line-height: $lh-base;
-    color: #0265dc;
+    color: $color-primary;
     margin-block: $space-base 4px;
   }
 

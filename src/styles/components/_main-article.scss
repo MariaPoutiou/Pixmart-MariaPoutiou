@@ -5,7 +5,7 @@
   &__paragraph {
     font-size: $fz-md;
     line-height: $lh-md;
-    color: #2a3541d9;
+    color: $color-text-secondary;
   }
 
   &__subtitle {
@@ -32,14 +32,14 @@
 
   &__img-description {
     @include tablet {
-      color: #222222;
+      color: $color-text-dark;
       opacity: 70%;
     }
   }
 
   &__img-link {
     font-weight: $fw-semibold;
-    color: #0265dc;
+    color: $color-primary;
     @include link-style;
   }
 
@@ -60,7 +60,7 @@
     font-weight: $fw-bold;
     font-size: 24px;
     line-height: $lh-lg;
-    color: #0d0d15;
+    color: $color-text-primary;
     margin: $space-0;
     padding-top: $space-sm;
     width: 80%;

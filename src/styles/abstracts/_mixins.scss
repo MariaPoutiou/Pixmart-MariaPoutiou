@@ -28,7 +28,7 @@
 }
 
 @mixin box-shadow {
-  box-shadow: 0 4px 40px rgba(29, 57, 95, 0.08);
+  box-shadow: 0 4px 40px $color-shadow;
 }
 
 @mixin label {
@@ -36,9 +36,9 @@
   border: 2px solid transparent;
   border-radius: 8px;
   white-space: nowrap;
-  background-color: rgb(2, 101, 220);
-  border-color: rgb(2, 101, 220);
-  color: rgb(245, 248, 251);
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: $color-text-button;
   height: 64px;
   display: inline-flex;
   align-items: center;
@@ -63,31 +63,31 @@
 }
 
 @mixin button-small-primary {
-  background-color: rgb(2, 101, 220);
-  border-color: rgb(2, 101, 220);
-  color: rgb(245, 248, 251);
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: $color-text-button;
   height: 40px;
   width: 40px;
 }
 
 @mixin button-small-secondary {
   background-color: transparent;
-  border-color: #2735448c;
+  border-color: $color-10;
   height: 40px;
   width: 40px;
 }
 
 @mixin button-primary {
-  background-color: rgb(2, 101, 220);
-  border-color: rgb(2, 101, 220);
-  color: rgb(245, 248, 251);
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: $color-text-button;
   height: 64px;
   padding-block: $space-ml;
   padding-inline: $space-xl;
 }
 
 @mixin button-secondary {
-  border: 2px solid #1d36532b;
+  border: 2px solid $color-gray-light;
   background-color: transparent;
   height: 64px;
   padding-block: $space-ml;
@@ -96,23 +96,23 @@
 
 @mixin button-primary-style {
   &:hover {
-    background-color: #3892f3;
-    border-color: #3892f3;
+    background-color: $color-blue-light;
+    border-color: $color-blue-light;
   }
 
   &:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.6);
+    box-shadow: 0 0 0 4px $color-focus-ring;
   }
 
   &:active {
-    background-color: #0054b6;
-    border-color: #0054b6;
+    background-color: $color-blue-dark;
+    border-color: $color-blue-dark;
   }
 
   &:disabled {
     outline: none;
-    color: #22344966;
+    color: $color-disabled;
     border: 2px solid rgba(29, 54, 83, 0.17);
     background-color: rgba(29, 54, 83, 0.17);
     pointer-events: none;
@@ -121,24 +121,24 @@
 
 @mixin button-secondary-style {
   &:hover {
-    background-color: #294d7517;
+    background-color: $color-gray-bg;
   }
 
   &:focus-visible {
     outline: none;
-    background-color: #294d7517;
-    box-shadow: 0 0 0 4px #3892f3;
-    border-color: #294d7517;
+    background-color: $color-gray-bg;
+    box-shadow: 0 0 0 4px $color-blue-light;
+    border-color: $color-gray-bg;
   }
 
   &:active {
-    background-color: #294d7517;
+    background-color: $color-gray-bg;
   }
 
   &:disabled {
-    color: #22344966;
-    background-color: #1d36532b;
-    border: 2px solid #1d36532b;
+    color: $color-disabled;
+    background-color: $color-gray-light;
+    border: 2px solid $color-gray-light;
     border-radius: 8px;
     pointer-events: none;
   }
@@ -155,7 +155,7 @@
   display: flex;
   align-items: flex-start;
   gap: $gap-sm;
-  color: #2a3541b2;
+  color: $color-03;
   white-space: nowrap;
 }
 
@@ -164,7 +164,7 @@
   display: inline-block;
   width: 5px;
   height: 5px;
-  background-color: #2a3541b2;
+  background-color: $color-03;
   border-radius: 50%;
   margin-right: $space-sm;
   vertical-align: middle;
@@ -172,7 +172,7 @@
 
 @mixin card-hover {
   &:hover {
-    border-color: #0265dc;
+    border-color: $color-primary;
   }
 }
 
@@ -181,21 +181,21 @@
   box-sizing: border-box;
 
   &:visited {
-    color: #0054b6;
+    color: $color-blue-dark;
   }
 
   &:hover {
-    color: #3892f3;
+    color: $color-blue-light;
   }
 
   &:focus-visible {
-    box-shadow: 0 0 0 4px #3892f3;
+    box-shadow: 0 0 0 4px $color-blue-light;
     border-radius: 5px;
     outline: none;
   }
 
   &:disabled {
-    color: #22344966;
+    color: $color-disabled;
   }
 
   &:active {
@@ -204,26 +204,26 @@
 }
 
 @mixin input {
-  border: 1px solid #1d36532b;
+  border: 1px solid $color-gray-light;
   border-radius: 8px;
   height: 64px;
 }
 
 @mixin input-style {
   &:hover {
-    border: 2px solid #3892f3;
+    border: 2px solid $color-blue-light;
   }
 
   &:user-invalid {
-    border: 1px solid #ea3829;
+    border: 1px solid $color-error;
   }
 
   &:focus,
   &:focus-visible {
-    border: 3px solid #3892f3;
+    border: 3px solid $color-blue-light;
   }
 
   &:disabled {
-    background-color: #294d7517;
+    background-color: $color-gray-bg;
   }
 }

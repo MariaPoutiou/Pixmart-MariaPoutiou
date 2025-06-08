@@ -8,7 +8,7 @@
 .contact-form {
   padding: $space-xl;
   border-radius: 20px;
-  background-color: #ffffff;
+  background-color: $color-white;
   width: 100%;
   min-width: 320px;
   display: flex;
@@ -71,7 +71,7 @@
   }
 
   &__textarea {
-    border: 1px solid #1d36532b;
+    border: 1px solid $color-gray-light;
     border-radius: 8px;
     height: 180px;
 
@@ -101,32 +101,32 @@
 
   &__valid {
     display: none;
-    color: #008f5d;
+    color: $color-valid;
   }
 
   &__invalid {
     display: none;
-    color: #ea3829;
+    color: $color-error;
   }
 
   &__textarea-valid {
     display: none;
-    color: #008f5d;
+    color: $color-valid;
   }
 
   &__textarea-invalid {
     display: none;
-    color: #ea3829;
+    color: $color-error;
   }
 
   &__select-valid {
     display: none;
-    color: #008f5d;
+    color: $color-valid;
   }
 
   &__select-invalid {
     display: none;
-    color: #ea3829;
+    color: $color-error;
   }
 
   &__footer-wrapper {

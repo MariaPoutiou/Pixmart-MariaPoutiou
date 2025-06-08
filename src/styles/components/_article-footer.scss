@@ -4,7 +4,7 @@
 .related-articles {
   padding-block: 0 $space-xl;
   width: 100%;
-  background-color: #f0f6fd;
+  background-color: $color-background;
 
   @include tablet {
     padding-block: $space-base $space-2xl;
@@ -37,7 +37,7 @@
 
   &__link {
     font-weight: $fw-semibold;
-    color: #0265dc;
+    color: $color-primary;
     display: flex;
     align-items: center;
     gap: $gap-sm;
@@ -46,7 +46,7 @@
   &__icon {
     width: 16px;
     height: 16px;
-    color: #0265dc;
+    color: $color-primary;
   }
 
   &__list {

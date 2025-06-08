@@ -18,7 +18,7 @@
     width: 100%;
     height: 824px;
     overflow-y: auto;
-    background-color: #f0f6fd;
+    background-color: $color-background;
   }
 
   &__section {
@@ -33,7 +33,7 @@
     height: 88px;
     padding-block: $space-lg;
     padding-inline: $space-base;
-    background-color: #ffffff;
+    background-color: $color-white;
     margin-bottom: $space-2xl;
 
     @include desktop {
@@ -41,7 +41,7 @@
     }
 
     &-btn {
-      border: 2px solid #1d36532b;
+      border: 2px solid $color-gray-light;
       padding: $space-s;
       border-radius: 8px;
       display: flex;
@@ -75,7 +75,7 @@
     position: fixed;
     height: 96px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: $color-white;
     padding: $space-base;
     top: 854px;
     left: 0;
@@ -109,7 +109,7 @@
   &__label {
     font-size: $fz-xs;
     line-height: $lh-sm;
-    color: #0d0d15;
+    color: $color-text-primary;
     position: relative;
   }
 

@@ -64,7 +64,7 @@
 
     &-highlight {
       font-weight: $fw-bold;
-      color: rgb(2, 101, 220);
+      color: $color-primary;
     }
   }
 
@@ -90,38 +90,38 @@
 
   &__button-secondary {
     @include button-base;
-    background-color: #ffffff;
-    color: #0d0d15;
+    background-color: $color-white;
+    color: $color-text-primary;
     padding-block: $space-ml;
     padding-inline: $space-xl;
     width: 233px;
     border: 1px solid transparent;
 
       &:hover {
-        background-color: #294d7517;
-        border: 1px solid #3892f3;
+        background-color: $color-gray-bg;
+        border: 1px solid $color-blue-light;
       }
 
       &:focus-visible {
         outline: none;
-        background-color: #294d7517;
-        box-shadow: 0 0 0 4px #3892f3;
-        border-color: #294d7517;
+        background-color: $color-gray-bg;
+        box-shadow: 0 0 0 4px $color-blue-light;
+        border-color: $color-gray-bg;
       }
 
       &:active {
-        background-color: #294d7517;
+        background-color: $color-gray-bg;
       }
 
       &:disabled {
-        color: #22344966;
+        color: $color-disabled;
         background-color: transparent;
       }
     }
 
   &__button-svg {
     margin-right: $space-sm;
-    color: #0265dc;
-    fill: #0265dc;
+    color: $color-primary;
+    fill: $color-primary;
   }
 }

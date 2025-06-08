@@ -19,7 +19,7 @@
     padding: $space-0;
 
     &-icon {
-      color: #0d0d15;
+      color: $color-text-primary;
       @include svg-small;
     }
   }

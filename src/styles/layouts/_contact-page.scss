@@ -38,7 +38,7 @@
     font-family: $ff-body;
     font-size: $fz-md;
     line-height: $lh-m;
-    color: #2a3541d9;
+    color: $color-text-secondary;
     margin-bottom: $space-base;
   }
 
@@ -68,7 +68,7 @@
   }
 
   &__icon {
-    color: #0265dc;
+    color: $color-primary;
   }
 
   &__map-wrapper {
@@ -106,11 +106,11 @@
   }
 
   &__map-text-lower {
-    color: #2a3541d9;
+    color: $color-text-secondary;
     margin-block: $space-0 $space-md;
   }
 
   &-map__icon {
-    color: #0265dc;
+    color: $color-primary;
   }
 }

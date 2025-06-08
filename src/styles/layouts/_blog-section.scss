@@ -12,12 +12,12 @@
 
   &__link {
     font-weight: $fw-semibold;
-    color: #0265dc;
+    color: $color-primary;
     @include link-style;
   }
 
   &__link-icon {
-    color: #0265dc;
+    color: $color-primary;
     vertical-align: middle;
     @include svg-small;
   }
@@ -57,6 +57,6 @@
   }
 
   &__date {
-    color: #2a3541b2;
+    color: $color-03;
   }
 }

@@ -42,20 +42,20 @@
   &__label {
     &--sold-out {
       width: 114px;
-      background-color: #ffffff;
-      color: #2a3541b2;
+      background-color: $color-white;
+      color: $color-03;
     }
 
     &--new {
       width: 72px;
-      background-color: #007772;
-      color: #f5f8fb;
+      background-color: $color-11;
+      color: $color-background-soft;
     }
 
     &--popular {
       width: 111px;
-      background-color: #0265dc;
-      color: #f5f8fb;
+      background-color: $color-primary;
+      color: $color-background-soft;
     }
   }
 
@@ -79,5 +79,5 @@
 }
 
 .catalog-list__item:hover .catalog-card__price {
-  color: #0265dc;
+  color: $color-primary;
 }

@@ -7,7 +7,7 @@
     padding-inline: $space-lg;
     border: 2px solid transparent;
     transition: border-color 0.3s ease;
-    background-color: #FFFFFF;
+    background-color: $color-white;
     @include card-hover;
     @include box-shadow;
   }
@@ -46,6 +46,6 @@ details.faq__item {
 
 summary.faq__question:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 4px #3892f3;
+  box-shadow: 0 0 0 4px $color-blue-light;
   border-radius: 8px;
 }

@@ -44,7 +44,7 @@
   }
 
   &-search__input {
-    border: 2px solid #1d36532b;
+    border: 2px solid $color-gray-light;
     border-radius: 8px;
     height: 40px;
     width: 40px;
@@ -58,12 +58,12 @@
     @include input-style;
 
     @include tablet {
-      border: 1px solid #1d36532b;
+      border: 1px solid $color-gray-light;
       width: 240px;
 
       &::placeholder {
         display: flex;
-        color: #2a3541b2;
+        color: $color-03;
       }
     }
   }
@@ -99,7 +99,7 @@
       left: 0;
       top: 80px;
       width: 100%;
-      background-color: #f0f6fd;
+      background-color: $color-background;
       overflow-y: auto;
     }
 
@@ -135,7 +135,7 @@
 
       .header__burger-img--close {
         display: block;
-        color: #f8f7ff;
+        color: $color-soft-white;
       }
     }
   }

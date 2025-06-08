@@ -116,7 +116,7 @@
     padding-block: $space-lg;
     padding-inline: $space-base;
     margin-bottom: $space-0;
-    background-color: #0d0d15;
+    background-color: $color-text-primary;
     height: 128px;
 
     @include tablet {
@@ -140,7 +140,7 @@
 
   &__legal-item {
     line-height: $lh-base;
-    color: #e7eef7a8;
+    color: $color-background-faded;
     position: relative;
 
     &::after {
@@ -151,7 +151,7 @@
       height: 24px;
       margin-inline: $space-sm;
       margin-right: $space-sm;
-      background-color: #e7eef7a8;
+      background-color: $color-background-faded;
     }
 
     &:last-child::after {
@@ -161,7 +161,7 @@
 
   &__copyright {
     line-height: $lh-base;
-    color: #e7eef7a8;
+    color: $color-background-faded;
     margin-block: $space-0;
   }
 }
