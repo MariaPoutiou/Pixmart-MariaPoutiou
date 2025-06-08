@@ -75,6 +75,15 @@ fieldset {
   @include svg-size;
 }
 
+select option {
+  font-family: $fw-regular;
+  font-size: $fz-sm;
+  color: #0D0D15;
+  background-color: #ffffff;
+  padding: $space-sm;              
+  border: none;              
+}/*unfortunately i can't override browser styling it doesn't work :/ */
+
 .container {
   width: 100%;
   margin: $space-0 auto;
