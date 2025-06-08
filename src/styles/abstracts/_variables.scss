@@ -4,48 +4,48 @@ $screen-tablet: 1024px;
 $screen-mobile: 440px;
 
 // Core color variables
-$color-primary: #0265DC;
-$color-background: #F0F6FD;
-$color-text-primary: #0D0D15;
+$color-primary: rgb(2, 101, 220);
+$color-background: rgb(240, 246, 253);
+$color-text-primary: rgb(13, 13, 21);
 $color-text-secondary: rgba(42, 53, 65, 0.8509803922);
-$color-text-dark: #222222;
+$color-text-dark: rgb(34, 34, 34);
 
 // Box shadow and hover
-$color-blue-light: #3892f3;
+$color-blue-light: rgb(56, 146, 243);
 
 // Input and links styling
-$color-blue-dark: #0054b6;
+$color-blue-dark: rgb(0, 84, 182);
 
 // Form and input validation
-$color-error: #ea3829;
-$color-valid: #008f5d;
+$color-error: rgb(234, 56, 41);
+$color-valid: rgb(0, 143, 93);
 
 // General
 $color-body-bg: rgb(255, 255, 255);
-$color-white: #ffffff;
-$color-soft-white: #f8f7ff;
+$color-white: rgb(255, 255, 255);
+$color-soft-white: rgb(248, 247, 255);
 $color-gray-light: rgba(29, 54, 83, 0.168627451);
 $color-gray-bg: rgba(41, 77, 117, 0.0901960784);
 $color-shadow: rgba(29, 57, 95, 0.08);
 $color-focus-ring: rgba(30, 144, 255, 0.6);
-$color-disabled: #22344966;
+$color-disabled: rgba(34, 52, 73, 0.4);
 $color-background-soft: rgb(245, 248, 251);
-$color-background-faded: #e7eef7a8;
-$color-surface-light: #f4f7fa;
+$color-background-faded: rgba(231, 238, 247, 0.66);
+$color-surface-light: rgb(244, 247, 250);
 $color-text-button: rgb(245, 248, 251);
 
 // Unique-rarely used
-$color-01: #1d1c28;
-$color-02: #1f324745;
-$color-03: #2a3541b2;
-$color-04: #f8fafc;
-$color-05: #eff5fad1;
-$color-06: #f1f2f4;
-$color-07: #b5deff;
-$color-08: #cae8ff;
-$color-09: #0f73f6;
-$color-10: #2735448c;
-$color-11: #007772;
+$color-01: rgb(29, 28, 40);
+$color-02: rgba(31, 50, 71, 0.27);
+$color-03: rgba(42, 53, 65, 0.698);
+$color-04: rgb(248, 250, 252);
+$color-05: rgba(239, 245, 250, 0.82);
+$color-06: rgb(241, 242, 244);
+$color-07: rgb(181, 222, 255);
+$color-08: rgb(202, 232, 255);
+$color-09: rgb(15, 115, 246);
+$color-10: rgba(39, 53, 68, 0.55);
+$color-11: rgb(0, 119, 114);
 
 
 // Typography
