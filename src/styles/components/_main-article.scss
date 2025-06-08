@@ -2,10 +2,10 @@
 @use "../abstracts/mixins" as *;
 
 .article {
-  margin-bottom: 64px;
+  margin-bottom: $space-4xl;
 
   @include tablet {
-    margin-bottom: 120px;
+    margin-bottom: $space-6xl;
   }
 
   &__paragraph {
@@ -16,7 +16,7 @@
   }
 
   &__subtitle {
-    font-size: 24px;
+    font-size: $fz-ml;
     line-height: $lh-lg;
   }
 
@@ -65,7 +65,7 @@
   &__quote {
     font-family: $ff-heading;
     font-weight: $fw-bold;
-    font-size: 24px;
+    font-size: $fz-ml;
     line-height: $lh-lg;
     color: $color-text-primary;
     margin: $space-0;

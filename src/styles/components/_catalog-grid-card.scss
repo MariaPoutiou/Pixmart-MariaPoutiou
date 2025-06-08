@@ -24,6 +24,8 @@
   }
 
   &__tag {
+    margin-block: $space-0;
+    
     &:last-child::before {
       @include card-pseudoelement;
     }
@@ -63,6 +65,7 @@
     font-weight: $fw-bold;
     font-size: $fz-m;
     line-height: $lh-md;
+    margin-top: $space-m;
   }
 
   &__footer {
