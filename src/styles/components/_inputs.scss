@@ -123,7 +123,7 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
     background-color: #3892f3;
   }
 
-    &:user-invalid::before {
+  &:user-invalid::before {
     border-color: #ea3829;
     background-color: #0265dc;
     cursor: not-allowed;
@@ -151,11 +151,6 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
     box-sizing: border-box;
   }
 
-input[type="radio"]:focus-visible + .input-radio::before {
-  box-shadow: 0 0 0 2px rgba(30, 144, 255, 0.6);
-  border-color: #2a3541b2;
-}
-
   input[type="radio"]:hover + &::before {
     background-color: #f4f7fa;
     box-shadow: none;
@@ -179,23 +174,28 @@ input[type="radio"]:focus-visible + .input-radio::before {
   }
 }
 
+.radio:focus-visible + .input-radio::before {
+  box-shadow: 0 0 0 2px rgba(30, 144, 255, 0.6);
+  border-color: #2a3541b2;
+}
+
 .radio:checked + .input-radio::before {
   border: 5px solid #0265dc;
 }
 
 .radio:checked + .input-radio:hover::before {
-  background-color: #E7EEF7A8;
+  background-color: #e7eef7a8;
   border-color: #3892f3;
 }
 
 .radio:checked + .input-radio:active::before {
   background-color: #0054b6;
-  border: 5px solid #CAE8FF;
+  border: 5px solid #cae8ff;
 }
 
 .radio:focus-visible + .input-radio::before {
   border: 5px solid #0265dc;
-  box-shadow: 0 0 0 2px #3892F3;
+  box-shadow: 0 0 0 2px #3892f3;
 }
 
 .radio:checked + .input-radio:hover:invalid::before {
@@ -204,8 +204,8 @@ input[type="radio"]:focus-visible + .input-radio::before {
 }
 
 .radio:checked + .input-radio:disabled::before {
-  box-shadow: 0 0 0 5px #1F324745;
-  background-color: #2A3541B2;
+  box-shadow: 0 0 0 5px #1f324745;
+  background-color: #2a3541b2;
   cursor: not-allowed;
 }
 
@@ -239,13 +239,65 @@ input[type="radio"]:focus-visible + .input-radio::before {
     border-radius: 50%;
     background-color: #ffffff;
   }
+
+  &:hover::before {
+    background-color: #1f324745;
+  }
+
+  &:active::before {
+    background-color: #2a3541d9;
+  }
+
+  &:active::after {
+    background-color: #1d1c28;
+  }
 }
 
 .toggle:checked + .input-toggle::before {
   background-color: #0265dc;
 }
 
+.toggle:checked + .input-toggle:hover::before {
+  background-color: #3892f3;
+}
+
+.toggle:checked + .input-toggle:focus-visible::before {
+  background-color: #0265dc;
+}
+
+.toggle:checked + .input-toggle:active::before {
+  background-color: #3892f3;
+}
+
 .toggle:checked + .input-toggle::after {
   left: 22px;
   top: 2px;
+}
+
+.toggle:checked + .input-toggle::after {
+  background-color: #ffffff;
+}
+
+
+.toggle:focus-visible + .input-toggle::before {
+  box-shadow: 0 0 0 2px #3892f3;
+}
+
+.toggle:disabled + .input-toggle {
+  cursor: not-allowed;
+  opacity: 0.6;
+
+  &::before {
+    background-color: #1d36532b;
+  }
+
+  &::after {
+    background-color: #f8fafc;
+  }
+}
+
+
+.input-toggle::before,
+.input-toggle::after {
+  transition: all 0.2s ease;
 }
