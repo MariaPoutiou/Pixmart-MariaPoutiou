@@ -39,6 +39,35 @@
     @include input-style;
   }
 
+  &__select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    cursor: pointer;
+    font-family: $ff-body;
+    font-weight: $fw-regular;
+    font-size: $fz-sm;
+    line-height: $lh-base;
+    padding-left: $space-m;
+  }
+
+  &--select {
+    position: relative;
+  }
+
+  &__select-icon {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    transition: transform 0.3s ease;
+  }
+
   &__textarea {
     border: 1px solid #1d36532b;
     border-radius: 8px;
@@ -99,8 +128,12 @@
   }
 
   &__footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xl;
+
     @include desktop {
-      display: flex;
+      flex-direction: row;
     }
   }
 

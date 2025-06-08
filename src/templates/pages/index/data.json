@@ -909,6 +909,7 @@
     "selectInvalid": "This field is required.",
     "textareaLabel": "Message",
     "textareaPlaceholder": "Enter your message ...",
+    "icon": "/img/sprite.svg#icon-chevron-down",
     "valid": "Field validation is successful.",
     "invalid": "This field is required.",
     "checkboxes": [
