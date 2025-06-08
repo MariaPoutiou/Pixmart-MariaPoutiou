@@ -31,7 +31,7 @@
     margin-block-end: $space-base;
 
     @include tablet {
-      margin-block-end: $space-xl;
+      margin-block: 40px 32px;
     }
   }
 
