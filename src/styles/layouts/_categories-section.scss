@@ -43,7 +43,7 @@
     }
   }
 
-  &__list-left {
+  &__list-primary {
     display: flex;
     flex-direction: column;
     gap: $gap-ml;
@@ -69,7 +69,7 @@
     }
   }
 
-  &__list-right {
+  &__list-secondary {
     display: flex;
     flex-direction: column;
     gap: $gap-ml;
