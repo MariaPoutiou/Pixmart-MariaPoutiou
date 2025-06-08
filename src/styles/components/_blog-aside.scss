@@ -20,6 +20,7 @@
     gap: $gap-base;
     align-items: center;
     margin-inline: $space-0;
+    margin-bottom: $space-0;
   }
 
   &__author-name {
@@ -54,10 +55,12 @@
   &__heading {
     font-size: 24px;
     line-height: $lh-lg;
+    margin-block: $space-0;
   }
 
   &__list {
     padding-inline: $space-0;
+    margin-bottom: $space-0;
   }
 
   &__list-item {
@@ -119,7 +122,7 @@
   &__article-title {
     font-size: $fz-m;
     line-height: $lh-md;
-    margin-bottom: $space-md;
+    margin-block: $space-md;
   }
 
   &__article-title {

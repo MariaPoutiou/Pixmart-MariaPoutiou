@@ -27,7 +27,7 @@
   }
 
   &__img-wrapper {
-    margin-bottom: $space-3xl;
+    margin-bottom: $space-lg;
   }
 
   &__img img {
@@ -41,7 +41,6 @@
   display: flex;
   position: relative;
   flex-direction: column-reverse;
-  gap: $gap-4xl;
 
   @include tablet {
     flex-direction: row-reverse;
