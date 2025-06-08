@@ -61,7 +61,9 @@
     padding: $space-m;
     align-items: unset;
     width: 64px;
+  }
 
+  &__social-link {
     @include button-secondary-style;
   }
 

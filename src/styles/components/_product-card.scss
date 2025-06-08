@@ -39,3 +39,9 @@
   color: #ffffff;
   transform: scale(1.1);
 }
+
+.product-card__link:focus-visible .product-card__wrapper {
+  outline: none;
+  box-shadow: 0 0 0 4px #3892f3;
+  border-radius: 8px;
+}

@@ -97,7 +97,6 @@
     width: 233px;
     border: 1px solid transparent;
 
-    &:hover {
       &:hover {
         background-color: #294d7517;
         border: 1px solid #3892f3;
@@ -119,7 +118,6 @@
         background-color: transparent;
       }
     }
-  }
 
   &__button-svg {
     margin-right: $space-sm;

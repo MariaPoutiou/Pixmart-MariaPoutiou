@@ -81,6 +81,10 @@
     @include link-style;
   }
 
+  &__link {
+    @include link-style;
+  }
+
   &__article-date {
     color: #2a3541d9;
   }

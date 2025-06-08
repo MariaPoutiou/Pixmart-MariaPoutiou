@@ -43,3 +43,9 @@ details[open] .faq__icon-img {
 details.faq__item {
   max-width: 100%;
 }
+
+summary.faq__question:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px #3892f3;
+  border-radius: 8px;
+}

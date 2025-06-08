@@ -3,7 +3,7 @@
 
 
 .card-button {
-  display: none;
+  opacity: 0;
   position: absolute;
   width: calc(100% - 32px);
   top: 104px;
@@ -33,6 +33,6 @@
   }
 
   &:hover .card-button {
-    display: flex;
+    opacity: 1;
   }
 }

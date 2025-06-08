@@ -43,7 +43,7 @@
     <div class="header-actions">
       {% include "partials/header-search-form.njk" %}
       <button class="button header__button button--primary-small" aria-label="{{ headerButton.alt }}">
-        <svg class="svg header__button-img">
+        <svg class="svg header__button-img" focusable="false">
           <use href="{{ headerButton.img }}"></use>
         </svg>
       </button>
