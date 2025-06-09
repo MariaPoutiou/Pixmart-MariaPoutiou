@@ -30,14 +30,14 @@
     line-height: $lh-md;
     margin-block: $space-0;
 
-      &--best-seller {
-        margin-top: $space-xl;
+    &--best-seller {
+      margin-top: $space-xl;
 
-        @include desktop {
-          margin-block: $space-0;
-        }
+      @include desktop {
+        margin-block: $space-0;
       }
     }
+  }
 
   &__price {
     font-family: $ff-heading;

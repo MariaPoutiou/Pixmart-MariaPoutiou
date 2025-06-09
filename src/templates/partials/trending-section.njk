@@ -1,4 +1,4 @@
-<section class="container trending">
+<section class="trending">
   <h2 class="primary-title trending__primary-title">
     {{ trendingSection.title }}
   </h2>
@@ -7,13 +7,13 @@
       {{ trendingSection.subtitle }}
     </h3>
     <div class="trending__header-functions">
-    {% for button in trendingSection.navButtons %}
-      <button class="button trending__button button--secondary">
-        <svg class="svg trending-button__icon" aria-label="{{ button.alt }}">
-          <use href="{{ button.icon }}"></use>
-        </svg>
-      </button>
-    {% endfor %}
+      {% for button in trendingSection.navButtons %}
+        <button class="button trending__button button--secondary">
+          <svg class="svg trending-button__icon" aria-label="{{ button.alt }}">
+            <use href="{{ button.icon }}"></use>
+          </svg>
+        </button>
+      {% endfor %}
     </div>
   </div>
   <ul class="trending__list-wrapper">

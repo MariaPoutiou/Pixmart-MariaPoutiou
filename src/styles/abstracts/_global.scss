@@ -1,6 +1,10 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
+html {
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,6 +16,7 @@ body {
   font-weight: $fw-regular;
   font-size: $fz-sm;
   line-height: $lh-base;
+  overflow-x: hidden;
 
   &.not-scrolled {
     @include tablet {
@@ -80,9 +85,9 @@ select option {
   font-size: $fz-sm;
   color: $color-text-primary;
   background-color: $color-white;
-  padding: $space-sm;              
-  border: none;              
-}/*unfortunately i can't override browser styling it doesn't work :/ */
+  padding: $space-sm;
+  border: none;
+} /*unfortunately i can't override browser styling it doesn't work :/ */
 
 .container {
   width: 100%;

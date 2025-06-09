@@ -24,7 +24,7 @@
     align-items: center;
 
     @include tablet {
-      gap: 0;
+      gap: $space-0;
     }
   }
 

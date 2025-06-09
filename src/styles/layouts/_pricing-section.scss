@@ -25,20 +25,20 @@
   &__item {
     border-radius: 22px; /** I had to push it 2 pixels to match layout **/
 
-  &:first-child,
-  &:last-child {
-    @include box-shadow;
-  }
+    &:first-child,
+    &:last-child {
+      @include box-shadow;
+    }
 
-  &:nth-child(2) {
-    border: 2px solid $color-primary;
-    margin-bottom: $space-xl; /** magic number, sorry. It should be padding bottom 32 but i put the border in pricing-list__item not pricing-card. This fits better my structure so far **/
+    &:nth-child(2) {
+      border: 2px solid $color-primary;
+      margin-bottom: $space-xl; /** magic number, sorry. It should be padding bottom 32 but i put the border in pricing-list__item not pricing-card. This fits better my structure so far **/
 
-    @include tablet {
-      transform: translateY(-32px);
-      margin-bottom: unset;
-      padding-bottom: 0;
+      @include tablet {
+        transform: translateY(-32px);
+        margin-bottom: unset;
+        padding-bottom: 0;
+      }
     }
   }
-}
 }

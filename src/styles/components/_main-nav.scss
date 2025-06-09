@@ -2,7 +2,6 @@
 @use "../abstracts/mixins" as *;
 
 .main-nav {
-
   &__list {
     display: flex;
     flex-direction: column;
@@ -21,7 +20,7 @@
     font-size: $fz-md;
     line-height: $lh-m;
     @include link-style;
-    
+
     @include tablet {
       font-size: $fz-xs;
       line-height: $lh-sm;

@@ -10,6 +10,8 @@ details summary::-webkit-details-marker {
 }
 
 .faq {
+  padding-inline: $space-base;
+
   @include tablet {
     display: flex;
     flex-direction: row;
@@ -18,26 +20,26 @@ details summary::-webkit-details-marker {
     align-items: center;
     position: relative;
     z-index: 0;
+    padding-inline: $space-5xl;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 164px; 
-    left: 400px;
-    width: 689px;
-    height: 498px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(15, 115, 246, 0.1) 300%);
-    filter: blur(80px);
-    z-index: -1; 
-    pointer-events: none;
-  }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 164px;
+      left: 400px;
+      width: 689px;
+      height: 498px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15, 115, 246, 0.1) 300%);
+      filter: blur(80px);
+      z-index: -1;
+      pointer-events: none;
+    }
   }
 
   &__header {
     margin-bottom: $space-4xl;
     width: 100%;
-
 
     @include tablet {
       margin-bottom: $space-0;
@@ -60,10 +62,10 @@ details summary::-webkit-details-marker {
     width: 100%;
 
     @include tablet {
-    width: 100%;
-    max-width: 50%;
+      width: 100%;
+      max-width: 50%;
+    }
   }
-}
 
   &__button {
     width: 100%;

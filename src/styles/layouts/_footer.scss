@@ -5,8 +5,8 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: $gap-xl;
-    padding-block: 0 $space-xl;
+    gap: $gap-6xl;
+    margin-top: $space-4xl;
 
     @include tablet {
       padding-block: $space-4xl $space-5xl;
@@ -17,7 +17,6 @@
   &__upper {
     display: flex;
     flex-direction: column;
-    margin-top: $space-4xl;
 
     @include tablet {
       flex-direction: row;
@@ -35,26 +34,33 @@
   &__logo {
     width: 300px;
     height: 58px;
-    margin-left: -20px;/* there is a mystery space on the left of the logo, i believe it comes from viewport and goes away only when i put height in around 70px, so i put -20 to the left to match the layout*/
+    margin-left: -20px; /* there is a mystery space on the left of the logo, i believe it comes from viewport and goes away only when i put height in around 70px, so i put -20 to the left to match the layout*/
   }
 
   &__middle {
     display: flex;
     flex-direction: column;
-    gap: $gap-base;
+    gap: $gap-xl;
     min-width: 0;
+    margin-bottom: $space-4xl;
 
     @include tablet {
       flex-direction: row;
+      gap: unset;
       justify-content: space-between;
+      margin-bottom: $space-5xl;
     }
   }
 
   &__social-list {
     padding: $space-0;
-    margin-block: $space-0;
+    margin-block: $space-0 $space-xl;
     display: flex;
     gap: $gap-sm;
+
+    @include tablet {
+      margin-block: $space-0;
+    }
   }
 
   &__social-item {
@@ -82,7 +88,7 @@
   }
 
   &__newsletter-title {
-    font-size: 24px;
+    font-size: $fz-ml;
     line-height: $lh-lg;
     width: 216px;
     min-width: 216px;
@@ -113,6 +119,9 @@
   }
 
   &__lower {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xl;
     padding-block: $space-lg;
     padding-inline: $space-base;
     margin-bottom: $space-0;
@@ -120,7 +129,7 @@
     height: 128px;
 
     @include tablet {
-      display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
       padding-inline: $space-5xl;
@@ -132,6 +141,7 @@
     display: inline-flex;
     gap: $gap-base;
     padding: $space-0;
+    margin-block: $space-0;
   }
 
   &__legal-link {

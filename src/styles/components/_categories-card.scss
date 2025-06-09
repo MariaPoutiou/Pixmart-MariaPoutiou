@@ -20,7 +20,7 @@
 
   &__title {
     font-size: $fz-lg;
-    line-height: 36px;
+    line-height: $lh-ml;
     margin-block: $space-base 0;
   }
 
@@ -45,7 +45,7 @@
 
     @media screen and (max-width: 500px) {
       display: none;
-    }/* i need to explain here, the mobile layout text is different. It says "text" everywhere. These words are small and fit the block but the actual text is long and not possible to fit the block without wrap or adjustment. I just hide one of the words for screen below 500px*/
+    } /* i need to explain here, the mobile layout text is different. It says "text" everywhere. These words are small and fit the block but the actual text is long and not possible to fit the block without wrap or adjustment. I just hide one of the words for screen below 500px*/
   }
 
   &__info {

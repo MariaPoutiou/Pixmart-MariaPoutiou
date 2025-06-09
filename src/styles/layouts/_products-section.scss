@@ -18,7 +18,6 @@
 
     @include desktop {
       gap: $gap-xl;
-
     }
   }
 
@@ -34,6 +33,5 @@
     @include desktop {
       min-width: 224px;
     }
-
   }
 }

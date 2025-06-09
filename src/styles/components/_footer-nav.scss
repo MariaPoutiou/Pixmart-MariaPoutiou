@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .footer__nav {
-    &-wrapper {
+  &-wrapper {
     display: flex;
     flex-direction: column;
     gap: $gap-base;

@@ -6,7 +6,6 @@
     height: 272px;
     width: 100%;
     overflow: hidden;
-    border-radius: 20px;
   }
 
   &__img img {
@@ -42,8 +41,8 @@
 
   &__title {
     font-size: $fz-lg;
-    line-height: 36px;
-    margin-block: $space-base 4px;
+    line-height: $lh-ml;
+    margin-block: $space-base $space-0;
   }
 
   &__price {
@@ -55,6 +54,7 @@
 
   &__tags {
     @include card-info;
+    margin-block: $space-0;
   }
 
   &__tag {

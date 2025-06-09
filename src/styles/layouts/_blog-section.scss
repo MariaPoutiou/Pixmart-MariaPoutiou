@@ -4,10 +4,19 @@
 .blog {
   &__header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
     margin-bottom: $space-3xl;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: center;
+      gap: $gap-base;
+    }
+  }
+
+  &__title {
+    margin-block: $space-0 $space-base;
   }
 
   &__link {
@@ -29,6 +38,7 @@
 
     @include tablet {
       flex-direction: row;
+      justify-content: center;
     }
   }
 }
@@ -50,9 +60,13 @@
     @include card-hover;
   }
 
+  &__img--primary img {
+    object-position: center 0;
+  }
+
   &__title {
     font-size: $fz-lg;
-    line-height: 36px;
+    line-height: $lh-ml;
     margin-block: $space-lg $space-sm;
   }
 

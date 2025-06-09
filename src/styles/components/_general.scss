@@ -16,7 +16,12 @@
   letter-spacing: -0.5px;
 }
 
-.product-section, .categories, .trending, .pricing, .faq, .blog {
+.product-section,
+.categories,
+.trending,
+.pricing,
+.faq,
+.blog {
   margin-block: 0 $space-4xl;
 
   @include tablet {

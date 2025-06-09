@@ -12,19 +12,20 @@
     gap: $gap-2xl;
     background: linear-gradient(
       90deg,
-      rgba(240, 246, 253, 1) 30%,
-      rgba(255, 255, 255, 1) 60%
+      rgba(240, 246, 253, 1) 60%,
+      rgba(255, 255, 255, 1) 80%
     );
 
     @include tablet {
       padding-block: $space-6xl;
-      margin-block: $space-0 $space-6xl;
+      margin-block: $space-0 68px;
       flex-direction: row;
       align-items: center;
     }
 
     @include desktop {
-      padding-block: 47px;
+      padding-block: 47px;/* overall i was a bit confused with spacing in this section. I extracted this value from figma, not from the values given by on the side but by the space indicated inside the layout */
+      margin-block: $space-0 $space-6xl;
     }
   }
 
@@ -34,9 +35,13 @@
     gap: $gap-xl;
     height: 398px;
     width: 100%;
+    margin-bottom: $space-4xl;
 
     @include tablet {
-      width: 69%;
+      max-width: 350px;
+    }
+
+    @include desktop {
       max-width: 520px;
     }
   }
@@ -44,6 +49,8 @@
   &__banner {
     height: 276px;
     width: 100%;
+    object-fit: contain;
+    object-position: left;
 
     @include tablet {
       height: 386px;
@@ -52,7 +59,9 @@
     }
 
     @include desktop {
-      max-width: 544px;
+      height: 544px;
+      width: 100%;
+      max-width: 624px;
     }
   }
 
@@ -79,7 +88,12 @@
 
   &__btn-wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: $gap-lg;
+
+    @include tablet {
+      flex-wrap: nowrap;
+    }
   }
 
   &__button-primary {
@@ -97,27 +111,27 @@
     width: 233px;
     border: 1px solid transparent;
 
-      &:hover {
-        background-color: $color-gray-bg;
-        border: 1px solid $color-blue-light;
-      }
-
-      &:focus-visible {
-        outline: none;
-        background-color: $color-gray-bg;
-        box-shadow: 0 0 0 4px $color-blue-light;
-        border-color: $color-gray-bg;
-      }
-
-      &:active {
-        background-color: $color-gray-bg;
-      }
-
-      &:disabled {
-        color: $color-disabled;
-        background-color: transparent;
-      }
+    &:hover {
+      background-color: $color-gray-bg;
+      border: 1px solid $color-blue-light;
     }
+
+    &:focus-visible {
+      outline: none;
+      background-color: $color-gray-bg;
+      box-shadow: 0 0 0 4px $color-blue-light;
+      border-color: $color-gray-bg;
+    }
+
+    &:active {
+      background-color: $color-gray-bg;
+    }
+
+    &:disabled {
+      color: $color-disabled;
+      background-color: transparent;
+    }
+  }
 
   &__button-svg {
     margin-right: $space-sm;

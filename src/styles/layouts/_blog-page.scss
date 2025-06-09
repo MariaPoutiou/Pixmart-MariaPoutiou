@@ -24,6 +24,13 @@
 
   &__title {
     margin-block: $space-0;
+    font-size: $fz-xl;
+    line-height: $lh-xl;
+
+    @include tablet {
+      font-size: $fz-2xl;
+      line-height: $lh-2xl;
+    }
   }
 
   &__img-wrapper {

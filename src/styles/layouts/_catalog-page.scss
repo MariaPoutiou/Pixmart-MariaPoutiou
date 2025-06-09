@@ -17,6 +17,13 @@
     flex-direction: column;
     letter-spacing: -0.5px;
     margin-block: $space-4xl 100px;
+    font-size: $fz-xl;
+    line-height: $lh-xl;
+
+    @include tablet {
+      font-size: $fz-2xl;
+      line-height: $lh-2xl;
+    }
   }
 
   &__catalog-highlight {
@@ -121,7 +128,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    margin: 0;
+    margin: $space-0;
   }
 
   &__select-icon {

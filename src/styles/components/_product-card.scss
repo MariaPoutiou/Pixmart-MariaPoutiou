@@ -4,7 +4,6 @@
 .product-card {
   &__wrapper {
     background-color: $color-surface-light;
-    padding: $space-xl;
     border-radius: 20px;
     margin-bottom: $space-m;
     display: flex;
@@ -31,7 +30,7 @@
     height: 150px;
     color: $color-primary;
     transition: color 0.3s ease;
-    transition: transform 0.3s
+    transition: transform 0.3s;
   }
 }
 

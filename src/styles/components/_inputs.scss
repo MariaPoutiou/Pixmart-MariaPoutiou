@@ -278,7 +278,6 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
   background-color: $color-white;
 }
 
-
 .toggle:focus-visible + .input-toggle::before {
   box-shadow: 0 0 0 2px $color-blue-light;
 }
@@ -295,7 +294,6 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
     background-color: $color-04;
   }
 }
-
 
 .input-toggle::before,
 .input-toggle::after {
