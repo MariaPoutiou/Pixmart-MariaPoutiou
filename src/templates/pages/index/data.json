@@ -111,13 +111,13 @@
         "svg": "/img/sprite.svg#icon-uikits",
         "title": "Templates",
         "description": "For all needs",
-        "label": "Modern"
+        "label": "Text"
       },
       {
         "svg": "/img/sprite.svg#icon-presentation",
         "title": "Slides",
         "description": "Pitch-ready",
-        "label": "Creative"
+        "label": "Text"
       }
     ]
   },
@@ -127,13 +127,13 @@
         "svg": "/img/sprite.svg#icon-social",
         "title": "App Icons",
         "description": "High-quality",
-        "label": "Elegant"
+        "label": "Text"
       },
       {
         "svg": "/img/sprite.svg#icon-illustrations",
         "title": "Design Tools",
         "description": "Easy to use",
-        "label": "Unique"
+        "label": "Text"
       }
     ]
   },

@@ -26,30 +26,26 @@
 
   &__meta {
     display: flex;
-    width: 100px;
-    gap: $gap-sm;
+    flex-wrap: wrap;
+    gap: $gap-xs;
   }
 
   &__description {
     margin-block: $space-sm 0;
+    white-space: nowrap;
   }
 
   &__label {
-    line-height: $lh-base;
     position: relative;
     margin-block: $space-sm 0;
 
     &::before {
       @include card-pseudoelement;
+      margin-right: $space-xs;
     }
 
-    @media screen and (max-width: 500px) {
-      display: none;
-    } /* i need to explain here, the mobile layout text is different. It says "text" everywhere. These words are small and fit the block but the actual text is long and not possible to fit the block without wrap or adjustment. I just hide one of the words for screen below 500px*/
-  }
-
-  &__info {
-    @include card-info;
-    flex-direction: column;
+    &__info {
+      @include card-info;
+    }
   }
 }

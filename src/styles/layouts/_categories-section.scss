@@ -56,7 +56,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 400px;
+      top: 416px;
       height: 60px;
       width: 100%;
       background: linear-gradient(
@@ -99,16 +99,9 @@
   &__list-item {
     background-color: $color-surface-light;
     border-radius: 20px;
-    height: 180px;
+    height: auto;
+    max-height: 216px;
 
-    @include tablet {
-      min-width: 210px;
-    }
-
-    @include desktop {
-      min-width: 294px;
-    }
-  }
 }
 
 .categories__list-item {
@@ -140,4 +133,5 @@
       }
     }
   }
+}
 }
