@@ -10,7 +10,6 @@
 
     @include tablet {
       padding-block: $space-4xl $space-5xl;
-      gap: $gap-6xl;
     }
   }
 
@@ -48,19 +47,14 @@
       flex-direction: row;
       gap: unset;
       justify-content: space-between;
-      margin-bottom: $space-5xl;
     }
   }
 
   &__social-list {
     padding: $space-0;
-    margin-block: $space-0 $space-xl;
     display: flex;
     gap: $gap-sm;
-
-    @include tablet {
-      margin-block: $space-0;
-    }
+    margin-block: 0;
   }
 
   &__social-item {
