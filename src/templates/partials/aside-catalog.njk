@@ -1,7 +1,7 @@
 <aside class="catalog-filter">
   <h2 class="catalog-filter__section-title visually-hidden">{{ catalogFilterHeader.mainTitle }}</h2>
   {% include "partials/mobile-filter-header.njk" %}
-  <form class="catalog-filter__form" action="{{ catalogAsideForm.action }}" method="get">
+  <form class="catalog-filter__form" action="{{ catalogForm.action }}" method="get">
     <div class="catalog-filter__wrapper">
       <div class="catalog-filter__blocks">
         {% include "partials/aside-catalog-categories.njk" %}

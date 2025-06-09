@@ -110,6 +110,8 @@
   &__label {
     color: $color-text-primary;
     position: relative;
+    font-size: $fz-xs;
+    line-height: $lh-sm;
   }
 
   &__list {
