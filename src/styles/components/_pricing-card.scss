@@ -31,10 +31,12 @@
     margin-block: $space-0;
 
     &--best-seller {
-      margin-top: $space-xl;
+      @include tablet {
+        margin-block: 16px $space-0;
+      }
 
       @include desktop {
-        margin-block: $space-0;
+        margin-block: $space-0
       }
     }
   }
