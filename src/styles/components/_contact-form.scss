@@ -74,6 +74,7 @@
     border: 1px solid $color-gray-light;
     border-radius: 8px;
     height: 180px;
+    resize: none;
 
     &::placeholder {
       padding-top: $space-ml;
