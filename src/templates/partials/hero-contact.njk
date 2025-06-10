@@ -7,9 +7,9 @@
     </h1>
     <h3 class="contact__description">{{ contactIntro.description }}</h3>
   </div>
-  <button class="button contact__button button--primary">
+  <a class="button contact__button button--primary" href="{{ contactIntro.buttonLink }}">
     {{ contactIntro.buttonText }}
-  </button>
+  </a>
   <div class="contact__info-wrapper">
     {% for item in contactInfo %}
       <div class="contact__info-item">

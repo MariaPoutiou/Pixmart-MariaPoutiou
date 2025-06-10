@@ -4,9 +4,9 @@
     <h3 class="secondary-title faq__secondary-title">
       {{ faqSection.subtitle }}
     </h3>
-    <button class="button faq__button button--secondary">
+    <a class="button faq__button button--secondary" href="{{ faqSection.buttonLink }}">
       {{ faqSection.buttonText }}
-    </button>
+    </a>
   </div>
   <div class="faq__list">
     {% for item in faqSection.items %}

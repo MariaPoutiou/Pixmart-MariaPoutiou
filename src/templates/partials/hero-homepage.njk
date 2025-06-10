@@ -4,15 +4,15 @@
       {{ heroHome.titleLast }}</h1>
     <h2 class="hero-section__description">{{ heroHome.description }}</h2>
     <div class="hero-section__btn-wrapper">
-      <button class="button hero-section__button-primary button--primary">
+      <a class="button hero-section__button-primary button--primary" href="{{ heroHome.linkPrimary }}">
         {{ heroHome.buttonPrimary }}
-      </button>
-      <button class="button hero-section__button-secondary">
+      </a>
+      <a class="button hero-section__button-secondary" href="{{ heroHome.linkSecondary }}" target="_blank">
         <svg class="svg hero-section__button-svg" aria-hidden="true" focusable="false">
           <use href="{{ heroHome.buttonIcon.svg }}"></use>
         </svg>
         {{ heroHome.buttonSecondary }}
-      </button>
+      </a>
     </div>
   </div>
   <div class="hero-section__img-wrapper">

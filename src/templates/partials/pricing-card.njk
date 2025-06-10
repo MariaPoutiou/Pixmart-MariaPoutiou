@@ -20,9 +20,9 @@
             {{ feature.item }}</li>
         {% endfor %}
       </ul>
-      <button class="button pricing-card__button button--{{ plan.button.style }}">
+      <a class="button pricing-card__button button--{{ plan.button.style }}" href="{{ plan.button.link }}">
         {{ plan.button.label }}
-      </button>
+      </a>
     </div>
   </article>
 </li>

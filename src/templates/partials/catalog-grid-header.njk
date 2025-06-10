@@ -5,7 +5,7 @@
       <div class="button catalog-tools__select-wrapper button--secondary">
         {% include "partials/dropdown-catalog.njk" %}
       </div>
-      <button class="button catalog-tools__filter button--primary-small">
+      <button class="button catalog-tools__filter button--primary-small" type="button">
         <svg class="svg catalog-tools__filter-icon" aria-label="{{ catalogFilterButton.alt }}">
           <use href="{{ catalogFilterButton.icon }}"></use>
         </svg>
@@ -15,16 +15,16 @@
       <p class="catalog-tools__info">{{ catalogMeta.info }}</p>
       <div class="catalog-meta__wrapper">
         <div class="catalog-meta">
-          <div class="button catalog-meta__primary button--primary-small">
+          <button class="button catalog-meta__primary button--primary-small" type="button">
             <svg class="svg catalog-meta__icon-primary" aria-label="{{ catalogViewmodes.gridView.alt }}">
               <use href="{{ catalogViewmodes.gridView.icon }}"></use>
             </svg>
-          </div>
-          <div class="button catalog-meta__secondary button--secondary-small">
+          </button>
+          <button class="button catalog-meta__secondary button--secondary-small" type="button">
             <svg class="svg catalog-meta__icon" aria-label="{{ catalogViewmodes.listView.alt }}">
               <use href="{{ catalogViewmodes.listView.icon }}"></use>
             </svg>
-          </div>
+          </button>
         </div>
       </div>
     </div>

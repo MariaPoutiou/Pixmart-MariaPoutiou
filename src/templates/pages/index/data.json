@@ -57,7 +57,9 @@
     "titleLast": "Assets",
     "description": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
     "buttonPrimary": "Shop Now",
+    "linkPrimary": "catalog.html",
     "buttonSecondary": "Watch About Us",
+    "linkSecondary": "https://some-url.com/",
     "img": "hero-ornaments",
     "alt": "Event and Conference Website UI Kit Preview",
     "buttonIcon": {
@@ -103,7 +105,8 @@
     "title": "CATEGORIES",
     "subtitle": "Discover Assets for Every Projects",
     "description": "From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you need to your projects.",
-    "buttonText": "Shop Now"
+    "buttonText": "Shop Now",
+    "buttonLink": "catalog.html"
   },
   "categoriesSectionLeft": {
     "items": [
@@ -230,7 +233,8 @@
       ],
       "button": {
         "label": "Subscribe",
-        "style": "secondary"
+        "style": "secondary",
+        "link": "https://some-url.com/"
       }
     },
     {
@@ -259,7 +263,8 @@
       ],
       "button": {
         "label": "Subscribe",
-        "style": "primary"
+        "style": "primary",
+        "link": "https://some-url.com/"
       }
     },
     {
@@ -286,7 +291,8 @@
       ],
       "button": {
         "label": "Subscribe",
-        "style": "secondary"
+        "style": "secondary",
+        "link": "https://some-url.com/"
       }
     }
   ],
@@ -294,6 +300,7 @@
     "title": "F.A.Q",
     "subtitle": "Answers to Your Questions",
     "buttonText": "Ask Us A Question",
+    "buttonLink": "contact.html",
     "items": [
       {
         "question": "Can I request a refund?",
@@ -435,13 +442,15 @@
           "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
           "modifier": "wishlist",
-          "modifierBtn": "button--secondary-small"
+          "modifierBtn": "button--secondary-small",
+          "value": "add-to-wishlist"
         },
         {
           "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
           "modifier": "cart",
-          "modifierBtn": "button--primary-small"
+          "modifierBtn": "button--primary-small",
+          "value": "add-to-cart"
         }
       ]
     },
@@ -462,13 +471,15 @@
           "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
           "modifier": "wishlist",
-          "modifierBtn": "button--secondary-small"
+          "modifierBtn": "button--secondary-small",
+          "value": "add-to-wishlist"
         },
         {
           "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
           "modifier": "cart",
-          "modifierBtn": "button--primary-small"
+          "modifierBtn": "button--primary-small",
+          "value": "add-to-cart"
         }
       ]
     },
@@ -489,13 +500,15 @@
           "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
           "modifier": "wishlist",
-          "modifierBtn": "button--secondary-small"
+          "modifierBtn": "button--secondary-small",
+          "value": "add-to-wishlist"
         },
         {
           "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
           "modifier": "cart",
-          "modifierBtn": "button--primary-small"
+          "modifierBtn": "button--primary-small",
+          "value": "add-to-cart"
         }
       ]
     },
@@ -516,13 +529,15 @@
           "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
           "modifier": "wishlist",
-          "modifierBtn": "button--secondary-small"
+          "modifierBtn": "button--secondary-small",
+          "value": "add-to-wishlist"
         },
         {
           "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
           "modifier": "cart",
-          "modifierBtn": "button--primary-small"
+          "modifierBtn": "button--primary-small",
+          "value": "add-to-cart"
         }
       ]
     },
@@ -567,13 +582,15 @@
           "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
           "modifier": "wishlist",
-          "modifierBtn": "button--secondary-small"
+          "modifierBtn": "button--secondary-small",
+          "value": "add-to-wishlist"
         },
         {
           "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
           "modifier": "cart",
-          "modifierBtn": "button--primary-small"
+          "modifierBtn": "button--primary-small",
+          "value": "add-to-cart"
         }
       ]
     },
@@ -594,13 +611,15 @@
           "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
           "modifier": "wishlist",
-          "modifierBtn": "button--secondary-small"
+          "modifierBtn": "button--secondary-small",
+          "value": "add-to-wishlist"
         },
         {
           "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
           "modifier": "cart",
-          "modifierBtn": "button--primary-small"
+          "modifierBtn": "button--primary-small",
+          "value": "add-to-cart"
         }
       ]
     },
@@ -621,13 +640,15 @@
           "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
           "modifier": "wishlist",
-          "modifierBtn": "button--secondary-small"
+          "modifierBtn": "button--secondary-small",
+          "value": "add-to-wishlist"
         },
         {
           "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
           "modifier": "cart",
-          "modifierBtn": "button--primary-small"
+          "modifierBtn": "button--primary-small",
+          "value": "add-to-cart"
         }
       ]
     },
@@ -648,13 +669,15 @@
           "icon": "/img/sprite.svg#icon-heart",
           "alt": "Save to wishlist",
           "modifier": "wishlist",
-          "modifierBtn": "button--secondary-small"
+          "modifierBtn": "button--secondary-small",
+          "value": "add-to-wishlist"
         },
         {
           "icon": "/img/sprite.svg#icon-bag",
           "alt": "Add to cart",
           "modifier": "cart",
-          "modifierBtn": "button--primary-small"
+          "modifierBtn": "button--primary-small",
+          "value": "add-to-cart"
         }
       ]
     },
@@ -952,7 +975,8 @@
     "titleUp": "Get in Touch",
     "titleLow": "with Us",
     "description": "We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.",
-    "buttonText": "Shop Now"
+    "buttonText": "Shop Now",
+    "buttonLink": "catalog.html"
   },
   "contactInfo": [
     {

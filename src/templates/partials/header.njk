@@ -3,7 +3,8 @@
     <div class="header__nav">
       <div class="header__burger">
         <div class="header__burger-wrapper">
-          <button class="button header__burger-btn button--primary-small">
+          <!-- correct me if i'm wrong i kept this as a button because usually view cart images open a block on the spot, that's how i would do it-->
+          <button class="button header__burger-btn button--primary-small" type="button">
             <svg class="svg header__burger-img" aria-hidden="true" focusable="false">
               <use href="{{ header.burgerImg }}"></use>
             </svg>
@@ -42,7 +43,7 @@
     </div>
     <div class="header-actions">
       {% include "partials/header-search-form.njk" %}
-      <button class="button header__button button--primary-small" aria-label="{{ headerButton.alt }}">
+      <button class="button header__button button--primary-small" aria-label="{{ headerButton.alt }}" type="button">
         <svg class="svg header__button-img" focusable="false">
           <use href="{{ headerButton.img }}"></use>
         </svg>
