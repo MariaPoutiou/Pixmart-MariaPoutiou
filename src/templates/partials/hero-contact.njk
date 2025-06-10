@@ -16,7 +16,15 @@
         <svg class="svg contact__icon" aria-hidden="true" focusable="false">
           <use href="{{ item.icon }}"></use>
         </svg>
-        <p class="contact__text">{{ item.text }}</p>
+        <p class="contact__text">
+          {% if "@" in item.text %}
+            <a href="mailto:{{ item.text }}">{{ item.text }}</a>
+          {% elif item.text.match('^\\+?[\\d\\s().-]+$') %}
+            <a href="tel:{{ item.text | replace(' ', '') | replace('(', '') | replace(')', '') | replace('-', '') }}">{{ item.text }}</a>
+          {% else %}
+            {{ item.text }}
+          {% endif %}
+        </p>
       </div>
     {% endfor %}
   </div>
