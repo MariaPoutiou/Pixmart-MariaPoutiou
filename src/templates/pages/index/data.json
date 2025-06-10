@@ -419,6 +419,7 @@
         "Photography",
         "Creative"
       ],
+      "link": "https://some-url.com/",
       "price": "€00.00",
       "image": "lens-chronicles",
       "alt": "UI of a photography website with layered photo collage and call-to-action button",
@@ -431,6 +432,7 @@
         "Guidance",
         "Jobs"
       ],
+      "link": "https://some-url.com/",
       "price": "€20.99",
       "image": "career-success",
       "alt": "UI of Job search website with job listings and search filters",
@@ -460,6 +462,7 @@
         "Real Estate",
         "Modern"
       ],
+      "link": "https://some-url.com/",
       "price": "€45.99",
       "image": "dream-homes",
       "alt": "UI of Real Estate website with house images and newsletter button",
@@ -489,6 +492,7 @@
         "Food",
         "Events"
       ],
+      "link": "https://some-url.com/",
       "price": "€15.99",
       "image": "foodish-catering",
       "alt": "UI of catering website with fruit images and call to action button",
@@ -518,6 +522,7 @@
         "Healthcare",
         "Support"
       ],
+      "link": "https://some-url.com/",
       "price": "€19.99",
       "image": "caring-hearts",
       "alt": "UI of healthcare website with doctor appointment details and service highlights",
@@ -547,6 +552,7 @@
         "eSports",
         "Trend"
       ],
+      "link": "https://some-url.com/",
       "price": "€00.00",
       "image": "gaming-rise",
       "alt": "UI of e-gaming blog article with a list of related posts and recommended articles",
@@ -571,6 +577,7 @@
         "Finance",
         "Secure"
       ],
+      "link": "https://some-url.com/",
       "price": "€25.99",
       "image": "banking-redefined",
       "alt": "UI of banking website with financial stats, call-to-action buttons and user ratings",
@@ -600,6 +607,7 @@
         "Travel",
         "Adventure"
       ],
+      "link": "https://some-url.com/",
       "price": "€41.99",
       "image": "exploring-fun",
       "alt": "UI of travel agency website with call-to-action buttons and client testimonials",
@@ -629,6 +637,7 @@
         "Data",
         "Tools"
       ],
+      "link": "https://some-url.com/",
       "price": "€15.99",
       "image": "admin-dashboard",
       "alt": "E-commerce admin dashboard showing sales, revenue analytics, and user activity metrics",
@@ -658,6 +667,7 @@
         "Data",
         "Tools"
       ],
+      "link": "https://some-url.com/",
       "price": "€10.99",
       "image": "analytical-dashboard",
       "alt": "School admin dashboard displaying student data, attendance, earnings, and teacher messages",
@@ -687,6 +697,7 @@
         "Education",
         "Kids"
       ],
+      "link": "https://some-url.com/",
       "price": "€00.00",
       "image": "kindergarten",
       "alt": "Kindergarten website template preview with event highlights and playful design",

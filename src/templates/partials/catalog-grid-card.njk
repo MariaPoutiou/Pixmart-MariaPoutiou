@@ -2,31 +2,32 @@
   {% for item in catalog %}
     <li class="catalog-list__item">
       <article class="catalog-card">
-        <div class="catalog-card__img-wrapper">
-          <picture class="catalog-card__img">
-            <source srcset="/img/{{ item.image }}-1x.avif 1x, /img/{{ item.image }}-2x.avif 2x" type="image/avif"/>
-            <source srcset="/img/{{ item.image }}-1x.webp 1x, /img/{{ item.image }}-2x.webp 2x" type="image/webp"/>
-            <img class="catalog-card__img" src="/img/{{ item.img }}-2x.webp" alt="{{ item.alt }}" loading="lazy"/>
-          </picture>
-          {% if item.state %}
-            <div class="button catalog-card__label catalog-card__label--{{ item.stateClass }}">
-              <p class="catalog-card__state">{{ item.state }}</p>
-            </div>
-          {% endif %}
-        </div>
-        <h3 class="catalog-card__title">{{ item.title }}</h3>
-        <div class="catalog-card__tags">
-          {% for tag in item.tags %}
-            <p class="catalog-card__tag">{{ tag }}</p>
-          {% endfor %}
-        </div>
+        <a class="catalog-card__link" href="{{ item.link }}">
+          <div class="catalog-card__img-wrapper">
+            <picture class="catalog-card__img">
+              <source srcset="/img/{{ item.image }}-1x.avif 1x, /img/{{ item.image }}-2x.avif 2x" type="image/avif"/>
+              <source srcset="/img/{{ item.image }}-1x.webp 1x, /img/{{ item.image }}-2x.webp 2x" type="image/webp"/>
+              <img class="catalog-card__img" src="/img/{{ item.img }}-2x.webp" alt="{{ item.alt }}" loading="lazy"/>
+            </picture>
+            {% if item.state %}
+              <div class="button catalog-card__label catalog-card__label--{{ item.stateClass }}">
+                <p class="catalog-card__state">{{ item.state }}</p>
+              </div>
+            {% endif %}
+          </div>
+          <h3 class="catalog-card__title">{{ item.title }}</h3>
+          <div class="catalog-card__tags">
+            {% for tag in item.tags %}
+              <p class="catalog-card__tag">{{ tag }}</p>
+            {% endfor %}
+          </div>
+        </a>
         {% if item.actions %}
           <div class="catalog-card__footer">
             <p class="catalog-card__price">{{ item.price }}</p>
             <div class="catalog-card__actions">
               {% for action in item.actions %}
-                <button class="button catalog-card__action{% if action.modifier %} catalog-card__action--{{ action.modifier }} {{
-                    action.modifierBtn }}{% endif %}" type="submit" value="{{ action.value }}">
+                <button class="button catalog-card__action{% if action.modifier %} catalog-card__action--{{ action.modifier }} {{ action.modifierBtn }}{% endif %}" type="submit" value="{{ action.value }}">
                   <svg class="svg catalog-card__action-icon" aria-label="{{ action.icon }}">
                     <use href="{{ action.icon }}"></use>
                   </svg>
