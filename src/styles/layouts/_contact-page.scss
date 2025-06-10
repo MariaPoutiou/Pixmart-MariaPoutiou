@@ -29,6 +29,8 @@
   }
 
   &__intro {
+    display: flex;
+    flex-direction: column-reverse;
     margin-bottom: $space-xl;
   }
 
