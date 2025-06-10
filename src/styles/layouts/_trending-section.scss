@@ -2,17 +2,9 @@
 @use "../abstracts/mixins" as *;
 
 .trending {
+
   &__primary-title {
     margin-bottom: $space-base;
-    padding-inline: $space-base;
-
-    @include tablet {
-      padding-inline: $space-2xl $space-0;
-    }
-
-    @include desktop {
-      padding-inline: $space-5xl $space-0;
-    }
   }
   &__secondary-title {
     margin-block: $space-0;
@@ -24,15 +16,6 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: $space-3xl;
-    padding-inline: $space-base;
-
-    @include tablet {
-      padding-inline: $space-2xl;
-    }
-
-    @include desktop {
-      padding-inline: $space-5xl;
-    }
   }
 
   &__header-functions {
@@ -66,12 +49,8 @@
     grid-auto-flow: column;
     grid-auto-columns: 305px;
     gap: $gap-base;
-    padding-inline: $space-base $space-0;
     overflow-x: scroll;
-
-    @include tablet {
-      padding-inline: $space-2xl $space-0;
-    }
+    padding-inline: 0;
 
     @include desktop {
       display: grid;
@@ -79,7 +58,6 @@
       align-items: center;
       overflow: visible;
       overflow-x: unset;
-      padding-inline: $space-5xl;
     }
   }
 }

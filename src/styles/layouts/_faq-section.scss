@@ -10,7 +10,6 @@ details summary::-webkit-details-marker {
 }
 
 .faq {
-  padding-inline: $space-base;
 
   @include tablet {
     display: flex;
@@ -20,7 +19,6 @@ details summary::-webkit-details-marker {
     align-items: center;
     position: relative;
     z-index: 0;
-    padding-inline: $space-5xl;
 
     &::before {
       content: "";

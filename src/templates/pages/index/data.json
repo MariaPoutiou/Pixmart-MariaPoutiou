@@ -415,7 +415,7 @@
       "price": "€00.00",
       "image": "lens-chronicles",
       "alt": "UI of a photography website with layered photo collage and call-to-action button",
-      "state": "Sold Out",
+      "state": "SOLD OUT",
       "stateClass": "sold-out"
     },
     {
@@ -428,7 +428,7 @@
       "image": "career-success",
       "alt": "UI of Job search website with job listings and search filters",
       "button": "Go to Product",
-      "state": "New",
+      "state": "NEW",
       "stateClass": "new",
       "actions": [
         {
@@ -455,7 +455,7 @@
       "image": "dream-homes",
       "alt": "UI of Real Estate website with house images and newsletter button",
       "button": "Go to Product",
-      "state": "Popular",
+      "state": "POPULAR",
       "stateClass": "popular",
       "actions": [
         {
@@ -482,7 +482,7 @@
       "image": "foodish-catering",
       "alt": "UI of catering website with fruit images and call to action button",
       "button": "Go to Product",
-      "state": "Popular",
+      "state": "POPULAR",
       "stateClass": "popular",
       "actions": [
         {
@@ -509,7 +509,7 @@
       "image": "caring-hearts",
       "alt": "UI of healthcare website with doctor appointment details and service highlights",
       "button": "Go to Product",
-      "state": "New",
+      "state": "NEW",
       "stateClass": "new",
       "actions": [
         {
@@ -535,7 +535,7 @@
       "price": "€00.00",
       "image": "gaming-rise",
       "alt": "UI of e-gaming blog article with a list of related posts and recommended articles",
-      "state": "Sold Out",
+      "state": "SOLD OUT",
       "stateClass": "sold-out"
     },
     {
@@ -547,7 +547,7 @@
       "price": "€00.00",
       "image": "edit-pro",
       "alt": "UI of video editing services website with quality highlights and call to action button",
-      "state": "Sold Out",
+      "state": "SOLD OUT",
       "stateClass": "sold-out"
     },
     {
@@ -560,7 +560,7 @@
       "image": "banking-redefined",
       "alt": "UI of banking website with financial stats, call-to-action buttons and user ratings",
       "button": "Go to Product",
-      "state": "New",
+      "state": "NEW",
       "stateClass": "new",
       "actions": [
         {
@@ -587,7 +587,7 @@
       "image": "exploring-fun",
       "alt": "UI of travel agency website with call-to-action buttons and client testimonials",
       "button": "Go to Product",
-      "state": "Popular",
+      "state": "POPULAR",
       "stateClass": "popular",
       "actions": [
         {
@@ -614,7 +614,7 @@
       "image": "admin-dashboard",
       "alt": "E-commerce admin dashboard showing sales, revenue analytics, and user activity metrics",
       "button": "Go to Product",
-      "state": "Popular",
+      "state": "POPULAR",
       "stateClass": "popular",
       "actions": [
         {
@@ -641,7 +641,7 @@
       "image": "analytical-dashboard",
       "alt": "School admin dashboard displaying student data, attendance, earnings, and teacher messages",
       "button": "Go to Product",
-      "state": "New",
+      "state": "NEW",
       "stateClass": "new",
       "actions": [
         {
@@ -667,7 +667,7 @@
       "price": "€00.00",
       "image": "kindergarten",
       "alt": "Kindergarten website template preview with event highlights and playful design",
-      "state": "Sold Out",
+      "state": "SOLD OUT",
       "stateClass": "sold-out"
     }
   ],
