@@ -32,10 +32,7 @@
   }
 
   &__input {
-    &::placeholder {
-      padding-left: $space-base;
-    }
-
+    padding-left: $space-md;
     @include input-style;
   }
 
@@ -75,10 +72,7 @@
     border-radius: 8px;
     height: 180px;
     resize: none;
-
-    &::placeholder {
-      padding-top: $space-ml;
-    }
+    padding: $space-m;
   }
 
   &__checkbox-wrapper {
