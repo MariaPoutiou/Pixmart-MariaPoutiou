@@ -163,10 +163,7 @@
         "button": "Go to Product",
         "title": "Travel Hero",
         "price": "€29.99",
-        "tags": [
-          "Adventure",
-          "Journey"
-        ]
+        "tags": ["Adventure", "Journey"]
       },
       {
         "img": "caring-hearts",
@@ -175,10 +172,7 @@
         "button": "Go to Product",
         "title": "Healthcare Pro",
         "price": "€15.99",
-        "tags": [
-          "Medical",
-          "Wellness"
-        ]
+        "tags": ["Medical", "Wellness"]
       },
       {
         "img": "foodish-catering",
@@ -186,10 +180,7 @@
         "button": "Go to Product",
         "title": "Foodish Delight",
         "price": "€31.99",
-        "tags": [
-          "Catering",
-          "Food"
-        ]
+        "tags": ["Catering", "Food"]
       },
       {
         "img": "dream-homes",
@@ -197,10 +188,7 @@
         "button": "Go to Product",
         "title": "Real Estate",
         "price": "€40.99",
-        "tags": [
-          "Modern",
-          "Homes"
-        ]
+        "tags": ["Modern", "Homes"]
       }
     ]
   },
@@ -382,9 +370,7 @@
     "Price: Low to High",
     "Price: High to Low"
   ],
-  "catalogDropdownIcon": [
-    "/img/sprite.svg#icon-chevron-down"
-  ],
+  "catalogDropdownIcon": ["/img/sprite.svg#icon-chevron-down"],
   "catalogFilterButton": {
     "icon": "/img/sprite.svg#icon-filter-lines",
     "alt": "Filter icon"
@@ -415,10 +401,7 @@
   "catalog": [
     {
       "title": "Lens Chronicles",
-      "tags": [
-        "Photography",
-        "Creative"
-      ],
+      "tags": ["Photography", "Creative"],
       "link": "https://some-url.com/",
       "price": "€00.00",
       "image": "lens-chronicles",
@@ -428,10 +411,7 @@
     },
     {
       "title": "Career Success",
-      "tags": [
-        "Guidance",
-        "Jobs"
-      ],
+      "tags": ["Guidance", "Jobs"],
       "link": "https://some-url.com/",
       "price": "€20.99",
       "image": "career-success",
@@ -458,10 +438,7 @@
     },
     {
       "title": "Dream Homes",
-      "tags": [
-        "Real Estate",
-        "Modern"
-      ],
+      "tags": ["Real Estate", "Modern"],
       "link": "https://some-url.com/",
       "price": "€45.99",
       "image": "dream-homes",
@@ -488,10 +465,7 @@
     },
     {
       "title": "Foodish Catering",
-      "tags": [
-        "Food",
-        "Events"
-      ],
+      "tags": ["Food", "Events"],
       "link": "https://some-url.com/",
       "price": "€15.99",
       "image": "foodish-catering",
@@ -518,10 +492,7 @@
     },
     {
       "title": "Caring Hearts",
-      "tags": [
-        "Healthcare",
-        "Support"
-      ],
+      "tags": ["Healthcare", "Support"],
       "link": "https://some-url.com/",
       "price": "€19.99",
       "image": "caring-hearts",
@@ -548,10 +519,7 @@
     },
     {
       "title": "Gaming Rise",
-      "tags": [
-        "eSports",
-        "Trend"
-      ],
+      "tags": ["eSports", "Trend"],
       "link": "https://some-url.com/",
       "price": "€00.00",
       "image": "gaming-rise",
@@ -561,10 +529,7 @@
     },
     {
       "title": "Edit Pro",
-      "tags": [
-        "Design",
-        "Tools"
-      ],
+      "tags": ["Design", "Tools"],
       "price": "€00.00",
       "image": "edit-pro",
       "alt": "UI of video editing services website with quality highlights and call to action button",
@@ -573,10 +538,7 @@
     },
     {
       "title": "Banking Redefined",
-      "tags": [
-        "Finance",
-        "Secure"
-      ],
+      "tags": ["Finance", "Secure"],
       "link": "https://some-url.com/",
       "price": "€25.99",
       "image": "banking-redefined",
@@ -603,10 +565,7 @@
     },
     {
       "title": "Exploring Fun",
-      "tags": [
-        "Travel",
-        "Adventure"
-      ],
+      "tags": ["Travel", "Adventure"],
       "link": "https://some-url.com/",
       "price": "€41.99",
       "image": "exploring-fun",
@@ -633,10 +592,7 @@
     },
     {
       "title": "Admin Dashboard",
-      "tags": [
-        "Data",
-        "Tools"
-      ],
+      "tags": ["Data", "Tools"],
       "link": "https://some-url.com/",
       "price": "€15.99",
       "image": "admin-dashboard",
@@ -663,10 +619,7 @@
     },
     {
       "title": "Analytical Dashboard",
-      "tags": [
-        "Data",
-        "Tools"
-      ],
+      "tags": ["Data", "Tools"],
       "link": "https://some-url.com/",
       "price": "€10.99",
       "image": "analytical-dashboard",
@@ -693,10 +646,7 @@
     },
     {
       "title": "Kindergarten",
-      "tags": [
-        "Education",
-        "Kids"
-      ],
+      "tags": ["Education", "Kids"],
       "link": "https://some-url.com/",
       "price": "€00.00",
       "image": "kindergarten",
@@ -895,17 +845,20 @@
       "date": "April 10, 2024",
       "datetime": "2024-04-10"
     },
+
     "blogCategoriesSection": {
       "heading": "Categories",
       "items": [
         {
           "text": "Graphic Design Trends",
-          "link": "https://some-url.com/"
-        },
-        {
-          "text": "Typography & Fonts",
-          "link": "blog-article.html",
-          "active": true
+          "link": "https://some-url.com/",
+          "children": [
+            {
+              "text": "Typography & Fonts",
+              "link": "blog-article.html",
+              "active": true
+            }
+          ]
         },
         {
           "text": "UI/UX Design",
@@ -925,6 +878,7 @@
         }
       ]
     },
+
     "latestArticlesSection": {
       "heading": "Latest Articles",
       "items": [
@@ -1034,11 +988,7 @@
     ],
     "selectLabel": "Subject",
     "selectPlaceholder": "Select a subject",
-    "selectOptions": [
-      "General Inquiry",
-      "Support",
-      "Billing"
-    ],
+    "selectOptions": ["General Inquiry", "Support", "Billing"],
     "selectValid": "Field validation is successful.",
     "selectInvalid": "This field is required.",
     "textareaLabel": "Message",
