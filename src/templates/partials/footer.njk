@@ -41,11 +41,11 @@
       <div class="footer__socials">
         <div class="footer__social-list">
           {% for social in footerSocials %}
-              <a class="button footer__social-item button--secondary" href="{{ social.link }}" target="_blank" aria-label="{{ social.alt }}">
-                <svg class="svg footer__social-icon">
-                  <use href="{{ social.icon }}"></use>
-                </svg>
-              </a>
+            <a class="button footer__social-item button--secondary" href="{{ social.link }}" target="_blank" aria-label="{{ social.alt }}">
+              <svg class="svg footer__social-icon">
+                <use href="{{ social.icon }}"></use>
+              </svg>
+            </a>
           {% endfor %}
         </div>
       </div>

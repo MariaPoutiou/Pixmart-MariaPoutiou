@@ -2,7 +2,6 @@
 @use "../abstracts/mixins" as *;
 
 .product {
-
   &__list {
     padding-block: $space-0;
     display: flex;

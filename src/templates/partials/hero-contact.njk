@@ -20,7 +20,9 @@
           {% if "@" in item.text %}
             <a class="contact-hero__link" href="mailto:{{ item.text }}">{{ item.text }}</a>
           {% elif item.text.match('^\\+?[\\d\\s().-]+$') %}
-            <a class="contact-hero__link" href="tel:{{ item.text | replace(' ', '') | replace('(', '') | replace(')', '') | replace('-', '') }}">{{ item.text }}</a>
+            <a
+              class="contact-hero__link"
+              href="tel:{{ item.text | replace(' ', '') | replace('(', '') | replace(')', '') | replace('-', '') }}">{{ item.text }}</a>
           {% else %}
             {{ item.text }}
           {% endif %}
