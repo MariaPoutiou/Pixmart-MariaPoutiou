@@ -50,6 +50,37 @@
     }
   }
 
+  &__nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-base;
+
+    @include tablet {
+      flex-direction: row;
+      gap: $gap-5xl;
+    }
+  }
+
+  &__nav-title {
+    font-size: $fz-m;
+    line-height: $lh-md;
+    margin-block: $space-0 $space-base;
+  }
+
+  &__nav-list {
+    padding: $space-0;
+    margin-bottom: $space-0;
+  }
+
+  &__nav-item {
+    margin-bottom: $space-sm;
+  }
+
+  &__nav-link {
+    color: $color-text-secondary;
+    @include link-style;
+  }
+
   &__social-list {
     padding: $space-0;
     display: flex;
