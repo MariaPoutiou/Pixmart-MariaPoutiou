@@ -31,7 +31,7 @@
       },
       {
         "text": "Creators",
-        "link": "https://some-url.com/"
+        "link": "#"
       },
       {
         "text": "Blog",
@@ -59,7 +59,7 @@
     "buttonPrimary": "Shop Now",
     "linkPrimary": "catalog.html",
     "buttonSecondary": "Watch About Us",
-    "linkSecondary": "https://some-url.com/",
+    "linkSecondary": "#",
     "img": "hero-ornaments",
     "alt": "Event and Conference Website UI Kit Preview",
     "buttonIcon": {
@@ -70,31 +70,31 @@
     "title": "PRODUCT CATEGORIES",
     "items": [
       {
-        "link": "https://some-url.com/",
+        "link": "#",
         "title": "UI kits",
         "img": "/img/sprite.svg#icon-uikits",
         "alt": "images of different devices"
       },
       {
-        "link": "https://some-url.com/",
+        "link": "#",
         "title": "Social Media",
         "img": "/img/sprite.svg#icon-social",
         "alt": "mobile phone"
       },
       {
-        "link": "https://some-url.com/",
+        "link": "#",
         "title": "Presentation",
         "img": "/img/sprite.svg#icon-presentation",
         "alt": "roll up banner with graphs"
       },
       {
-        "link": "https://some-url.com/",
+        "link": "#",
         "title": "Fonts",
         "img": "/img/sprite.svg#icon-fonts",
         "alt": "square with typography"
       },
       {
-        "link": "https://some-url.com/",
+        "link": "#",
         "title": "illustrations",
         "img": "/img/sprite.svg#icon-illustrations",
         "alt": "painting bag"
@@ -230,7 +230,7 @@
       "button": {
         "label": "Subscribe",
         "style": "secondary",
-        "link": "https://some-url.com/"
+        "link": "#"
       }
     },
     {
@@ -260,7 +260,7 @@
       "button": {
         "label": "Subscribe",
         "style": "primary",
-        "link": "https://some-url.com/"
+        "link": "#"
       }
     },
     {
@@ -288,7 +288,7 @@
       "button": {
         "label": "Subscribe",
         "style": "secondary",
-        "link": "https://some-url.com/"
+        "link": "#"
       }
     }
   ],
@@ -343,7 +343,7 @@
   "blogSection": {
     "title": "Latest Expert",
     "linkText": "Explore All Articles",
-    "link": "https://some-url.com/",
+    "link": "#",
     "icon": "/img/sprite.svg#icon-chevron-right",
     "cards": [
       {
@@ -367,7 +367,7 @@
   },
   "gridHeader": {
     "title": "Catalog Actions",
-    "action": "https://some-url.com/"
+    "action": "#"
   },
   "gridCatalog": {
     "mainTitle": "Choose Among our Products"
@@ -410,7 +410,7 @@
     {
       "title": "Lens Chronicles",
       "tags": ["Photography", "Creative"],
-      "link": "https://some-url.com/",
+      "link": "#",
       "price": "€00.00",
       "image": "lens-chronicles",
       "alt": "UI of a photography website with layered photo collage and call-to-action button",
@@ -422,7 +422,7 @@
     {
       "title": "Career Success",
       "tags": ["Guidance", "Jobs"],
-      "link": "https://some-url.com/",
+      "link": "#",
       "price": "€20.99",
       "image": "career-success",
       "alt": "UI of Job search website with job listings and search filters",
@@ -451,7 +451,7 @@
     {
       "title": "Dream Homes",
       "tags": ["Real Estate", "Modern"],
-      "link": "https://some-url.com/",
+      "link": "#",
       "price": "€45.99",
       "image": "dream-homes",
       "alt": "UI of Real Estate website with house images and newsletter button",
@@ -480,7 +480,7 @@
     {
       "title": "Foodish Catering",
       "tags": ["Food", "Events"],
-      "link": "https://some-url.com/",
+      "link": "#",
       "price": "€15.99",
       "image": "foodish-catering",
       "alt": "UI of catering website with fruit images and call to action button",
@@ -509,7 +509,7 @@
     {
       "title": "Caring Hearts",
       "tags": ["Healthcare", "Support"],
-      "link": "https://some-url.com/",
+      "link": "#",
       "price": "€19.99",
       "image": "caring-hearts",
       "alt": "UI of healthcare website with doctor appointment details and service highlights",
@@ -538,7 +538,7 @@
     {
       "title": "Gaming Rise",
       "tags": ["eSports", "Trend"],
-      "link": "https://some-url.com/",
+      "link": "#",
       "price": "€00.00",
       "image": "gaming-rise",
       "alt": "UI of e-gaming blog article with a list of related posts and recommended articles",
@@ -561,7 +561,7 @@
     {
       "title": "Banking Redefined",
       "tags": ["Finance", "Secure"],
-      "link": "https://some-url.com/",
+      "link": "#",
       "price": "€25.99",
       "image": "banking-redefined",
       "alt": "UI of banking website with financial stats, call-to-action buttons and user ratings",
@@ -590,7 +590,7 @@
     {
       "title": "Exploring Fun",
       "tags": ["Travel", "Adventure"],
-      "link": "https://some-url.com/",
+      "link": "#",
       "price": "€41.99",
       "image": "exploring-fun",
       "alt": "UI of travel agency website with call-to-action buttons and client testimonials",
@@ -619,7 +619,7 @@
     {
       "title": "Admin Dashboard",
       "tags": ["Data", "Tools"],
-      "link": "https://some-url.com/",
+      "link": "#",
       "price": "€15.99",
       "image": "admin-dashboard",
       "alt": "E-commerce admin dashboard showing sales, revenue analytics, and user activity metrics",
@@ -648,7 +648,7 @@
     {
       "title": "Analytical Dashboard",
       "tags": ["Data", "Tools"],
-      "link": "https://some-url.com/",
+      "link": "#",
       "price": "€10.99",
       "image": "analytical-dashboard",
       "alt": "School admin dashboard displaying student data, attendance, earnings, and teacher messages",
@@ -677,7 +677,7 @@
     {
       "title": "Kindergarten",
       "tags": ["Education", "Kids"],
-      "link": "https://some-url.com/",
+      "link": "#",
       "price": "€00.00",
       "image": "kindergarten",
       "alt": "Kindergarten website template preview with event highlights and playful design",
@@ -695,7 +695,7 @@
     "icon": "/img/sprite.svg#icon-close"
   },
   "catalogForm": {
-    "action": "https://some-url.com"
+    "action": "#"
   },
   "catalogFilterCategories": {
     "title": "Categories",
@@ -850,7 +850,7 @@
         "alt": "Corporate presentation template with slides for company overview, goals, marketing strategy, and team profiles",
         "caption": "Example of font usage in typography",
         "linkText": "Get this asset",
-        "link": "https://some-url.com/"
+        "link": "#"
       }
     },
     {
@@ -882,7 +882,7 @@
       "items": [
         {
           "text": "Graphic Design Trends",
-          "link": "https://some-url.com/",
+          "link": "#",
           "children": [
             {
               "text": "Typography & Fonts",
@@ -893,19 +893,19 @@
         },
         {
           "text": "UI/UX Design",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "Branding & Identity",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "Illustration",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "Digital Marketing",
-          "link": "https://some-url.com/"
+          "link": "$"
         }
       ]
     },
@@ -915,13 +915,13 @@
       "items": [
         {
           "title": "Text",
-          "link": "https://some-url.com/",
+          "link": "#",
           "date": "March 15, 2024",
           "datetime": "2024-03-15"
         },
         {
           "title": "Text",
-          "link": "https://some-url.com/",
+          "link": "#",
           "date": "March 15, 2024",
           "datetime": "2024-03-15"
         }
@@ -932,7 +932,7 @@
     "title": "Related Articles",
     "link": {
       "text": "Explore All Articles",
-      "href": "https://some-url.com/",
+      "href": "#",
       "icon": "/img/sprite.svg#icon-chevron-right"
     },
     "articles": [
@@ -945,7 +945,7 @@
         "title": "Best Dishes",
         "date": "15 APRIL 2024",
         "datetime": "2024-04-15",
-        "link": "https://some-url.com/"
+        "link": "#"
       },
       {
         "img": "article-lotus-spa",
@@ -956,7 +956,7 @@
         "title": "Contact Us Lotus Spa article",
         "date": "05 MAY 2024",
         "datetime": "2024-05-05",
-        "link": "https://some-url.com/"
+        "link": "#"
       },
       {
         "img": "article-creative-blog",
@@ -967,7 +967,7 @@
         "title": "Creative Blog",
         "date": "20 JUNE 2024",
         "datetime": "2024-06-20",
-        "link": "https://some-url.com/"
+        "link": "#"
       }
     ]
   },
@@ -1004,7 +1004,7 @@
     "textSecondary": "123 Creative Ave, Design City, 45678"
   },
   "contactForm": {
-    "action": "https://some-url.com/",
+    "action": "#",
     "hiddenTitle": "Contact Us",
     "fields": [
       {
@@ -1072,11 +1072,11 @@
         },
         {
           "text": "About Us",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "About Us",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "Blog Articles",
@@ -1090,27 +1090,27 @@
       "links": [
         {
           "text": "Website",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "Mobile App",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "Social Media Feeds",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "Presentation",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "Product Mockups",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "Illustrations",
-          "link": "https://some-url.com/"
+          "link": "#"
         }
       ]
     },
@@ -1120,27 +1120,27 @@
       "links": [
         {
           "text": "Your Cart",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "Check Out",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "Refund Policy",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "Company Policy",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "Send A Message",
-          "link": "https://some-url.com/"
+          "link": "#"
         },
         {
           "text": "Customer Support",
-          "link": "https://some-url.com/"
+          "link": "#"
         }
       ]
     }
@@ -1170,11 +1170,11 @@
   "footerLegal": [
     {
       "text": "Privacy Policy",
-      "link": "https://some-url.com/"
+      "link": "#"
     },
     {
       "text": "Terms and Condition",
-      "link": "https://some-url.com/"
+      "link": "#"
     },
     {
       "text": "Site Map",
