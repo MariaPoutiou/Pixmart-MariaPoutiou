@@ -66,22 +66,19 @@
   background-color: $color-primary;
   border-color: $color-primary;
   color: $color-text-button;
-  height: 40px;
-  width: 40px;
+  padding: 6px;
 }
 
 @mixin button-small-secondary {
   background-color: transparent;
   border-color: $color-10;
-  height: 40px;
-  width: 40px;
+  padding: 6px;
 }
 
 @mixin button-primary {
   background-color: $color-primary;
   border-color: $color-primary;
   color: $color-text-button;
-  height: 64px;
   padding-block: $space-ml;
   padding-inline: $space-xl;
 }
@@ -89,7 +86,6 @@
 @mixin button-secondary {
   border: 2px solid $color-gray-light;
   background-color: transparent;
-  height: 64px;
   padding-block: $space-ml;
   padding-inline: $space-xl;
 }

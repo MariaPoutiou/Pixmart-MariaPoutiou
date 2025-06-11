@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     gap: $gap-xl;
-    height: 398px;
+    min-height: 398px;
     width: 100%;
     margin-bottom: $space-4xl;
 
@@ -103,7 +103,6 @@
   &__button-primary {
     @include button-base;
     @include button-primary;
-    width: 151px;
   }
 
   &__button-secondary {
@@ -112,7 +111,6 @@
     color: $color-text-primary;
     padding-block: $space-ml;
     padding-inline: $space-xl;
-    width: 233px;
     border: 1px solid transparent;
 
     &:hover {
