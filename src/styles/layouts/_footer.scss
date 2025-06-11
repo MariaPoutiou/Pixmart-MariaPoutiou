@@ -92,13 +92,10 @@
   }
 
   &__social-item {
-    padding: $space-m;
+    padding-block: $space-m;
+    padding-inline: $space-m;
     align-items: unset;
     width: 64px;
-  }
-
-  &__social-link {
-    @include button-secondary-style;
   }
 
   &__newsletter {
