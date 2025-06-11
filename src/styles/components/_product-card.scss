@@ -17,6 +17,17 @@
     }
   }
 
+  &__wrapper:hover .product-card__img {
+    color: $color-white;
+    transform: scale(1.1);
+  }
+
+  &__link:focus-visible .product-card__wrapper {
+    outline: none;
+    box-shadow: 0 0 0 4px $color-blue-light;
+    border-radius: 8px;
+  }
+
   &__title {
     font-weight: $fw-medium;
     font-size: $fz-m;
@@ -33,14 +44,3 @@
     transition: transform 0.3s;
   }
 }
-
-  .product-card__wrapper:hover .product-card__img {
-    color: $color-white;
-    transform: scale(1.1);
-  }
-
-  .product-card__link:focus-visible .product-card__wrapper {
-    outline: none;
-    box-shadow: 0 0 0 4px $color-blue-light;
-    border-radius: 8px;
-  }
