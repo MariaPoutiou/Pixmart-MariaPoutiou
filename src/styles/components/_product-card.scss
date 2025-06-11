@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 224px;
+    padding: $space-xl;
     transition: background-color 0.3s ease;
 
     &:hover {
