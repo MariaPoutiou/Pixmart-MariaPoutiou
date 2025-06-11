@@ -25,21 +25,6 @@ body {
   }
 }
 
-h1 {
-  font-size: $fz-2xl;
-  line-height: $lh-2xl;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: $ff-heading;
-  font-weight: $fw-bold;
-  color: $color-text-primary;
-}
-
 ul {
   list-style: none;
 }
@@ -70,24 +55,9 @@ a {
   border: 0;
 }
 
-fieldset {
-  border: none;
-  padding: $space-0;
-  margin: $space-0;
-}
-
 .svg {
   @include svg-size;
 }
-
-select option {
-  font-family: $fw-regular;
-  font-size: $fz-sm;
-  color: $color-text-primary;
-  background-color: $color-white;
-  padding: $space-sm;
-  border: none;
-} /*unfortunately i can't override browser styling it doesn't work :/ */
 
 .container {
   width: 100%;

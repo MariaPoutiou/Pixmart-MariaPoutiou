@@ -24,7 +24,7 @@
     }
 
     @include desktop {
-      padding-block: 47px;/* overall i was a bit confused with spacing in this section. I extracted this value from figma, not from the values given by on the side but by the space indicated inside the layout */
+      padding-block: 47px; /* overall i was a bit confused with spacing in this section. I extracted this value from figma, not from the values given by on the side but by the space indicated inside the layout */
       margin-block: $space-0 $space-6xl;
     }
   }
@@ -66,6 +66,9 @@
   }
 
   &__heading {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
     font-size: $fz-2xl;
     line-height: $lh-2xl;
     letter-spacing: -0.5px;
@@ -78,6 +81,7 @@
   }
 
   &__description {
+    font-family: $ff-heading;
     font-weight: $fw-medium;
     font-size: $fz-m;
     line-height: $lh-m;

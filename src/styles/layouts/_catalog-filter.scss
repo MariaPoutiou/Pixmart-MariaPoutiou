@@ -21,6 +21,12 @@
     background-color: $color-background;
   }
 
+  &__fieldset {
+    border: none;
+    padding: $space-0;
+    margin: $space-0;
+  }
+
   &__section {
     margin-bottom: $space-2xl;
   }
@@ -102,9 +108,13 @@
   }
 
   &__title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
     margin-bottom: $space-lg;
     margin-top: $space-0;
-    font-size: 32px;
+    font-size: $fz-ml;
+    line-height: $lh-lg;
   }
 
   &__label {

@@ -2,21 +2,24 @@
 @use "../abstracts/mixins" as *;
 
 .hero-catalog {
-    background-image: url("/img/hero-background-1x.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 288px;
-    display: flex;
-    align-items: center;
+  background-image: url("/img/hero-background-1x.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 288px;
+  display: flex;
+  align-items: center;
 
   &__title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
     display: flex;
     flex-direction: column;
     letter-spacing: -0.5px;
     margin-block: $space-4xl 100px;
-    font-size: $fz-xl;
-    line-height: $lh-xl;
+    font-size: $fz-2xl;
+    line-height: $lh-2xl;
 
     @include tablet {
       font-size: $fz-2xl;

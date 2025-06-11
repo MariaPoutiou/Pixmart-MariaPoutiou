@@ -58,6 +58,15 @@
     margin: $space-0;
   }
 
+  &__select option {
+    font-family: $fw-regular;
+    font-size: $fz-sm;
+    color: $color-text-primary;
+    background-color: $color-white;
+    padding: $space-sm;
+    border: none;
+  }
+
   &__select-icon {
     position: absolute;
     top: 8px;

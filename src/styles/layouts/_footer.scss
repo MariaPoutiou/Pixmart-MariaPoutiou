@@ -62,6 +62,9 @@
   }
 
   &__nav-title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
     font-size: $fz-m;
     line-height: $lh-md;
     margin-block: $space-0 $space-base;

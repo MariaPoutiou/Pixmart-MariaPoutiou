@@ -19,6 +19,9 @@
   }
 
   &__title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
     font-size: $fz-lg;
     line-height: $lh-ml;
     margin-block: $space-base 0;

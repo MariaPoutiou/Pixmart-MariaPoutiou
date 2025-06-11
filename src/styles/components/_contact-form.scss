@@ -13,6 +13,12 @@
   gap: $gap-lg;
   @include box-shadow;
 
+  &__fieldset {
+    border: none;
+    padding: $space-0;
+    margin: $space-0;
+  }
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -43,6 +49,15 @@
     font-size: $fz-sm;
     line-height: $lh-base;
     padding-left: $space-m;
+  }
+
+  &__select option {
+    font-family: $fw-regular;
+    font-size: $fz-sm;
+    color: $color-text-primary;
+    background-color: $color-white;
+    padding: $space-sm;
+    border: none;
   }
 
   &__item--select {

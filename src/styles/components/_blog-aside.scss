@@ -54,6 +54,9 @@
   }
 
   &__heading {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
     font-size: $fz-ml;
     line-height: $lh-lg;
     margin-block: $space-0;
@@ -64,7 +67,8 @@
     margin-bottom: $space-0;
   }
 
-  &__list-item, &__sublist-item {
+  &__list-item,
+  &__sublist-item {
     padding-block: $space-xs;
 
     /* padding not defined in Figma, but it doesn't look correct with 24px line height, so i put this padding to match the look in Figma. I could do it with flex column gap but i did not see reason to apply flex here */
@@ -80,7 +84,8 @@
     }
   }
 
-  &__list-link, &__sublist-link {
+  &__list-link,
+  &__sublist-link {
     color: $color-text-secondary;
     @include link-style;
   }

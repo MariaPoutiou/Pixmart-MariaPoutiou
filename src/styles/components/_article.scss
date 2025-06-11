@@ -16,6 +16,9 @@
   }
 
   &__subtitle {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
     font-size: $fz-ml;
     line-height: $lh-lg;
   }

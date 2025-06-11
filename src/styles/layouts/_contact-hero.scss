@@ -12,12 +12,18 @@
   }
 
   &__title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
+    font-size: $fz-2xl;
+    line-height: $lh-2xl;
     margin-block: $space-0;
     display: flex;
     flex-direction: column;
   }
 
   &__description {
+    font-weight: $fw-regular;
     font-family: $ff-body;
     font-size: $fz-md;
     line-height: $lh-m;
