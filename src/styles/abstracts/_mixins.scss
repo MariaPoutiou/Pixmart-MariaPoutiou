@@ -54,7 +54,6 @@
   border: 2px solid transparent;
   border-radius: 8px;
   display: inline-block;
-  white-space: nowrap;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +201,6 @@
 @mixin input {
   border: 1px solid $color-gray-light;
   border-radius: 8px;
-  height: 64px;
 }
 
 @mixin input-style {
