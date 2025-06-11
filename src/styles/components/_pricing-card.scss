@@ -3,7 +3,6 @@
 
 .pricing-card {
   padding: $space-xl;
-  width: 100%;
   position: relative;
 
   &__badge {
@@ -84,5 +83,6 @@
 
   &__button {
     width: 100%;
+    white-space: wrap;
   }
 }
