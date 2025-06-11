@@ -4,21 +4,28 @@
 
 /********** COMPONENTS ************/
 @use "../components/general";
-@use "../components/buttons";
+@use "../components/header-search";
+@use "../components/header-actions";
+@use "../components/header-section";
+@use "../components/button";
 @use "../components/inputs";
-@use "../components/trending-card-hover";
 @use "../components/main-nav";
 @use "../components/product-card";
 @use "../components/categories-card";
 @use "../components/trending-card";
+@use "../components/pricing-list";
 @use "../components/pricing-card";
+@use "../components/details-summary";
 @use "../components/faq-item";
-@use "../components/main-article";
-@use "../components/article-footer";
-@use "../components/article-footer-card";
+@use "../components/article";
+@use "../components/related-articles";
+@use "../components/article-card";
 @use "../components/blog-aside";
-@use "../components/catalog-grid";
-@use "../components/catalog-grid-card";
+@use "../components/blog-card";
+@use "../components/catalog-header";
+@use "../components/catalog-tools";
+@use "../components/catalog-list";
+@use "../components/catalog-card";
 @use "../components/contact-form";
 @use "../components/footer-nav";
 
@@ -26,35 +33,40 @@
 @use "../layouts/header";
 
 /* HERO SECTION */
-@use "../layouts/hero-home";
+@use "../layouts/hero-section";
 
 /* PRODUCTS SECTION */
-@use "../layouts/products-section";
+@use "../layouts/product";
 
 /* CATEGORIES SECTION */
 @use "../layouts/categories-section";
 
 /* CATEGORIES SECTION */
-@use "../layouts/trending-section";
+@use "../layouts/trending";
 
 /* PRICING SECTION */
-@use "../layouts/pricing-section";
+@use "../layouts/pricing";
 
 /* FAQ SECTION */
-@use "../layouts/faq-section";
+@use "../layouts/faq";
 
 /* BLOG SECTION */
-@use "../layouts/blog-section";
+@use "../layouts/blog";
 
 /* CONTACT PAGE */
-@use "../layouts/contact-page";
+@use "../layouts/contact";
+@use "../layouts/contact-hero";
 
 /* BLOG PAGE */
 @use "../layouts/blog-page";
+@use "../layouts/blog-hero";
+@use "../layouts/blog-layout";
 
 /* CATALOG PAGE */
-@use "../layouts/catalog-page";
-@use "../layouts/catalog-aside";
+@use "../layouts/hero-catalog";
+@use "../layouts/catalog-layout";
+@use "../layouts/catalog";
+@use "../layouts/catalog-filter";
 
 /* FOOTER */
 @use "../layouts/footer";

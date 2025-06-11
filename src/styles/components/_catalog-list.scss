@@ -24,4 +24,8 @@
       opacity: 50%;
     }
   }
+
+  &__item:hover .catalog-card__price {
+    color: $color-primary;
+  }
 }

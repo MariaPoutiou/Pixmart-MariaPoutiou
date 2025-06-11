@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.header-section {
+  display: none;
+
+  &.is-shown {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    padding: $space-base;
+    height: 100%;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    background-color: $color-background;
+    overflow-y: auto;
+  }
+
+  @include tablet {
+    display: flex;
+  }
+}

@@ -1,17 +1,6 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.pricing {
-  &__primary-title {
-    text-align: center;
-  }
-
-  &__secondary-title {
-    text-align: center;
-    margin-block: $space-base $space-5xl;
-  }
-}
-
 .pricing-list {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(272px, 1fr));

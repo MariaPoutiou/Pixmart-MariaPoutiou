@@ -137,4 +137,13 @@
       margin-bottom: $space-0;
     }
   }
+
+  &__button {
+    font-size: $fz-sm;
+    line-height: $lh-base;
+  }
+
+  &__button-icon {
+    margin-right: $space-sm;
+  }
 }

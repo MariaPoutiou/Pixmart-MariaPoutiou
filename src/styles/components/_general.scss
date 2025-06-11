@@ -16,7 +16,7 @@
   letter-spacing: -0.5px;
 }
 
-.product-section,
+.product,
 .categories,
 .trending,
 .pricing,
@@ -27,11 +27,6 @@
   @include tablet {
     margin-block: $space-0 $space-6xl;
   }
-}
-
-.input {
-  @include input;
-  @include input-style;
 }
 
 .label {

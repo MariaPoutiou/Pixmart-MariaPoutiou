@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.header-search {
+  position: relative;
+
+  &__input {
+    border: 2px solid $color-gray-light;
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    padding: $space-md;
+
+    &::placeholder {
+      display: none;
+    }
+
+    @include input-style;
+
+    @include tablet {
+      border: 1px solid $color-gray-light;
+      width: 240px;
+
+      &::placeholder {
+        display: flex;
+        color: $color-03;
+      }
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}

@@ -1,16 +1,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-details summary {
-  list-style: none;
-}
-
-details summary::-webkit-details-marker {
-  display: none;
-}
-
 .faq {
-
   @include tablet {
     display: flex;
     flex-direction: row;

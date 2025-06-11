@@ -1,35 +1,33 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.footer__nav {
-  &-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: $gap-base;
+.footer__nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-base;
 
-    @include tablet {
-      flex-direction: row;
-      gap: $gap-5xl;
-    }
+  @include tablet {
+    flex-direction: row;
+    gap: $gap-5xl;
   }
+}
 
-  &-title {
-    font-size: $fz-m;
-    line-height: $lh-md;
-    margin-block: $space-0 $space-base;
-  }
+.footer__nav-title {
+  font-size: $fz-m;
+  line-height: $lh-md;
+  margin-block: $space-0 $space-base;
+}
 
-  &-list {
-    padding: $space-0;
-    margin-bottom: $space-0;
-  }
+.footer__nav-list {
+  padding: $space-0;
+  margin-bottom: $space-0;
+}
 
-  &-item {
-    margin-bottom: $space-sm;
-  }
+.footer__nav-item {
+  margin-bottom: $space-sm;
+}
 
-  &-link {
-    color: $color-text-secondary;
-    @include link-style;
-  }
+.footer__nav-link {
+  color: $color-text-secondary;
+  @include link-style;
 }

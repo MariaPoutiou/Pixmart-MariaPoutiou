@@ -1,0 +1,48 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.blog-hero {
+  &__wrapper {
+    padding-block: $space-4xl;
+  }
+
+  &__label {
+    padding: $space-base;
+    border-radius: 100px;
+    width: 146px;
+    height: 40px;
+    margin-bottom: $space-lg;
+  }
+
+  &__title {
+    margin-block: $space-0;
+    font-size: $fz-xl;
+    line-height: $lh-xl;
+
+    @include tablet {
+      font-size: $fz-2xl;
+      line-height: $lh-2xl;
+    }
+  }
+
+  &__img img {
+    margin-bottom: $space-lg;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 5%;
+    overflow: hidden;
+    display: block;
+    height: 127px;
+    overflow: hidden;
+
+    @include tablet {
+      height: 293px;
+    }
+
+    @include desktop {
+      height: 398px;
+    }
+  }
+}

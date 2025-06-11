@@ -1,7 +1,8 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.product-section {
+.product {
+
   &__list {
     padding-block: $space-0;
     display: flex;

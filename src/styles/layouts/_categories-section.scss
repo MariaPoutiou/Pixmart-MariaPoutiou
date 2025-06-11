@@ -95,43 +95,38 @@
       border-bottom-left-radius: 20px;
     }
   }
-
-  &__list-item {
-    background-color: $color-surface-light;
-    border-radius: 20px;
-    height: auto;
-    max-height: 216px;
-
 }
 
 .categories__list-item {
-  &:hover {
-    .categories-card {
-      background-color: $color-primary;
-      transform: scale(1.02);
-
-      &__svg {
-        color: $color-white;
-        transform: scale(1.1);
-      }
-
-      &__title {
-        color: $color-soft-white;
-      }
-
-      &__description,
-      &__label {
-        color: $color-05;
-      }
-
-      &__label::before {
-        background-color: $color-05;
-      }
-
-      &__img {
-        color: $color-white;
-      }
-    }
+  background-color: $color-surface-light;
+  border-radius: 20px;
+  height: auto;
+  max-height: 216px;
+  &:hover .categories-card {
+    background-color: $color-primary;
+    transform: scale(1.02);
   }
 }
+
+.categories__list-item:hover .categories-card__svg {
+  color: $color-white;
+  transform: scale(1.1);
 }
+
+.categories__list-item:hover .categories-card__title {
+  color: $color-soft-white;
+}
+
+.categories__list-item:hover .categories-card__description,
+.categories__list-item:hover .categories-card__label {
+  color: $color-05;
+}
+
+.categories__list-item:hover .categories-card__label::before {
+  background-color: $color-05;
+}
+
+.categories__list-item:hover .categories-card__img {
+  color: $color-white;
+}
+

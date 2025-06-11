@@ -1,6 +1,11 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.input {
+  @include input;
+  @include input-style;
+}
+
 form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
   border-color: $color-error;
 }

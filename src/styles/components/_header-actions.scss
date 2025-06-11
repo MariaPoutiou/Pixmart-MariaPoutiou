@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.header-actions {
+  display: flex;
+  gap: $gap-sm;
+  align-items: center;
+}

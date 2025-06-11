@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.catalog-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $space-3xl;
+}

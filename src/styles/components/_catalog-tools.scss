@@ -1,0 +1,87 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.catalog-tools {
+  display: flex;
+  gap: $gap-lg;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__upper {
+    display: flex;
+    justify-content: space-between;
+    gap: $gap-sm;
+  }
+
+  &__select-wrapper {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: $space-sm $space-2xl $space-sm 20px;
+    background-color: $color-06;
+    border: 1px solid $color-gray-light;
+    font-weight: $fw-semibold;
+    cursor: pointer;
+    width: 100%;
+
+    @include tablet {
+      width: 156px;
+    }
+  }
+
+  &__select-wrapper {
+    width: 100;
+  }
+
+  &__select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: $fw-semibold;
+    font-size: $fz-sm;
+    line-height: $lh-base;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-left: $space-m;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin: $space-0;
+  }
+
+  &__select-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+
+  &__info {
+    margin-block: $space-sm;
+    white-space: nowrap;
+  }
+
+  &__filter {
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__filter-icon {
+    color: $color-soft-white;
+  }
+
+  &__lower {
+    display: flex;
+    gap: $gap-lg;
+    justify-content: space-between;
+  }
+}

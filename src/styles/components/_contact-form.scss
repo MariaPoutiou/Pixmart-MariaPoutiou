@@ -1,10 +1,6 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.contact {
-  width: 100%;
-}
-
 .contact-form {
   padding: $space-xl;
   border-radius: 20px;
@@ -138,28 +134,28 @@
     font-size: $fz-xs;
     line-height: $lh-sm;
   }
-}
 
-.contact-form__input:user-invalid ~ .contact-form__invalid {
-  display: block;
-}
+  &__input:user-invalid ~ .contact-form__invalid {
+    display: block;
+  }
 
-.contact-form__input:valid + .contact-form__valid {
-  display: block;
-}
+  &__input:valid + .contact-form__valid {
+    display: block;
+  }
 
-.contact-form__textarea:user-invalid ~ .contact-form__textarea-invalid {
-  display: block;
-}
+  &__textarea:user-invalid ~ .contact-form__textarea-invalid {
+    display: block;
+  }
 
-.contact-form__textarea:valid + .contact-form__textarea-valid {
-  display: block;
-}
+  &__textarea:valid + .contact-form__textarea-valid {
+    display: block;
+  }
 
-.contact-form__select:invalid ~ span {
-  display: block;
-}
+  &__select:invalid ~ span {
+    display: block;
+  }
 
-.contact-form__select:valid ~ .contact-form__select-valid {
-  display: block;
+  &__select:valid ~ .contact-form__select-valid {
+    display: block;
+  }
 }

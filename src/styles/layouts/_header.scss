@@ -33,83 +33,11 @@
     height: 24px;
   }
 
-  &-actions {
-    display: flex;
-    gap: $gap-sm;
-    align-items: center;
-  }
-
-  &-search {
-    position: relative;
-  }
-
-  &-search__input {
-    border: 2px solid $color-gray-light;
-    border-radius: 8px;
-    height: 40px;
-    width: 40px;
-    align-items: center;
-    padding: $space-md;
-
-    &::placeholder {
-      display: none;
-    }
-
-    @include input-style;
-
-    @include tablet {
-      border: 1px solid $color-gray-light;
-      width: 240px;
-
-      &::placeholder {
-        display: flex;
-        color: $color-03;
-      }
-    }
-  }
-
-  &-search__img {
-    position: absolute;
-    left: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 24px;
-    height: 24px;
-    pointer-events: none;
-
-    @include tablet {
-      display: none;
-    }
-  }
-
   &__button {
     @include button-base;
     @include button-small-primary;
   }
 
-  &-section {
-    display: none;
-
-    &.is-shown {
-      display: flex;
-      position: fixed;
-      z-index: 999;
-      padding: $space-base;
-      height: 100%;
-      left: 0;
-      top: 80px;
-      width: 100%;
-      background-color: $color-background;
-      overflow-y: auto;
-    }
-
-    @include tablet {
-      display: flex;
-    }
-  }
-}
-
-.header {
   &__burger-btn {
     @include button-base;
     display: flex;
