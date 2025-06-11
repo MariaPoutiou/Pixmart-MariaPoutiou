@@ -692,7 +692,6 @@
   },
   "catalogFilterHeader": {
     "mainTitle": "Customize Your Prefrences",
-    "title": "Filters",
     "icon": "/img/sprite.svg#icon-close"
   },
   "catalogForm": {
