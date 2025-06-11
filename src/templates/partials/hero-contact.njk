@@ -18,9 +18,9 @@
         </svg>
         <p class="contact-hero__text">
           {% if "@" in item.text %}
-            <a href="mailto:{{ item.text }}">{{ item.text }}</a>
+            <a class="contact-hero__link" href="mailto:{{ item.text }}">{{ item.text }}</a>
           {% elif item.text.match('^\\+?[\\d\\s().-]+$') %}
-            <a href="tel:{{ item.text | replace(' ', '') | replace('(', '') | replace(')', '') | replace('-', '') }}">{{ item.text }}</a>
+            <a class="contact-hero__link" href="tel:{{ item.text | replace(' ', '') | replace('(', '') | replace(')', '') | replace('-', '') }}">{{ item.text }}</a>
           {% else %}
             {{ item.text }}
           {% endif %}
