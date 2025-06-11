@@ -22,11 +22,9 @@
   }
 }
 
-.contact {
-  &__layout {
-    padding-block: $space-4xl 0;
-    width: 100%;
-  }
+.contact-hero {
+  padding-block: $space-4xl 0;
+  width: 100%;
 
   &__intro {
     display: flex;
@@ -116,7 +114,7 @@
     margin-block: $space-0 $space-md;
   }
 
-  &-map__icon {
+  &__map-icon {
     color: $color-primary;
   }
 }

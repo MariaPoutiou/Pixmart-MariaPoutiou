@@ -13,15 +13,15 @@
     </div>
     <div class="catalog-tools__lower">
       <p class="catalog-tools__info">{{ catalogMeta.info }}</p>
-      <div class="catalog-meta__wrapper">
-        <div class="catalog-meta">
-          <button class="button catalog-meta__primary button--primary-small" type="button">
-            <svg class="svg catalog-meta__icon-primary" aria-label="{{ catalogViewmodes.gridView.alt }}">
+      <div class="catalog__meta-wrapper">
+        <div class="catalog__meta-buttons">
+          <button class="button catalog__meta-button catalog__meta-button--primary button--primary-small" type="button">
+            <svg class="svg catalog__meta-icon catalog__meta-icon--primary" aria-label="{{ catalogViewmodes.gridView.alt }}">
               <use href="{{ catalogViewmodes.gridView.icon }}"></use>
             </svg>
           </button>
-          <button class="button catalog-meta__secondary button--secondary-small" type="button">
-            <svg class="svg catalog-meta__icon" aria-label="{{ catalogViewmodes.listView.alt }}">
+          <button class="button catalog__meta-button catalog__meta-button--secondary button--secondary-small" type="button">
+            <svg class="svg catalog__meta-icon catalog__meta-icon--secondary" aria-label="{{ catalogViewmodes.listView.alt }}">
               <use href="{{ catalogViewmodes.listView.icon }}"></use>
             </svg>
           </button>
@@ -29,11 +29,11 @@
       </div>
     </div>
   </div>
-  <div class="catalog-tags">
+  <div class="catalog__tags">
     {% for tag in catalogTags %}
-      <div class="button catalog-tag__item button--secondary">
+      <div class="button catalog__tag-item button--secondary">
         {{ tag.label }}
-        <svg class="catalog-tag__icon" aria-hidden="true" focusable="false">
+        <svg class="catalog__tag-icon" aria-hidden="true" focusable="false">
           <use href="{{ tag.icon }}"></use>
         </svg>
       </div>

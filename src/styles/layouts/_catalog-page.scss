@@ -160,31 +160,31 @@
 }
 
 .catalog {
-  &-meta__wrapper {
+  &__meta-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: $space-lg;
   }
 
-  &-meta {
+  &__meta-buttons {
     display: flex;
   }
 
-  &-meta__primary {
+  &__meta-button--primary {
     margin-right: $space-sm;
   }
 
-  &-meta__icon-primary {
+  &__meta-icon--primary {
     color: $color-soft-white;
   }
 
-  &-tags {
+  &__tags {
     display: flex;
     gap: $gap-sm;
   }
 
-  &-tag__item {
+  &__tag-item {
     font-size: $fz-xs;
     line-height: $lh-sm;
     display: flex;
@@ -195,7 +195,7 @@
     padding-inline: $space-md;
   }
 
-  &-tag__icon {
+  &__tag-icon {
     @include svg-small;
   }
 
