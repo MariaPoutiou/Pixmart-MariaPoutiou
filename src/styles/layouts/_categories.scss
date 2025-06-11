@@ -24,10 +24,6 @@
     margin-block: $space-base $space-xl;
   }
 
-  &__header-button {
-    width: 151px;
-  }
-
   &__secondary-title {
     margin-block: $space-base;
   }
@@ -37,18 +33,13 @@
     align-items: flex-end;
     gap: $gap-ml;
     width: 100%;
-
-    @include tablet {
-      min-width: 50%;
-    }
   }
 
   &__list-primary {
     display: flex;
     flex-direction: column;
     gap: $gap-ml;
-    height: 460px;
-    width: 50%;
+    width: 100%;
     padding-inline: $space-0;
     margin-block: $space-0;
     position: relative;
@@ -73,8 +64,7 @@
     display: flex;
     flex-direction: column;
     gap: $gap-ml;
-    height: 460px;
-    width: 50%;
+    width: 100%;
     padding-inline: $space-0;
     margin-block: 100px -80px;
     position: relative;
@@ -100,8 +90,6 @@
 .categories__list-item {
   background-color: $color-surface-light;
   border-radius: 20px;
-  height: auto;
-  max-height: 216px;
   &:hover .categories-card {
     background-color: $color-primary;
     transform: scale(1.02);
