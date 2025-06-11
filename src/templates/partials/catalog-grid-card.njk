@@ -7,7 +7,7 @@
             <picture class="catalog-card__img">
               <source srcset="/img/{{ item.image }}-1x.avif 1x, /img/{{ item.image }}-2x.avif 2x" type="image/avif"/>
               <source srcset="/img/{{ item.image }}-1x.webp 1x, /img/{{ item.image }}-2x.webp 2x" type="image/webp"/>
-              <img class="catalog-card__img" src="/img/{{ item.img }}-2x.webp" alt="{{ item.alt }}" loading="lazy"/>
+              <img class="catalog-card__img" src="/img/{{ item.image }}-2x.webp" alt="{{ item.alt }}" width="{{ item.width }}" height="{{ item.height }}" loading="lazy"/>
             </picture>
             {% if item.state %}
               <div class="button catalog-card__label catalog-card__label--{{ item.stateClass }}">

@@ -5,7 +5,7 @@
                 <picture class="article-card__img">
                     <source srcset="/img/{{ item.img }}-1x.avif 1x, /img/{{ item.img }}-2x.avif 2x" type="image/avif"/>
                     <source srcset="/img/{{ item.img }}-1x.webp 1x, /img/{{ item.img }}-2x.webp 2x" type="image/webp"/>
-                    <img src="/img/{{ item.img }}-2x.webp" alt="{{ item.alt }}" loading="lazy"/>
+                    <img src="/img/{{ item.img }}-2x.webp" alt="{{ item.alt }}" width="{{ item.width }}" height="{{ item.height }}" loading="lazy"/>
                 </picture>
             </div>
             <span class="label article-card__tag">{{ item.tag }}</span>
