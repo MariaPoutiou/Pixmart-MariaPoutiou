@@ -2,6 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .article {
+  flex-shrink: 1;
   margin-bottom: $space-4xl;
 
   @include tablet {
@@ -35,6 +36,7 @@
 
   &__img-captions {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
