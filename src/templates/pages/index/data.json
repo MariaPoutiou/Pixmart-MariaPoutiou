@@ -168,6 +168,7 @@
         "price": "€29.99",
         "width": "305",
         "height": "272",
+        "link": "catalog.html",
         "tags": ["Adventure", "Journey"]
       },
       {
@@ -179,6 +180,7 @@
         "price": "€15.99",
         "width": "305",
         "height": "272",
+        "link": "catalog.html",
         "tags": ["Medical", "Wellness"]
       },
       {
@@ -189,6 +191,7 @@
         "price": "€31.99",
         "width": "305",
         "height": "272",
+        "link": "catalog.html",
         "tags": ["Catering", "Food"]
       },
       {
@@ -199,6 +202,7 @@
         "price": "€40.99",
         "width": "305",
         "height": "272",
+        "link": "catalog.html",
         "tags": ["Modern", "Homes"]
       }
     ]
@@ -417,7 +421,7 @@
     {
       "title": "Lens Chronicles",
       "tags": ["Photography", "Creative"],
-      "link": "#",
+      "link": "catalog.html",
       "price": "€00.00",
       "image": "lens-chronicles",
       "alt": "UI of a photography website with layered photo collage and call-to-action button",
@@ -429,7 +433,7 @@
     {
       "title": "Career Success",
       "tags": ["Guidance", "Jobs"],
-      "link": "#",
+      "link": "catalog.html",
       "price": "€20.99",
       "image": "career-success",
       "alt": "UI of Job search website with job listings and search filters",
@@ -458,7 +462,7 @@
     {
       "title": "Dream Homes",
       "tags": ["Real Estate", "Modern"],
-      "link": "#",
+      "link": "catalog.html",
       "price": "€45.99",
       "image": "dream-homes",
       "alt": "UI of Real Estate website with house images and newsletter button",
@@ -487,7 +491,7 @@
     {
       "title": "Foodish Catering",
       "tags": ["Food", "Events"],
-      "link": "#",
+      "link": "catalog.html",
       "price": "€15.99",
       "image": "foodish-catering",
       "alt": "UI of catering website with fruit images and call to action button",
@@ -516,7 +520,7 @@
     {
       "title": "Caring Hearts",
       "tags": ["Healthcare", "Support"],
-      "link": "#",
+      "link": "catalog.html",
       "price": "€19.99",
       "image": "caring-hearts",
       "alt": "UI of healthcare website with doctor appointment details and service highlights",
@@ -545,7 +549,7 @@
     {
       "title": "Gaming Rise",
       "tags": ["eSports", "Trend"],
-      "link": "#",
+      "link": "catalog.html",
       "price": "€00.00",
       "image": "gaming-rise",
       "alt": "UI of e-gaming blog article with a list of related posts and recommended articles",
@@ -568,7 +572,7 @@
     {
       "title": "Banking Redefined",
       "tags": ["Finance", "Secure"],
-      "link": "#",
+      "link": "catalog.html",
       "price": "€25.99",
       "image": "banking-redefined",
       "alt": "UI of banking website with financial stats, call-to-action buttons and user ratings",
@@ -597,7 +601,7 @@
     {
       "title": "Exploring Fun",
       "tags": ["Travel", "Adventure"],
-      "link": "#",
+      "link": "catalog.html",
       "price": "€41.99",
       "image": "exploring-fun",
       "alt": "UI of travel agency website with call-to-action buttons and client testimonials",
@@ -626,7 +630,7 @@
     {
       "title": "Admin Dashboard",
       "tags": ["Data", "Tools"],
-      "link": "#",
+      "link": "catalog.html",
       "price": "€15.99",
       "image": "admin-dashboard",
       "alt": "E-commerce admin dashboard showing sales, revenue analytics, and user activity metrics",
@@ -655,7 +659,7 @@
     {
       "title": "Analytical Dashboard",
       "tags": ["Data", "Tools"],
-      "link": "#",
+      "link": "catalog.html",
       "price": "€10.99",
       "image": "analytical-dashboard",
       "alt": "School admin dashboard displaying student data, attendance, earnings, and teacher messages",
@@ -684,7 +688,7 @@
     {
       "title": "Kindergarten",
       "tags": ["Education", "Kids"],
-      "link": "#",
+      "link": "catalog.html",
       "price": "€00.00",
       "image": "kindergarten",
       "alt": "Kindergarten website template preview with event highlights and playful design",

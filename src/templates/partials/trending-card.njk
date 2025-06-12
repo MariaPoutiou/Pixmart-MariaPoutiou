@@ -13,9 +13,9 @@
           </svg>
         </div>
       {% endif %}
-      <button class="button trending-card__button card-button button--primary">
+      <a class="button trending-card__button card-button button--primary" href="{{ item.link }}">
         {{ item.button }}
-      </button>
+      </a>
     </div>
     <div class="trending-card__details">
       <h4 class="trending-card__title">{{ item.title }}</h4>
