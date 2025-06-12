@@ -108,7 +108,7 @@
     padding-inline: $space-base;
   }
 
-  &__list-link--active {
+  &__list-link--highlighted {
     font-weight: $fw-semibold;
     color: $color-text-primary;
   }

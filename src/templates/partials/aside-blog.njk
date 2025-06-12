@@ -22,18 +22,14 @@
     <ul class="blog-aside__list">
       {% for item in blogAside.blogCategoriesSection.items %}
         <li class="blog-aside__list-item">
-          {% if item.link %}
-            <a class="blog-aside__list-link{% if item.active %} blog-aside__list-link--active{% endif %}" href="{{ item.link }}">
+            <a class="blog-aside__list-link" href="{{ item.link }}">
               {{ item.text }}
             </a>
-          {% else %}
-            <span class="blog-aside__list-link">{{ item.text }}</span>
-          {% endif %}
           {% if item.children %}
             <ul class="blog-aside__sublist">
               {% for child in item.children %}
                 <li class="blog-aside__sublist-item">
-                  <a class="blog-aside__list-link{% if child.active %} blog-aside__list-link--active{% endif %}" href="{{ child.link }}">
+                  <a class="blog-aside__list-link{% if child.highlighted %} blog-aside__list-link--highlighted{% endif %}" href="{{ child.link }}">
                     {{ child.text }}
                   </a>
                 </li>

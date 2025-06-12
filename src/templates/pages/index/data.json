@@ -898,8 +898,8 @@
           "children": [
             {
               "text": "Typography & Fonts",
-              "link": "blog-article.html",
-              "active": true
+              "link": "#",
+              "highlighted": true
             }
           ]
         },
