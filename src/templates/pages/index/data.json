@@ -61,6 +61,8 @@
     "buttonSecondary": "Watch About Us",
     "linkSecondary": "#",
     "img": "hero-ornaments",
+    "width": "624",
+    "height": "544",
     "alt": "Event and Conference Website UI Kit Preview",
     "buttonIcon": {
       "svg": "/img/sprite.svg#icon-play"
@@ -163,8 +165,8 @@
         "button": "Go to Product",
         "title": "Travel Hero",
         "price": "€29.99",
-        "width": "2340",
-        "height": "1560",
+        "width": "305",
+        "height": "272",
         "tags": ["Adventure", "Journey"]
       },
       {
@@ -174,8 +176,8 @@
         "button": "Go to Product",
         "title": "Healthcare Pro",
         "price": "€15.99",
-        "width": "2340",
-        "height": "1560",
+        "width": "305",
+        "height": "272",
         "tags": ["Medical", "Wellness"]
       },
       {
@@ -184,8 +186,8 @@
         "button": "Go to Product",
         "title": "Foodish Delight",
         "price": "€31.99",
-        "width": "2340",
-        "height": "1560",
+        "width": "305",
+        "height": "272",
         "tags": ["Catering", "Food"]
       },
       {
@@ -194,8 +196,8 @@
         "button": "Go to Product",
         "title": "Real Estate",
         "price": "€40.99",
-        "width": "2560",
-        "height": "1707",
+        "width": "305",
+        "height": "272",
         "tags": ["Modern", "Homes"]
       }
     ]
@@ -349,12 +351,16 @@
       {
         "img": "creative-blog-home",
         "alt": "UI of Creative Blog article",
+        "width": "624",
+        "height": "702",
         "title": "Creative Blog",
         "date": "15 APRIL 2024"
       },
       {
         "img": "best-dishes-home",
         "alt": "UI of Best Dishes article",
+        "width": "624",
+        "height": "702",
         "title": "Best Dishes",
         "date": "5 MAY 2024"
       }
@@ -416,8 +422,8 @@
       "alt": "UI of a photography website with layered photo collage and call-to-action button",
       "state": "SOLD OUT",
       "stateClass": "sold-out",
-      "width": "2340",
-      "height": "1560"
+      "width": "325",
+      "height": "260"
     },
     {
       "title": "Career Success",
@@ -429,8 +435,8 @@
       "button": "Go to Product",
       "state": "NEW",
       "stateClass": "new",
-      "width": "2340",
-      "height": "1560",
+      "width": "325",
+      "height": "260",
       "actions": [
         {
           "icon": "/img/sprite.svg#icon-heart",
@@ -458,8 +464,8 @@
       "button": "Go to Product",
       "state": "POPULAR",
       "stateClass": "popular",
-      "width": "2560",
-      "height": "1707",
+      "width": "325",
+      "height": "260",
       "actions": [
         {
           "icon": "/img/sprite.svg#icon-heart",
@@ -487,8 +493,8 @@
       "button": "Go to Product",
       "state": "POPULAR",
       "stateClass": "popular",
-      "width": "2340",
-      "height": "1560",
+      "width": "325",
+      "height": "260",
       "actions": [
         {
           "icon": "/img/sprite.svg#icon-heart",
@@ -516,8 +522,8 @@
       "button": "Go to Product",
       "state": "NEW",
       "stateClass": "new",
-      "width": "2340",
-      "height": "1560",
+      "width": "325",
+      "height": "260",
       "actions": [
         {
           "icon": "/img/sprite.svg#icon-heart",
@@ -544,8 +550,8 @@
       "alt": "UI of e-gaming blog article with a list of related posts and recommended articles",
       "state": "SOLD OUT",
       "stateClass": "sold-out",
-      "width": "2340",
-      "height": "1560"
+      "width": "325",
+      "height": "260"
     },
     {
       "title": "Edit Pro",
@@ -555,8 +561,8 @@
       "alt": "UI of video editing services website with quality highlights and call to action button",
       "state": "SOLD OUT",
       "stateClass": "sold-out",
-      "width": "2340",
-      "height": "1560"
+      "width": "325",
+      "height": "260"
     },
     {
       "title": "Banking Redefined",
@@ -568,8 +574,8 @@
       "button": "Go to Product",
       "state": "NEW",
       "stateClass": "new",
-      "width": "2340",
-      "height": "1560",
+      "width": "325",
+      "height": "260",
       "actions": [
         {
           "icon": "/img/sprite.svg#icon-heart",
@@ -597,8 +603,8 @@
       "button": "Go to Product",
       "state": "POPULAR",
       "stateClass": "popular",
-      "width": "2340",
-      "height": "1560",
+      "width": "325",
+      "height": "260",
       "actions": [
         {
           "icon": "/img/sprite.svg#icon-heart",
@@ -626,8 +632,8 @@
       "button": "Go to Product",
       "state": "POPULAR",
       "stateClass": "popular",
-      "width": "2560",
-      "height": "1707",
+      "width": "325",
+      "height": "260",
       "actions": [
         {
           "icon": "/img/sprite.svg#icon-heart",
@@ -655,8 +661,8 @@
       "button": "Go to Product",
       "state": "NEW",
       "stateClass": "new",
-      "width": "2340",
-      "height": "1560",
+      "width": "325",
+      "height": "260",
       "actions": [
         {
           "icon": "/img/sprite.svg#icon-heart",
@@ -683,8 +689,8 @@
       "alt": "Kindergarten website template preview with event highlights and playful design",
       "state": "SOLD OUT",
       "stateClass": "sold-out",
-      "width": "2340",
-      "height": "1560"
+      "width": "325",
+      "height": "260"
     }
   ],
   "catalogCta": {
@@ -831,7 +837,9 @@
     "label": "TYPOGRAPHY",
     "image": {
       "src": "article-hero",
-      "alt": "Image of an office employee showing stats on a screen to his work team"
+      "alt": "Image of an office employee showing stats on a screen to his work team",
+      "width": "1280",
+      "height": "398"
     }
   },
   "articleIntro": "In the vast expanse of graphic design, typography stands as a pivotal element that can make or break the visual appeal of any project. Understanding the art of typography is essential for creating designs that not only attract attention but also communicate effectively. Here, we delve into practical tips that will help you master typography, transforming your creations into eye-catching masterpieces.",
@@ -848,6 +856,8 @@
       "image": {
         "src": "article-image",
         "alt": "Corporate presentation template with slides for company overview, goals, marketing strategy, and team profiles",
+        "width": "980",
+        "height": "462",
         "caption": "Example of font usage in typography",
         "linkText": "Get this asset",
         "link": "#"
@@ -938,8 +948,8 @@
     "articles": [
       {
         "img": "article-best-dishes",
-        "width": "624",
-        "height": "702",
+        "width": "370",
+        "height": "272",
         "alt": "Thumbnail for Best Dishes article",
         "tag": "TAG",
         "title": "Best Dishes",
@@ -949,8 +959,8 @@
       },
       {
         "img": "article-lotus-spa",
-        "width": "1600",
-        "height": "1200",
+        "width": "370",
+        "height": "272",
         "alt": "Thumbnail for Contact Us Lotus Spa",
         "tag": "TAG",
         "title": "Contact Us Lotus Spa article",
@@ -960,8 +970,8 @@
       },
       {
         "img": "article-creative-blog",
-        "width": "664",
-        "height": "1000",
+        "width": "370",
+        "height": "272",
         "alt": "Thumbnail for Creative Blog article",
         "tag": "TAG",
         "title": "Creative Blog",
@@ -996,8 +1006,8 @@
   ],
   "contactMap": {
     "img": "map",
-    "width": "1226",
-    "height": "898",
+    "width": "618",
+    "height": "314",
     "alt": "Map of the PixMart HQ address: 123 Creative Ave, Design City, 45678",
     "icon": "/img/sprite.svg#icon-location",
     "textPrimary": "PixMart HQ",
