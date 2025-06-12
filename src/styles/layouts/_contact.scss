@@ -4,28 +4,3 @@
 .contact {
   width: 100%;
 }
-
-.contact-page {
-  background: linear-gradient(
-    180deg,
-    rgba(240, 246, 253, 1) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-}
-
-.contact--container {
-  display: flex;
-  flex-direction: column;
-  gap: $gap-3xl;
-  margin-bottom: 64px;
-
-
-  @include tablet {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: $gap-3xl;
-    margin-bottom: $space-6xl;
-  }
-}

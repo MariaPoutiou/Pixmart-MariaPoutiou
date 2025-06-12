@@ -23,6 +23,7 @@
 @use "../components/catalog-tools";
 @use "../components/catalog-list";
 @use "../components/catalog-card";
+@use "../components/contact-page";
 @use "../components/contact-form";
 
 /* HEADER */
@@ -50,6 +51,7 @@
 @use "../layouts/blog";
 
 /* CONTACT PAGE */
+@use "../layouts/contact-container";
 @use "../layouts/contact";
 @use "../layouts/contact-hero";
 

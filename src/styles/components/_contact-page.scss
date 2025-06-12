@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.contact-page {
+  background: linear-gradient(
+    180deg,
+    rgba(240, 246, 253, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
