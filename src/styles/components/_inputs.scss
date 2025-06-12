@@ -2,6 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .input {
+  height: 64px;
   @include input;
   @include input-style;
 }

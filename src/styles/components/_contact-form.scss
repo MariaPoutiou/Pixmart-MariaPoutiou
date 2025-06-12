@@ -34,7 +34,7 @@
   }
 
   &__input {
-    padding-left: $space-md;
+    padding: $space-m;
     @include input-style;
   }
 
@@ -48,7 +48,7 @@
     font-weight: $fw-regular;
     font-size: $fz-sm;
     line-height: $lh-base;
-    padding-left: $space-m;
+    padding: $space-m;
   }
 
   &__select option {
@@ -100,9 +100,9 @@
   }
 
   &__button {
-    width: 192px;
-    padding-inline: $space-2xl;
-    padding-block: $space-m;
+    padding: $space-m;
+    white-space: nowrap;
+    word-break: normal;
   }
 
   &__valid {

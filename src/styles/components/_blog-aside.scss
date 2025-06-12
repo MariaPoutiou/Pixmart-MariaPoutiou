@@ -84,8 +84,13 @@
     }
   }
 
-  &__list-link,
+  &__list-link {
+    color: $color-text-secondary;
+    @include link-style;
+  }
+  
   &__sublist-link {
+    font-weight: $fw-semibold;
     color: $color-text-secondary;
     @include link-style;
   }
@@ -104,6 +109,7 @@
   }
 
   &__list-link--active {
+    font-weight: $fw-semibold;
     color: $color-text-primary;
   }
 
