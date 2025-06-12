@@ -10,14 +10,13 @@
 
   @include tablet {
     max-width: 260px;
-    position: sticky;
     top: 0;
     left: 0;
   }
 
   &__author {
     display: inline-flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: $gap-base;
     align-items: center;
     margin-inline: $space-0;

@@ -9,9 +9,9 @@
   &__label {
     padding: $space-base;
     border-radius: 100px;
-    width: 146px;
     height: 40px;
     margin-bottom: $space-lg;
+    white-space: wrap;
   }
 
   &__title {
