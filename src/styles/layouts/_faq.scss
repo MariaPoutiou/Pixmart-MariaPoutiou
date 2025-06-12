@@ -63,4 +63,59 @@
       width: 223px;
     }
   }
+
+  &__item {
+    border-radius: 10px;
+    padding-inline: $space-lg;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    background-color: $color-white;
+    max-width: 100%;
+    @include card-hover;
+    @include box-shadow;
+  }
+
+  &__item summary {
+    list-style: none;
+  }
+
+  &__item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  &__item[open] .faq__icon-img {
+    transform: rotate(180deg);
+  }
+
+  &__question:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px $color-blue-light;
+    border-radius: 8px;
+  }
+
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
+    font-size: $fz-m;
+    line-height: $lh-md;
+    flex: 1;
+    margin-right: $space-sm;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__icon-img {
+    @include svg-small;
+    transition: transform 0.3s ease;
+  }
 }

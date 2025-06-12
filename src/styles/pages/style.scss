@@ -3,7 +3,6 @@
 @use "../abstracts/global";
 
 /********** COMPONENTS ************/
-@use "../components/general";
 @use "../components/header-search";
 @use "../components/header-actions";
 @use "../components/header-section";
@@ -15,8 +14,6 @@
 @use "../components/trending-card";
 @use "../components/pricing-list";
 @use "../components/pricing-card";
-@use "../components/details-summary";
-@use "../components/faq-item";
 @use "../components/article";
 @use "../components/related-articles";
 @use "../components/article-card";
