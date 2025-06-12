@@ -13,7 +13,7 @@
     "partials/aside-catalog-price.njk" %}
       </div>
       <div class="catalog-filter__button-upper">
-        <button class="button catalog-filter__button button--secondary">
+        <button class="button catalog-filter__button button--secondary" type="reset">
           <svg class="svg catalog-filter__button-icon" aria-hidden="true" focusable="false">
             <use href="{{ catalogFormButton.icon }}"></use>
           </svg>
@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="catalog-filter__button-lower">
-      <button class="button catalog-filter__button-save button--primary" type="reset">
+      <button class="button catalog-filter__button-save button--primary" type="submit" value="save-preferences">
         {{ catalogFormSave.text }}
       </button>
     </div>

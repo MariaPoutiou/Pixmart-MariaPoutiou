@@ -49,7 +49,8 @@
   },
   "headerButton": {
     "img": "/img/sprite.svg#icon-bag",
-    "alt": "View Cart"
+    "alt": "View Cart",
+    "link": "#"
   },
   "heroHome": {
     "titleFirst": "Craft Your Success with Our ",
@@ -873,6 +874,7 @@
     }
   ],
   "articleQuote": {
+    "cite": "#",
     "svg": "/img/sprite.svg#icon-quote",
     "text": "Typography is not just the art of arranging type but the craft of breathing life into characters, turning words into stories that captivate the soul."
   },
