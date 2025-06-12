@@ -6,7 +6,7 @@
   @include input-style;
 }
 
-form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
+input[type="checkbox"]:user-invalid + .input-checkbox::before {
   border-color: $color-error;
 }
 
@@ -48,7 +48,7 @@ form.was-submitted input[type="checkbox"]:invalid + .input-checkbox::before {
     border-color: transparent;
   }
 
-  input[type="checkbox"]:hover:invalid + &::before {
+  input[type="checkbox"]:hover:user-invalid + &::before {
     border-color: $color-error;
     background-color: $color-gray-bg;
   }

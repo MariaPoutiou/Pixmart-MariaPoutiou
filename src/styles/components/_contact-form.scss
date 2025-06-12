@@ -115,11 +115,13 @@
   &__valid {
     display: none;
     color: $color-valid;
+    margin-top: $space-xs;
   }
 
   &__invalid {
     display: none;
     color: $color-error;
+    margin-top: $space-xs;
   }
 
   &__textarea-valid {
