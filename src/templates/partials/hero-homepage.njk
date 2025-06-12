@@ -1,4 +1,6 @@
-<section class="container hero-section hero-section--homepage hero-section--banner">
+<section class="hero-section hero-section--homepage hero-section--banner">
+  <div class="container">
+    <div class="hero-section__content">
   <div class="hero-section__wrapper">
     <h1 class="hero-section__heading">{{ heroHome.titleFirst }}<span class="hero-section__heading-highlight">{{ heroHome.titleMiddle }}</span>
       {{ heroHome.titleLast }}</h1>
@@ -21,5 +23,7 @@
       <source srcset="/img/{{ heroHome.img }}-1x.webp 1x, /img/{{ heroHome.img }}-2x.webp 2x" type="image/webp"/>
       <img class="hero-section__banner" src="/img/{{ heroHome.img }}-2x.webp" alt="{{ heroHome.alt }}" width="{{ heroHome.width }}" height="{{ heroHome.height }}" loading="lazy"/>
     </picture>
+    </div>
+  </div>
   </div>
 </section>

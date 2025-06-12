@@ -5,12 +5,14 @@
 {% set page = "contact" %}
 {% block content %}
   <!--HERO SECTION-->
-  <div class="container container--contact">
-    {% include "partials/hero-contact.njk" %}
-    <!--MAIN STARTS HERE-->
-    <section class="contact">
-      <h2 class="visually-hidden">{{ contactTitleHidden }}</h2>
-      {% include "partials/contact-form.njk" %}
-    </section>
+  <div class="contact-page">
+    <div class="container contact--container">
+      {% include "partials/hero-contact.njk" %}
+      <!--MAIN STARTS HERE-->
+      <section class="contact">
+        <h2 class="visually-hidden">{{ contactTitleHidden }}</h2>
+        {% include "partials/contact-form.njk" %}
+      </section>
+    </div>
   </div>
 {% endblock %}

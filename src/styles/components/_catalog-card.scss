@@ -39,26 +39,25 @@
     height: 40px;
     border-radius: 100px;
     font-weight: $fw-medium;
-    padding: $space-base;
+    padding-inline: $space-base;
     top: 16px;
     left: 16px;
   }
 
   &__label {
     &--sold-out {
-      width: 114px;
       background-color: $color-white;
       color: $color-03;
     }
 
     &--new {
-      width: 72px;
       background-color: $color-11;
       color: $color-background-soft;
+      width: auto;
+      max-width: 300px;
     }
 
     &--popular {
-      width: 111px;
       background-color: $color-primary;
       color: $color-background-soft;
     }

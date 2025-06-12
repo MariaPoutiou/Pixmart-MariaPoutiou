@@ -29,6 +29,13 @@
     }
   }
 
+  &__content {
+    @include desktop {
+    display: flex;
+    gap: 36px
+  }
+}
+
   &__wrapper {
     display: flex;
     flex-direction: column;
