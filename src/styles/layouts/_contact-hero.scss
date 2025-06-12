@@ -8,7 +8,7 @@
   &__intro {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: $space-xl;
+    margin-bottom: 16px;
   }
 
   &__title {
@@ -28,15 +28,14 @@
     font-size: $fz-md;
     line-height: $lh-m;
     color: $color-text-secondary;
-    margin-bottom: $space-base;
+    margin-block: $space-0 $space-xl;
   }
 
   &__button {
-    padding-block: $space-sm;
-    padding-inline: $space-m;
-    margin-bottom: $space-xl;
+    font-size: $fz-sm;
+    line-height: $lh-base;
+    margin-bottom: 28px;
     padding: $space-m;
-    white-space: nowrap;
   }
 
   &__info-wrapper {
@@ -87,8 +86,7 @@
     right: 16px;
     background-color: white;
     display: flex;
-    height: 72px;
-    gap: $gap-md;
+    gap: $gap-base;
     align-items: center;
     padding: $space-md $space-base;
     border-radius: 8px;
@@ -97,12 +95,12 @@
 
   &__map-text-upper {
     font-weight: $fw-bold;
-    margin-block: $space-md 0;
+    margin-block: $space-0;
   }
 
   &__map-text-lower {
     color: $color-text-secondary;
-    margin-block: $space-0 $space-md;
+    margin-block: $space-0;
   }
 
   &__map-icon {

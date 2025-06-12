@@ -8,9 +8,8 @@
   width: 100%;
   min-width: 320px;
   display: flex;
-  flex: 1 1;
   flex-direction: column;
-  gap: $gap-lg;
+  gap: $gap-ml;
   @include box-shadow;
 
   &__fieldset {
@@ -22,7 +21,6 @@
   &__item {
     display: flex;
     flex-direction: column;
-    gap: $gap-xxs;
     width: 100%;
     margin-bottom: $space-m;
   }
@@ -30,7 +28,7 @@
   &__label {
     font-size: $fz-xs;
     line-height: $lh-sm;
-    margin-bottom: $space-xs;
+    margin-bottom: 10px;
   }
 
   &__input {
@@ -66,8 +64,8 @@
 
   &__select-icon {
     position: absolute;
-    top: 60px;
-    right: 16px;
+    top: 64px;
+    right: 20px;
     transform: translateY(-50%);
     pointer-events: none;
     fill: currentColor;
@@ -81,9 +79,14 @@
   &__textarea {
     border: 1px solid $color-gray-light;
     border-radius: 8px;
-    height: 180px;
+    height: 175px;
     resize: none;
     padding: $space-m;
+    margin-bottom: $space-sm;
+
+    @include desktop {
+      margin-bottom: $space-0;
+    }
   }
 
   &__checkbox-wrapper {
@@ -97,12 +100,16 @@
 
   &__checkbox {
     position: relative;
+    margin-left: $space-xs;
   }
 
   &__button {
-    padding: $space-m;
-    white-space: nowrap;
-    word-break: normal;
+    padding-block: $space-m;
+    padding-inline: $space-md;
+    font-size: $fz-sm;
+    line-height: $lh-base;
+    width: 50%;
+    min-width: 192px;
   }
 
   &__valid {
