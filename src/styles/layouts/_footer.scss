@@ -131,13 +131,11 @@
     @include input;
     width: 100%;
     flex: 1;
+    padding: $space-m;
+
 
     @include tablet {
       width: 243px;
-    }
-
-    &::placeholder {
-      padding-left: $space-m;
     }
 
     @include input-style;
