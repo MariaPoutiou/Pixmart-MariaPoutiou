@@ -59,6 +59,10 @@
   align-items: center;
   text-decoration: none;
   transition: box-shadow 0.2s ease;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 @mixin button-small-primary {

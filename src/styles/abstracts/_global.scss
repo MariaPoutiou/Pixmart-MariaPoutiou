@@ -49,14 +49,12 @@ img {
   }
 }
 
-button:focus,
-a:focus,
-input:focus {
-  outline: none;
-}
-
 a {
   text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .visually-hidden {
