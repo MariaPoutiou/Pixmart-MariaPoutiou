@@ -4,6 +4,7 @@
 .main-nav {
   &__list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     padding-inline: $space-0;
     gap: $gap-sm;
