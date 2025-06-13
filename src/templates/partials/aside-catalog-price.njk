@@ -2,13 +2,19 @@
   <h3 class="catalog-filter__title">{{ catalogFilterPrice.title }}</h3>
   <fieldset class="catalog-filter__fieldset">
     <legend class="visually-hidden catalog-filter__legend">{{ catalogFilterPrice.title }}</legend>
-    <div class="catalog-filter__range">
-      <div class="catalog-filter__range-slider">
-        <input class="catalog-filter__range-input" type="range" min="{{ catalogFilterPrice.min }}" max="{{ catalogFilterPrice.max }}" value="{{ catalogFilterPrice.valueMin }}" id="{{ catalogFilterPrice.idMin }}"></div>
-        <div class="catalog-filter__range-labels">
-          <span class="catalog-filter__range-up">{{ catalogFilterPrice.labelMin }}</span>
-          <span class="catalog-filter__range-down">{{ catalogFilterPrice.labelMax }}</span>
+    <div class="catalog-filter__range-slider">
+      <button class="catalog-filter__button-primary"></button>
+      <button class="catalog-filter__button-secondary"></button>
+      <div class="catalog-filter__range-line"></div>
+      <div class="catalog-filter__range-line catalog-filter__range-line--is-selected"></div>
+      <div class="catalog-filter__range-labels">
+        <div class="catalog-filter__range-min">
+          <label for="{{ catalogFilterPrice.idMin }}">{{ catalogFilterPrice.labelMin }}</label>
+          <input class="visually-hidden" type="range" min="{{ catalogFilterPrice.min }}" value="{{ catalogFilterPrice.valueMin }}" id="{{ catalogFilterPrice.idMin }}"></div>
+          <div class="catalog-filter__range-max">
+            <label for="{{ catalogFilterPrice.idMax }}">{{ catalogFilterPrice.labelMax }}</label>
+            <input class="visually-hidden" type="range" max="{{ catalogFilterPrice.max }}" value="{{ catalogFilterPrice.valueMax }}" id="{{ catalogFilterPrice.idMax }}"></div>
+          </div>
         </div>
-      </div>
-    </fieldset>
-  </section>
+      </fieldset>
+    </section>

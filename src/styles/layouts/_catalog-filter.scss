@@ -139,6 +139,47 @@
     padding-block: $space-xs;
   }
 
+  &__range-slider {
+    position: relative;
+  }
+
+  &__range-line {
+    background-color: #1d36532b;
+    width: 215px;
+    height: 4px;
+    border-radius: 4px;
+
+    &--is-selected {
+      position: absolute;
+      top: 0;
+      left: 50px;
+      width: 108px;
+      background-color: #0265dc;
+    }
+  }
+
+  &__button-primary {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -6px;
+    left: 45px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background-color: #0265dc;
+  }
+
+    &__button-secondary {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -6px;
+    left: 146px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background-color: #0265dc;
+  }
+
   &__range-labels {
     display: flex;
     justify-content: space-between;
