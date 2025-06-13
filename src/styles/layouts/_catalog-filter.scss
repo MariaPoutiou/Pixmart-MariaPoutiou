@@ -144,7 +144,7 @@
   }
 
   &__range-line {
-    background-color: #1d36532b;
+    background-color: $color-gray-light;
     width: 215px;
     height: 4px;
     border-radius: 4px;
@@ -152,9 +152,9 @@
     &--is-selected {
       position: absolute;
       top: 0;
-      left: 50px;
+      left: 55px;
       width: 108px;
-      background-color: #0265dc;
+      background-color: $color-primary;
     }
   }
 
@@ -166,7 +166,7 @@
     left: 45px;
     border-radius: 50%;
     border: 2px solid transparent;
-    background-color: #0265dc;
+    background-color: $color-primary;
   }
 
     &__button-secondary {
@@ -174,10 +174,10 @@
     width: 16px;
     height: 16px;
     top: -6px;
-    left: 146px;
+    left: 150px;
     border-radius: 50%;
     border: 2px solid transparent;
-    background-color: #0265dc;
+    background-color: $color-primary;
   }
 
   &__range-labels {
