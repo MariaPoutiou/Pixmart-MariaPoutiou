@@ -160,6 +160,11 @@
     }
   }
 
+  &__legal-list-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__legal-list {
     display: inline-flex;
     gap: $gap-base;

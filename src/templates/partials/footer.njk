@@ -59,13 +59,15 @@
   </div>
   <!-- Lower section (outside .footer__content) -->
   <div class="footer__lower">
-    <ul class="footer__legal-list">
-      {% for item in footerLegal %}
-        <li class="footer__legal-item">
-          <a class="footer__legal-link" href="{{ item.link }}">{{ item.text }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-    <p class="footer__copyright">{{ footerCopyright }}</p>
+    <div class="container footer__legal-list-wrapper">
+      <ul class="footer__legal-list">
+        {% for item in footerLegal %}
+          <li class="footer__legal-item">
+            <a class="footer__legal-link" href="{{ item.link }}">{{ item.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <p class="footer__copyright">{{ footerCopyright }}</p>
+    </div>
   </div>
 </footer>
