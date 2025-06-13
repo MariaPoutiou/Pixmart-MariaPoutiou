@@ -13,10 +13,10 @@
     flex-direction: column;
     position: fixed;
     z-index: 999;
-    top: 128px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 824px;
+    height: 100%;
     overflow-y: auto;
     background-color: $color-background;
   }
@@ -79,13 +79,10 @@
   &__button-lower {
     display: flex;
     align-items: center;
-    position: fixed;
     height: 96px;
     width: 100%;
     background-color: $color-white;
     padding: $space-base;
-    top: 854px;
-    left: 0;
 
     @include desktop {
       display: none;
@@ -184,13 +181,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: $space-sm;
-  }
-
-  &--price {
-    margin-bottom: $space-6xl;
-    @include desktop {
-      margin-bottom: $space-0;
-    }
   }
 
   &__button {
