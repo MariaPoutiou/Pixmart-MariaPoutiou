@@ -87,6 +87,7 @@
   &__social-list {
     padding: $space-0;
     display: flex;
+    flex-wrap: wrap;
     gap: $gap-sm;
     margin-block: 0;
   }
