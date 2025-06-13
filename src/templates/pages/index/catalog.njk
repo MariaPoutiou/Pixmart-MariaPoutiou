@@ -6,16 +6,16 @@
 {% block content %}
   <!--MAIN STARTS HERE-->
   <!--HERO SECTION-->
-  <div class="catalog-bg">
-  {% include "partials/hero-catalog.njk" %}
-  <!--CATALOG GRID HEADER-->
-    <div class="container catalog-layout"> <section class="catalog">
-      {% include "partials/catalog-grid-header.njk" %}
-      <!--CATALOG-GRID-->
-      {% include "partials/catalog-grid.njk" %}
-    </section>
-    <!--CATALOG-ASIDE-->
-    {% include "partials/aside-catalog.njk" %}
-  </div>
+    <div class="catalog-bg"> {% include "partials/hero-catalog.njk" %}
+    <!--CATALOG GRID HEADER-->
+    <div class="container catalog-layout">
+      <section class="catalog">
+        {% include "partials/catalog-grid-header.njk" %}
+        <!--CATALOG-GRID-->
+        {% include "partials/catalog-grid.njk" %}
+      </section>
+      <!--CATALOG-ASIDE-->
+      {% include "partials/aside-catalog.njk" %}
+    </div>
   </div>
 {% endblock %}

@@ -2,7 +2,6 @@
 @use "../abstracts/mixins" as *;
 
 .hero-section {
-
   &--homepage {
     padding-block: $space-xl $space-4xl;
     gap: $gap-2xl;

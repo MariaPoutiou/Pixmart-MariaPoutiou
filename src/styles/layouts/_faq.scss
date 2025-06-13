@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .faq {
-margin-top: $space-4xl;
+  margin-top: $space-4xl;
 
   @include tablet {
     padding-inline: 80px;

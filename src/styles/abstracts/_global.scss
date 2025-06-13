@@ -126,7 +126,8 @@ a {
   border-color: $color-error;
 }
 
-.contact-form__input:valid:not(:placeholder-shown):not(:focus) + .contact-form__valid {
+.contact-form__input:valid:not(:placeholder-shown):not(:focus)
+  + .contact-form__valid {
   display: block;
 }
 

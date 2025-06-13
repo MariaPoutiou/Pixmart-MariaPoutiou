@@ -1,18 +1,18 @@
 <section class="related-articles">
   <div class="container">
-  <div class="related-articles__header">
-    <h2 class="related-articles__title">{{ relatedArticles.title }}</h2>
-    <a class="related-articles__link" href="{{ relatedArticles.link.href }}">
-      {{ relatedArticles.link.text }}
-      <svg class="related-articles__icon" aria-hidden="true" focusable="false">
-        <use href="{{ relatedArticles.link.icon }}"></use>
-      </svg>
-    </a>
-  </div>
-  <ul class="related-articles__list">
-    {% for item in relatedArticles.articles %}
-      {% include "partials/article-footer-card.njk" %}
-    {% endfor %}
-  </ul>
+    <div class="related-articles__header">
+      <h2 class="related-articles__title">{{ relatedArticles.title }}</h2>
+      <a class="related-articles__link" href="{{ relatedArticles.link.href }}">
+        {{ relatedArticles.link.text }}
+        <svg class="related-articles__icon" aria-hidden="true" focusable="false">
+          <use href="{{ relatedArticles.link.icon }}"></use>
+        </svg>
+      </a>
+    </div>
+    <ul class="related-articles__list">
+      {% for item in relatedArticles.articles %}
+        {% include "partials/article-footer-card.njk" %}
+      {% endfor %}
+    </ul>
   </div>
 </section>

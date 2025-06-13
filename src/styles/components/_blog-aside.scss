@@ -80,7 +80,6 @@
 
   &__list-item,
   &__sublist-item {
-
     &::before {
       content: "";
       display: inline-block;
@@ -97,11 +96,11 @@
     @include link-style;
   }
 
-    &__list-link--highlighted {
+  &__list-link--highlighted {
     font-weight: $fw-semibold;
     color: $color-text-primary;
   }
-  
+
   &__sublist-link {
     font-weight: $fw-semibold;
     color: $color-text-secondary;

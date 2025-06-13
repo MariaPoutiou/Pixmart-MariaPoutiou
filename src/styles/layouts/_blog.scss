@@ -2,15 +2,15 @@
 @use "../abstracts/mixins" as *;
 
 .blog {
-margin-top: 64px;
+  margin-top: 64px;
 
-@include tablet {
-  margin-top: 117px;
-}
+  @include tablet {
+    margin-top: 117px;
+  }
 
-@include desktop {
-  margin-top: 124px;
-}
+  @include desktop {
+    margin-top: 124px;
+  }
 
   &__header {
     display: flex;

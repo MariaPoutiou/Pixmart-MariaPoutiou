@@ -11,7 +11,7 @@
     grid-template-columns: repeat(3, minmax(272px, 1fr));
     margin-top: $space-4xl;
   }
-  
+
   @include desktop {
     margin-top: -10px;
   }
@@ -20,7 +20,7 @@
     border-radius: 22px; /** I had to push it 2 pixels to match layout **/
 
     @include tablet {
-    margin-top: $space-2xl;
+      margin-top: $space-2xl;
     }
 
     &:first-child,

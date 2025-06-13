@@ -5,7 +5,6 @@
   display: flex;
   gap: $gap-lg;
   flex-direction: column;
-  
 
   @include tablet {
     flex-direction: row;
