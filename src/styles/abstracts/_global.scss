@@ -135,8 +135,12 @@ a {
   @include input-style;
 }
 
-input[type="checkbox"]:user-invalid + .input-checkbox::before {
+.checkbox[type="checkbox"]:user-invalid + .input-checkbox::before {
   border-color: $color-error;
+}
+
+.contact-form__input:valid:not(:placeholder-shown):not(:focus) + .contact-form__valid {
+  display: block;
 }
 
 .input-checkbox {
@@ -158,26 +162,26 @@ input[type="checkbox"]:user-invalid + .input-checkbox::before {
     border-radius: 4px;
     background-color: $color-white;
   }
-  input[type="checkbox"]:focus-visible + &::before {
+  .checkbox[type="checkbox"]:focus-visible + &::before {
     box-shadow: 0 0 0 2px $color-focus-ring;
     border-color: transparent;
   }
 
-  input[type="checkbox"]:hover + &::before {
+  .checkbox[type="checkbox"]:hover + &::before {
     background-color: $color-surface-light;
   }
 
-  input[type="checkbox"]:active + &::before {
+  .checkbox[type="checkbox"]:active + &::before {
     background-color: $color-surface-light;
     border-color: transparent;
   }
 
-  input[type="checkbox"]:disabled + &::before {
+  .checkbox[type="checkbox"]:disabled + &::before {
     background-color: $color-gray-light;
     border-color: transparent;
   }
 
-  input[type="checkbox"]:hover:user-invalid + &::before {
+  .checkbox[type="checkbox"]:hover:user-invalid + &::before {
     border-color: $color-error;
     background-color: $color-gray-bg;
   }
@@ -282,24 +286,24 @@ input[type="checkbox"]:user-invalid + .input-checkbox::before {
     box-sizing: border-box;
   }
 
-  input[type="radio"]:hover + &::before {
+  .radio[type="radio"]:hover + &::before {
     background-color: $color-surface-light;
     box-shadow: none;
   }
 
-  input[type="radio"]:active + &::before {
+  .radio[type="radio"]:active + &::before {
     background-color: $color-background-faded;
     border-color: $color-03;
     box-shadow: none;
   }
 
-  input[type="radio"]:disabled + &::before {
+  .radio[type="radio"]:disabled + &::before {
     background-color: $color-disabled;
     border: 2px solid $color-disabled;
     cursor: not-allowed;
   }
 
-  input[type="radio"]:hover:invalid + &::before {
+  .radio[type="radio"]:hover:invalid + &::before {
     border-color: $color-error;
     background-color: $color-gray-bg;
   }

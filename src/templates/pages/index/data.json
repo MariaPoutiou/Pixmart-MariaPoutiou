@@ -1030,6 +1030,7 @@
         "label": "Full Name",
         "type": "text",
         "placeholder": "Amelia Robert Johnson",
+        "minLength": "2",
         "valid": "Field validation is successful.",
         "invalid": "This field is required."
       },

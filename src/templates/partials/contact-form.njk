@@ -4,7 +4,7 @@
     {% for field in contactForm.fields %}
       <div class="contact-form__item">
         <label class="contact-form__label" for="{{ field.id }}">{{ field.label }}</label>
-        <input class="input contact-form__input" type="{{ field.type }}" id="{{ field.id }}" name="{{ field.id }}" placeholder="{{ field.placeholder }}" {% if field.title %} title="{{ field.title }}" {% endif %} required>
+        <input class="input contact-form__input" type="{{ field.type }}" id="{{ field.id }}" name="{{ field.id }}" placeholder="{{ field.placeholder }}" {% if field.title %} title="{{ field.title }}" {% endif %} {% if field.minLength %}minlength="{{ field.minLength }}"{% endif %} required>
           <span class="contact-form__valid">{{ field.valid }}</span>
           <span class="contact-form__invalid">{{ field.invalid }}</span>
         </div>
