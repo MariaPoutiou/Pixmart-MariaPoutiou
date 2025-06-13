@@ -62,8 +62,8 @@
     "buttonSecondary": "Watch About Us",
     "linkSecondary": "#",
     "img": "hero-ornaments",
-    "width": "624",
-    "height": "544",
+    "width": "408",
+    "height": "276",
     "alt": "Event and Conference Website UI Kit Preview",
     "buttonIcon": {
       "svg": "/img/sprite.svg#icon-play"
@@ -356,16 +356,16 @@
       {
         "img": "creative-blog-home",
         "alt": "UI of Creative Blog article",
-        "width": "624",
-        "height": "702",
+        "width": "408",
+        "height": "289",
         "title": "Creative Blog",
         "date": "15 APRIL 2024"
       },
       {
         "img": "best-dishes-home",
         "alt": "UI of Best Dishes article",
-        "width": "624",
-        "height": "702",
+        "width": "408",
+        "height": "289",
         "title": "Best Dishes",
         "date": "5 MAY 2024"
       }
@@ -844,8 +844,8 @@
     "image": {
       "src": "article-hero",
       "alt": "Image of an office employee showing stats on a screen to his work team",
-      "width": "1280",
-      "height": "398"
+      "width": "408",
+      "height": "127"
     }
   },
   "articleIntro": "In the vast expanse of graphic design, typography stands as a pivotal element that can make or break the visual appeal of any project. Understanding the art of typography is essential for creating designs that not only attract attention but also communicate effectively. Here, we delve into practical tips that will help you master typography, transforming your creations into eye-catching masterpieces.",
@@ -862,8 +862,8 @@
       "image": {
         "src": "article-image",
         "alt": "Corporate presentation template with slides for company overview, goals, marketing strategy, and team profiles",
-        "width": "980",
-        "height": "462",
+        "width": "408",
+        "height": "504",
         "caption": "Example of font usage in typography",
         "linkText": "Get this asset",
         "link": "#"
@@ -1015,7 +1015,7 @@
   ],
   "contactMap": {
     "img": "map",
-    "width": "618",
+    "width": "408",
     "height": "314",
     "alt": "Map of the PixMart HQ address: 123 Creative Ave, Design City, 45678",
     "icon": "/img/sprite.svg#icon-location",
