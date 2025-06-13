@@ -2,7 +2,6 @@
 @use "../abstracts/mixins" as *;
 
 .hero-catalog {
-
   height: 288px;
   display: flex;
   align-items: center;
@@ -10,21 +9,28 @@
   &__title {
     font-family: $ff-heading;
     font-weight: $fw-bold;
-    color: $color-text-primary;
     display: flex;
     flex-direction: column;
     letter-spacing: -0.5px;
     margin-block: $space-4xl 100px;
-    font-size: $fz-2xl;
-    line-height: $lh-2xl;
+    font-size: 36px;
+    line-height: 48px;
+    margin-top: 40px;
 
     @include tablet {
+      color: $color-text-primary;
       font-size: $fz-2xl;
       line-height: $lh-2xl;
+      margin-top: 65px;
+      margin-left: 40px;
+    }
+
+    @include desktop {
+      margin-left: 0;
     }
   }
 
-  &__highlight {
+  &__title-highlight {
     color: $color-primary;
   }
 }

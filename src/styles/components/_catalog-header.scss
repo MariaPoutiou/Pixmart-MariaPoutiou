@@ -5,4 +5,10 @@
   display: flex;
   flex-direction: column;
   margin-bottom: $space-3xl;
+  margin-top: -35px;
+
+  @include tablet {
+    margin-top: -12px;
+    gap: 12px;
+  }
 }

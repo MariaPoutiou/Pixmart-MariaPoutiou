@@ -5,7 +5,7 @@
   padding-inline: $space-0;
   display: grid;
   grid-template-rows: 1fr;
-  gap: $gap-xl;
+  gap: 16px;
   margin-block: $space-0;
 
   @include tablet {
@@ -13,9 +13,6 @@
   }
 
   &__item {
-    @include desktop {
-      padding-bottom: 7px;
-    }
 
     &:nth-child(1),
     &:nth-child(6),

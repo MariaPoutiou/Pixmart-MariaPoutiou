@@ -3,7 +3,6 @@
     <li class="catalog-list__item">
       <article class="catalog-card">
         <a class="catalog-card__link" href="{{ item.link }}">
-          <div class="catalog-card__img-wrapper">
             <picture class="catalog-card__img">
               <source srcset="/img/{{ item.image }}-1x.avif 1x, /img/{{ item.image }}-2x.avif 2x" type="image/avif"/>
               <source srcset="/img/{{ item.image }}-1x.webp 1x, /img/{{ item.image }}-2x.webp 2x" type="image/webp"/>
@@ -14,7 +13,6 @@
                 <p class="catalog-card__state">{{ item.state }}</p>
               </div>
             {% endif %}
-          </div>
           <h3 class="catalog-card__title">{{ item.title }}</h3>
           <div class="catalog-card__tags">
             {% for tag in item.tags %}

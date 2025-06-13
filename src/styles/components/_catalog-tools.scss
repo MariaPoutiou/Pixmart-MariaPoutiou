@@ -5,10 +5,15 @@
   display: flex;
   gap: $gap-lg;
   flex-direction: column;
+  
 
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @include desktop {
+    align-items: center;
   }
 
   &__upper {
@@ -71,7 +76,7 @@
   &__select-icon {
     position: absolute;
     top: 8px;
-    right: 8px;
+    right: 20px;
   }
 
   &__info {
@@ -93,5 +98,6 @@
     display: flex;
     gap: $gap-lg;
     justify-content: space-between;
+    align-items: center;
   }
 }

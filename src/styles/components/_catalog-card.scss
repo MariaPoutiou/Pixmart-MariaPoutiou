@@ -7,10 +7,12 @@
   &__img img {
     @include product-image;
     width: 100%;
-  }
-
-  &__img-wrapper {
+    height: 260px;
     margin-bottom: $space-m;
+
+    @include desktop {
+      width: 325px;
+    }
   }
 
   &__title {
@@ -19,7 +21,7 @@
     color: $color-text-primary;
     font-size: $fz-m;
     line-height: $lh-md;
-    margin-block: $space-m 0;
+    margin-block: -5px 0;
   }
 
   &__tags {
@@ -28,6 +30,7 @@
 
   &__tag {
     margin-block: $space-0;
+    white-space: wrap;
 
     &:last-child::before {
       @include card-pseudoelement;

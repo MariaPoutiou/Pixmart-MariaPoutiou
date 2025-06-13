@@ -28,7 +28,7 @@
   }
 
   &__section {
-    margin-bottom: $space-2xl;
+    margin-bottom: 35px;
   }
 
   &__header {
@@ -65,7 +65,7 @@
 
   &__wrapper {
     display: flex;
-    gap: $gap-3xl;
+    gap: 6px;
     flex-direction: column-reverse;
     padding-inline: $space-base;
     height: 100%;
@@ -128,8 +128,9 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: $gap-md;
+    gap: 8px;
     padding-inline: $space-0;
+    margin-block: 0;
   }
 
   &__item {
@@ -175,6 +176,10 @@
     border-radius: 50%;
     border: 2px solid transparent;
     background-color: $color-primary;
+  }
+
+  &__range-slider {
+    margin-top: 12px;
   }
 
   &__range-labels {
