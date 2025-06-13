@@ -5,11 +5,11 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: $gap-6xl;
-    margin-top: $space-4xl;
+    gap: $gap-5xl;
+    margin-top: 77px;
 
     @include tablet {
-      padding-block: $space-4xl $space-5xl;
+      padding-block: 100px $space-5xl;
     }
   }
 
@@ -24,7 +24,7 @@
   }
 
   &__brand {
-    margin-bottom: $space-xl;
+    margin-bottom: 20px;
 
     @include tablet {
       width: 320px;
@@ -53,7 +53,7 @@
   &__nav-wrapper {
     display: flex;
     flex-direction: column;
-    gap: $gap-base;
+    gap: $gap-ml;
 
     @include tablet {
       flex-direction: row;
@@ -163,6 +163,16 @@
   &__legal-list-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    gap: $gap-xl;
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    @include desktop {
+
+    }
   }
 
   &__legal-list {
