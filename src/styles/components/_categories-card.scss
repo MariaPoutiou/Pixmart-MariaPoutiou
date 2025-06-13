@@ -42,7 +42,7 @@
 
   &__label {
     position: relative;
-    margin-block: $space-sm 0;
+    margin-block: $space-sm $space-0;
 
     &::before {
       @include card-pseudoelement;

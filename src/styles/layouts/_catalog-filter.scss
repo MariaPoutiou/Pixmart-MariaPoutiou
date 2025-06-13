@@ -65,7 +65,7 @@
 
   &__wrapper {
     display: flex;
-    gap: 6px;
+    gap: $gap-xs;
     flex-direction: column-reverse;
     padding-inline: $space-base;
     height: 100%;
@@ -128,7 +128,7 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: $gap-sm;
     padding-inline: $space-0;
     margin-block: 0;
   }
@@ -179,7 +179,7 @@
   }
 
   &__range-slider {
-    margin-top: 12px;
+    margin-top: $space-md;
   }
 
   &__range-labels {

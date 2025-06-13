@@ -9,6 +9,6 @@
 
   @include tablet {
     margin-top: -12px;
-    gap: 12px;
+    gap: $gap-md;
   }
 }

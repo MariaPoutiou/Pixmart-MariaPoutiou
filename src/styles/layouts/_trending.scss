@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .trending {
-  margin-top: 48px;
+  margin-top: $space-3xl;
 
   @include tablet {
     margin-top: 100px;

@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .faq {
-margin-top: 64px;
+margin-top: $space-4xl;
 
   @include tablet {
     padding-inline: 80px;
@@ -55,7 +55,7 @@ margin-top: 64px;
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: $gap-base;
     width: 100%;
 
     @include tablet {
@@ -71,7 +71,7 @@ margin-top: 64px;
   &__button {
     color: $color-text-primary;
     width: 100%;
-    padding: 18px;
+    padding: $gap-m;
 
     @include tablet {
       width: 223px;
@@ -125,7 +125,7 @@ margin-top: 64px;
   }
 
   &__answer {
-    margin-block: 0 24px;
+    margin-block: $space-0 $space-lg;
   }
 
   &__icon {

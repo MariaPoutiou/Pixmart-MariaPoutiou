@@ -13,16 +13,16 @@
     flex-direction: column;
     letter-spacing: -0.5px;
     margin-block: $space-4xl 100px;
-    font-size: 36px;
-    line-height: 48px;
-    margin-top: 40px;
+    font-size: $fz-xl;
+    line-height: $lh-xl;
+    margin-top: $space-2xl;
 
     @include tablet {
       color: $color-text-primary;
       font-size: $fz-2xl;
       line-height: $lh-2xl;
       margin-top: 65px;
-      margin-left: 40px;
+      margin-left: $space-2xl;
     }
 
     @include desktop {

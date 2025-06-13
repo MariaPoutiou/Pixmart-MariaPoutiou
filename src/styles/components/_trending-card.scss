@@ -74,7 +74,7 @@
     font-weight: $fw-medium;
     line-height: $lh-base;
     color: $color-primary;
-    margin-block: $space-base 4px;
+    margin-block: $space-base $space-xs;
   }
 
   &__tags {
@@ -85,7 +85,7 @@
 
   &__tag {
     white-space: wrap;
-    margin-block: 8px;
+    margin-block: $space-sm;
     &:last-child::before {
       @include card-pseudoelement;
     }
