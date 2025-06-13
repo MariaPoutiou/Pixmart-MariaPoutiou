@@ -90,19 +90,6 @@ a {
   letter-spacing: -0.5px;
 }
 
-.product,
-.categories,
-.trending,
-.pricing,
-.faq,
-.blog {
-  margin-block: 0 $space-4xl;
-
-  @include tablet {
-    margin-block: $space-0 $space-6xl;
-  }
-}
-
 .label {
   @include label;
 }

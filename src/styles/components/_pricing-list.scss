@@ -4,15 +4,24 @@
 .pricing-list {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(272px, 1fr));
-  gap: $gap-base;
+  gap: 8px;
   padding-inline: $space-0;
 
   @include tablet {
     grid-template-columns: repeat(3, minmax(272px, 1fr));
+    margin-top: 64px;
+  }
+  
+  @include desktop {
+    margin-top: -10px;
   }
 
   &__item {
     border-radius: 22px; /** I had to push it 2 pixels to match layout **/
+
+    @include tablet {
+    margin-top: 40px;
+    }
 
     &:first-child,
     &:last-child {
@@ -21,12 +30,16 @@
 
     &:nth-child(2) {
       border: 2px solid $color-primary;
-      margin-bottom: $space-xl; /** magic number, sorry. It should be padding bottom 32 but i put the border in pricing-list__item not pricing-card. This fits better my structure so far **/
+      margin-bottom: $space-xl;
 
       @include tablet {
-        transform: translateY(-32px);
+        transform: translateY(-64px);
         margin-bottom: unset;
         padding-bottom: 0;
+      }
+
+      @include desktop {
+        transform: translateY(-32px);
       }
     }
   }

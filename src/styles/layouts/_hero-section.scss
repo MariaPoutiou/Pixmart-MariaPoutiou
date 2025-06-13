@@ -2,14 +2,11 @@
 @use "../abstracts/mixins" as *;
 
 .hero-section {
+
   &--homepage {
     padding-block: $space-xl $space-4xl;
-    margin-block: $space-0 $space-4xl;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: left;
     gap: $gap-2xl;
+    margin-bottom: 44px;
     background: linear-gradient(
       90deg,
       rgba(240, 246, 253, 1) 60%,
@@ -18,34 +15,41 @@
 
     @include tablet {
       padding-block: $space-6xl;
-      margin-block: $space-0 68px;
+      margin-block: $space-0 40px;
       flex-direction: row;
       align-items: center;
     }
 
     @include desktop {
-      padding-block: 47px; /* overall i was a bit confused with spacing in this section. I extracted this value from figma, not from the values given by on the side but by the space indicated inside the layout */
-      margin-block: $space-0 $space-6xl;
+      padding-block: 46px; /* overall i was a bit confused with spacing in this section. I extracted this value from figma, not from the values given by on the side but by the space indicated inside the layout */
+      margin-block: $space-0 96px;
     }
   }
 
   &__content {
-    @include desktop {
     display: flex;
-    gap: 36px
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 36px;
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    @include desktop {
+      align-items: center;
+      gap: 175px;
+    }
   }
-}
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     gap: $gap-xl;
-    min-height: 398px;
     width: 100%;
-    margin-bottom: $space-4xl;
 
     @include tablet {
-      max-width: 350px;
+      max-width: 400px;
     }
 
     @include desktop {
@@ -54,10 +58,9 @@
   }
 
   &__banner {
-    height: 276px;
-    width: 100%;
-    object-fit: contain;
-    object-position: left;
+    height: 269px;
+    width: 90%;
+    object-fit: cover;
 
     @include tablet {
       height: 386px;
@@ -67,8 +70,7 @@
 
     @include desktop {
       height: 544px;
-      width: 100%;
-      max-width: 624px;
+      width: 624px;
     }
   }
 
@@ -99,26 +101,21 @@
 
   &__btn-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: $gap-lg;
-
-    @include tablet {
-      flex-wrap: nowrap;
-    }
   }
 
   &__button-primary {
-    @include button-base;
-    @include button-primary;
+    white-space: nowrap;
   }
 
   &__button-secondary {
-    @include button-base;
     background-color: $color-white;
     color: $color-text-primary;
     padding-block: $space-ml;
     padding-inline: $space-xl;
     border: 1px solid transparent;
+    white-space: nowrap;
 
     &:hover {
       background-color: $color-gray-bg;

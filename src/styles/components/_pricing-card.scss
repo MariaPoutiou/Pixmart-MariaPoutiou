@@ -5,6 +5,11 @@
   padding: $space-xl;
   position: relative;
 
+  @include tablet {
+    width: 100%;
+    min-width: 272px;
+  }
+
   &__badge {
     font-weight: $fw-bold;
     font-size: $fz-m;
@@ -31,7 +36,7 @@
 
     &--best-seller {
       @include tablet {
-        margin-block: 16px $space-0;
+        margin-block: 26px $space-0;
       }
 
       @include desktop {
@@ -70,6 +75,7 @@
   &__list-item {
     margin-bottom: $space-base;
     display: flex;
+    align-items: center;
     gap: $gap-base;
 
     &:last-child {
@@ -82,6 +88,7 @@
   }
 
   &__button {
+    color: $color-text-primary;
     width: 100%;
     white-space: wrap;
   }

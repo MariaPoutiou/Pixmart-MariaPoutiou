@@ -7,10 +7,15 @@
     border-radius: 20px;
     margin-bottom: $space-m;
     display: flex;
+    height: 224px;
     justify-content: center;
     align-items: center;
     padding: $space-xl;
     transition: background-color 0.3s ease;
+
+    @include tablet {
+      padding: 16px;
+    }
 
     &:hover {
       background-color: $color-primary;

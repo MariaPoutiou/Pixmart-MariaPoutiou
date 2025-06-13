@@ -2,14 +2,17 @@
 @use "../abstracts/mixins" as *;
 
 .product {
+  margin-bottom: 28px;
+
   &__list {
-    padding-block: $space-0;
+    padding-block: 16px;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     gap: $gap-base;
     padding-inline: 0;
-  max-width: 100vw;
+    max-width: 100vw;
+    overflow-x: scroll;
 
     @include desktop {
       gap: $gap-xl;

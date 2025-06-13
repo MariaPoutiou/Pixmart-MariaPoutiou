@@ -80,9 +80,12 @@
   &__tags {
     @include card-info;
     margin-block: $space-0;
+    white-space: wrap;
   }
 
   &__tag {
+    white-space: wrap;
+    margin-block: 8px;
     &:last-child::before {
       @include card-pseudoelement;
     }

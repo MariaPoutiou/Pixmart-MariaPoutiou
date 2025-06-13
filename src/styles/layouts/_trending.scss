@@ -2,6 +2,12 @@
 @use "../abstracts/mixins" as *;
 
 .trending {
+  margin-top: 48px;
+
+  @include tablet {
+    margin-top: 100px;
+  }
+
   &__primary-title {
     margin-bottom: $space-base;
   }
@@ -15,6 +21,10 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: $space-3xl;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
   }
 
   &__header-functions {
@@ -38,7 +48,6 @@
 
   &__list-item {
     width: 100%;
-    min-width: 305px;
     position: relative;
   }
 
@@ -52,10 +61,8 @@
 
     @include desktop {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(minmax(200px, 1fr));
       align-items: center;
-      overflow: visible;
-      overflow-x: unset;
     }
   }
 }

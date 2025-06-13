@@ -2,12 +2,18 @@
 @use "../abstracts/mixins" as *;
 
 .pricing {
+  margin-top: 55px;
+
+  @include tablet {
+    margin-top: 115px;
+  }
+
   &__primary-title {
     text-align: center;
   }
 
   &__secondary-title {
     text-align: center;
-    margin-block: $space-base $space-5xl;
+    margin-block: $space-base 48px;
   }
 }
