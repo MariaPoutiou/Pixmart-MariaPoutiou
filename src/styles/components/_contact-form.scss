@@ -103,6 +103,10 @@
     margin-left: $space-xs;
   }
 
+  &__checkbox-icon {
+    display: none;
+  }
+
   &__button {
     padding-block: $space-m;
     padding-inline: $space-md;

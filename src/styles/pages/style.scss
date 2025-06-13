@@ -6,8 +6,6 @@
 @use "../components/header-search";
 @use "../components/header-actions";
 @use "../components/header-section";
-@use "../components/button";
-@use "../components/inputs";
 @use "../components/main-nav";
 @use "../components/product-card";
 @use "../components/categories-card";
@@ -23,7 +21,6 @@
 @use "../components/catalog-tools";
 @use "../components/catalog-list";
 @use "../components/catalog-card";
-@use "../components/contact-page";
 @use "../components/contact-form";
 
 /* HEADER */
@@ -51,8 +48,8 @@
 @use "../layouts/blog";
 
 /* CONTACT PAGE */
-@use "../layouts/contact-container";
 @use "../layouts/contact";
+@use "../layouts/contact-page";
 @use "../layouts/contact-hero";
 
 /* BLOG PAGE */

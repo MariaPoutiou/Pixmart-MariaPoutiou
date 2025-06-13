@@ -124,6 +124,10 @@
     line-height: $lh-sm;
   }
 
+  &__label-icon {
+    display: none;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
