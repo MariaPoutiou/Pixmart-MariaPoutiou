@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .related-articles {
-  padding-block: 0 $space-xl;
+  padding-block: $space-xl;
   width: 100%;
   background-color: $color-background;
 
@@ -51,6 +51,7 @@
   &__icon {
     width: 16px;
     height: 16px;
+    margin-left: $space-sm;
     color: $color-primary;
   }
 

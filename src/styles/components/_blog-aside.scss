@@ -47,7 +47,7 @@
   }
 
   &__section {
-    padding-top: $space-2xl;
+    padding-top: $space-xl;
     border-top: 2px solid $color-text-primary;
     width: 100%;
   }
@@ -63,14 +63,23 @@
 
   &__list {
     padding-inline: $space-0;
-    margin-bottom: $space-0;
+    margin-block: $space-lg $space-0;
+  }
+
+  &__list-item {
+    margin-block: $space-sm;
+  }
+
+  &__sublist {
+    padding-inline: $space-base;
+  }
+
+  &__sublist-item {
+    margin-block: $space-sm;
   }
 
   &__list-item,
   &__sublist-item {
-    padding-block: $space-xs;
-
-    /* padding not defined in Figma, but it doesn't look correct with 24px line height, so i put this padding to match the look in Figma. I could do it with flex column gap but i did not see reason to apply flex here */
 
     &::before {
       content: "";
@@ -79,13 +88,18 @@
       height: 8px;
       border-radius: 50px;
       background-color: $color-primary;
-      margin-right: $space-sm;
+      margin-right: 8px;
     }
   }
 
   &__list-link {
     color: $color-text-secondary;
     @include link-style;
+  }
+
+    &__list-link--highlighted {
+    font-weight: $fw-semibold;
+    color: $color-text-primary;
   }
   
   &__sublist-link {
@@ -100,16 +114,7 @@
 
   &__article-date {
     color: $color-text-secondary;
-  }
-
-  &__list-item--active {
-    font-weight: $fw-semibold;
-    padding-inline: $space-base;
-  }
-
-  &__list-link--highlighted {
-    font-weight: $fw-semibold;
-    color: $color-text-primary;
+    margin-top: -4px;
   }
 
   &__articles {
@@ -119,6 +124,7 @@
   &__article {
     display: flex;
     flex-direction: column;
+    gap: $gap-sm;
 
     &:first-of-type::after {
       content: "";

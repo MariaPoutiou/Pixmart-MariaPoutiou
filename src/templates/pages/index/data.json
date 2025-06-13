@@ -838,7 +838,8 @@
     "text": "Save"
   },
   "blogHero": {
-    "title": "Mastering the Art of Typography: Tips for Eye-Catching designs for 2024",
+    "titlePrefix": "Mastering the Art of Typography:",
+    "titleSuffix": "Tips for Eye-Catching Designs for 2024",
     "label": "TYPOGRAPHY",
     "image": {
       "src": "article-hero",
@@ -969,7 +970,7 @@
         "img": "article-lotus-spa",
         "width": "370",
         "height": "272",
-        "alt": "Thumbnail for Contact Us Lotus Spa",
+        "alt": "Thumbnail for Contact Us Lotus Spa article",
         "tag": "TAG",
         "title": "Contact Us Lotus Spa article",
         "date": "05 MAY 2024",

@@ -2,9 +2,16 @@
   <span class="label blog-hero__label">
     {{ blogHero.label }}
   </span>
-  <h1 class="blog-hero__title">
-    {{ blogHero.title }}
-  </h1>
+  <div class="blog-her__title-wrapper">
+    <h1 class="blog-hero__title">
+      <span class="blog-hero__title-prefix">
+        {{ blogHero.titlePrefix }}
+      </span>
+      <span class="blog-hero__title-suffix">
+        {{ blogHero.titleSuffix }}
+      </span>
+    </h1>
+  </div>
 </div>
 <picture class="blog-hero__img">
   <source srcset="/img/{{ blogHero.image.src }}-1x.avif 1x, /img/{{ blogHero.image.src }}-2x.avif 2x" type="image/avif"/>
