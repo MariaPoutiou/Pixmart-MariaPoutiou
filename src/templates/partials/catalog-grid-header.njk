@@ -31,12 +31,12 @@
   </div>
   <div class="catalog__tags">
     {% for tag in catalogTags %}
-      <div class="button catalog__tag-item button--secondary">
+      <button class="button catalog__tag-item button--secondary" type="reset">
         {{ tag.label }}
         <svg class="catalog__tag-icon" aria-hidden="true" focusable="false">
           <use href="{{ tag.icon }}"></use>
         </svg>
-      </div>
+      </button>
     {% endfor %}
   </div>
 </section>
