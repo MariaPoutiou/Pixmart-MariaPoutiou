@@ -40,12 +40,13 @@
 
   &__icon-wrapper {
     position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 16px;
     top: 0;
     right: 0;
     padding: $space-base;
     background-color: $color-primary;
-    width: 56px;
-    height: 56px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
   }

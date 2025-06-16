@@ -1,10 +1,6 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-html {
-  overflow-x: hidden;
-}
-
 * {
   box-sizing: border-box;
 }
