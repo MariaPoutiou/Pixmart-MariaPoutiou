@@ -180,10 +180,6 @@
   text-decoration: none;
   box-sizing: border-box;
 
-  &:visited {
-    color: $color-blue-dark;
-  }
-
   &:hover {
     color: $color-blue-light;
   }
@@ -200,6 +196,10 @@
 
   &:active {
     outline: none;
+  }
+
+  &:visited {
+    color: $color-blue-dark;
   }
 }
 
