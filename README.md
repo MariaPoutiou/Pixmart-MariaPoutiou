@@ -1,4 +1,4 @@
-# Binabox
+# Pixmart
 
 ## First install
 Run `npm ci` after first installation to install dependencies
@@ -31,6 +31,6 @@ Available flags:
 
 ## Credits
 
-Student:
+Student: Maria Poutiou
 
 Mentor:
