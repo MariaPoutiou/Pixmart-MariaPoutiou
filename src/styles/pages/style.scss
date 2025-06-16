@@ -3,6 +3,22 @@
 @use "../abstracts/global";
 
 /********** COMPONENTS ************/
+@use "../general/container";
+@use "../general/visually-hidden";
+@use "../general/svg";
+@use "../general/primary-title";
+@use "../general/secondary-title";
+@use "../general/button";
+@use "../general/label";
+@use "../general/input";
+@use "../general/checkbox";
+@use "../general/input-checkbox";
+@use "../general/radio";
+@use "../general/input-radio";
+@use "../general/toggle";
+@use "../general/input-toggle";
+
+/********** COMPONENTS ************/
 @use "../components/header-search";
 @use "../components/header-actions";
 @use "../components/header-section";

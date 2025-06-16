@@ -34,6 +34,10 @@
   &__input {
     padding: $space-m;
     @include input-style;
+
+    &:valid:not(:placeholder-shown):not(:focus) + .contact-form__valid {
+      display: block;
+    }
   }
 
   &__select {
