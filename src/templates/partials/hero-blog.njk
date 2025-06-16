@@ -14,5 +14,5 @@
 <picture class="blog-hero__img">
   <source srcset="/img/{{ blogHero.image.src }}-1x.avif 1x, /img/{{ blogHero.image.src }}-2x.avif 2x" type="image/avif"/>
   <source srcset="/img/{{ blogHero.image.src }}-1x.webp 1x, /img/{{ blogHero.image.src }}-2x.webp 2x" type="image/webp"/>
-  <img class="blog-hero__img" src="/img/{{ blogHero.image.src }}-2x.webp" alt="{{ blogHero.image.alt }}" width="2240" height="1260" loading="eager"/>
+  <img class="blog-hero__img" src="/img/{{ blogHero.image.src }}-2x.webp" alt="{{ blogHero.image.alt }}" width="{{ blogHero.image.width }}" height="{{ blogHero.image.height }}" loading="eager"/>
 </picture>
