@@ -2,9 +2,9 @@
 @use "../abstracts/mixins" as *;
 
 .header {
-  height: 92px;
   display: flex;
   align-items: center;
+  padding-block: 24px;
 
   &__menu-wrapper {
     display: flex;

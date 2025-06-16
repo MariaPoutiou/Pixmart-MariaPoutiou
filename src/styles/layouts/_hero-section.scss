@@ -48,10 +48,6 @@
     width: 100%;
 
     @include tablet {
-      max-width: 400px;
-    }
-
-    @include desktop {
       max-width: 520px;
     }
   }
@@ -101,11 +97,12 @@
   &__btn-wrapper {
     display: flex;
     flex-wrap: nowrap;
+    flex-shrink: 1;
     gap: $gap-lg;
   }
 
   &__button-primary {
-    white-space: nowrap;
+    white-space: wrap;
   }
 
   &__button-secondary {
@@ -114,7 +111,7 @@
     padding-block: $space-ml;
     padding-inline: $space-xl;
     border: 1px solid transparent;
-    white-space: nowrap;
+    white-space: wrap;
 
     &:hover {
       background-color: $color-gray-bg;
