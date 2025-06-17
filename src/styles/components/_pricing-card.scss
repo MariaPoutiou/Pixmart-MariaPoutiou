@@ -34,15 +34,15 @@
     font-size: $fz-m;
     line-height: $lh-md;
     margin-block: $space-0;
+  }
 
-    &--best-seller {
-      @include tablet {
-        margin-block: 26px $space-0;
-      }
+  &__title--best-seller {
+    @include tablet {
+      margin-block: 26px $space-0;
+    }
 
-      @include desktop {
-        margin-block: $space-0;
-      }
+    @include desktop {
+      margin-block: $space-0;
     }
   }
 
