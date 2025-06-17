@@ -16,7 +16,7 @@
 
   &__author {
     display: inline-flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: $gap-base;
     align-items: center;
     margin-inline: $space-0;
@@ -29,13 +29,11 @@
     font-weight: $fw-bold;
     font-size: $fz-m;
     line-height: $lh-md;
-    white-space: nowrap;
   }
 
   &__author-date {
     color: $color-text-dark;
     opacity: 50%;
-    white-space: nowrap;
   }
 
   &__author-img {

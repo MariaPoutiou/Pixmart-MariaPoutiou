@@ -39,10 +39,12 @@
 
   &__label {
     position: absolute;
+    height: auto;
+    min-height: 40px;
     border-radius: 100px;
     font-weight: $fw-medium;
     padding-inline: $space-base;
-    height: 40px;
+    padding-block: 0;
     top: 16px;
     left: 16px;
     max-width: 300px;
@@ -61,6 +63,10 @@
   &__label--popular {
     background-color: $color-primary;
     color: $color-background-soft;
+  }
+
+  &__state {
+    margin-block: 0;
   }
 
   &__price {

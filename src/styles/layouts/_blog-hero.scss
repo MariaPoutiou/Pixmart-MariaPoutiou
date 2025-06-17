@@ -7,9 +7,11 @@
   }
 
   &__label {
-    padding: $space-base;
+    height: auto;
+    min-height: 40px;
+    padding-inline: $space-base;
+    padding-block: 0;
     border-radius: 100px;
-    height: 40px;
     margin-bottom: $space-lg;
     white-space: wrap;
   }

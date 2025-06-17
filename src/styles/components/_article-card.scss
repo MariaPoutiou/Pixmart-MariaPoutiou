@@ -10,13 +10,14 @@
   @include card-hover;
 
   &__tag {
-    height: 40px;
+    height: auto;
+    min-height: 40px;
+    white-space: wrap;
+    max-width: 85%;
     border-radius: 100px;
     font-weight: $fw-medium;
-    font-size: $fz-sm;
-    line-height: $lh-base;
     position: absolute;
-    padding: $space-base;
+    padding-block: 0;
     left: 36px;
     top: 270px;
   }
