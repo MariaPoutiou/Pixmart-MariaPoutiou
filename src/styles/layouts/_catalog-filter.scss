@@ -90,6 +90,10 @@
     }
   }
 
+  &__button-icon {
+    flex-shrink: 0;
+  }
+
   &__button-save {
     width: 100%;
   }

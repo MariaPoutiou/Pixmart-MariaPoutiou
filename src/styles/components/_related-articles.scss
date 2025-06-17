@@ -52,6 +52,7 @@
     height: 16px;
     margin-left: $space-sm;
     color: $color-primary;
+    flex-shrink: 0;
   }
 
   &__list {

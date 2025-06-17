@@ -63,6 +63,7 @@
 
   &__icon {
     color: $color-primary;
+    flex-shrink: 0;
   }
 
   &__map-wrapper {
@@ -105,5 +106,6 @@
 
   &__map-icon {
     color: $color-primary;
+    flex-shrink: 0;
   }
 }
