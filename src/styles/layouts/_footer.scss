@@ -104,7 +104,6 @@
     flex-direction: column;
     gap: $gap-lg;
     width: 100%;
-    min-width: 320px;
 
     @include tablet {
       flex-direction: row;
@@ -130,15 +129,13 @@
 
   &__input {
     @include input;
-    width: 100%;
-    flex: 1;
     padding: $space-m;
 
-    @include tablet {
-      width: 243px;
-    }
-
     @include input-style;
+
+    ::placeholder {
+      white-space: wrap;
+    }
   }
 
   &__lower {
@@ -149,14 +146,12 @@
     padding-inline: $space-base;
     margin-bottom: $space-0;
     background-color: $color-text-primary;
-    height: 128px;
 
     @include tablet {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       padding-inline: $space-5xl;
-      height: 72px;
     }
   }
 
@@ -168,9 +163,6 @@
 
     @include tablet {
       flex-direction: row;
-    }
-
-    @include desktop {
     }
   }
 

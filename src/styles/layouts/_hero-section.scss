@@ -102,7 +102,11 @@
   }
 
   &__button-primary {
-    white-space: wrap;
+    white-space: nowrap;
+
+    @include tablet {
+      white-space: wrap;
+    }
   }
 
   &__button-secondary {
@@ -111,7 +115,11 @@
     padding-block: $space-ml;
     padding-inline: $space-xl;
     border: 1px solid transparent;
-    white-space: wrap;
+    white-space: nowrap;
+
+    @include tablet {
+      white-space: wrap;
+    }
 
     &:hover {
       background-color: $color-gray-bg;
