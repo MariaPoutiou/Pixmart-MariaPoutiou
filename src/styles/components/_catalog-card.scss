@@ -39,31 +39,28 @@
 
   &__label {
     position: absolute;
-    height: 40px;
     border-radius: 100px;
     font-weight: $fw-medium;
     padding-inline: $space-base;
+    height: 40px;
     top: 16px;
     left: 16px;
+    max-width: 300px;
   }
 
-  &__label {
-    &--sold-out {
-      background-color: $color-white;
-      color: $color-03;
-    }
+  &__label--sold-out {
+    background-color: $color-white;
+    color: $color-03;
+  }
 
-    &--new {
-      background-color: $color-11;
-      color: $color-background-soft;
-      width: auto;
-      max-width: 300px;
-    }
+  &__label--new {
+    background-color: $color-11;
+    color: $color-background-soft;
+  }
 
-    &--popular {
-      background-color: $color-primary;
-      color: $color-background-soft;
-    }
+  &__label--popular {
+    background-color: $color-primary;
+    color: $color-background-soft;
   }
 
   &__price {
@@ -79,9 +76,13 @@
     align-items: center;
   }
 
-  &__action {
-    &:first-child {
-      margin-right: $space-sm;
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    @include tablet {
+      flex-wrap: wrap;
     }
   }
 }

@@ -3,31 +3,21 @@
 
 .product {
   margin-bottom: 28px;
-  padding-left: 16px;
-
-  @include tablet {
-    padding-inline: 40px;
-  }
-
-  @include desktop {
-    padding-inline: 80px;
-  }
 
   &__list {
     padding-block: $space-base;
     display: flex;
-    justify-content: space-between;
     flex-wrap: nowrap;
     gap: $gap-base;
     padding-inline: 0;
-    max-width: 100vw;
+    max-width: 100%;
     overflow-x: auto;
 
     @include desktop {
       overflow: unset;
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      grid-template-rows: repeat(auto-fit, minmax(0, 1fr));;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
       gap: $gap-xl;
     }
   }
@@ -41,6 +31,7 @@
     }
 
     @include desktop {
+      width: unset;
       min-width: 224px;
     }
   }

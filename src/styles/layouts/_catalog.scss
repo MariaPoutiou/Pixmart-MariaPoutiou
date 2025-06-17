@@ -51,6 +51,7 @@
 
   &__tags {
     display: flex;
+    flex-wrap: wrap;
     gap: $gap-sm;
   }
 
