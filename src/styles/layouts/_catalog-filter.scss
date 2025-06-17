@@ -45,22 +45,22 @@
     @include desktop {
       display: none;
     }
+  }
 
-    &-btn {
-      border: 2px solid $color-gray-light;
-      padding: $space-s;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      @include button-small-secondary;
-    }
+  &__header-btn {
+    border: 2px solid $color-gray-light;
+    padding: $space-s;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include button-small-secondary;
+  }
 
-    &-title {
-      font-size: $fz-ml;
-      line-height: $lh-base;
-      margin-block: $space-0;
-    }
+  &__header-title {
+    font-size: $fz-ml;
+    line-height: $lh-base;
+    margin-block: $space-0;
   }
 
   &__wrapper {
@@ -146,14 +146,14 @@
     width: 215px;
     height: 4px;
     border-radius: 4px;
+  }
 
-    &--is-selected {
-      position: absolute;
-      top: 0;
-      left: 55px;
-      width: 108px;
-      background-color: $color-primary;
-    }
+  &__range-line--is-selected {
+    position: absolute;
+    top: 0;
+    left: 55px;
+    width: 108px;
+    background-color: $color-primary;
   }
 
   &__button-primary {

@@ -77,11 +77,11 @@
     line-height: $lh-2xl;
     letter-spacing: -0.5px;
     margin-block: $space-0;
+  }
 
-    &-highlight {
-      font-weight: $fw-bold;
-      color: $color-primary;
-    }
+  &__heading-highlight {
+    font-weight: $fw-bold;
+    color: $color-primary;
   }
 
   &__description {
