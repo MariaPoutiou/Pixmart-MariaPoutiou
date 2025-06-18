@@ -34,7 +34,7 @@
   }
 
   &__header {
-    margin-bottom: 55px;
+    margin-bottom: 60px;
     width: 100%;
 
     @include tablet {
@@ -70,7 +70,7 @@
   &__button {
     color: $color-text-primary;
     width: 100%;
-    padding: $gap-m;
+    padding: 16px;
 
     @include tablet {
       width: 223px;

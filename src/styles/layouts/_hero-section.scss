@@ -33,10 +33,11 @@
 
     @include tablet {
       flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
     }
 
     @include desktop {
-      align-items: center;
       gap: 175px;
     }
   }
@@ -48,13 +49,23 @@
     width: 100%;
 
     @include tablet {
-      max-width: 520px;
+      width: 100%;
+      flex: 1 1;
+    }
+  }
+
+  &__heading {
+    width: 100%;
+    max-width: 430px;
+
+    @include desktop {
+      max-width: unset;
     }
   }
 
   &__banner {
-    height: 269px;
-    width: 90%;
+    height: 277px;
+    width: 94%;
     object-fit: cover;
 
     @include tablet {
@@ -70,6 +81,8 @@
   }
 
   &__heading {
+    display: flex;
+    flex-direction: column;
     font-family: $ff-heading;
     font-weight: $fw-bold;
     color: $color-text-primary;

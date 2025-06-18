@@ -33,6 +33,11 @@
   &__secondary-title {
     margin-block: $space-base;
 
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+
     @include desktop {
       width: 60%;
     }
@@ -82,7 +87,7 @@
     position: relative;
 
     @include tablet {
-      margin-top: 45px;
+      margin-top: 52px;
     }
 
     &::before {

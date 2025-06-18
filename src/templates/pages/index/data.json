@@ -53,9 +53,11 @@
     "link": "#"
   },
   "heroHome": {
-    "titleFirst": "Craft Your Success with Our ",
-    "titleMiddle": "Digital ",
-    "titleLast": "Assets",
+    "titlePrefix": "Craft Your",
+    "titleMiddle": "Success with",
+    "titleSuffixFirst": "Our",
+    "titleHighlight": "Digital",
+    "titleSuffixLast": "Assets",
     "description": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
     "buttonPrimary": "Shop Now",
     "linkPrimary": "catalog.html",
@@ -106,7 +108,8 @@
   },
   "categoriesSection": {
     "title": "CATEGORIES",
-    "subtitle": "Discover Assets for Every Projects",
+    "subtitleUpper": "Discover Assets for",
+    "subtitleLower": "Every Projects",
     "description": "From fonts and icons to mockups and templates, our comprehensive categories ensure that you find exactly what you need to your projects.",
     "buttonText": "Shop Now",
     "buttonLink": "catalog.html"

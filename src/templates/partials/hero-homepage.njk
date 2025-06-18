@@ -2,8 +2,11 @@
   <div class="container">
     <div class="hero-section__content">
       <div class="hero-section__wrapper">
-        <h1 class="hero-section__heading">{{ heroHome.titleFirst }}<span class="hero-section__heading-highlight">{{ heroHome.titleMiddle }}</span>
-          {{ heroHome.titleLast }}</h1>
+        <h1 class="hero-section__heading">
+          <span class="hero-section__heading-prefix">{{ heroHome.titlePrefix }}</span>
+          <span class="hero-section__heading-middle">{{ heroHome.titleMiddle}}</span>
+          <span class="hero-section__heading-suffix">{{ heroHome.titleSuffixFirst }} <strong class="hero-section__heading-highlight">{{ heroHome.titleHighlight }} </strong>{{ heroHome.titleSuffixLast }}</span>
+          </h1>
         <h2 class="hero-section__description">{{ heroHome.description }}</h2>
         <div class="hero-section__btn-wrapper">
           <a class="button hero-section__button-primary button--primary" href="{{ heroHome.linkPrimary }}">

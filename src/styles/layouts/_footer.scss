@@ -47,6 +47,7 @@
       flex-direction: row;
       gap: unset;
       justify-content: space-between;
+      margin-bottom: 55px;
     }
   }
 
@@ -68,6 +69,10 @@
     font-size: $fz-m;
     line-height: $lh-md;
     margin-block: $space-0 $space-base;
+
+    @include tablet {
+      margin-block: $space-0 20px;
+    }
   }
 
   &__nav-list {
@@ -130,6 +135,7 @@
   &__input {
     @include input;
     padding: $space-m;
+    width: 243px;
 
     @include input-style;
 
@@ -160,6 +166,7 @@
     justify-content: space-between;
     flex-direction: column;
     gap: $gap-xl;
+    padding-inline: 0;
 
     @include tablet {
       flex-direction: row;

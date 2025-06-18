@@ -4,8 +4,16 @@
 .trending {
   margin-top: $space-3xl;
 
+  @include tablet {
+    margin-top: 95px;
+  }
+
   &__primary-title {
     margin-bottom: $space-base;
+
+    @include tablet {
+      margin-bottom: 2px;
+    }
   }
   &__secondary-title {
     margin-block: $space-0;
@@ -18,7 +26,8 @@
     margin-bottom: $space-3xl;
 
     @include tablet {
-      margin-bottom: 30px;
+      margin-bottom: 46px;
+      align-items: flex-end;
     }
   }
 
@@ -27,12 +36,12 @@
 
     @include tablet {
       display: flex;
+      gap: 6px;
     }
   }
 
   &__header-button {
     font-size: $fz-sm;
-    margin-right: $space-sm;
     padding: $space-m;
   }
 
