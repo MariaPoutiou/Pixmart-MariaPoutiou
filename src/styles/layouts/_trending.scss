@@ -10,15 +10,15 @@
 
   &__primary-title {
     margin-bottom: $space-base;
-    padding-inline: 16px;
+    padding-inline: $space-base;
 
     @include tablet {
       margin-bottom: 2px;
-      padding-inline: 40px;
+      padding-inline: $space-2xl;
     }
 
     @include desktop {
-      padding-inline: 80px;
+      padding-inline: $space-5xl;
       width: 100%;
       max-width: 1440px;
       margin-inline: auto;
@@ -33,16 +33,16 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: $space-3xl;
-    padding-inline: 16px;
+    padding-inline: $space-base;
 
     @include tablet {
       margin-bottom: 46px;
-      padding-inline: 40px;
+      padding-inline: $space-2xl;
       align-items: flex-end;
     }
 
     @include desktop {
-      padding-inline: 80px;
+      padding-inline: $space-5xl;
       width: 100%;
       max-width: 1440px;
       margin-inline: auto;
@@ -79,17 +79,17 @@
     grid-auto-columns: 305px;
     gap: $gap-base;
     overflow-x: auto;
-    padding-left: 16px;
+    padding-left: $space-base;
 
     @include tablet {
-      padding-left: 40px;
+      padding-left: $space-2xl;
     }
 
     @include desktop {
       display: grid;
       grid-template-columns: repeat(minmax(200px, 1fr));
       align-items: center;
-      padding-inline: 80px;
+      padding-inline: $space-5xl;
       width: 100%;
       max-width: 1440px;
       margin-inline: auto;

@@ -3,15 +3,15 @@
 
 .product {
   margin-bottom: $space-1lg;
-  padding-left: 16px;
+  padding-left: $space-base;
   width: 100%;
 
   @include tablet {
-    padding-inline: 40px;
+    padding-inline: $space-2xl;
   }
 
   @include desktop {
-    padding-inline: 80px;
+    padding-inline: $space-5xl;
     margin-inline: auto;
     max-width: 1440px;
   }
