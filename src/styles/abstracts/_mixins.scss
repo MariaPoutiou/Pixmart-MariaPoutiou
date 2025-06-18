@@ -197,9 +197,9 @@
     outline: none;
   }
 
-  /*&:visited {
+  &:visited {
     color: $color-blue-dark;
-  }*/
+  }
 }
 
 @mixin input {
