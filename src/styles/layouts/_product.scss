@@ -3,6 +3,18 @@
 
 .product {
   margin-bottom: $space-1lg;
+  padding-left: 16px;
+  width: 100%;
+
+  @include tablet {
+    padding-inline: 40px;
+  }
+
+  @include desktop {
+    padding-inline: 80px;
+    margin-inline: auto;
+    max-width: 1440px;
+  }
 
   &__list {
     padding-block: $space-base;

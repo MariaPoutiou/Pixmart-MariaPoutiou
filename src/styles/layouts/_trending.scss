@@ -10,9 +10,18 @@
 
   &__primary-title {
     margin-bottom: $space-base;
+    padding-inline: 16px;
 
     @include tablet {
       margin-bottom: 2px;
+      padding-inline: 40px;
+    }
+
+    @include desktop {
+      padding-inline: 80px;
+      width: 100%;
+      max-width: 1440px;
+      margin-inline: auto;
     }
   }
   &__secondary-title {
@@ -24,10 +33,19 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: $space-3xl;
+    padding-inline: 16px;
 
     @include tablet {
       margin-bottom: 46px;
+      padding-inline: 40px;
       align-items: flex-end;
+    }
+
+    @include desktop {
+      padding-inline: 80px;
+      width: 100%;
+      max-width: 1440px;
+      margin-inline: auto;
     }
   }
 
@@ -61,12 +79,20 @@
     grid-auto-columns: 305px;
     gap: $gap-base;
     overflow-x: auto;
-    padding-inline: $space-0;
+    padding-left: 16px;
+
+    @include tablet {
+      padding-left: 40px;
+    }
 
     @include desktop {
       display: grid;
       grid-template-columns: repeat(minmax(200px, 1fr));
       align-items: center;
+      padding-inline: 80px;
+      width: 100%;
+      max-width: 1440px;
+      margin-inline: auto;
     }
   }
 }
