@@ -13,6 +13,10 @@
     z-index: 2;
     overflow: visible;
 
+    @include tablet {
+      margin-top: 50px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -39,10 +43,7 @@
 
   &__meta-buttons {
     display: flex;
-  }
-
-  &__meta-button--primary {
-    margin-right: $space-sm;
+    gap: 8px;
   }
 
   &__meta-icon--primary {

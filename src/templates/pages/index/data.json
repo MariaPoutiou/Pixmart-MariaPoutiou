@@ -706,6 +706,7 @@
   },
   "catalogFilterHeader": {
     "mainTitle": "Customize Your Prefrences",
+    "Title": "Filters",
     "icon": "/img/sprite.svg#icon-close"
   },
   "catalogForm": {

@@ -10,8 +10,9 @@
     height: 260px;
     margin-bottom: $space-m;
 
-    @include desktop {
+    @include tablet {
       width: 325px;
+      margin-bottom: 22px;
     }
   }
 
@@ -43,7 +44,7 @@
     min-height: 40px;
     border-radius: 100px;
     font-weight: $fw-medium;
-    padding-inline: $space-base;
+    padding-inline: 12px;
     padding-block: 0;
     top: 16px;
     left: 16px;
@@ -74,6 +75,7 @@
     font-size: $fz-m;
     line-height: $lh-md;
     margin-top: $space-m;
+    margin-bottom: 0;
   }
 
   &__footer {

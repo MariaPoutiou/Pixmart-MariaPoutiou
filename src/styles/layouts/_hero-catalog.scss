@@ -14,13 +14,12 @@
     margin-block: $space-4xl 100px;
     font-size: $fz-xl;
     line-height: $lh-xl;
-    margin-top: $space-2xl;
+    margin-top: 64px;
 
     @include tablet {
       color: $color-text-primary;
       font-size: $fz-2xl;
       line-height: $lh-2xl;
-      margin-top: 65px;
       margin-left: $space-2xl;
     }
 

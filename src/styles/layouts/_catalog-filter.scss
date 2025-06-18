@@ -38,11 +38,10 @@
     justify-content: space-between;
     align-items: center;
     gap: $gap-base;
-    height: 88px;
     padding-block: $space-lg;
     padding-inline: $space-base;
     background-color: $color-white;
-    margin-bottom: $space-2xl;
+    margin-bottom: 36px;
 
     @include desktop {
       display: none;
@@ -60,14 +59,16 @@
   }
 
   &__header-title {
+    font-family: $ff-heading;
+    font-weight: 700;
     font-size: $fz-ml;
-    line-height: $lh-base;
+    line-height: 32px;
     margin-block: $space-0;
   }
 
   &__wrapper {
     display: flex;
-    gap: $gap-xs;
+    gap: 40px;
     flex-direction: column-reverse;
     padding-inline: $space-base;
     height: 100%;
