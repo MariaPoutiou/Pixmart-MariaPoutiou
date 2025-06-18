@@ -60,7 +60,7 @@
     grid-auto-flow: column;
     grid-auto-columns: 305px;
     gap: $gap-base;
-    overflow-x: scroll;
+    overflow-x: auto;
     padding-inline: 0;
 
     @include desktop {
