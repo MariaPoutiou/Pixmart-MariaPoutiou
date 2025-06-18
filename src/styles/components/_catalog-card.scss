@@ -47,8 +47,8 @@
     min-height: 40px;
     border-radius: 100px;
     font-weight: $fw-medium;
-    padding-inline: 12px;
-    padding-block: 0;
+    padding-inline: $space-md;
+    padding-block: $space-0;
     top: 16px;
     left: 16px;
     max-width: 300px;
@@ -70,7 +70,7 @@
   }
 
   &__state {
-    margin-block: 0;
+    margin-block: $space-0;
   }
 
   &__price {
@@ -78,7 +78,7 @@
     font-size: $fz-m;
     line-height: $lh-md;
     margin-top: $space-m;
-    margin-bottom: 0;
+    margin-bottom: $space-0;
   }
 
   &__footer {
@@ -94,7 +94,7 @@
   &__actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: $gap-sm;
 
     @include tablet {
       flex-wrap: wrap;

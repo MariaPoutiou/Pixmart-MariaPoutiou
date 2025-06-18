@@ -25,7 +25,7 @@
     color: $color-text-primary;
     font-size: $fz-lg;
     line-height: $lh-ml;
-    margin-block: $space-base 0;
+    margin-block: $space-base $space-0;
     white-space: wrap;
   }
 
@@ -36,7 +36,7 @@
   }
 
   &__description {
-    margin-block: $space-sm 0;
+    margin-block: $space-sm $space-0;
     white-space: wrap;
   }
 

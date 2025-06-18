@@ -16,7 +16,7 @@
 
   &__header {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: $space-m;
 
     @include tablet {
       margin-bottom: 42px;
@@ -111,6 +111,7 @@
 .categories__list-item {
   background-color: $color-surface-light;
   border-radius: 20px;
+
   &:hover .categories-card {
     background-color: $color-primary;
     transform: scale(1.02);

@@ -5,7 +5,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 28px;
+  padding-left: $space-1lg;
   cursor: pointer;
 
   &::before {

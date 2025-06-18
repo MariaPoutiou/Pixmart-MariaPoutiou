@@ -17,15 +17,15 @@
     font-size: $fz-md;
     line-height: $lh-m;
     color: $color-text-secondary;
-    margin-right: 0;
-    margin-block: 8px 32px;
+    margin-right: $space-0;
+    margin-block: $space-sm $space-xl;
 
     @include tablet {
-      margin-block: 20px 32px;
+      margin-block: $space-m $space-xl;
     }
 
     @include desktop {
-      margin-block: 14px 32px;
+      margin-block: 14px $space-xl;
     }
   }
 
@@ -35,12 +35,12 @@
     color: $color-text-primary;
     font-size: $fz-ml;
     line-height: $lh-lg;
-    margin-bottom: 20px;
+    margin-bottom: $space-m;
   }
 
   &__img-wrapper {
-    padding-inline: 0;
-    margin-inline: 0;
+    padding-inline: $space-0;
+    margin-inline: $space-0;
     margin-bottom: $space-xl;
   }
 
@@ -62,7 +62,7 @@
   }
 
   &__img-description {
-    margin-block: 0;
+    margin-block: $space-0;
     color: $color-text-dark;
     opacity: 70%;
   }
@@ -70,7 +70,7 @@
   &__img-link {
     font-weight: $fw-semibold;
     color: $color-primary;
-    margin-block: 0;
+    margin-block: $space-0;
     @include link-style;
   }
 
@@ -79,7 +79,7 @@
     align-items: flex-start;
     gap: $gap-base;
     margin-inline: $space-0;
-    margin-block: $space-0 32px;
+    margin-block: $space-0 $space-xl;
   }
 
   &__quote-svg {

@@ -2,17 +2,17 @@
 @use "../abstracts/mixins" as *;
 
 .contact-hero {
-  padding-block: $space-4xl 0;
+  padding-block: $space-4xl $space-0;
   width: 100%;
 
   &__primary-title {
-    margin-block: 0 20px;
+    margin-block: $space-0 $space-m;
   }
 
   &__intro {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 16px;
+    margin-bottom: $space-base;
   }
 
   &__title {
@@ -39,7 +39,7 @@
   &__button {
     font-size: $fz-sm;
     line-height: $lh-base;
-    margin-bottom: 28px;
+    margin-bottom: $space-1lg;
     padding: $space-m;
   }
 

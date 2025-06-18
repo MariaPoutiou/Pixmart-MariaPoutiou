@@ -10,9 +10,9 @@
     height: auto;
     min-height: 40px;
     padding-inline: $space-base;
-    padding-block: 0;
+    padding-block: $space-0;
     border-radius: 100px;
-    margin-bottom: 28px;
+    margin-bottom: $space-1lg;
     white-space: wrap;
   }
 

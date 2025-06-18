@@ -5,8 +5,8 @@
   margin-top: $space-4xl;
 
   @include tablet {
-    padding-inline: 80px;
-    margin-top: 80px;
+    padding-inline: $space-5xl;
+    margin-top: $space-5xl;
     display: flex;
     flex-direction: row;
     gap: $gap-3xl;
@@ -15,7 +15,7 @@
     position: relative;
 
     @include desktop {
-      margin-top: 120px;
+      margin-top: $space-6xl;
     }
 
     &::before {

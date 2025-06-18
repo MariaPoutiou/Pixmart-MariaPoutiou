@@ -4,7 +4,7 @@
 .header {
   display: flex;
   align-items: center;
-  padding-block: 24px;
+  padding-block: $space-lg;
 
   &__menu-wrapper {
     display: flex;

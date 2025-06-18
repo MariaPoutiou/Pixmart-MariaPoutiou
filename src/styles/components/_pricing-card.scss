@@ -18,8 +18,8 @@
     position: absolute;
     background-color: $color-primary;
     color: $color-white;
-    padding-inline: 24px;
-    padding-block: 6px;
+    padding-inline: $space-lg;
+    padding-block: $space-s;
     max-width: 200px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;

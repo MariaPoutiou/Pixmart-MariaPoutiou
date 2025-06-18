@@ -2,14 +2,14 @@
 @use "../abstracts/mixins" as *;
 
 .product {
-  margin-bottom: 28px;
+  margin-bottom: $space-1lg;
 
   &__list {
     padding-block: $space-base;
     display: flex;
     flex-wrap: nowrap;
     gap: $gap-base;
-    padding-inline: 0;
+    padding-inline: $space-0;
     max-width: 100%;
     overflow-x: auto;
 

@@ -41,7 +41,7 @@
     padding-block: $space-lg;
     padding-inline: $space-base;
     background-color: $color-white;
-    margin-bottom: 36px;
+    margin-bottom: $space-1xl;
 
     @include desktop {
       display: none;
@@ -60,22 +60,22 @@
 
   &__header-title {
     font-family: $ff-heading;
-    font-weight: 700;
+    font-weight: $fw-bold;
     font-size: $fz-ml;
-    line-height: 32px;
+    line-height: $lh-lg;
     margin-block: $space-0;
   }
 
   &__wrapper {
     display: flex;
-    gap: 40px;
+    gap: $gap-3xl;
     flex-direction: column-reverse;
     padding-inline: $space-base;
     height: 100%;
 
     @include desktop {
       flex-direction: column;
-      gap: 0;
+      gap: $space-0;
       width: 100%;
       padding-inline: $space-0;
     }
@@ -102,8 +102,8 @@
   }
 
   &__button {
-    padding-block: 8px;
-    padding-inline: 20px;
+    padding-block: $space-sm;
+    padding-inline: $space-m;
     width: 100%;
   }
 
@@ -139,7 +139,7 @@
     flex-direction: column;
     gap: $gap-sm;
     padding-inline: $space-0;
-    margin-block: 0;
+    margin-block: $space-0;
   }
 
   &__item {

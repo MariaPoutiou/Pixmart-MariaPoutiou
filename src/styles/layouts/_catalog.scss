@@ -8,7 +8,7 @@
   &__grid-button {
     display: flex;
     justify-content: center;
-    margin-top: 32px;
+    margin-top: $space-xl;
     position: relative;
     z-index: 2;
     overflow: visible;
@@ -43,7 +43,7 @@
 
   &__meta-buttons {
     display: flex;
-    gap: 8px;
+    gap: $gap-sm;
   }
 
   &__meta-icon--primary {

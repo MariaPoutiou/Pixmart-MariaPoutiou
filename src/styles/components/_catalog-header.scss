@@ -7,6 +7,6 @@
   margin-bottom: $space-3xl;
 
   @include tablet {
-    gap: 4px;
+    gap: $gap-xxs;
   }
 }

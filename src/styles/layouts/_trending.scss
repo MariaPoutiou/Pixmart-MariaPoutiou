@@ -36,7 +36,7 @@
 
     @include tablet {
       display: flex;
-      gap: 6px;
+      gap: $gap-xs;
     }
   }
 
@@ -61,7 +61,7 @@
     grid-auto-columns: 305px;
     gap: $gap-base;
     overflow-x: auto;
-    padding-inline: 0;
+    padding-inline: $space-0;
 
     @include desktop {
       display: grid;

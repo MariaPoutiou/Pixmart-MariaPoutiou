@@ -24,7 +24,7 @@
   }
 
   &__brand {
-    margin-bottom: 20px;
+    margin-bottom: $space-m;
 
     @include tablet {
       width: 320px;
@@ -71,7 +71,7 @@
     margin-block: $space-0 $space-base;
 
     @include tablet {
-      margin-block: $space-0 20px;
+      margin-block: $space-0 $space-m;
     }
   }
 
