@@ -135,7 +135,8 @@
   &__input {
     @include input;
     padding: $space-m;
-    width: 243px;
+    width: 100%;
+    max-width: 243px;
 
     @include input-style;
 
@@ -178,6 +179,25 @@
     gap: $gap-base;
     padding: $space-0;
     margin-block: $space-0;
+    position: relative;
+  }
+
+  &__legal-list {
+    .footer__legal-item {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &:nth-of-type(1)::after,
+      &:nth-of-type(2)::after {
+        content: "";
+        display: inline-block;
+        margin-left: $space-sm;
+        width: 1px;
+        height: 24px;
+        background-color: $color-background-faded;
+      }
+    }
   }
 
   &__legal-link {
@@ -189,21 +209,6 @@
     line-height: $lh-base;
     color: $color-background-faded;
     position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      display: inline-block;
-      width: 1px;
-      height: 24px;
-      margin-inline: $space-sm;
-      margin-right: $space-sm;
-      background-color: $color-background-faded;
-    }
-
-    &:last-child::after {
-      content: none;
-    }
   }
 
   &__copyright {
