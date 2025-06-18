@@ -430,7 +430,7 @@
       "alt": "UI of a photography website with layered photo collage and call-to-action button",
       "state": "SOLD OUT",
       "stateClass": "sold-out",
-      "width": "325",
+      "width": "408",
       "height": "260"
     },
     {
@@ -443,7 +443,7 @@
       "button": "Go to Product",
       "state": "NEW",
       "stateClass": "new",
-      "width": "325",
+      "width": "408",
       "height": "260",
       "actions": [
         {
@@ -472,7 +472,7 @@
       "button": "Go to Product",
       "state": "POPULAR",
       "stateClass": "popular",
-      "width": "325",
+      "width": "408",
       "height": "260",
       "actions": [
         {
@@ -501,7 +501,7 @@
       "button": "Go to Product",
       "state": "POPULAR",
       "stateClass": "popular",
-      "width": "325",
+      "width": "408",
       "height": "260",
       "actions": [
         {
@@ -530,7 +530,7 @@
       "button": "Go to Product",
       "state": "NEW",
       "stateClass": "new",
-      "width": "325",
+      "width": "408",
       "height": "260",
       "actions": [
         {
@@ -558,7 +558,7 @@
       "alt": "UI of e-gaming blog article with a list of related posts and recommended articles",
       "state": "SOLD OUT",
       "stateClass": "sold-out",
-      "width": "325",
+      "width": "408",
       "height": "260"
     },
     {
@@ -569,7 +569,7 @@
       "alt": "UI of video editing services website with quality highlights and call to action button",
       "state": "SOLD OUT",
       "stateClass": "sold-out",
-      "width": "325",
+      "width": "408",
       "height": "260"
     },
     {
@@ -582,7 +582,7 @@
       "button": "Go to Product",
       "state": "NEW",
       "stateClass": "new",
-      "width": "325",
+      "width": "408",
       "height": "260",
       "actions": [
         {
@@ -611,7 +611,7 @@
       "button": "Go to Product",
       "state": "POPULAR",
       "stateClass": "popular",
-      "width": "325",
+      "width": "408",
       "height": "260",
       "actions": [
         {
@@ -640,7 +640,7 @@
       "button": "Go to Product",
       "state": "POPULAR",
       "stateClass": "popular",
-      "width": "325",
+      "width": "408",
       "height": "260",
       "actions": [
         {
@@ -669,7 +669,7 @@
       "button": "Go to Product",
       "state": "NEW",
       "stateClass": "new",
-      "width": "325",
+      "width": "408",
       "height": "260",
       "actions": [
         {
@@ -697,7 +697,7 @@
       "alt": "Kindergarten website template preview with event highlights and playful design",
       "state": "SOLD OUT",
       "stateClass": "sold-out",
-      "width": "325",
+      "width": "408",
       "height": "260"
     }
   ],
@@ -867,7 +867,7 @@
         "src": "article-image",
         "alt": "Corporate presentation template with slides for company overview, goals, marketing strategy, and team profiles",
         "width": "408",
-        "height": "504",
+        "height": "462",
         "caption": "Example of font usage in typography",
         "linkText": "Get this asset",
         "link": "#"
@@ -961,7 +961,7 @@
     "articles": [
       {
         "img": "article-best-dishes",
-        "width": "370",
+        "width": "368",
         "height": "272",
         "alt": "Thumbnail for Best Dishes article",
         "tag": "TAG",
@@ -972,7 +972,7 @@
       },
       {
         "img": "article-lotus-spa",
-        "width": "370",
+        "width": "368",
         "height": "272",
         "alt": "Thumbnail for Contact Us Lotus Spa article",
         "tag": "TAG",
@@ -983,7 +983,7 @@
       },
       {
         "img": "article-creative-blog",
-        "width": "370",
+        "width": "368",
         "height": "272",
         "alt": "Thumbnail for Creative Blog article",
         "tag": "TAG",
