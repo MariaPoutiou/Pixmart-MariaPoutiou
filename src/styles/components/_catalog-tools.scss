@@ -12,7 +12,7 @@
   }
 
   @include desktop {
-    align-items: center;
+    align-items: self-start;
   }
 
   &__upper {

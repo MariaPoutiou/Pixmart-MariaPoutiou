@@ -72,8 +72,10 @@
     flex-direction: column-reverse;
     padding-inline: $space-base;
     height: 100%;
+
     @include desktop {
       flex-direction: column;
+      gap: 0;
       width: 100%;
       padding-inline: $space-0;
     }
