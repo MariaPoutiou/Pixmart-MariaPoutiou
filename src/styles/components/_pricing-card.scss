@@ -86,6 +86,7 @@
 
   &__list-icon {
     color: $color-primary;
+    flex-shrink: 0;
   }
 
   &__button {

@@ -99,6 +99,7 @@
 
   &__lower {
     display: flex;
+    flex-wrap: wrap;
     gap: $gap-lg;
     justify-content: space-between;
     align-items: baseline;

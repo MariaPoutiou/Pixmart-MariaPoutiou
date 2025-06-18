@@ -61,13 +61,13 @@
     line-height: $lh-sm;
     display: flex;
     gap: $gap-sm;
-    height: 32px;
     width: auto;
     padding-block: $space-s;
     padding-inline: $space-md;
   }
 
   &__tag-icon {
+    flex-shrink: 0;
     @include svg-small;
   }
 }

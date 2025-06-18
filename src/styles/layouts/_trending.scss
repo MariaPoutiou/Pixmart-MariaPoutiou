@@ -88,7 +88,6 @@
     @include desktop {
       display: grid;
       grid-template-columns: repeat(minmax(200px, 1fr));
-      align-items: center;
       padding-inline: $space-5xl;
       width: 100%;
       max-width: 1440px;
