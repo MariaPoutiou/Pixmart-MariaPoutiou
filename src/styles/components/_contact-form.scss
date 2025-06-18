@@ -28,10 +28,14 @@
   &__label {
     font-size: $fz-xs;
     line-height: $lh-sm;
-    margin-bottom: $space-m;
+    margin-bottom: $space-smd;
 
     @include tablet {
       margin-bottom: $space-sm;
+    }
+
+    @include desktop {
+      margin-bottom: $space-smd;
     }
   }
 

@@ -5,8 +5,4 @@
   display: flex;
   flex-direction: column;
   margin-bottom: $space-3xl;
-
-  @include tablet {
-    gap: $gap-xxs;
-  }
 }
