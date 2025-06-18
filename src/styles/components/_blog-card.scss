@@ -29,6 +29,10 @@
     font-size: $fz-lg;
     line-height: $lh-ml;
     margin-block: $space-lg $space-sm;
+
+    @include desktop {
+      margin-block: 20px 8px;
+    }
   }
 
   &__date {

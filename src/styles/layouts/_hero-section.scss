@@ -20,7 +20,7 @@
     }
 
     @include desktop {
-      padding-block: 46px; /* overall i was a bit confused with spacing in this section. I extracted this value from figma, not from the values given by on the side but by the space indicated inside the layout */
+      padding-block: 52px;
       margin-block: $space-0 96px;
     }
   }
@@ -34,11 +34,6 @@
     @include tablet {
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
-    }
-
-    @include desktop {
-      gap: 175px;
     }
   }
 
@@ -50,6 +45,8 @@
 
     @include tablet {
       width: 100%;
+      min-width: 300px;
+      max-width: 520px;
       flex: 1 1;
     }
   }
@@ -71,7 +68,6 @@
     @include tablet {
       height: 386px;
       width: 443px;
-      flex: 1;
     }
 
     @include desktop {
