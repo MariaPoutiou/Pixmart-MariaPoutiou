@@ -45,9 +45,10 @@
   }
 
   &__section {
-    padding-top: $space-xl;
+    padding-top: 40px;
     border-top: 2px solid $color-text-primary;
     width: 100%;
+    margin-bottom: -10px;
   }
 
   &__heading {
@@ -56,12 +57,12 @@
     color: $color-text-primary;
     font-size: $fz-ml;
     line-height: $lh-lg;
-    margin-block: $space-0;
+    margin-block: 0 24px;
   }
 
   &__list {
     padding-inline: $space-0;
-    margin-block: $space-lg $space-0;
+    margin-bottom: 8px;
   }
 
   &__list-item {
@@ -111,7 +112,6 @@
 
   &__article-date {
     color: $color-text-secondary;
-    margin-top: -4px;
   }
 
   &__articles {

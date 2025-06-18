@@ -18,7 +18,15 @@
     line-height: $lh-m;
     color: $color-text-secondary;
     margin-right: 0;
-    margin-bottom: $space-xl;
+    margin-block: 8px 32px;
+
+    @include tablet {
+      margin-block: 20px 32px;
+    }
+
+    @include desktop {
+      margin-block: 14px 32px;
+    }
   }
 
   &__subtitle {
@@ -27,7 +35,7 @@
     color: $color-text-primary;
     font-size: $fz-ml;
     line-height: $lh-lg;
-    margin-bottom: $space-base;
+    margin-bottom: 20px;
   }
 
   &__img-wrapper {

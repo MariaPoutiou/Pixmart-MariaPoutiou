@@ -32,7 +32,7 @@
     font-size: $fz-xl;
     line-height: $lh-xl;
     letter-spacing: -0.5px;
-    margin-block-end: $space-base;
+    margin-block: 0 $space-base;
 
     @include tablet {
       margin-block: $space-2xl $space-xl;
