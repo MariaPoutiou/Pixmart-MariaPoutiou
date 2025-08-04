@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.catalog-list {
+  padding-inline: $space-0;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: $gap-2xl;
+  margin-block: $space-0;
+
+  @include tablet {
+    gap: $gap-xl;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    &:nth-child(1),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:last-child {
+      opacity: 50%;
+    }
+  }
+
+  &__item:hover .catalog-card__price {
+    color: $color-primary;
+  }
+}

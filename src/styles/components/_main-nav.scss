@@ -1,0 +1,41 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.main-nav {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-inline: $space-0;
+    gap: $gap-sm;
+    margin-block: $space-0;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__list-link {
+    color: rgb(13 13 21);
+    font-weight: $fw-semibold;
+    font-size: $fz-md;
+    line-height: $lh-m;
+    @include link-style;
+
+    @include tablet {
+      font-size: $fz-xs;
+      line-height: $lh-sm;
+    }
+  }
+
+  &__list-item {
+    padding-inline: $space-xl;
+    padding-block: $space-ml;
+
+    @include tablet {
+      padding-inline: $space-md;
+      padding-block: $space-s;
+    }
+  }
+}

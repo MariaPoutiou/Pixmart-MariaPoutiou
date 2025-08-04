@@ -1,0 +1,53 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.product-card {
+  &__wrapper {
+    background-color: $color-surface-light;
+    border-radius: 20px;
+    margin-bottom: $space-m;
+    display: flex;
+    height: 224px;
+    justify-content: center;
+    align-items: center;
+    padding: $space-xl;
+    transition: background-color 0.3s ease;
+
+    @include tablet {
+      padding: $space-base;
+    }
+
+    &:hover {
+      background-color: $color-primary;
+    }
+  }
+
+  &__wrapper:hover .product-card__img {
+    color: $color-white;
+    transform: scale(1.1);
+  }
+
+  &__link:focus-visible .product-card__wrapper {
+    outline: none;
+    box-shadow: 0 0 0 4px $color-blue-light;
+    border-radius: 8px;
+  }
+
+  &__title {
+    font-family: $ff-heading;
+    color: $color-text-primary;
+    font-weight: $fw-medium;
+    font-size: $fz-m;
+    line-height: $lh-m;
+    text-align: center;
+    margin-top: $space-0;
+  }
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    color: $color-primary;
+    transition: color 0.3s ease;
+    transition: transform 0.3s;
+  }
+}

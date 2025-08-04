@@ -1,0 +1,50 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.product {
+  margin-bottom: $space-1lg;
+  padding-left: $space-base;
+  width: 100%;
+
+  @include tablet {
+    padding-inline: $space-2xl;
+  }
+
+  @include desktop {
+    padding-inline: $space-5xl;
+    margin-inline: auto;
+    max-width: 1440px;
+  }
+
+  &__list {
+    padding-block: $space-base;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: $gap-base;
+    padding-inline: $space-0;
+    max-width: 100%;
+    overflow-x: auto;
+
+    @include desktop {
+      overflow: unset;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: $gap-xl;
+    }
+  }
+
+  &__list-item {
+    width: 100%;
+    min-width: 224px;
+
+    @include tablet {
+      min-width: 176px;
+    }
+
+    @include desktop {
+      width: unset;
+      width: 224px;
+    }
+  }
+}

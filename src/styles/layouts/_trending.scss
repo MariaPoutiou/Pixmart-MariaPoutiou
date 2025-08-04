@@ -1,0 +1,97 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.trending {
+  margin-top: $space-3xl;
+
+  @include tablet {
+    margin-top: 95px;
+  }
+
+  &__primary-title {
+    margin-bottom: $space-base;
+    padding-inline: $space-base;
+
+    @include tablet {
+      margin-bottom: 2px;
+      padding-inline: $space-2xl;
+    }
+
+    @include desktop {
+      padding-inline: $space-5xl;
+      width: 100%;
+      max-width: 1440px;
+      margin-inline: auto;
+    }
+  }
+  &__secondary-title {
+    margin-block: $space-0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $space-3xl;
+    padding-inline: $space-base;
+
+    @include tablet {
+      margin-bottom: 46px;
+      padding-inline: $space-2xl;
+      align-items: flex-end;
+    }
+
+    @include desktop {
+      padding-inline: $space-5xl;
+      width: 100%;
+      max-width: 1440px;
+      margin-inline: auto;
+    }
+  }
+
+  &__header-functions {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      gap: $gap-xs;
+    }
+  }
+
+  &__header-button {
+    font-size: $fz-sm;
+    padding: $space-m;
+  }
+
+  &__header-button-icon {
+    color: $color-text-primary;
+    @include svg-size;
+  }
+
+  &__list-item {
+    width: 100%;
+    position: relative;
+  }
+
+  &__list-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 305px;
+    gap: $gap-base;
+    overflow-x: auto;
+    padding-left: $space-base;
+
+    @include tablet {
+      padding-left: $space-2xl;
+    }
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(minmax(200px, 1fr));
+      padding-inline: $space-5xl;
+      width: 100%;
+      max-width: 1440px;
+      margin-inline: auto;
+    }
+  }
+}

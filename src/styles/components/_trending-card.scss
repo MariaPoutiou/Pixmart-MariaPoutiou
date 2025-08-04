@@ -1,0 +1,103 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.trending-card {
+  &__img-wrapper {
+    height: 272px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: $color-background-faded;
+      border-radius: 20px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &:hover .trending-card__button {
+      opacity: 1;
+    }
+  }
+
+  &__img img {
+    @include product-image;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__icon-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: $space-base;
+    top: 0;
+    right: 0;
+    padding: $space-base;
+    background-color: $color-primary;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  &__label-icon {
+    color: $color-soft-white;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: $space-0;
+  }
+
+  &__title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
+    font-size: $fz-lg;
+    line-height: $lh-ml;
+    margin-block: $space-base $space-0;
+  }
+
+  &__price {
+    font-weight: $fw-medium;
+    line-height: $lh-base;
+    color: $color-primary;
+    margin-block: $space-base $space-xs;
+  }
+
+  &__tags {
+    @include card-info;
+    margin-block: $space-0;
+    white-space: wrap;
+  }
+
+  &__tag {
+    white-space: wrap;
+    margin-block: $space-sm;
+    &:last-child::before {
+      @include card-pseudoelement;
+    }
+  }
+
+  &__button {
+    opacity: 0;
+    position: absolute;
+    width: calc(100% - 32px);
+    top: 104px;
+    left: 16px;
+    z-index: 2;
+  }
+}

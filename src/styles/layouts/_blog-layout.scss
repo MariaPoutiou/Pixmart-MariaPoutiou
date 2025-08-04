@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.blog-layout {
+  display: flex;
+  position: relative;
+  flex-direction: column-reverse;
+
+  @include tablet {
+    flex-direction: row-reverse;
+    gap: $gap-3xl;
+  }
+}

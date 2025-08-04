@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.categories-card {
+  width: 100%;
+  max-width: 294px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: $space-lg;
+
+  &__svg {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.4s ease;
+    color: $color-09;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  &__title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
+    font-size: $fz-lg;
+    line-height: $lh-ml;
+    margin-block: $space-base $space-0;
+    white-space: wrap;
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: $gap-xs;
+  }
+
+  &__description {
+    margin-block: $space-sm $space-0;
+    white-space: wrap;
+  }
+
+  &__label {
+    position: relative;
+    margin-block: $space-sm $space-0;
+
+    &::before {
+      @include card-pseudoelement;
+      margin-right: $space-xs;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.catalog-card {
+  position: relative;
+
+  &__img img {
+    @include product-image;
+    width: 100%;
+    height: 260px;
+    margin-bottom: $space-m;
+
+    @include tablet {
+      margin-bottom: 22px;
+    }
+
+    @include desktop {
+      width: 325px;
+    }
+  }
+
+  &__title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
+    font-size: $fz-m;
+    line-height: $lh-md;
+    margin-block: -5px 0;
+  }
+
+  &__tags {
+    @include card-info;
+  }
+
+  &__tag {
+    margin-block: $space-0;
+    white-space: wrap;
+
+    &:last-child::before {
+      @include card-pseudoelement;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    height: auto;
+    min-height: 40px;
+    border-radius: 100px;
+    font-weight: $fw-medium;
+    padding-inline: $space-md;
+    padding-block: $space-0;
+    top: 16px;
+    left: 16px;
+    max-width: 300px;
+  }
+
+  &__label--sold-out {
+    background-color: $color-white;
+    color: $color-03;
+  }
+
+  &__label--new {
+    background-color: $color-11;
+    color: $color-background-soft;
+  }
+
+  &__label--popular {
+    background-color: $color-primary;
+    color: $color-background-soft;
+  }
+
+  &__state {
+    margin-block: $space-0;
+  }
+
+  &__price {
+    font-weight: $fw-bold;
+    font-size: $fz-m;
+    line-height: $lh-md;
+    margin-top: $space-m;
+    margin-bottom: $space-0;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include desktop {
+      align-items: flex-end;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-sm;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+}

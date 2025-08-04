@@ -1,0 +1,24 @@
+<section class="trending">
+  <h2 class="primary-title trending__primary-title">
+    {{ trendingSection.title }}
+  </h2>
+  <div class="trending__header">
+    <h3 class="secondary-title trending__secondary-title">
+      {{ trendingSection.subtitle }}
+    </h3>
+    <div class="trending__header-functions">
+      {% for button in trendingSection.navButtons %}
+        <button class="button trending__header-button button--secondary" type="button">
+          <svg class="svg trending__header-button-icon" aria-label="{{ button.alt }}">
+            <use href="{{ button.icon }}"></use>
+          </svg>
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+  <ul class="trending__list-wrapper">
+    {% for item in trendingSection.items %}
+      {% include "partials/trending-card.njk" %}
+    {% endfor %}
+  </ul>
+</section>

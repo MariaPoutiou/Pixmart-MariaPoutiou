@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.secondary-title {
+  font-family: $ff-heading;
+  font-weight: $fw-bold;
+  color: $color-text-primary;
+  font-size: $fz-xl;
+  line-height: $lh-xl;
+  letter-spacing: -0.5px;
+}

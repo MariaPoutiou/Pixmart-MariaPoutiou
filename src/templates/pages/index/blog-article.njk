@@ -1,0 +1,24 @@
+{% set currentPage = "Blog" %}
+{% extends "layouts/base.njk" %}
+{% set title = meta.title.blog %}
+{% set description = meta.description.blog %}
+{% set page = "blog" %}
+{% block content %}
+  <!--MAIN STARTS HERE-->
+  <!--HERO SECTION-->
+    <article class="blog-page"> <div class="container">
+      <section class="blog-hero">
+        {% include "partials/hero-blog.njk" %}
+      </section>
+      <div
+        class="blog-layout">
+        <!--MAIN ARTICLE-->
+        <section class="article">{% include "partials/main-article.njk" %}</section>
+        <!--ASIDE SECTIONS-->
+        {% include "partials/aside-blog.njk" %}
+      </div>
+    </div>
+  </article>
+  <!--ARTICLE FOOTER-->
+  {% include "partials/article-footer.njk" %}
+{% endblock %}

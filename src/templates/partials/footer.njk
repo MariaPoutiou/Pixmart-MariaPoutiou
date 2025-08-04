@@ -1,0 +1,73 @@
+<footer class="footer">
+  <div
+    class="container footer__content">
+    <!-- Upper section -->
+    <div class="footer__upper">
+      {% if page == "about" %}
+        <div class="footer__brand">
+          <svg class="footer__logo" aria-label="{{ header.logoAlt }}">
+            <use href="{{ header.logoImgFull }}"></use>
+          </svg>
+          <p class="footer__description">{{ footerDescription }}</p>
+        </div>
+      {% else %}
+        <div class="footer__brand">
+          <a href="{{ header.logoLink }}">
+            <svg class="footer__logo" aria-label="{{ header.logoAlt }}">
+              <use href="{{ header.logoImgFull }}"></use>
+            </svg>
+          </a>
+          <p class="footer__description">{{ footerDescription }}</p>
+        </div>
+      {% endif %}
+      <h2 class="footer__nav-cta visually-hidden">Navigate to our Website</h2>
+      <div class="footer__nav-wrapper">
+        {% for group in footerNav %}
+          <nav class="footer__nav" aria-label="{{ group.ariaLabel }}">
+            <h3 class="footer__nav-title">{{ group.title }}</h3>
+            <ul class="footer__nav-list">
+              {% for item in group.links %}
+                <li class="footer__nav-item">
+                  <a class="footer__nav-link" href="{{ item.link }}">{{ item.text }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        {% endfor %}
+      </div>
+    </div>
+    <!-- Middle section -->
+    <div class="footer__middle">
+      <div class="footer__socials">
+        <div class="footer__social-list">
+          {% for social in footerSocials %}
+            <a class="button footer__social-item button--secondary" href="{{ social.link }}" target="_blank" aria-label="{{ social.alt }}">
+              <svg class="svg footer__social-icon">
+                <use href="{{ social.icon }}"></use>
+              </svg>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="footer__newsletter">
+        <h4 class="footer__newsletter-title">
+          {{ footerNewsletter.title }}
+        </h4>
+        {% include "partials/footer-search-form.njk" %}
+      </div>
+    </div>
+  </div>
+  <!-- Lower section (outside .footer__content) -->
+  <div class="footer__lower">
+    <div class="container footer__legal-list-wrapper">
+      <ul class="footer__legal-list">
+        {% for item in footerLegal %}
+          <li class="footer__legal-item">
+            <a class="footer__legal-link" href="{{ item.link }}">{{ item.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <p class="footer__copyright">{{ footerCopyright }}</p>
+    </div>
+  </div>
+</footer>

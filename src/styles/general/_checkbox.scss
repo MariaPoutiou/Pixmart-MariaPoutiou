@@ -1,0 +1,78 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.checkbox[type="checkbox"]:user-invalid + .input-checkbox::before {
+  border-color: $color-error;
+}
+
+.checkbox:checked + .input-checkbox .catalog-filter__label-icon {
+  color: $color-background-soft;
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 8px;
+  top: 7px;
+  left: 3px;
+
+  &:active {
+    color: $color-blue-dark;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+  }
+}
+
+.checkbox:checked + .contact-form__checkbox .contact-form__checkbox-icon {
+  color: $color-background-soft;
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 8px;
+  top: 7px;
+  left: 3px;
+  &:active {
+    color: $color-blue-dark;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+  }
+}
+
+.checkbox:checked + .input-checkbox {
+  &::before {
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+  &:hover::before {
+    background-color: $color-blue-light;
+    border-color: $color-blue-light;
+  }
+
+  &:active:before {
+    background-color: $color-07;
+    border-color: $color-07;
+  }
+
+  &:focus-visible::before {
+    outline: none;
+    box-shadow: 0 0 0 4px $color-focus-ring;
+  }
+
+  &:disabled::before {
+    background-color: $color-gray-light;
+    border-color: $color-gray-light;
+  }
+
+  &:hover:invalid::before {
+    border-color: $color-error;
+    background-color: $color-blue-light;
+  }
+
+  &:user-invalid::before {
+    border-color: $color-error;
+    background-color: $color-primary;
+    cursor: not-allowed;
+  }
+}

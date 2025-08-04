@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.radio:focus-visible + .input-radio::before {
+  box-shadow: 0 0 0 2px $color-focus-ring;
+  border-color: $color-03;
+}
+
+.radio:checked + .input-radio::before {
+  border: 5px solid $color-primary;
+}
+
+.radio:checked + .input-radio:hover::before {
+  background-color: $color-background-faded;
+  border-color: $color-blue-light;
+}
+
+.radio:checked + .input-radio:active::before {
+  background-color: $color-blue-dark;
+  border: 5px solid $color-08;
+}
+
+.radio:focus-visible + .input-radio::before {
+  border: 5px solid $color-primary;
+  box-shadow: 0 0 0 2px $color-blue-light;
+}
+
+.radio:checked + .input-radio:hover:invalid::before {
+  border: 2px solid $color-error;
+  box-shadow: 0 0 0 2px $color-blue-dark;
+}
+
+.radio:checked + .input-radio:disabled::before {
+  box-shadow: 0 0 0 5px $color-02;
+  background-color: $color-03;
+  cursor: not-allowed;
+}

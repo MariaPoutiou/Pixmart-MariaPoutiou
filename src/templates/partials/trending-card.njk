@@ -1,0 +1,30 @@
+<li class="trending__list-item">
+  <article class="trending-card">
+    <div class="trending-card__img-wrapper hover-wrapper">
+      <picture class="trending-card__img">
+        <source srcset="/img/{{ item.img }}-1x.avif 1x, /img/{{ item.img }}-2x.avif 2x" type="image/avif"/>
+        <source srcset="/img/{{ item.img }}-1x.webp 1x, /img/{{ item.img }}-2x.webp 2x" type="image/webp"/>
+        <img class="trending-card__img" src="/img/{{ item.img }}-2x.webp" alt="{{ item.alt }}" width="{{ item.width }}" height="{{ item.height }}" loading="lazy"/>
+      </picture>
+      {% if item.icon %}
+        <div class="trending-card__icon-wrapper">
+          <svg class="svg trending-card__label-icon" aria-hidden="true" focusable="false">
+            <use href="{{ item.icon }}"></use>
+          </svg>
+        </div>
+      {% endif %}
+      <a class="button trending-card__button card-button button--primary" href="{{ item.link }}">
+        {{ item.button }}
+      </a>
+    </div>
+    <div class="trending-card__details">
+      <h4 class="trending-card__title">{{ item.title }}</h4>
+      <p class="trending-card__price">{{ item.price }}</p>
+    </div>
+    <div class="trending-card__tags">
+      {% for tag in item.tags %}
+        <p class="trending-card__tag">{{ tag }}</p>
+      {% endfor %}
+    </div>
+  </article>
+</li>

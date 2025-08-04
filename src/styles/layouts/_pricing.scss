@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.pricing {
+  margin-top: 52px;
+
+  @include tablet {
+    margin-top: 115px;
+  }
+
+  &__primary-title {
+    text-align: center;
+  }
+
+  &__secondary-title {
+    text-align: center;
+    margin-block: $space-base $space-3xl;
+  }
+}

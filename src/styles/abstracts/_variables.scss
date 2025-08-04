@@ -1,0 +1,116 @@
+// Screen Sizes
+$screen-desktop: 1440px;
+$screen-tablet: 1024px;
+$screen-mobile: 440px;
+
+// Core color variables
+$color-primary: rgb(2, 101, 220);
+$color-background: rgb(240, 246, 253);
+$color-text-primary: rgb(13, 13, 21);
+$color-text-secondary: rgba(42, 53, 65, 0.8509803922);
+$color-text-dark: rgb(34, 34, 34);
+
+// Box shadow and hover
+$color-blue-light: rgb(56, 146, 243);
+
+// Input and links styling
+$color-blue-dark: rgb(0, 84, 182);
+
+// Form and input validation
+$color-error: rgb(234, 56, 41);
+$color-valid: rgb(0, 143, 93);
+
+// General
+$color-body-bg: rgb(255, 255, 255);
+$color-white: rgb(255, 255, 255);
+$color-soft-white: rgb(248, 247, 255);
+$color-gray-light: rgba(29, 54, 83, 0.168627451);
+$color-gray-bg: rgba(41, 77, 117, 0.0901960784);
+$color-shadow: rgba(29, 57, 95, 0.08);
+$color-focus-ring: rgba(30, 144, 255, 0.6);
+$color-disabled: rgba(34, 52, 73, 0.4);
+$color-background-soft: rgb(245, 248, 251);
+$color-background-faded: rgba(231, 238, 247, 0.66);
+$color-surface-light: rgb(244, 247, 250);
+$color-text-button: rgb(245, 248, 251);
+
+// Unique-rarely used
+$color-01: rgb(29, 28, 40);
+$color-02: rgba(31, 50, 71, 0.27);
+$color-03: rgba(42, 53, 65, 0.698);
+$color-04: rgb(248, 250, 252);
+$color-05: rgba(239, 245, 250, 0.82);
+$color-06: rgb(241, 242, 244);
+$color-07: rgb(181, 222, 255);
+$color-08: rgb(202, 232, 255);
+$color-09: rgb(15, 115, 246);
+$color-10: rgba(39, 53, 68, 0.55);
+$color-11: rgb(0, 119, 114);
+
+// Typography
+$text-primary: rgb(42 53 65);
+//Font Family
+$ff-body: "Libre Franklin", "Arial", "Georgia", sans-serif;
+$ff-heading: "Plus Jakarta Sans", "Arial", "Georgia", sans-serif;
+// Fonte Weight
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+// Font Size
+$fz-xs: 14px;
+$fz-sm: 16px;
+$fz-md: 18px;
+$fz-m: 20px;
+$fz-ml: 24px;
+$fz-lg: 28px;
+$fz-xl: 36px;
+$fz-2xl: 52px;
+// Line Height
+$lh-sm: 20px;
+$lh-base: 24px;
+$lh-md: 26px;
+$lh-m: 28px;
+$lh-lg: 32px;
+$lh-ml: 36px;
+$lh-xl: 48px;
+$lh-2xl: 62px;
+
+// Gaps
+$gap-xxs: 4px;
+$gap-xs: 6px;
+$gap-sm: 8px;
+$gap-md: 12px;
+$gap-base: 16px;
+$gap-m: 18px;
+$gap-ml: 20px;
+$gap-lg: 24px;
+$gap-xl: 32px;
+$gap-2xl: 36px;
+$gap-3xl: 40px;
+$gap-4xl: 48px;
+$gap-5xl: 64px;
+$gap-6xl: 72px;
+
+// Spacing
+$space-0: 0;
+// Small sizes
+$space-xs: 4px;
+$space-s: 6px;
+$space-sm: 8px;
+$space-smd: 10px;
+// Primary sizes
+$space-md: 12px;
+$space-base: 16px;
+$space-ml: 18px;
+$space-m: 20px;
+$space-lg: 24px;
+$space-1lg: 28px;
+// Large sizes
+$space-xl: 32px;
+$space-1xl: 36px;
+$space-2xl: 40px;
+$space-3xl: 48px;
+$space-4xl: 64px;
+$space-5xl: 80px;
+$space-6xl: 120px;

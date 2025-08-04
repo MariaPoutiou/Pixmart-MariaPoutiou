@@ -1,0 +1,96 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.pricing-card {
+  padding: $space-xl;
+  position: relative;
+
+  @include tablet {
+    width: 100%;
+    min-width: 272px;
+  }
+
+  &__badge {
+    font-weight: $fw-bold;
+    font-size: $fz-m;
+    line-height: $lh-md;
+    text-align: center;
+    position: absolute;
+    background-color: $color-primary;
+    color: $color-white;
+    padding-inline: $space-lg;
+    padding-block: $space-s;
+    max-width: 200px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: $fz-m;
+    line-height: $lh-md;
+    margin-block: $space-0;
+  }
+
+  &__title--best-seller {
+    @include tablet {
+      margin-block: 26px $space-0;
+    }
+
+    @include desktop {
+      margin-block: $space-0;
+    }
+  }
+
+  &__price {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    font-size: $fz-xl;
+    line-height: $lh-xl;
+    letter-spacing: -0.5px;
+    margin-block: $space-base $space-xl;
+  }
+
+  &__billing {
+    font-family: $ff-body;
+    font-weight: $fw-regular;
+    font-size: $fz-sm;
+    line-height: $lh-base;
+    opacity: 50%;
+  }
+
+  &__wrapper {
+    padding-top: $space-2xl;
+    border-top: 1px solid $color-02;
+  }
+
+  &__list {
+    padding: $space-0;
+    margin-bottom: $space-2xl;
+  }
+
+  &__list-item {
+    margin-bottom: $space-base;
+    display: flex;
+    align-items: center;
+    gap: $gap-base;
+
+    &:last-child {
+      margin-bottom: $space-0;
+    }
+  }
+
+  &__list-icon {
+    color: $color-primary;
+    flex-shrink: 0;
+  }
+
+  &__button {
+    width: 100%;
+    white-space: wrap;
+  }
+}

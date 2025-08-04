@@ -1,0 +1,20 @@
+<section class="catalog-filter__section catalog-filter__section--price">
+  <h3 class="catalog-filter__title">{{ catalogFilterPrice.title }}</h3>
+  <fieldset class="catalog-filter__fieldset">
+    <legend class="visually-hidden catalog-filter__legend">{{ catalogFilterPrice.title }}</legend>
+    <div class="catalog-filter__range-slider">
+      <button class="catalog-filter__button-primary" type="button"></button>
+      <button class="catalog-filter__button-secondary" type="button"></button>
+      <div class="catalog-filter__range-line"></div>
+      <div class="catalog-filter__range-line catalog-filter__range-line--is-selected"></div>
+      <div class="catalog-filter__range-labels">
+        <div class="catalog-filter__range-min">
+          <label for="{{ catalogFilterPrice.idMin }}">{{ catalogFilterPrice.labelMin }}</label>
+          <input class="visually-hidden" type="range" min="{{ catalogFilterPrice.min }}" value="{{ catalogFilterPrice.valueMin }}" id="{{ catalogFilterPrice.idMin }}"></div>
+          <div class="catalog-filter__range-max">
+            <label for="{{ catalogFilterPrice.idMax }}">{{ catalogFilterPrice.labelMax }}</label>
+            <input class="visually-hidden" type="range" max="{{ catalogFilterPrice.max }}" value="{{ catalogFilterPrice.valueMax }}" id="{{ catalogFilterPrice.idMax }}"></div>
+          </div>
+        </div>
+      </fieldset>
+    </section>

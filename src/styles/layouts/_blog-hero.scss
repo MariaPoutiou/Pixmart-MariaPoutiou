@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.blog-hero {
+  &__wrapper {
+    padding-block: $space-4xl;
+  }
+
+  &__label {
+    height: auto;
+    min-height: 40px;
+    padding-inline: $space-base;
+    padding-block: $space-0;
+    border-radius: 100px;
+    margin-bottom: $space-1lg;
+    white-space: wrap;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
+    margin-block: $space-0;
+    font-size: $fz-xl;
+    line-height: $lh-xl;
+    letter-spacing: -0.5px;
+
+    @include tablet {
+      font-size: $fz-2xl;
+      line-height: $lh-2xl;
+    }
+  }
+
+  &__img img {
+    margin-bottom: $space-lg;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 5%;
+    overflow: hidden;
+    display: block;
+    height: 127px;
+    overflow: hidden;
+    margin-bottom: $space-xl;
+
+    @include tablet {
+      height: 293px;
+    }
+
+    @include desktop {
+      height: 398px;
+    }
+  }
+}

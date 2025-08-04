@@ -1,0 +1,52 @@
+<header class="container header">
+  <div class="header__menu-wrapper">
+    <div class="header__nav">
+      <div class="header__burger">
+        <div class="header__burger-wrapper">
+          <button class="button header__burger-btn button--primary-small" type="button">
+            <svg class="svg header__burger-img" aria-hidden="true" focusable="false">
+              <use href="{{ header.burgerImg }}"></use>
+            </svg>
+            <svg class="svg header__burger-img header__burger-img--close" aria-hidden="true" focusable="false">
+              <use href="{{ header.burgerImgClose }}"></use>
+            </svg>
+          </button>
+        </div>
+        {% if page == "about" %}
+          <div class="header__logo">
+            <svg class="header__logo-img" aria-label="{{ header.logoAlt }}">
+              <use href="{{ header.logoImgFull }}"></use>
+            </svg>
+          </div>
+        {% else %}
+          <div class="header__logo">
+            <a class="header__logo-image" href="{{ header.logoLink }}" aria-label="{{ header.logoAlt }}">
+              <svg class="header__logo-img">
+                <use href="{{ header.logoImgFull }}"></use>
+              </svg>
+            </a>
+          </div>
+        {% endif %}
+      </div>
+      <div class="header-section">
+        <nav class="main-nav" aria-label="main navigation">
+          <ul class="main-nav__list">
+            {% for item in header.nav %}
+              <li class="main-nav__list-item">
+                <a class="main-nav__list-link" href="{{ item.link }}">{{ item.text }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header-actions">
+      {% include "partials/header-search-form.njk" %}
+      <a class="button header__button button--primary-small" href="{{ headerButton.link }}" aria-label="{{ headerButton.alt }}">
+        <svg class="svg header__button-img" focusable="false">
+          <use href="{{ headerButton.img }}"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>

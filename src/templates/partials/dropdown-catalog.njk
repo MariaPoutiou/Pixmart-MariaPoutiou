@@ -1,0 +1,16 @@
+<form method="get" action="{{ gridHeader.action }}">
+    <div class="catalog-tools__block">
+        <label for="select" class="visually-hidden">Sort products by</label>
+        <select class="catalog-tools__select" name="select" id="select">
+            {% for option in catalogDropdownOptions %}
+                <option value="{{ option }}" {% if option == currentSelection %} selected {% endif %}>
+                    {{ option }}
+                </option>
+            {% endfor %}
+        </select>
+        <svg class="svg catalog-tools__select-icon" aria-hidden="true" focusable="false">
+            <use href="{{ catalogDropdownIcon }}"></use>
+        </svg>
+    </div>
+    <button class="visually-hidden" type="submit">Submit</button>
+</form>

@@ -1,0 +1,165 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.hero-section {
+  &--homepage {
+    padding-block: $space-xl $space-4xl;
+    gap: $gap-2xl;
+    margin-bottom: 44px;
+    background: linear-gradient(
+      90deg,
+      rgba(240, 246, 253, 1) 60%,
+      rgba(255, 255, 255, 1) 80%
+    );
+
+    @include tablet {
+      padding-block: $space-6xl;
+      margin-block: $space-0 $space-2xl;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    @include desktop {
+      padding-block: 52px;
+      margin-block: $space-0 96px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: $gap-2xl;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xl;
+    width: 100%;
+
+    @include tablet {
+      width: 100%;
+      min-width: 300px;
+      max-width: 520px;
+      flex: 1 1;
+    }
+  }
+
+  &__heading {
+    width: 100%;
+    max-width: 430px;
+
+    @include desktop {
+      max-width: unset;
+    }
+  }
+
+  &__banner {
+    height: 277px;
+    width: 94%;
+    object-fit: cover;
+
+    @include tablet {
+      height: 386px;
+      width: 443px;
+    }
+
+    @include desktop {
+      height: 544px;
+      width: 583px;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
+    font-size: $fz-2xl;
+    line-height: $lh-2xl;
+    letter-spacing: -0.5px;
+    margin-block: $space-0;
+  }
+
+  &__heading-highlight {
+    font-weight: $fw-bold;
+    color: $color-primary;
+  }
+
+  &__description {
+    font-family: $ff-heading;
+    font-weight: $fw-medium;
+    font-size: $fz-m;
+    line-height: $lh-m;
+    color: $text-primary;
+    opacity: 85%;
+    margin-block: $space-0;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-lg;
+
+    @include tablet {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__button-primary {
+    white-space: wrap;
+    padding-inline: 30px; /*it's a strange situation here, 440px cannot handle these sizes, along with white space wrap, the text breaks into 2 rows. Nowrap in the text makes the layout break and causes buttons to overflow and flex wrap in the wrapper makes buttons go vertically even in default size. I tried all options again and again. The only way to fit the 2 buttons there with white space wrap and staying loyal to figma layout, is to reduce a bit the horizontal padding of buttons in mobile view. If there is more practically solution, i'll be happy to know*/
+
+    @include tablet {
+      padding-inline: $space-xl;
+    }
+  }
+
+  &__button-secondary {
+    background-color: $color-white;
+    color: $color-text-primary;
+    padding-block: $space-ml;
+    padding-inline: 30px;
+    border: 1px solid transparent;
+    white-space: wrap;
+
+    @include tablet {
+      padding-inline: $space-xl;
+    }
+
+    &:hover {
+      background-color: $color-gray-bg;
+      border: 1px solid $color-blue-light;
+    }
+
+    &:focus-visible {
+      outline: none;
+      background-color: $color-gray-bg;
+      box-shadow: 0 0 0 4px $color-blue-light;
+      border-color: $color-gray-bg;
+    }
+
+    &:active {
+      background-color: $color-gray-bg;
+    }
+
+    &:disabled {
+      color: $color-disabled;
+      background-color: transparent;
+    }
+  }
+
+  &__button-svg {
+    margin-right: $space-sm;
+    color: $color-primary;
+    fill: $color-primary;
+    flex-shrink: 0;
+  }
+}

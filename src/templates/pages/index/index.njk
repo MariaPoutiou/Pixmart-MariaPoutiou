@@ -1,0 +1,22 @@
+{% set currentPage = "About" %}
+{% extends "layouts/base.njk" %}
+{% set title = meta.title.index %}
+{% set description = meta.description.index %}
+{% set page = "about"
+%}
+{% block content %}
+    <!--MAIN STARTS HERE-->
+    <!--HERO SECTION-->
+    {% include "partials/hero-homepage.njk" %}
+    <!--PRODUCTS SECTION-->
+    {% include "partials/products-section.njk" %}
+    <!--CATEGORIES SECTION-->
+    {% include "partials/categories-section.njk" %}
+    <!--TRENDING SECTION-->
+    {% include "partials/trending-section.njk" %}
+    <!--PRICING SECTION-->
+    {% include "partials/pricing-section.njk" %}
+    <!--FAQ SECTION-->
+    {% include "partials/faq-section.njk" %}
+    <!--BLOG SECTION-->
+{% include "partials/blog-section.njk" %}{% endblock %}

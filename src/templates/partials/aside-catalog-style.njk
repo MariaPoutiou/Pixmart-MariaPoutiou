@@ -1,0 +1,16 @@
+<section class="catalog-filter__section">
+  <h3 class="catalog-filter__title">{{ catalogFilterStyles.title }}</h3>
+  <fieldset class="catalog-filter__fieldset">
+    <legend class="visually-hidden catalog-filter__legend">{{ catalogFilterStyles.title }}</legend>
+    <ul class="catalog-filter__list">
+      {% for style in catalogFilterStyles.items %}
+        <li class="catalog-filter__item">
+          <div class="catalog-filter__group">
+            <input class="visually-hidden toggle catalog-filter__input" type="checkbox" name="style" value="{{ style.value }}" id="{{ style.id }}"/>
+            <label class="input-toggle catalog-filter__label" for="{{ style.id }}">{{ style.label }}</label>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </fieldset>
+</section>

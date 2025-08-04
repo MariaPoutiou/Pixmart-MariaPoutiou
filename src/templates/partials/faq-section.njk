@@ -1,0 +1,16 @@
+<section class="container faq">
+  <div class="faq__header">
+    <h2 class="primary-title faq__primary-title">{{ faqSection.title }}</h2>
+    <h3 class="secondary-title faq__secondary-title">
+      {{ faqSection.subtitle }}
+    </h3>
+    <a class="button faq__button button--secondary" href="{{ faqSection.buttonLink }}">
+      {{ faqSection.buttonText }}
+    </a>
+  </div>
+  <div class="faq__list">
+    {% for item in faqSection.items %}
+      {% include "partials/faq-item.njk" %}
+    {% endfor %}
+  </div>
+</section>

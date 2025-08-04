@@ -1,0 +1,28 @@
+<li class="pricing-list__item">
+  <article class="pricing-card">
+    {% if plan.badge %}
+      <div class="pricing-card__badge">{{ plan.badge }}</div>
+    {% endif %}
+    <div class="pricing-card__header">
+      <h4 class="pricing-card__title{% if plan.titleModifier %} pricing-card__title--{{ plan.titleModifier }}{% endif %}">{{ plan.title }}</h4>
+      <p class="pricing-card__price">
+        {{ plan.price }}
+        <span class="pricing-card__billing">{{ plan.billing }}</span>
+      </p>
+    </div>
+    <div class="pricing-card__wrapper">
+      <ul class="pricing-card__list">
+        {% for feature in plan.features %}
+          <li class="pricing-card__list-item">
+            <svg class="svg pricing-card__list-icon" aria-hidden="true" focusable="false">
+              <use href="{{ feature.icon }}"></use>
+            </svg>
+            {{ feature.item }}</li>
+        {% endfor %}
+      </ul>
+      <a class="button pricing-card__button button--{{ plan.button.style }}" href="{{ plan.button.link }}">
+        {{ plan.button.label }}
+      </a>
+    </div>
+  </article>
+</li>

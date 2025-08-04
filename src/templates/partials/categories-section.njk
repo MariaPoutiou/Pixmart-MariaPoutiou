@@ -1,0 +1,28 @@
+<section class="container categories">
+  <div class="categories__header">
+    <h2 class="primary-title categories__primary-title">
+      {{ categoriesSection.title }}
+    </h2>
+    <h3 class="secondary-title categories__secondary-title">
+      <span>{{ categoriesSection.subtitleUpper }}</span>
+          <span>
+            {{ categoriesSection.subtitleLower }}</span>
+        </h3>
+        <p class="categories__description">{{ categoriesSection.description }}</p>
+        <a class="button categories__header-button button--primary" href="{{ categoriesSection.buttonLink }}">
+          {{ categoriesSection.buttonText }}
+        </a>
+      </div>
+      <div class="categories__list-wrapper">
+        <ul class="categories__list-primary">
+          {% for item in categoriesSectionLeft.items %}
+            {% include "partials/categories-card.njk" %}
+          {% endfor %}
+        </ul>
+        <ul class="categories__list-secondary">
+          {% for item in categoriesSectionRight.items %}
+            {% include "partials/categories-card.njk" %}
+          {% endfor %}
+        </ul>
+      </div>
+    </section>

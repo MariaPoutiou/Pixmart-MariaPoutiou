@@ -1,0 +1,22 @@
+{% set currentPage = "Products" %}
+{% extends "layouts/base.njk" %}
+{% set title = meta.title.catalog %}
+{% set description = meta.description.catalog %}
+{% set page = "catalog" %}
+{% block content %}
+  <!--MAIN STARTS HERE-->
+  <!--HERO SECTION-->
+    <div class="catalog-bg"> {% include "partials/hero-catalog.njk" %}
+        </div>
+    <!--CATALOG GRID HEADER-->
+    <div class="container catalog-layout">
+      <section class="catalog">
+        {% include "partials/catalog-grid-header.njk" %}
+        <!--CATALOG-GRID-->
+        {% include "partials/catalog-grid.njk" %}
+      </section>
+      <!--CATALOG-ASIDE-->
+      {% include "partials/aside-catalog.njk" %}
+    </div>
+
+{% endblock %}

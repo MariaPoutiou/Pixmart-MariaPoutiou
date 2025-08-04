@@ -1,0 +1,39 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $color-text-primary;
+  background-color: $color-body-bg;
+  font-family: $ff-body;
+  font-weight: $fw-regular;
+  font-size: $fz-sm;
+  line-height: $lh-base;
+  overflow-x: hidden;
+
+  &.not-scrolled {
+    @include tablet {
+      overflow-y: hidden;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+}

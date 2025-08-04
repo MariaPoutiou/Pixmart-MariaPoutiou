@@ -1,0 +1,228 @@
+@use "./variables" as *;
+
+@mixin desktop {
+  @media screen and (width >= #{$screen-desktop}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (width >= #{$screen-tablet}) {
+    @content;
+  }
+}
+
+@mixin svg-size {
+  width: 24px;
+  height: 24px;
+}
+
+@mixin svg-small {
+  width: 16px;
+  height: 16px;
+}
+
+@mixin svg-large {
+  width: 64px;
+  height: 64px;
+}
+
+@mixin box-shadow {
+  box-shadow: 0 4px 40px $color-shadow;
+}
+
+@mixin label {
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  white-space: nowrap;
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: $color-text-button;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-base;
+}
+
+@mixin button-base {
+  font-weight: $fw-semibold;
+  font-size: $fz-md;
+  line-height: $lh-m;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin button-small-primary {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: $color-text-button;
+  padding: 6px;
+}
+
+@mixin button-small-secondary {
+  background-color: transparent;
+  border-color: $color-10;
+  padding: 6px;
+}
+
+@mixin button-primary {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: $color-text-button;
+  padding-block: $space-ml;
+  padding-inline: $space-xl;
+}
+
+@mixin button-secondary {
+  border: 2px solid $color-gray-light;
+  color: $color-text-primary;
+  background-color: transparent;
+  padding-block: $space-ml;
+  padding-inline: $space-xl;
+}
+
+@mixin button-primary-style {
+  &:hover {
+    background-color: $color-blue-light;
+    border-color: $color-blue-light;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px $color-focus-ring;
+  }
+
+  &:active {
+    background-color: $color-blue-dark;
+    border-color: $color-blue-dark;
+  }
+
+  &:disabled {
+    outline: none;
+    color: $color-disabled;
+    border: 2px solid rgba(29, 54, 83, 0.17);
+    background-color: rgba(29, 54, 83, 0.17);
+    pointer-events: none;
+  }
+}
+
+@mixin button-secondary-style {
+  &:hover {
+    background-color: $color-gray-bg;
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: $color-gray-bg;
+    box-shadow: 0 0 0 4px $color-blue-light;
+    border-color: $color-gray-bg;
+  }
+
+  &:active {
+    background-color: $color-gray-bg;
+  }
+
+  &:disabled {
+    color: $color-disabled;
+    background-color: $color-gray-light;
+    border: 2px solid $color-gray-light;
+    border-radius: 8px;
+    pointer-events: none;
+  }
+}
+
+@mixin product-image {
+  height: 272px;
+  border-radius: 20px;
+  object-fit: cover;
+  position: relative;
+}
+
+@mixin card-info {
+  display: flex;
+  align-items: flex-start;
+  gap: $gap-sm;
+  color: $color-03;
+  white-space: nowrap;
+}
+
+@mixin card-pseudoelement {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: $color-03;
+  border-radius: 50%;
+  margin-right: $space-sm;
+  vertical-align: middle;
+}
+
+@mixin card-hover {
+  &:hover {
+    border-color: $color-primary;
+  }
+}
+
+@mixin link-style {
+  text-decoration: none;
+  box-sizing: border-box;
+
+  &:hover {
+    color: $color-blue-light;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 4px $color-blue-light;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  &:disabled {
+    color: $color-disabled;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &:visited {
+    color: $color-blue-dark;
+  }
+}
+
+@mixin input {
+  border: 1px solid $color-gray-light;
+  border-radius: 8px;
+}
+
+@mixin input-style {
+  &:hover {
+    box-shadow: 0 0 0 2px $color-blue-light;
+  }
+
+  &:user-invalid {
+    border: 1px solid $color-error;
+  }
+
+  &:focus,
+  &:focus-visible {
+    box-shadow: 0 0 0 3px $color-blue-light;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $color-gray-bg;
+  }
+}

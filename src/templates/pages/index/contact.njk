@@ -1,0 +1,18 @@
+{% set currentPage = "Contact" %}
+{% extends "layouts/base.njk" %}
+{% set title = meta.title.contact %}
+{% set description = meta.description.contact %}
+{% set page = "contact" %}
+{% block content %}
+  <!--HERO SECTION-->
+  <div class="contact-page">
+    <div class="container contact-page__container">
+      {% include "partials/hero-contact.njk" %}
+      <!--MAIN STARTS HERE-->
+      <section class="contact">
+        <h2 class="visually-hidden">{{ contactTitleHidden }}</h2>
+        {% include "partials/contact-form.njk" %}
+      </section>
+    </div>
+  </div>
+{% endblock %}

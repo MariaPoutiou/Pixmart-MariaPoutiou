@@ -1,0 +1,141 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.categories {
+  padding-block: $space-0;
+  display: flex;
+  flex-direction: column;
+  gap: $gap-5xl;
+
+  @include tablet {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 105px;
+  }
+
+  &__header {
+    width: 100%;
+    margin-bottom: $space-m;
+
+    @include tablet {
+      margin-bottom: 42px;
+    }
+  }
+
+  &__description {
+    color: $color-text-dark;
+    font-size: $fz-md;
+    line-height: $lh-m;
+    margin-block: $space-base $space-xl;
+  }
+
+  &__secondary-title {
+    margin-block: $space-base;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include desktop {
+      width: 60%;
+    }
+  }
+
+  &__list-wrapper {
+    display: flex;
+    gap: $gap-ml;
+    width: 100%;
+  }
+
+  &__list-primary {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-ml;
+    width: 100%;
+    padding-inline: $space-0;
+    margin-top: -30px;
+    position: relative;
+
+    @include tablet {
+      margin-top: -30px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 60px;
+      width: 100%;
+      background: linear-gradient(
+        180deg,
+        rgba(240, 246, 253, 1) 40%,
+        rgba(255, 255, 255, 0.6) 100%
+      );
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+  }
+
+  &__list-secondary {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-ml;
+    width: 100%;
+    padding-inline: $space-0;
+    margin-top: 50px;
+    position: relative;
+
+    @include tablet {
+      margin-top: 52px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      left: 0;
+      height: 60px;
+      width: 100%;
+      background: linear-gradient(
+        0deg,
+        rgba(240, 246, 253, 1) 40%,
+        rgba(255, 255, 255, 0.6) 100%
+      );
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+  }
+}
+
+.categories__list-item {
+  background-color: $color-surface-light;
+  border-radius: 20px;
+
+  &:hover .categories-card {
+    background-color: $color-primary;
+    transform: scale(1.02);
+  }
+}
+
+.categories__list-item:hover .categories-card__svg {
+  color: $color-white;
+  transform: scale(1.1);
+}
+
+.categories__list-item:hover .categories-card__title {
+  color: $color-soft-white;
+}
+
+.categories__list-item:hover .categories-card__description,
+.categories__list-item:hover .categories-card__label {
+  color: $color-05;
+}
+
+.categories__list-item:hover .categories-card__label::before {
+  background-color: $color-05;
+}
+
+.categories__list-item:hover .categories-card__img {
+  color: $color-white;
+}

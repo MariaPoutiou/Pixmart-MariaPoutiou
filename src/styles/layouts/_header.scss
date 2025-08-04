@@ -1,0 +1,70 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-block: $space-lg;
+
+  &__menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__nav {
+    display: flex;
+    gap: $gap-xl;
+  }
+
+  &__burger {
+    display: flex;
+    flex-direction: row;
+    gap: $gap-base;
+    align-items: center;
+
+    @include tablet {
+      gap: $space-0;
+    }
+  }
+
+  &__logo-img {
+    width: 108px;
+    height: 24px;
+  }
+
+  &__button {
+    @include button-base;
+    @include button-small-primary;
+  }
+
+  &__burger-btn {
+    @include button-base;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+      display: none;
+    }
+
+    .header__burger-img {
+      display: block;
+    }
+
+    .header__burger-img--close {
+      display: none;
+    }
+
+    &.is-open {
+      .header__burger-img {
+        display: none;
+      }
+
+      .header__burger-img--close {
+        display: block;
+        color: $color-soft-white;
+      }
+    }
+  }
+}

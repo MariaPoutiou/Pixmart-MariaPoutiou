@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.input-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: $space-1lg;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border: 1px solid $color-02;
+    border-radius: 4px;
+    background-color: $color-white;
+  }
+  input[type="checkbox"]:focus-visible + &::before {
+    box-shadow: 0 0 0 2px $color-focus-ring;
+    border-color: transparent;
+  }
+
+  input[type="checkbox"]:hover + &::before {
+    background-color: $color-surface-light;
+  }
+
+  input[type="checkbox"]:active + &::before {
+    background-color: $color-surface-light;
+    border-color: transparent;
+  }
+
+  input[type="checkbox"]:disabled + &::before {
+    background-color: $color-gray-light;
+    border-color: transparent;
+  }
+
+  input[type="checkbox"]:hover:user-invalid + &::before {
+    border-color: $color-error;
+    background-color: $color-gray-bg;
+  }
+
+  &:user-invalid::before {
+    border-color: $color-error;
+    background-color: $color-primary;
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,219 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.footer {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-5xl;
+    margin-top: 77px;
+
+    @include tablet {
+      padding-block: 100px $space-5xl;
+    }
+  }
+
+  &__upper {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__brand {
+    margin-bottom: $space-m;
+
+    @include tablet {
+      width: 320px;
+    }
+  }
+  &__logo {
+    width: 300px;
+    height: 58px;
+    margin-left: -20px; /* there is a mystery space on the left of the logo, i believe it comes from viewport and goes away only when i put height in around 70px, so i put -20 to the left to match the layout*/
+  }
+
+  &__middle {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xl;
+    min-width: 0;
+    margin-bottom: $space-4xl;
+
+    @include tablet {
+      flex-direction: row;
+      gap: unset;
+      justify-content: space-between;
+      margin-bottom: 55px;
+    }
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-ml;
+
+    @include tablet {
+      flex-direction: row;
+      gap: $gap-5xl;
+    }
+  }
+
+  &__nav-title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
+    font-size: $fz-m;
+    line-height: $lh-md;
+    margin-block: $space-0 $space-base;
+
+    @include tablet {
+      margin-block: $space-0 $space-m;
+    }
+  }
+
+  &__nav-list {
+    padding: $space-0;
+    margin-bottom: $space-0;
+  }
+
+  &__nav-item {
+    margin-bottom: $space-sm;
+  }
+
+  &__nav-link {
+    color: $color-text-secondary;
+    @include link-style;
+  }
+
+  &__social-list {
+    padding: $space-0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-sm;
+    margin-block: 0;
+  }
+
+  &__social-item {
+    padding-block: $space-m;
+    padding-inline: $space-m;
+    align-items: unset;
+    width: 64px;
+  }
+
+  &__newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-lg;
+    width: 100%;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: center;
+      width: 645px;
+    }
+  }
+
+  &__newsletter-title {
+    font-size: $fz-ml;
+    line-height: $lh-lg;
+    width: 216px;
+    min-width: 216px;
+    margin-block: $space-0;
+  }
+
+  &__form {
+    display: flex;
+    gap: $gap-sm;
+    width: 100%;
+    min-width: 320px;
+  }
+
+  &__input {
+    @include input;
+    padding: $space-m;
+    width: 100%;
+    max-width: 243px;
+
+    @include input-style;
+
+    ::placeholder {
+      white-space: wrap;
+    }
+  }
+
+  &__lower {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xl;
+    padding-block: $space-lg;
+    padding-inline: $space-base;
+    margin-bottom: $space-0;
+    background-color: $color-text-primary;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: $space-5xl;
+    }
+  }
+
+  &__legal-list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: $gap-xl;
+    padding-inline: 0;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__legal-list {
+    display: inline-flex;
+    gap: $gap-base;
+    padding: $space-0;
+    margin-block: $space-0;
+    position: relative;
+  }
+
+  &__legal-list {
+    .footer__legal-item {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &:nth-of-type(1)::after,
+      &:nth-of-type(2)::after {
+        content: "";
+        display: inline-block;
+        margin-left: $space-sm;
+        width: 1px;
+        height: 24px;
+        background-color: $color-background-faded;
+      }
+    }
+  }
+
+  &__legal-link {
+    color: $color-background-faded;
+    @include link-style;
+  }
+
+  &__legal-item {
+    line-height: $lh-base;
+    color: $color-background-faded;
+    position: relative;
+  }
+
+  &__copyright {
+    line-height: $lh-base;
+    color: $color-background-faded;
+    margin-block: $space-0;
+  }
+}

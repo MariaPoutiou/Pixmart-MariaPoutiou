@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.primary-title {
+  font-family: $ff-body;
+  font-size: $fz-sm;
+  font-weight: $fw-regular;
+  line-height: $lh-base;
+  color: $color-09;
+  margin-block: $space-0 $space-base;
+}

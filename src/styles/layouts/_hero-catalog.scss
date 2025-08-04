@@ -1,0 +1,34 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.hero-catalog {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: -0.5px;
+    margin-block: $space-4xl 100px;
+    font-size: $fz-xl;
+    line-height: $lh-xl;
+    margin-top: 64px;
+
+    @include tablet {
+      color: $color-text-primary;
+      font-size: $fz-2xl;
+      line-height: $lh-2xl;
+      margin-left: $space-2xl;
+    }
+
+    @include desktop {
+      margin-left: $space-0;
+    }
+  }
+
+  &__title-highlight {
+    color: $color-primary;
+  }
+}

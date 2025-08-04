@@ -1,0 +1,116 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.contact-hero {
+  padding-block: $space-4xl $space-0;
+  width: 100%;
+
+  &__primary-title {
+    margin-block: $space-0 $space-m;
+  }
+
+  &__intro {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: $space-base;
+  }
+
+  &__title {
+    font-family: $ff-heading;
+    font-weight: $fw-bold;
+    color: $color-text-primary;
+    font-size: $fz-2xl;
+    line-height: $lh-2xl;
+    margin-block: $space-0;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: -0.5px;
+  }
+
+  &__description {
+    font-weight: $fw-regular;
+    font-family: $ff-body;
+    font-size: $fz-md;
+    line-height: $lh-m;
+    color: $color-text-secondary;
+    margin-block: $space-0 $space-xl;
+  }
+
+  &__button {
+    font-size: $fz-sm;
+    line-height: $lh-base;
+    margin-bottom: $space-1lg;
+    padding: $space-m;
+  }
+
+  &__info-wrapper {
+    margin-bottom: $space-3xl;
+  }
+
+  &__info-item {
+    display: flex;
+    align-items: center;
+    gap: $gap-sm;
+    margin-bottom: $space-sm;
+  }
+
+  &__link {
+    color: $color-text-primary;
+    @include link-style;
+  }
+
+  &__text {
+    font-weight: $fw-semibold;
+    font-size: $fz-md;
+    line-height: $lh-m;
+    margin-block: $space-0;
+  }
+
+  &__icon {
+    color: $color-primary;
+    flex-shrink: 0;
+  }
+
+  &__map-wrapper {
+    position: relative;
+  }
+
+  &__map-img img {
+    display: block;
+    height: 314px;
+    overflow: hidden;
+    border-radius: $space-m;
+    width: 100%;
+    height: 314px;
+    object-fit: cover;
+    object-position: 0 75%;
+  }
+
+  &__map-wrapper-info {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background-color: white;
+    display: flex;
+    gap: $gap-base;
+    align-items: center;
+    padding: $space-md $space-base;
+    border-radius: 8px;
+    @include box-shadow;
+  }
+
+  &__map-text-upper {
+    font-weight: $fw-bold;
+    margin-block: $space-0;
+  }
+
+  &__map-text-lower {
+    color: $color-text-secondary;
+    margin-block: $space-0;
+  }
+
+  &__map-icon {
+    color: $color-primary;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.input-radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: $space-1lg;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border: 2px solid $color-02;
+    border-radius: 50%;
+    background-color: transparent;
+    box-sizing: border-box;
+  }
+
+  input[type="radio"]:hover + &::before {
+    background-color: $color-surface-light;
+    box-shadow: none;
+  }
+
+  input[type="radio"]:active + &::before {
+    background-color: $color-background-faded;
+    border-color: $color-03;
+    box-shadow: none;
+  }
+
+  input[type="radio"]:disabled + &::before {
+    background-color: $color-disabled;
+    border: 2px solid $color-disabled;
+    cursor: not-allowed;
+  }
+
+  input[type="radio"]:hover:invalid + &::before {
+    border-color: $color-error;
+    background-color: $color-gray-bg;
+  }
+}

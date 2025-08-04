@@ -1,0 +1,35 @@
+<div class="article-section article__upper">
+  <p class="article__paragraph">{{ articleIntro }}</p>
+  {% for section in articleSections %}
+    {% if section.title %}
+      <h2 class="article__subtitle">{{ section.title }}</h2>
+    {% endif %}
+    {% if section.text %}
+      <p class="article__paragraph">{{ section.text }}</p>
+    {% endif %}
+    {% if section.image %}
+      <figure class="article__img-wrapper">
+        <picture class="article__img">
+          <source srcset="/img/{{ section.image.src }}-1x.avif 1x, /img/{{ section.image.src }}-2x.avif 2x" type="image/avif"/>
+          <source srcset="/img/{{ section.image.src }}-1x.webp 1x, /img/{{ section.image.src }}-2x.webp 2x" type="image/webp"/>
+          <img class="article__img" src="/img/{{ section.image.src }}-2x.webp" alt="{{ section.image.alt }}" width="{{ section.image.width }}" height="{{ section.image.height }}" loading="lazy"/>
+        </picture>
+        <figcaption class="article__img-captions">
+          <p class="article__img-description">{{ section.image.caption }}</p>
+          <a class="article__img-link" href="{{ section.image.link }}">{{ section.image.linkText }}</a>
+        </figcaption>
+      </figure>
+    {% endif %}
+  {% endfor %}
+</div>
+<div class="article-section article__lower">
+  <div class="article__quote-wrapper">
+    <svg class="article__quote-svg" aria-hidden="true" focusable="false">
+      <use href="{{ articleQuote.svg }}"></use>
+    </svg>
+    <blockquote class="article__quote" cite="{{ articleQuote.cite }}">
+      {{ articleQuote.text }}
+    </blockquote>
+  </div>
+  <p class="article__paragraph">{{ articleOutro }}</p>
+</div>
